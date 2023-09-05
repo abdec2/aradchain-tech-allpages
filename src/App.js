@@ -23,6 +23,8 @@ function App() {
       {currentPage === "/blogs" && <CustomNavbar />}
       {currentPage === "/partner-with-us" && <CustomNavbar />}
 
+      {/* Saad! below routes needs styling and layout adjustments.. right now these routes can not be accessed from website you need to enter these routes in browser address bar */}
+
       {currentPage === "/solutionExchangeCryptocurrencyExchange" && <CustomNavbar />}
       {currentPage === "/exchangeWhiteLabelExchange" && <CustomNavbar />}
       {currentPage === "/exchange-hybridExchange" && <CustomNavbar />}
