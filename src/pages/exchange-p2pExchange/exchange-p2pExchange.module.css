@@ -29,15 +29,18 @@
     display: flex;
     margin-top: 80px;
 }
-.mainSectionContent > div:nth-child(1){
-    width: 55%;
+/* Update the CSS for the main section content */
+.mainSectionContent > div:nth-child(1) {
+    width: 100%; /* Change from 60% to 100% */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     font-size: 40px;
-    padding-right: 100px; 
+    padding-right: 0; /* Remove padding-right */
+    gap: 0; /* Remove gap between child elements */
 }
+
 
 .mainSectionContent > div:nth-child(1) h2{
     font-family: var(--gBold);
