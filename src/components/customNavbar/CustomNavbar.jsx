@@ -742,7 +742,7 @@ const NAV_ITEMS = [
             innerLabel: "Cryptocurrency Exchange",
             context:
               "Gear up for revenue stream with future ready white label crypto exchange",
-            href: "#",
+            href: "/solutionExchangeCryptocurrencyExchange",
           },
           {
             innerLabel: "White Label Exchange",

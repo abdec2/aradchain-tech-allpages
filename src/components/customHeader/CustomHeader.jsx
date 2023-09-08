@@ -87,7 +87,7 @@ export default function Navbar() {
             <chakra.span fontSize="1.2rem" sx={{ marginRight: "0.5rem" }}>
               &#127760;
             </chakra.span>
-            Our Global Presence :
+            Our Geographical Presence :
           </chakra.span>
           <chakra.span
             className="fi fi-gb"
