@@ -21,7 +21,15 @@ import ExchangeP2pExchange from "./exchange-p2pExchange/Exchange-p2pExchange";
 import ExchangeMarketMakingServices from "./exchange-marketMakingServices/Exchange-marketMakingServices";
 import ExchangeDerivativesExchange from "./exchange-derivativesExchange/Exchange-derivativesExchange";
 import ExchangeDecentralizedExchange from "./exchange-decentralizedExchange/Exchange-decentralizedExchange";
-
+import WalletCryptocurrencyWallet from "./wallet-cryptocurrencyWallet/Wallet-cryptocurrencyWallet";
+import WalletWeb3Wallet from "./wallet-web3Wallet/Wallet-web3Wallet"
+import WalletWhiteLabelWallet from "./wallet-whiteLabelWallet/Wallet-whiteLabelWallet"
+import WalletMultiCurrencyWallet from "./wallet-multicurrencyWallet/Wallet-multicurrencyWallet";
+import WalletnftWallet from "./wallet-nftWallet/Wallet-nftWallet"
+import WallettronWallet from './wallet-tronWallet/Wallet-tronWallet'
+import WalletbitcoinWallet from './wallet-bitcoinWallet/Wallet-bitcoinWallet'
+import WalletmobileWallet  from './wallet-mobileWalletApp/Wallet-mobileWalletApp'
+import WalletdefiWallet from './wallet-defiWallet/Wallet-defiWallet'
 
 import NftNftDevelopment from "./nft-nftDevelopment/Nft-nftDevelopment";
 import NftWhiteLabelNftMarketplace from "./nft-whiteLabelNftMarketplace/Nft-whiteLabelNftMarketplace";
@@ -153,6 +161,15 @@ const AllRoutes = () => {
       <Route path="/exchange-marketMakingServices" element={<ExchangeMarketMakingServices />} />
       <Route path="/exchange-derivativesExchange" element={<ExchangeDerivativesExchange />} />
       <Route path="/exchange-decentralizedExchange" element={<ExchangeDecentralizedExchange />} />
+      <Route path="/wallet-cryptocurrencyWallet" element={<WalletCryptocurrencyWallet />} />
+      <Route path="/wallet-web3Wallet" element={<WalletWeb3Wallet />} />
+      <Route path="/wallet-whiteLabelWallet" element={<WalletWhiteLabelWallet />} />
+      <Route path="/wallet-multiCurrencyWallet" element={<WalletMultiCurrencyWallet />} />
+      <Route path="/wallet-nftWallet" element={<WalletnftWallet />} />
+      <Route path="/wallet-tronWallet" element={<WallettronWallet />} />
+      <Route path="/wallet-bitcoinWallet" element={<WalletbitcoinWallet />} />
+      <Route path="/wallet-mobileWalletApp" element={<WalletmobileWallet />} />
+      <Route path="/wallet-defiWallet" element={<WalletdefiWallet />} />
 
       <Route path="/nft-nftDevelopment" element={<NftNftDevelopment />} />
       <Route path="/nft-whiteLabelNftMarketplace" element={<NftWhiteLabelNftMarketplace />} />

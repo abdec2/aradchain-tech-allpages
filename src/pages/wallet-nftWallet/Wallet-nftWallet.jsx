@@ -1,11 +1,9 @@
 import React from "react";
 import style from "./wallet-nftWallet.module.css";
-// import image from '../../assets/aboutInfo2.png'
 import crypto1 from "../../assets/crypto1.png";
 import crypto2 from "../../assets/crypto2.png";
 import data from "../../database/data";
 import Whyus from "../../components/whyUs/Whyus";
-import Heading from "../../components/heading/Heading";
 import AboutStats from "../../components/aboutStats/AboutStats";
 import Team from "../../components/team/Team";
 import { Link } from "react-router-dom";
@@ -15,159 +13,326 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+
 const About = () => {
-  // console.log(data.aboutStatsData)
   return (
     <div className={style.aboutMain}>
       <div className={style.mainSection}>
         <div className={style.mainSectionContainer}>
-          <Heading heading="About" />
           <div className={style.mainSectionContent}>
             <div>
-              <img src={map} alt="" />
-              <h2>NFT Wallet Development Company</h2>
-            </div>
-            <div>
-              <p>
-              How Secure are Our NFT Wallet Services?
-NFTs are renowned for their authenticity, integrity, and immutability, making them impervious to hacking and often utilized as collateral. Security is of paramount importance to our NFT wallet development professionals, who meticulously incorporate it into our solutions. As an esteemed NFT wallet development company, our blockchain experts possess a wealth of domain knowledge and technical expertise. They adeptly craft robust and scalable NFT wallets from the ground up. Moreover, our experts stay abreast of the latest advancements in the crypto sector, seamlessly integrating them into our wallet solutions. Count on us for a comprehensive range of crypto-related services, including NFT wallet development, NFT marketplace creation, NFT desktop app development, and much more. Our globally acclaimed wallet development services testify to our dedication.
-
-
-Varieties of NFT Wallets
-Custodial Wallets (1)
-Custodial Wallet
-Custodial NFT wallets entrust a third party with storing credentials such as assets, coins, tokens, and private keys on their servers. Users access the wallet by logging in for transactions.
-
-Non-Custodial Wallets (1)
-Non-Custodial Wallet
-Non-custodial wallets offer users complete control over their funds. Users bear the responsibility of safeguarding their keys and confidential data, without involving third parties.
-
-Hot Wallets (1)
-Hot Wallet
-Hot wallets, including desktop and mobile apps, facilitate buying, selling, and exchanging NFTs. These NFTs are accessible online, and tampering with the integrated security measures proves challenging.
-
-Distinctive Features of Our White Label NFT Wallet
-Support Across Multiple Platforms (2)
-Multi-Platform Assistance
-As a premier NFT Wallet Development Service provider, we conceive innovative and distinctive NFT wallets, seamlessly integrating them with existing platforms in the decentralized realm.
-
-Cross-Chain Functionality
-Cross-Chain Compatibility
-Our experts engineer cross-platform applications that can interconnect with various platforms, establishing novel ecosystems rooted in true decentralization.
-
-Compatibility Across Multiple Devices (2)
-Device Flexibility
-We create NFT wallets catering to both web-based browser extensions and mobile platforms. These wallets are easily usable across various devices.
-
-Enhanced Security (2)
-Heightened Security
-Rest assured, the NFT wallets developed by our experts are fortified with two-factor authentication, ensuring the utmost security for NFTs.
-
-Integration with Crypto Exchange API (2)
-Crypto Exchange Integration
-Our NFT wallet can be seamlessly linked with crypto exchanges, broadening its functionality. This synergy enhances transaction flow and user engagement within the wallet.
-
-Fiat Conversion with Credit Card (2)
-FIAT Conversion via Credit Card
-Our NFT wallet empowers users to acquire NFTs using a FIAT credit card, enabling effortless conversion of FIAT into supported cryptos for NFT purchases.
-
-Our NFT Wallet Development Process
-Group 66337
-Requirement Analysis
-Thoroughly understanding and assimilating application requirements
-Assessing feature necessities and implementation criteria
-Creating a development roadmap detailing the NFT wallet creation process
-
-Group 66338
-Designing
-Formulating a Smart Contract application document
-Illustrating data flow through diagrammatic representation
-Designing the technical architecture of the NFT wallet app
-Enforcing data protection and privacy compliance protocols
-
-Group 66336
-Development
-Utilizing cutting-edge technology to craft applications
-Subjecting the NFT app to rigorous testing and audits
-Rectifying errors to ensure seamless app performance
-
-Group 66373
-Deployment
-Launching the NFT wallet onto the main network
-
-Group 66340
-Post-Deployment
-Continuously updating the application with new features
-Prioritizing backlog tasks during the updating process
-
-              </p>
-              <p>
-              Our Unique Offerings:
-password (2)
-Robust infrastructure
-Cost-effective solutions
-Expert development team
-password (2)-2
-Extensive domain knowledge & experience
-password (2)-3
-Transparent and reliable processes
-password (2)-6
-Customizable solutions
-password (2)-5
-Timely and quality service delivery
-password (2)-6
-Budget-friendly project options
-
-Why Opt for Our NFT Wallet Development?
-AradChain Technologies stands as a dependable IT partner, offering forward-looking and enterprise-grade NFT wallet development solutions. Our unmatched accessibility and support empower enterprises in attaining their objectives.
-
-assistance
-Diverse Wallet Offerings
-services
-Tailored Custom Solutions
-team
-Seasoned Professional Team
-technology
-Integration of Cutting-Edge Technologies
-respond
-Prompt Responsiveness
-assistance
-Round-the-Clock Support
-
-Our Partners
-Our Clients
-Frequently Asked Questions
-
-1Is Security Ensured in NFT Wallets?
-NFT wallets enjoy heightened security due to their private key-based access, making them resilient to online attacks. Only the authorized private key owner can access the wallet.
-
-2What's the Cost of Developing an NFT Wallet?
-3Can Multiple Cryptocurrencies be Stored in an NFT Wallet?
-4How Long Does NFT Wallet Development Take?
-A Glimpse into Our Blogs
-White Label Crypto Wallet
-Navigating the Expenses of Constructing a White Label Crypto Wallet
-Table of Contents Introduction Exploring the Core Aspects of White-Label Crypto Wallets In-Depth Market Overview Advantages of Opting for White-Label Crypto Wallet Solutions […]
-READ MORE
-White Label Digital Identity Wallet
-Deepening the Understanding of White Label Digital Identity Wallets
-Table of Contents : Introduction A Comprehensive Look at Digital Identity Solutions Thorough Market Overview The Business Advantages of White Label Digital […]
-READ MORE
-Mobile Wallet App Development
-Elevating and Empowering User Experience through Mobile Wallet App Development Solutions
-Table of Contents Introduction to Mobile Wallet Apps Present Market Insights into Mobile Crypto Wallet Apps Reasons for Enterprises to Invest in Mobile […]
-READ MORE
-Our Blockchain Tech Proficiency
-We're available for a friendly conversation to discuss your business needs, no strings attached.
-
-              </p>
+              <Heading>NFT Wallet Development Company</Heading>
             </div>
           </div>
+          
         </div>
       </div>
 
-      {/* Info Section */}
       <div className={style.infoSection}>
+        <div className={style.infoContainer}>
+          <div className="content">
+            <Text align={'center'} letterSpacing={1}>
+            How Secure are Our NFT Wallet Services?NFTs are renowned for their authenticity, integrity, and immutability, making them impervious to hacking and often utilized as collateral. Security is of paramount importance to our NFT wallet development professionals, who meticulously incorporate it into our solutions. As an esteemed NFT wallet development company, our blockchain experts possess a wealth of domain knowledge and technical expertise. They adeptly craft robust and scalable NFT wallets from the ground up. Moreover, our experts stay abreast of the latest advancements in the crypto sector, seamlessly integrating them into our wallet solutions. Count on us for a comprehensive range of crypto-related services, including NFT wallet development, NFT marketplace creation, NFT desktop app development, and much more. Our globally acclaimed wallet development services testify to our dedication.
+            </Text>
+            <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+             Varieties of NFT Wallets
+            </Heading>
+            <Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+    Custodial Wallets (1)
+</Heading>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    <strong>Custodial Wallet</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={2}>
+    Custodial NFT wallets entrust a third party with storing credentials such as assets, coins, tokens, and private keys on their servers. Users access the wallet by logging in for transactions.
+</Text>
+
+<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+    Non-Custodial Wallets (1)
+</Heading>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    <strong>Non-Custodial Wallet</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={2}>
+    Non-custodial wallets offer users complete control over their funds. Users bear the responsibility of safeguarding their keys and confidential data, without involving third parties.
+</Text>
+
+<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+    Hot Wallets (1)
+</Heading>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    <strong>Hot Wallet</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={2}>
+    Hot wallets, including desktop and mobile apps, facilitate buying, selling, and exchanging NFTs. These NFTs are accessible online, and tampering with the integrated security measures proves challenging.
+</Text>
+
+<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+    Distinctive Features of Our White Label NFT Wallet
+</Heading>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    <strong>Support Across Multiple Platforms (2)</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={2}>
+    Multi-Platform Assistance
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    <strong>Cross-Chain Functionality</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={2}>
+    Cross-Chain Compatibility
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    <strong>Compatibility Across Multiple Devices (2)</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={2}>
+    Device Flexibility
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    <strong>Enhanced Security (2)</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={2}>
+    Heightened Security
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    <strong>Integration with Crypto Exchange API (2)</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={2}>
+    Crypto Exchange Integration
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    <strong>Fiat Conversion with Credit Card (2)</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={2}>
+    FIAT Conversion via Credit Card
+</Text>
+
+<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+    Our NFT Wallet Development Process
+</Heading>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    <strong>Requirement Analysis</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={2}>
+    Thoroughly understanding and assimilating application requirements
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={2}>
+    Assessing feature necessities and implementation criteria
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={2}>
+    Creating a development roadmap detailing the NFT wallet creation process
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    <strong>Designing</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={2}>
+    Formulating a Smart Contract application document
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={2}>
+    Illustrating data flow through diagrammatic representation
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={2}>
+    Designing the technical architecture of the NFT wallet app
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={2}>
+    Enforcing data protection and privacy compliance protocols
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    <strong>Development</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={2}>
+    Utilizing cutting-edge technology to craft applications
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={2}>
+    Subjecting the NFT app to rigorous testing and audits
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={2}>
+    Rectifying errors to ensure seamless app performance
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    <strong>Deployment</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={2}>
+    Launching the NFT wallet onto the main network
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    <strong>Post-Deployment</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={2}>
+    Continuously updating the application with new features
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={2}>
+    Prioritizing backlog tasks during the updating process
+</Text>
+<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center"> Our Unique Offerings:</Heading>
+<SimpleGrid minChildWidth='200px' spacing='20px' mt={10}>
+<Card>
+    <CardBody>
+        <Text>Robust infrastructure</Text>
+    </CardBody>
+</Card>
+
+<Card>
+    <CardBody>
+        <Text>Cost-effective solutions</Text>
+    </CardBody>
+</Card>
+
+<Card>
+    <CardBody>
+        <Text>Expert development team</Text>
+    </CardBody>
+</Card>
+
+<Card>
+    <CardBody>
+        <Text>Extensive domain knowledge & experience</Text>
+    </CardBody>
+</Card>
+
+<Card>
+    <CardBody>
+        <Text>Transparent and reliable processes</Text>
+    </CardBody>
+</Card>
+
+<Card>
+    <CardBody>
+        <Text>Customizable solutions</Text>
+    </CardBody>
+</Card>
+
+<Card>
+    <CardBody>
+        <Text>Timely and quality service delivery</Text>
+    </CardBody>
+</Card>
+
+<Card>
+    <CardBody>
+        <Text>Budget-friendly project options</Text>
+    </CardBody>
+</Card>
+</SimpleGrid>
+<Text align={'center'} letterSpacing={2} marginTop={4} fontWeight={800}><strong>Why Opt for Our NFT Wallet Development?</strong></Text>
+<Text align={'center'} letterSpacing={2} marginTop={2}>Our NFT wallet development services are renowned for their quality and reliability. We have a team of highly skilled and experienced blockchain developers who are well-versed in the latest technologies and tools. Our experts are well-versed in the intricacies of the crypto sector, enabling them to create cutting-edge NFT wallets. We provide a wide range of services, including NFT wallet development, NFT marketplace creation, NFT desktop app development, and much more. Our NFT wallet development services are renowned for their quality and reliability. We have a team of highly skilled and experienced blockchain developers who are well-versed in the latest technologies and tools. Our experts are well-versed in the intricacies of the crypto sector, enabling them to create cutting-edge NFT wallets. We provide a wide range of services, including NFT wallet development, NFT marketplace creation, NFT desktop app development, and much more.</Text>
+<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+    Frequently Asked Questions
+</Heading>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    <strong>Is Security Ensured in NFT Wallets?</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={2}>
+    NFT wallets enjoy heightened security due to their private key-based access, making them resilient to online attacks. Only the authorized private key owner can access the wallet.
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    <strong>What's the Cost of Developing an NFT Wallet?</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={2}>
+    Cost varies based on complexity and requirements.
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    <strong>Can Multiple Cryptocurrencies be Stored in an NFT Wallet?</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={2}>
+    Absolutely, NFT wallets support multi-currency storage.
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    <strong>How Long Does NFT Wallet Development Take?</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={2}>
+    The timeline for NFT wallet development varies based on project specifics. Our experts can provide an estimated timeframe based on your requirements.
+</Text>
+
+<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+    A Glimpse into Our Blogs
+</Heading>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    <strong>White Label Crypto Wallet</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={2}>
+    Navigating the Expenses of Constructing a White Label Crypto Wallet
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    <strong>White Label Digital Identity Wallet</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={2}>
+    Deepening the Understanding of White Label Digital Identity Wallets
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    <strong>Mobile Wallet App Development</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={2}>
+    Elevating and Empowering User Experience through Mobile Wallet App Development Solutions
+</Text>
+
+<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+    Our Blockchain Tech Proficiency
+</Heading>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    We're available for a friendly conversation to discuss your business needs, no strings attached.
+</Text>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      {/* Info Section */}
+      {/* <div className={style.infoSection}>
         <div className={style.infoContainer}>
           <div className={style.infoTop}>
             {data.about.map((ele) => {
@@ -188,18 +353,10 @@ We're available for a friendly conversation to discuss your business needs, no s
             })}
           </div>
         </div>
-      </div>
-
-      {/* Crypto Section */}
-      {/* <div className={style.cryptoSection}>
-        <div className={style.cryptoContainer}>
-          <img src={crypto1} alt="crypto1" />
-          <img src={crypto2} alt="crypto2" />
-        </div>
-    </div> */}
+      </div> */}
 
       {/* Our Team */}
-      <div className={style.ourTeamSection}>
+      {/* <div className={style.ourTeamSection}>
         <div className={style.ourTeamContainer}>
           <h1>Our Team</h1>
           <p>
@@ -220,7 +377,7 @@ We're available for a friendly conversation to discuss your business needs, no s
             })}
           </div>
         </div>
-      </div>
+      </div> */}
       <TelegramFloatingBtn />
       <FloatingWhatsApp
         phoneNumber="447778222221"
@@ -237,7 +394,9 @@ We're available for a friendly conversation to discuss your business needs, no s
       />
 
       {/* Need Solution */}
-      <Needsolution />
+      <Box mt={20}>
+        <Needsolution />
+      </Box>
 
       {/* Footer Section */}
       <Footer1 />
