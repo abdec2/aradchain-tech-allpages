@@ -360,7 +360,8 @@ Did you know that venture capital firms invested over $27 billion in crypto proj
       <TelegramFloatingBtn />
       <FloatingWhatsApp
         phoneNumber="447778222221"
-        accountName="Jennie"
+        accountName="AradChain Support"
+        chatMessage="Welcome to AradChain Technologies. One of our representative will be with you shortly."
         allowEsc
         allowClickAway
         notification
@@ -370,7 +371,15 @@ Did you know that venture capital firms invested over $27 billion in crypto proj
           bottom: "2rem",
           left: "2rem",
         }}
+        statusMessage="Typically Replies With in 5 minutes"
+        chatboxHeight={450}
+        chatboxStyle={{
+          position: "fixed",
+          bottom: "2rem",
+          left: "2rem",
+        }}
       />
+
 
       {/* Need Solution */}
       <Box mt={20}>

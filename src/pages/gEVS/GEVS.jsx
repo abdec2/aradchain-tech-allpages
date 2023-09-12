@@ -182,7 +182,8 @@ We're here for a friendly chat about your business needs, without obligation. Ou
       <TelegramFloatingBtn />
       <FloatingWhatsApp
         phoneNumber="447778222221"
-        accountName="Jennie"
+        accountName="AradChain Support"
+        chatMessage="Welcome to AradChain Technologies. One of our representative will be with you shortly."
         allowEsc
         allowClickAway
         notification
@@ -192,9 +193,16 @@ We're here for a friendly chat about your business needs, without obligation. Ou
           bottom: "2rem",
           left: "2rem",
         }}
+        statusMessage="Typically Replies With in 5 minutes"
+        chatboxHeight={450}
+        chatboxStyle={{
+          position: "fixed",
+          bottom: "2rem",
+          left: "2rem",
+        }}
       />
 
-      {/* Need Solution */}
+            {/* Need Solution */}
       <Needsolution />
 
       {/* Footer Section */}

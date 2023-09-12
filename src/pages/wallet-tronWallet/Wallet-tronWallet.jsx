@@ -389,7 +389,8 @@ If you are considering TRON wallet development, enlisting our services can be yo
       <TelegramFloatingBtn />
       <FloatingWhatsApp
         phoneNumber="447778222221"
-        accountName="Jennie"
+        accountName="AradChain Support"
+        chatMessage="Welcome to AradChain Technologies. One of our representative will be with you shortly."
         allowEsc
         allowClickAway
         notification
@@ -399,7 +400,15 @@ If you are considering TRON wallet development, enlisting our services can be yo
           bottom: "2rem",
           left: "2rem",
         }}
+        statusMessage="Typically Replies With in 5 minutes"
+        chatboxHeight={450}
+        chatboxStyle={{
+          position: "fixed",
+          bottom: "2rem",
+          left: "2rem",
+        }}
       />
+
 
       {/* Need Solution */}
       <Box mt={20}>

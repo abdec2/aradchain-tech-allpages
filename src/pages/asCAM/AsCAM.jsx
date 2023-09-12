@@ -191,7 +191,8 @@ We're here to offer technical support and answer inquiries. Feel free to get in 
       <TelegramFloatingBtn />
       <FloatingWhatsApp
         phoneNumber="447778222221"
-        accountName="Jennie"
+        accountName="AradChain Support"
+        chatMessage="Welcome to AradChain Technologies. One of our representative will be with you shortly."
         allowEsc
         allowClickAway
         notification
@@ -201,7 +202,15 @@ We're here to offer technical support and answer inquiries. Feel free to get in 
           bottom: "2rem",
           left: "2rem",
         }}
+        statusMessage="Typically Replies With in 5 minutes"
+        chatboxHeight={450}
+        chatboxStyle={{
+          position: "fixed",
+          bottom: "2rem",
+          left: "2rem",
+        }}
       />
+
 
       {/* Need Solution */}
       <Needsolution />

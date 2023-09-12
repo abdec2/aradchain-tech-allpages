@@ -156,7 +156,7 @@ const Contact = () => {
       <FloatingWhatsApp
         phoneNumber="447778222221"
         accountName="AradChain Support"
-        chatMessage="Welcome to AradChain Technologies. Somebody will be with you shortly.Thank you for your patience"
+        chatMessage="Welcome to AradChain Technologies. One of our representative will be with you shortly."
         allowEsc
         allowClickAway
         notification
@@ -166,6 +166,7 @@ const Contact = () => {
           bottom: "2rem",
           left: "2rem",
         }}
+        statusMessage="Typically Replies With in 5 minutes"
         chatboxHeight={450}
         chatboxStyle={{
           position: "fixed",
