@@ -153,10 +153,10 @@ const Contact = () => {
 
       {/* Need Solution */}
       <Needsolution />
-      <TelegramFloatingBtn />
       <FloatingWhatsApp
         phoneNumber="447778222221"
-        accountName="Jennie"
+        accountName="AradChain Support"
+        chatMessage="Welcome to AradChain Technologies. Somebody will be with you shortly.Thank you for your patience"
         allowEsc
         allowClickAway
         notification
@@ -166,7 +166,15 @@ const Contact = () => {
           bottom: "2rem",
           left: "2rem",
         }}
+        chatboxHeight={450}
+        chatboxStyle={{
+          position: "fixed",
+          bottom: "2rem",
+          left: "2rem",
+        }}
       />
+
+      <TelegramFloatingBtn />
 
       {/* Footer Section */}
       <Footer1 />

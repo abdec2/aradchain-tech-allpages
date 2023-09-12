@@ -830,7 +830,8 @@ const Home = () => {
       <TelegramFloatingBtn />
       <FloatingWhatsApp
         phoneNumber="447778222221"
-        accountName="Jennie"
+        accountName="AradChain Support"
+        chatMessage="Welcome to AradChain Technologies. Somebody will be with you shortly.Thank you for your patience"
         allowEsc
         allowClickAway
         notification
@@ -840,7 +841,14 @@ const Home = () => {
           bottom: "2rem",
           left: "2rem",
         }}
+        chatboxHeight={450}
+        chatboxStyle={{
+          position: "fixed",
+          bottom: "2rem",
+          left: "2rem",
+        }}
       />
+
 
       {/* Footer Section */}
       <div className={style.footerSection}>
