@@ -79,10 +79,11 @@ export default function Navbar() {
               marginLeft: isMobile ? "0.5rem" : "0.5rem",
               _hover: "#B1EDEB",
               cursor: "pointer",
+              marginRight:"1rem"
             }}
             fontSize=".9rem"
           >
-            <chakra.span fontSize="1.2rem" sx={{ marginRight: "0.5rem" }}>
+            <chakra.span fontSize="1.2rem" sx={{ marginRight: "1rem" }}>
               &#127760;
             </chakra.span>
             Our Geographical Presence :
@@ -97,10 +98,11 @@ export default function Navbar() {
               flexDirection: "column",
               alignItems: "center",
               justifyContent: "center",
+              marginRight:"2rem"
            
             }}
           >
-            <Text fontSize="0.8rem" sx={{ color: "white",  marginTop: "27px"}}>
+            <Text fontSize="0.7rem" sx={{ color: "white",  marginTop: "27px"}}>
               UK
             </Text>
           </div>
@@ -113,11 +115,11 @@ export default function Navbar() {
               flexDirection: "column",
               alignItems: "center",
               justifyContent: "center",
-           
+              marginRight:"2rem"
             }}
           >
-            <Text fontSize="0.8rem" sx={{ color: "white",  marginTop: "27px"}}>
-              BEH
+            <Text fontSize="0.7rem" sx={{ color: "white",  marginTop: "27px"}}>
+              BH
             </Text>
           </div>
           <div
@@ -129,9 +131,10 @@ export default function Navbar() {
               flexDirection: "column",
               alignItems: "center",
               justifyContent: "center",
+              marginRight:"2rem"
             }}
           >
-            <Text fontSize="0.8rem" sx={{ color: "white",  marginTop: "27px" }}>
+            <Text fontSize="0.7rem" sx={{ color: "white",  marginTop: "27px" }}>
               USA
             </Text>
            
@@ -147,7 +150,7 @@ export default function Navbar() {
               justifyContent: "center",
             }}
           >
-            <Text fontSize="0.8rem" sx={{ color: "white",  marginTop: "27px"}}>
+            <Text fontSize="0.7rem" sx={{ color: "white",  marginTop: "27px"}}>
               UAE
             </Text>
           </div>
