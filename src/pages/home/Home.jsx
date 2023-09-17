@@ -43,7 +43,6 @@ import {
   ModalFooter,
   ModalBody,
   ModalCloseButton,
-  Button,
   useDisclosure,
   useToast,
   Box,
@@ -52,8 +51,9 @@ import {
   Text,
   Container,
   Image,
-  chakra,
+  chakra, Button
 } from "@chakra-ui/react";
+import { MdBuild , MdCall } from "react-icons/md"
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import AnimatedCard from "../../components/animatedCard/AnimatedCard";
@@ -313,29 +313,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Why Us Section */}
-      <div className={style.whySection}>
-        <div className={style.whySectionContainer}>
-          <div className={style.whyContent}>
-            <h1>Why Us?</h1>
-            <div className={style.whyBoxes}>
-              {data.whyUs.map((ele) => {
-                return (
-                  <Whyus
-                    key={ele.id}
-                    image={ele.image}
-                    title={ele.title}
-                    desc={ele.desc}
-                    alt={ele.title}
-                  />
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* animatedCards */}
+      {/* Services Section */}
       <Stack spacing={0} align={"center"} mt={"5rem"} p={2}>
         <Heading
           as="h1"
@@ -362,96 +340,32 @@ const Home = () => {
           {dataCard.map((ele) => {
             return <AnimatedCard ele={ele} />;
           })}
+         <Stack spacing={4} mt={"1%"} direction='row' align='center'>
+      <Link to="https://t.me/aradchain" target="_blank">
+        <Button
+          size={window.innerWidth <= 680 ? 'xs' : 'md'} // Check the window width and change button size accordingly
+          rightIcon={<MdCall />}
+          colorScheme='telegram'
+        >
+          Connect on Telegram
+        </Button>
+      </Link>
+      <Link to="https://wa.me/97333227262" target="_blank">
+        <Button
+          size={window.innerWidth <= 680 ? 'xs' : 'md'} // Check the window width and change button size accordingly
+          rightIcon={<MdCall />}
+          colorScheme='whatsapp'
+        >
+          Connect on Whatsapp
+        </Button>
+      </Link>
+    </Stack> 
+       
         </Box>
+        
       </div>
-
-      {/* Services Section */}
-      {/* <div className={style.servicesSection}>
-        <div className={style.servicesContainer}>
-          <div className={style.servicesLeft}>
-            <div>
-              <Link
-                to="/services/nft-marketplace"
-                onClick={() => {
-                  window.scroll(0, 0);
-                }}
-              >
-                <h2>NFT Marketplace</h2>
-              </Link>
-              <Link
-                to="/services/blockchain-development"
-                onClick={() => {
-                  window.scroll(0, 0);
-                }}
-              >
-                <h2>Blockchain Development</h2>
-              </Link>
-              <Link
-                to="/services/blockchain-mlm"
-                onClick={() => {
-                  window.scroll(0, 0);
-                }}
-              >
-                <h2>Blockchain Based MLM</h2>
-              </Link>
-            </div>
-          </div>
-          <div className={style.servicesMid}>
-            <div>
-              <Link
-                to="/services/crypto-funding"
-                onClick={() => {
-                  window.scroll(0, 0);
-                }}
-              >
-                <h2>Crypto Funding</h2>
-              </Link>
-              <Link
-                to="/services/crypto-websites"
-                onClick={() => {
-                  window.scroll(0, 0);
-                }}
-              >
-                <h2>Crypto Websites</h2>
-              </Link>
-            </div>
-          </div>
-          <div className={style.servicesRight}>
-            <h1>Services</h1>
-            <p>
-              We provide customized solutions that meet our clients' unique
-              needs and help them succeed in an increasingly digital world.
-            </p>
-            <OutlineBtns link="/services" text="Explore Our Services" />
-          </div>
-        </div>
-      </div> */}
-
-      {/* Project Section */}
-      <div className={style.projectsSection}>
-        <div className={style.projectsContainer}>
-          <div className={style.projectHeading}>
-            <h1>Project</h1>
-            <OutlineBtns text="More Projects" link="/projects" />
-          </div>
-          <div className={style.projectContent}>
-            {data.projects.slice(0, 3).map((ele) => {
-              return (
-                <Homeproject
-                  slug={ele.slug}
-                  key={ele.id}
-                  index={ele.id}
-                  client={ele.client}
-                  year={ele.year}
-                  image={ele.image}
-                  shortDesc={ele.shortDesc}
-                />
-              );
-            })}
-          </div>
-        </div>
-      </div>
-
+      {/*Tech Experties*/}
+      
       <Stack spacing={0} align={"center"} mt={"8rem"} p={2}>
         <Heading
           as="h1"
@@ -671,6 +585,151 @@ const Home = () => {
         </Marquee>
       </Container>
 
+      {/* Blog Section*/}
+      <div className={style.blogSection}>
+        <div className={style.blogContainer}>
+          <h1>Blog</h1>
+          <div className={style.blogContent}>
+            <OutlineBtns text="READ MORE ARTICLES" link="/blogs" />
+            {data.blogPosts.slice(0, 2).map((ele) => {
+              return (
+                <Link
+                  to={ele.slug}
+                  onClick={() => {
+                    window.scroll(0, 0);
+                  }}
+                >
+                  <div>
+                    <img src={ele.image} alt="" />
+                    <h2>{ele.title}</h2>
+                    <p>{ele.date}</p>
+                  </div>
+                </Link>
+              );
+            })}
+
+          </div>
+        </div>
+      </div>
+
+      {/* Project Section */}
+      <div className={style.projectsSection}>
+        <div className={style.projectsContainer}>
+          <div className={style.projectHeading}>
+            <h1>Project</h1>
+            <OutlineBtns text="More Projects" link="/projects" />
+          </div>
+          <div className={style.projectContent}>
+            {data.projects.slice(0, 3).map((ele) => {
+              return (
+                <Homeproject
+                  slug={ele.slug}
+                  key={ele.id}
+                  index={ele.id}
+                  client={ele.client}
+                  year={ele.year}
+                  image={ele.image}
+                  shortDesc={ele.shortDesc}
+                />
+              );
+            })}
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      {/* Why us */}
+      
+      <div className={style.whySection}>
+        <div className={style.whySectionContainer}>
+          <div className={style.whyContent}>
+            <h1>Why Us?</h1>
+            <div className={style.whyBoxes}>
+              {data.whyUs.map((ele) => {
+                return (
+                  <Whyus
+                    key={ele.id}
+                    image={ele.image}
+                    title={ele.title}
+                    desc={ele.desc}
+                    alt={ele.title}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      
+      {/* Services Section */}
+      {/* <div className={style.servicesSection}>
+        <div className={style.servicesContainer}>
+          <div className={style.servicesLeft}>
+            <div>
+              <Link
+                to="/services/nft-marketplace"
+                onClick={() => {
+                  window.scroll(0, 0);
+                }}
+              >
+                <h2>NFT Marketplace</h2>
+              </Link>
+              <Link
+                to="/services/blockchain-development"
+                onClick={() => {
+                  window.scroll(0, 0);
+                }}
+              >
+                <h2>Blockchain Development</h2>
+              </Link>
+              <Link
+                to="/services/blockchain-mlm"
+                onClick={() => {
+                  window.scroll(0, 0);
+                }}
+              >
+                <h2>Blockchain Based MLM</h2>
+              </Link>
+            </div>
+          </div>
+          <div className={style.servicesMid}>
+            <div>
+              <Link
+                to="/services/crypto-funding"
+                onClick={() => {
+                  window.scroll(0, 0);
+                }}
+              >
+                <h2>Crypto Funding</h2>
+              </Link>
+              <Link
+                to="/services/crypto-websites"
+                onClick={() => {
+                  window.scroll(0, 0);
+                }}
+              >
+                <h2>Crypto Websites</h2>
+              </Link>
+            </div>
+          </div>
+          <div className={style.servicesRight}>
+            <h1>Services</h1>
+            <p>
+              We provide customized solutions that meet our clients' unique
+              needs and help them succeed in an increasingly digital world.
+            </p>
+            <OutlineBtns link="/services" text="Explore Our Services" />
+          </div>
+        </div>
+      </div> */}
+
+      
+
       {/* Ready to take */}
       <div className={style.readyToTake}>
         <Readytotake />
@@ -743,49 +802,7 @@ const Home = () => {
         </ModalContent>
       </Modal>
 
-      {/* Blog Section*/}
-
-      <div className={style.blogSection}>
-        <div className={style.blogContainer}>
-          <h1>Blog</h1>
-          <div className={style.blogContent}>
-            <OutlineBtns text="READ MORE ARTICLES" link="/blogs" />
-            {data.blogPosts.slice(0, 2).map((ele) => {
-              return (
-                <Link
-                  to={ele.slug}
-                  onClick={() => {
-                    window.scroll(0, 0);
-                  }}
-                >
-                  <div>
-                    <img src={ele.image} alt="" />
-                    <h2>{ele.title}</h2>
-                    <p>{ele.date}</p>
-                  </div>
-                </Link>
-              );
-            })}
-
-            {/* <Link to="article/blockchain-technology" onClick={() => {window.scroll(0, 0);}}>
-              <div>
-                <p>TECH</p>
-                <h2>Blockchain Technology: Revolutionizing the Future</h2>
-                <h3>30.06</h3>
-              </div>
-            </Link>
-            
-            <Link to="/article/nft-marketplaces" onClick={() => {window.scroll(0, 0);}}>
-              <div>
-                <p>TECH</p>
-                <h2>NFT Marketplaces: Transforming the World of Digital Assets</h2>
-                <h3>25.04</h3>
-              </div>
-            </Link> */}
-          </div>
-        </div>
-      </div>
-
+      
       {/* our global presence */}
       <Stack spacing={0} align={"center"} mt={"8rem"} p={2}>
         <Heading

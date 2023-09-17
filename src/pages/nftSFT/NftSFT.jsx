@@ -1,11 +1,9 @@
 import React from "react";
 import style from "./nftSFT.module.css";
-// import image from '../../assets/aboutInfo2.png'
 import crypto1 from "../../assets/crypto1.png";
 import crypto2 from "../../assets/crypto2.png";
 import data from "../../database/data";
 import Whyus from "../../components/whyUs/Whyus";
-import Heading from "../../components/heading/Heading";
 import AboutStats from "../../components/aboutStats/AboutStats";
 import Team from "../../components/team/Team";
 import { Link } from "react-router-dom";
@@ -15,110 +13,133 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+
 const About = () => {
-  // console.log(data.aboutStatsData)
   return (
     <div className={style.aboutMain}>
       <div className={style.mainSection}>
-        <div className={style.mainSectionContainer}>
-          <Heading heading="About" />
-          <div className={style.mainSectionContent}>
-            <div>
-              <img src={map} alt="" />
-              <h2>Semi Fungible Token Development Services</h2>
-            </div>
-            <div>
-              <p>
-              Semi-Fungible Token (SFT) Development
-The concept of a semi-fungible token (SFT) brings together the attributes of both fungible and non-fungible tokens, adding an intriguing layer of complexity. An SFT retains its fungibility until a specific purpose demands otherwise. AradChain Technologies offers comprehensive SFT token development services, allowing you to represent multiple tokens within a single smart contract.
-
-Why Opt for SFT Development Services?
-NFTs revolutionized digital asset ownership representation, providing immutability, transparency, and security. However, transferring an entire collection of NFTs can be slow and inefficient. This led to the emergence of the SFT standard, enabling the creation of multi-token platforms.
-
-By choosing to develop semi-fungible tokens, batch token transfers become streamlined as SFTs support both fungible and non-fungible tokens within one contract. This not only reduces gas fees but also simplifies token management.
-
-With AradChain Technologies's SFT token development, individuals such as artists, gamers, and brands can leverage SFTs to consolidate various tokens into a single contract. This not only saves costs but also streamlines token administration.
-
-TALK TO OUR EXPERTS
-
-AradChain Technologies’s Semi-Fungible Token Development Services
-Our SFT development employs the ERC-1155 multi-token standard, enabling each token ID to represent a distinct token type with configurable attributes.
-
-              </p>
-              <p>
-                
-Key features of our SFT development services include:
-
-Create tokens with a mix of fungible and non-fungible attributes.
-Each token carries attributes like token ID, token count, and metadata.
-Professional methodology for end-to-end SFT token development.
-Leverage our expertise and services to realize your semi-fungible token vision.
-
-CONNECT ON WHATSAPP CONNECT ON TELEGRAM
-
-Advantages of Semi-Fungible Token Development
-Benefits for Token Holders
-
-Effortless management of fungible and non-fungible tokens.
-Even bundled tokens under a single smart contract can be unbundled and traded separately.
-
-Benefits for Token Creators
-
-Facilitates open, user-friendly, and cost-effective minting.
-Only a single smart contract is needed to govern both fungible and non-fungible tokens.
-
-Why Choose Us for Your Semi-Fungible Token Development
-Collaborate with AradChain Technologies to access a team of technical experts with real-world experience in achieving success stories.
-
-Technical Proficiency
-
-We specialize exclusively in blockchain technologies, excelling in our focused domain.
-
-Expert Team
-
-Our team of 500 experts refines your concepts, suggests optimal tech strategies, and aids in community building and campaigns.
-
-Rapid Development
-
-Our tailored products are designed for your target audience. A well-structured roadmap ensures swift and efficient development and deployment.
-
-Complete Support
-
-Our commitment extends beyond product launch. Comprehensive post-delivery services empower you to focus on growth.
-
-Meaningful Outcomes
-
-Our impact is tangible; we ensure your investments yield visible value.
-
-CONNECT ON WHATSAPP CONNECT ON TELEGRAM
-
-A Glimpse of Our Blog Content
-NFTs: Key to Effortless Digital Identity Management
-NFTs and Digital Identity: Fostering Trust for a Smarter Future
-In a digital era dominated by interactions, the significance of digital identity has never been more pivotal. Explore how Non-Fungible Tokens (NFTs) stand as a robust solution for secure and efficient digital identity representation.
-READ MORE
-
-Crafting Tomorrow's NFT Marketplace: Delving into Advanced Features
-Advanced Attributes of Next-Gen NFT Marketplaces
-In the ever-evolving realm of blockchain technology and digital assets, Non-Fungible Tokens (NFTs) have seized the spotlight. Uncover the advanced features that empower next-generation NFT marketplaces to provide a unique user experience.
-READ MORE
-
-Expense Considerations for Crafting a White Label NFT Marketplace
-Cost Analysis: Developing a White Label NFT Marketplace in 2023
-Amid the swiftly expanding universe of non-fungible tokens (NFTs), white label NFT marketplaces hold substantial significance due to their adaptability and potential. Explore the cost factors involved in establishing such a platform.
-READ MORE
-
-Our Blockchain Expertise at Your Service
-Feel free to engage in a friendly conversation to explore your business requirements, with no obligations attached.
-
-              </p>
-            </div>
-          </div>
-        </div>
+  <div className={style.mainSectionContainer}>
+    <div className={style.mainSectionContent}>
+      <div>
+        <Heading>Semi-Fungible Token Development Services</Heading>
       </div>
+    </div>
+  </div>
+</div>
+
+<div className={style.infoSection}>
+  <div className={style.infoContainer}>
+    <div className="content">
+      <Text align={'center'} letterSpacing={1}>
+        The concept of a semi-fungible token (SFT) brings together the attributes of both fungible and non-fungible tokens, adding an intriguing layer of complexity. An SFT retains its fungibility until a specific purpose demands otherwise. AradChain Technologies offers comprehensive SFT token development services, allowing you to represent multiple tokens within a single smart contract.
+      </Text>
+      <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+        Why Opt for SFT Development Services?
+      </Heading>
+      <Text align={'center'} letterSpacing={1}>
+        NFTs revolutionized digital asset ownership representation, providing immutability, transparency, and security. However, transferring an entire collection of NFTs can be slow and inefficient. This led to the emergence of the SFT standard, enabling the creation of multi-token platforms. By choosing to develop semi-fungible tokens, batch token transfers become streamlined as SFTs support both fungible and non-fungible tokens within one contract. This not only reduces gas fees but also simplifies token management.
+      </Text>
+      <Text align={'center'} letterSpacing={1}>
+        With AradChain Technologies's SFT token development, individuals such as artists, gamers, and brands can leverage SFTs to consolidate various tokens into a single contract. This not only saves costs but also streamlines token administration.
+        <a href="#" style={{ fontSize: "20px" }}>
+          &nbsp;TALK TO OUR EXPERTS
+        </a>
+      </Text>
+      <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+        AradChain Technologies’s Semi-Fungible Token Development Services
+      </Heading>
+      <Text align={'center'} letterSpacing={1}>
+        Our SFT development employs the ERC-1155 multi-token standard, enabling each token ID to represent a distinct token type with configurable attributes.
+      </Text>
+      <Heading as='h3' size='xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={5}>
+        Key features of our SFT development services include:
+      </Heading>
+      <UnorderedList>
+        <Text>Create tokens with a mix of fungible and non-fungible attributes. Each token carries attributes like token ID, token count, and metadata.</Text>
+        <Text>Professional methodology for end-to-end SFT token development. Leverage our expertise and services to realize your semi-fungible token vision.</Text>
+      </UnorderedList>
+      <Text align={'center'} letterSpacing={1}>
+        <a href="#" style={{ fontSize: "20px" }}>
+          &nbsp;CONNECT ON WHATSAPP
+        </a>
+        <a href="#" style={{ fontSize: "20px" }}>
+          &nbsp;CONNECT ON TELEGRAM
+        </a>
+      </Text>
+      <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+        Advantages of Semi-Fungible Token Development
+      </Heading>
+      <Heading as='h3' size='xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={5}>
+        Benefits for Token Holders
+      </Heading>
+      <UnorderedList>
+        <Text>Effortless management of fungible and non-fungible tokens. Even bundled tokens under a single smart contract can be unbundled and traded separately.</Text>
+      </UnorderedList>
+      <Heading as='h3' size='xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={5}>
+        Benefits for Token Creators
+      </Heading>
+      <UnorderedList>
+        <Text>Facilitates open, user-friendly, and cost-effective minting. Only a single smart contract is needed to govern both fungible and non-fungible tokens.</Text>
+      </UnorderedList>
+      <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+        Why Choose Us for Your Semi-Fungible Token Development
+      </Heading>
+      <Text align={'center'} letterSpacing={1}>
+        Collaborate with AradChain Technologies to access a team of technical experts with real-world experience in achieving success stories.
+      </Text>
+      <Heading as='h3' size='xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={5}>
+        Technical Proficiency
+      </Heading>
+      <Text align={'center'} letterSpacing={1}>
+        We specialize exclusively in blockchain technologies, excelling in our focused domain.
+      </Text>
+      <Heading as='h3' size='xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={5}>
+        Expert Team
+      </Heading>
+      <Text align={'center'} letterSpacing={1}>
+        Our team of 500 experts refines your concepts, suggests optimal tech strategies, and aids in community building and campaigns.
+      </Text>
+      <Heading as='h3' size='xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={5}>
+        Rapid Development
+      </Heading>
+      <Text align={'center'} letterSpacing={1}>
+        Our tailored products are designed for your target audience. A well-structured roadmap ensures swift and efficient development and deployment.
+      </Text>
+      <Heading as='h3' size='xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={5}>
+        Complete Support
+      </Heading>
+      <Text align={'center'} letterSpacing={1}>
+        Our commitment extends beyond product launch. Comprehensive post-delivery services empower you to focus on growth.
+      </Text>
+      <Heading as='h3' size='xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={5}>
+        Meaningful Outcomes
+      </Heading>
+      <Text align={'center'} letterSpacing={1}>
+        Our impact is tangible; we ensure your investments yield visible value.
+      </Text>
+      <Text align={'center'} letterSpacing={1}>
+        <a href="#" style={{ fontSize: "20px" }}>
+          &nbsp;CONNECT ON WHATSAPP
+        </a>
+        <a href="#" style={{ fontSize: "20px" }}>
+          &nbsp;CONNECT ON TELEGRAM
+        </a>
+      </Text>
+      <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+        A Glimpse of Our Blog Content
+      </Heading>
+      <Text align={'center'} letterSpacing={1}>
+        Feel free to engage in a friendly conversation to explore your business requirements, with no obligations attached.
+      </Text>
+    </div>
+  </div>
+</div>
+
+     
 
       {/* Info Section */}
-      <div className={style.infoSection}>
+      {/* <div className={style.infoSection}>
         <div className={style.infoContainer}>
           <div className={style.infoTop}>
             {data.about.map((ele) => {
@@ -139,18 +160,10 @@ Feel free to engage in a friendly conversation to explore your business requirem
             })}
           </div>
         </div>
-      </div>
-
-      {/* Crypto Section */}
-      {/* <div className={style.cryptoSection}>
-        <div className={style.cryptoContainer}>
-          <img src={crypto1} alt="crypto1" />
-          <img src={crypto2} alt="crypto2" />
-        </div>
-    </div> */}
+      </div> */}
 
       {/* Our Team */}
-      <div className={style.ourTeamSection}>
+      {/* <div className={style.ourTeamSection}>
         <div className={style.ourTeamContainer}>
           <h1>Our Team</h1>
           <p>
@@ -171,7 +184,7 @@ Feel free to engage in a friendly conversation to explore your business requirem
             })}
           </div>
         </div>
-      </div>
+      </div> */}
       <TelegramFloatingBtn />
       <FloatingWhatsApp
         phoneNumber="447778222221"
@@ -197,7 +210,9 @@ Feel free to engage in a friendly conversation to explore your business requirem
 
 
       {/* Need Solution */}
-      <Needsolution />
+      <Box mt={20}>
+        <Needsolution />
+      </Box>
 
       {/* Footer Section */}
       <Footer1 />

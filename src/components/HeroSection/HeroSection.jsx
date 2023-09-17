@@ -67,7 +67,7 @@ const HeroSection = () => {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        "Transforming businesses <br /> with cutting-edge blockchain solutions.",
+        "Transforming businesses <br /> with cutting-edge Web3 solutions.",
       ],
       typeSpeed: 80,
       loop: false,
