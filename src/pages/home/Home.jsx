@@ -51,13 +51,16 @@ import {
   Text,
   Container,
   Image,
-  chakra, Button
+  chakra,
+  Button,
 } from "@chakra-ui/react";
-import { MdBuild , MdCall } from "react-icons/md"
+import { MdBuild, MdCall } from "react-icons/md";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import AnimatedCard from "../../components/animatedCard/AnimatedCard";
 import HeroSection from "../../components/HeroSection/HeroSection";
+
+import BlockchainSolutions from "./../../components/BlockchainSolutions";
 
 const Home = () => {
   // __________________________________________________________________
@@ -297,7 +300,7 @@ const Home = () => {
               <span className={style.paraBold1}>
                 Your Gateway to Blockchain, Cloud, AI, and IoT:
               </span>{" "}
-              AradChain Technologies driving digital transformation
+              <br /> AradChain Technologies driving digital transformation
             </p>
             <p>
               Transform your bold ideas into reality with AradChain, a leading
@@ -314,58 +317,58 @@ const Home = () => {
       </div>
 
       {/* Services Section */}
-      <Stack spacing={0} align={"center"} mt={"5rem"} p={2}>
-        <Heading
-          as="h1"
-          fontWeight={"900"}
-          color={"#00234F"}
-          textAlign={"center"}
-          fontSize={"2rem"}
-        >
-          Our Services
-        </Heading>
-        <Text mt={1} color="#000" textAlign={"center"} maxW={"2xl"}>
-          We provide customized solutions that meet our clients' unique needs
-          and help them succeed in an increasingly digital world.
-        </Text>
-      </Stack>
-      <div className={style.animatedCardArea}>
-        <Box
-          className={style.animatedCardArea}
-          maxW={"7xl"}
-          display={"flex"}
-          justifyContent={"center"}
-          alignItems={"center"}
-        >
-          {dataCard.map((ele) => {
-            return <AnimatedCard ele={ele} />;
-          })}
-         <Stack spacing={4} mt={"1%"} direction='row' align='center'>
-      <Link to="https://t.me/aradchain" target="_blank">
-        <Button
-          size={window.innerWidth <= 680 ? 'xs' : 'md'} // Check the window width and change button size accordingly
-          rightIcon={<MdCall />}
-          colorScheme='telegram'
-        >
-          Connect on Telegram
-        </Button>
-      </Link>
-      <Link to="https://wa.me/97333227262" target="_blank">
-        <Button
-          size={window.innerWidth <= 680 ? 'xs' : 'md'} // Check the window width and change button size accordingly
-          rightIcon={<MdCall />}
-          colorScheme='whatsapp'
-        >
-          Connect on Whatsapp
-        </Button>
-      </Link>
-    </Stack> 
-       
-        </Box>
-        
-      </div>
+      <Box bg={'#f9f9f9'} p={20} mt={"5rem"}>
+        <Stack spacing={0} align={"center"}  p={2}>
+          <Heading
+            as="h1"
+            fontWeight={"900"}
+            color={"#00234F"}
+            textAlign={"center"}
+            fontSize={"2rem"}
+          >
+            Our Services
+          </Heading>
+          <Text mt={1} color="#000" textAlign={"center"} maxW={"2xl"}>
+            We provide customized solutions that meet our clients' unique needs
+            and help them succeed in an increasingly digital world.
+          </Text>
+        </Stack>
+        <div className={style.animatedCardArea}>
+          <Box
+            className={style.animatedCardArea}
+            maxW={"7xl"}
+            display={"flex"}
+            justifyContent={"center"}
+            alignItems={"center"}
+          >
+            {dataCard.map((ele) => {
+              return <AnimatedCard ele={ele} />;
+            })}
+            <Stack spacing={4} mt={"1%"} direction="row" align="center">
+              <Link to="https://t.me/aradchain" target="_blank">
+                <Button
+                  size={window.innerWidth <= 680 ? "xs" : "md"} // Check the window width and change button size accordingly
+                  rightIcon={<MdCall />}
+                  colorScheme="telegram"
+                >
+                  Connect on Telegram
+                </Button>
+              </Link>
+              <Link to="https://wa.me/97333227262" target="_blank">
+                <Button
+                  size={window.innerWidth <= 680 ? "xs" : "md"} // Check the window width and change button size accordingly
+                  rightIcon={<MdCall />}
+                  colorScheme="whatsapp"
+                >
+                  Connect on Whatsapp
+                </Button>
+              </Link>
+            </Stack>
+          </Box>
+        </div>
+      </Box>
       {/*Tech Experties*/}
-      
+
       <Stack spacing={0} align={"center"} mt={"8rem"} p={2}>
         <Heading
           as="h1"
@@ -585,6 +588,8 @@ const Home = () => {
         </Marquee>
       </Container>
 
+      <BlockchainSolutions></BlockchainSolutions>
+
       {/* Blog Section*/}
       <div className={style.blogSection}>
         <div className={style.blogContainer}>
@@ -607,13 +612,12 @@ const Home = () => {
                 </Link>
               );
             })}
-
           </div>
         </div>
       </div>
 
       {/* Project Section */}
-      <div className={style.projectsSection}>
+      {/* <div className={style.projectsSection}>
         <div className={style.projectsContainer}>
           <div className={style.projectHeading}>
             <h1>Project</h1>
@@ -635,14 +639,10 @@ const Home = () => {
             })}
           </div>
         </div>
-      </div>
-
-
-
-
+      </div> */}
 
       {/* Why us */}
-      
+
       <div className={style.whySection}>
         <div className={style.whySectionContainer}>
           <div className={style.whyContent}>
@@ -664,8 +664,6 @@ const Home = () => {
         </div>
       </div>
 
-
-      
       {/* Services Section */}
       {/* <div className={style.servicesSection}>
         <div className={style.servicesContainer}>
@@ -727,8 +725,6 @@ const Home = () => {
           </div>
         </div>
       </div> */}
-
-      
 
       {/* Ready to take */}
       <div className={style.readyToTake}>
@@ -802,7 +798,6 @@ const Home = () => {
         </ModalContent>
       </Modal>
 
-      
       {/* our global presence */}
       <Stack spacing={0} align={"center"} mt={"8rem"} p={2}>
         <Heading
@@ -866,7 +861,6 @@ const Home = () => {
           left: "2rem",
         }}
       />
-
 
       {/* Footer Section */}
       <div className={style.footerSection}>
