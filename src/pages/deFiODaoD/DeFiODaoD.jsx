@@ -85,8 +85,98 @@ When navigating projects that necessitate funding and entail transactions with a
 Embrace DAO blockchain development for wholly transparent transactions, mandatory voting for implementing changes, and automatic handling of services in a standardized fashion.
 </Text>
 <SimpleGrid minChildWidth='200px' spacing='20px' mt={10}>
-              <Card><CardBody><Text>Spot Trading Module</Text></CardBody></Card>
+              <Card><CardBody><Text>Group 15132</Text></CardBody></Card>
+              <Card><CardBody><Text>Trusted</Text></CardBody></Card>
+              <Card><CardBody><Text>Timestamping</Text></CardBody></Card>
+              <Card><CardBody><Text>Group 15133</Text></CardBody></Card>
+              <Card><CardBody><Text>Eliminate Security</Text></CardBody></Card>
+              <Card><CardBody><Text>Group 15134</Text></CardBody></Card>
+              <Card><CardBody><Text>Farewell to Managerial</Text></CardBody></Card>
+              <Card><CardBody><Text>Supervision</Text></CardBody></Card>
+              <Card><CardBody><Text>Group 15135</Text></CardBody></Card>
+              <Card><CardBody><Text></Text>Utterly Autonomous</CardBody></Card>
+              <Card><CardBody><Text></Text>Controal</CardBody></Card>
 </SimpleGrid>
+<Heading as='h2' size='xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+  Why Choose AradChain Technologies for DAO Development Services?
+</Heading>
+
+<Heading as='h3' size='lg' letterSpacing={1} my={4} textAlign={'center'}>
+  Technical Prowess
+</Heading>
+<Text textAlign={'center'}>
+  Our focus is exclusively on Blockchain technologies. We specialize in one domain and excel at it.
+</Text>
+
+<Heading as='h3' size='lg' letterSpacing={1} my={4} textAlign={'center'}>
+  Expert Team
+</Heading>
+<Text textAlign={'center'}>
+  A team of 500 experts aids in refining your offerings, suggesting optimal tech approaches, and aiding in the establishment of communities and campaigns.
+</Text>
+
+<Heading as='h3' size='lg' letterSpacing={1} my={4} textAlign={'center'}>
+  Swift Development
+</Heading>
+<Text textAlign={'center'}>
+  Tailored products aligned with your target audience are our hallmark. A coherent roadmap ensures efficient, expedited development and deployment.
+</Text>
+
+<Heading as='h3' size='lg' letterSpacing={1} my={4} textAlign={'center'}>
+  Comprehensive Support
+</Heading>
+<Text textAlign={'center'}>
+  Our commitment transcends product launch. Extensive post-delivery services are offered, enabling your unwavering focus on growth.
+</Text>
+
+<Heading as='h3' size='lg' letterSpacing={1} my={4} textAlign={'center'}>
+  Meaningful Outcomes
+</Heading>
+<Text textAlign={'center'}>
+  We bring your aspirations to life, ensuring tangible value emerges from your investments.
+</Text>
+
+<Text textAlign={'center'} mt={5}>
+  CONNECT ON WHATSAPP CONNECT ON TELEGRAM
+</Text>
+
+<Heading as='h2' size='xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+  A Glimpse of Our Blogs
+</Heading>
+
+<Heading as='h3' size='lg' letterSpacing={1} my={4} textAlign={'center'}>
+  Get-Ready-For-Deploying-DAO-In-Healthcare
+</Heading>
+<Text textAlign={'center'}>
+  Harnessing DAO Blockchain Development to Empower Healthcare and Related Businesses in 2023.
+  Blockchain technology is revamping enterprise operations, providing a secure, transparent approach to data management and sharing.
+  It is […]
+  READ MORE
+</Text>
+
+<Heading as='h3' size='lg' letterSpacing={1} my={4} textAlign={'center'}>
+  Building and Executing DAO Governance Models in 2023
+</Heading>
+<Text textAlign={'center'}>
+  Cryptocurrencies and blockchain technology merely scratch the surface; the upcoming buzz centers on Decentralized Autonomous Organizations (DAOs). DAO Governance Models are […]
+  READ MORE
+</Text>
+
+<Heading as='h3' size='lg' letterSpacing={1} my={4} textAlign={'center'}>
+  Introduction to DAO Governance Tokens: Why and How to Construct Them
+</Heading>
+<Text textAlign={'center'}>
+  The decentralized world orbits the concept of empowering users with authority and ownership. However, this hinges on the participation of individuals […]
+  READ MORE
+</Text>
+
+<Heading as='h3' size='lg' letterSpacing={1} my={4} textAlign={'center'}>
+  Our Blockchain Tech Expertise
+</Heading>
+<Text textAlign={'center'}>
+  We're here for a friendly conversation, eager to explore your business needs—no obligations attached.
+</Text>
+
 
           </div>
 
