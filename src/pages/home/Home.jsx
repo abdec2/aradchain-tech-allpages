@@ -344,6 +344,7 @@ const Home = () => {
             {dataCard.map((ele) => {
               return <AnimatedCard ele={ele} />;
             })}
+            <div>
             <Stack spacing={4} mt={"1%"} direction="row" align="center">
               <Link to="https://t.me/aradchain" target="_blank">
                 <Button
@@ -364,6 +365,7 @@ const Home = () => {
                 </Button>
               </Link>
             </Stack>
+            </div>
           </Box>
         </div>
       </Box>
