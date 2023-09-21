@@ -1,11 +1,9 @@
 import React from "react";
 import style from "./bfS.module.css";
-// import image from '../../assets/aboutInfo2.png'
 import crypto1 from "../../assets/crypto1.png";
 import crypto2 from "../../assets/crypto2.png";
 import data from "../../database/data";
 import Whyus from "../../components/whyUs/Whyus";
-import Heading from "../../components/heading/Heading";
 import AboutStats from "../../components/aboutStats/AboutStats";
 import Team from "../../components/team/Team";
 import { Link } from "react-router-dom";
@@ -15,44 +13,156 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+
 const About = () => {
-  // console.log(data.aboutStatsData)
   return (
     <div className={style.aboutMain}>
       <div className={style.mainSection}>
         <div className={style.mainSectionContainer}>
-          <Heading heading="About" />
           <div className={style.mainSectionContent}>
             <div>
-              <img src={map} alt="" />
-              <h2>Substrate</h2>
-            </div>
-            <div>
-              <p>
-              Substrate Blockchain Development Overview The Substrate framework is a versatile toolkit designed for creating and constructing blockchain solutions. Crafted using the RUST programming language, it presents a flexible array of tools that expedite the development process by furnishing all the essential layers required for operating the consensus, network, and application components of a blockchain system.
-Our team of blockchain developers harnesses the power of the Substrate blockchain framework to construct exceptionally adaptable and future-proof applications, empowering you to disrupt the market. We devise a meticulous plan to propel and hasten your development journey, enabling you to swiftly penetrate the market and attain a crucial competitive advantage.
-
-              </p>
-              <p>
-              CONSULT OUR SPECIALISTS Our Services in Substrate Development We offer a comprehensive range of services for creating various platforms driven by the Substrate framework.
-Mask Group 69085 Interconnected Blockchain Bridge Our experts fabricate robust cross-chain bridges using Substrate's XCMP (Cross-Chain Message Passing) protocol, facilitating seamless exchange of assets and information across multiple blockchains. Mask Group 69086 Integration of Sidechains We possess the capability to integrate an existing Substrate-powered relay chain or dApp to interconnect with other chains or Polkadot, enhancing interoperability. Mask Group 69090 Relay Chain Creation Our specialization lies in constructing highly secure Substrate-based blockchains tailored to specific use cases, ensuring rapid and secure development. Mask Group 69091 Parachain Establishment We hold extensive experience in constructing relay chains and parachains using the Substrate framework and RUST programming language. Our team comprehends each stratum of the framework and its adept utilization for efficient blockchain development. Mask Group 69092 Pallets Crafting Using RUST, we can produce novel pallets within the Substrate framework, ranging from formulating new consensus algorithms to generating NFTs. Our RUST developers boast hands-on proficiency in pallet and relay chain creation. Mask Group 69096 Smart Contract Implementation Leveraging Parity's ink! technology, we craft smart contracts on substrate-based blockchains to execute business logic on a relay chain. Diverse Range of Substrate-based Applications Blockchain Innovations Mask Group 69126 Platforms for Decentralized Finance (DeFi) Mask Group 69127 Systems for Supply Chain Management Mask Group 69130 Voting and Governance Networks Mask Group 69136 Solutions for Identity and Access Management Mask Group 69129 Gaming and Betting Platforms Mask Group 69131 Social Media and Content Sharing Networks Connect with our domain experts to explore how these apply to your business. CONNECT VIA WHATSAPP CONNECT VIA TELEGRAM Our Methodology for Building Substrate Applications We adhere to a structured roadmap to steer the development process and expedite your time-to-market.
-Group 85177 Comprehend We comprehend your business prerequisites to discern the envisioned business benefits. Throughout this phase, we closely collaborate with you to explore the initial theoretical and practical implications of the project. Group 85180 Develop Substrate Node This stage encompasses default implementations for fundamental components such as account management, privileged access, consensus, etc. The genesis block can be customized to initiate the chain. Group 85181 Develop Substrate Frame Subsequently, we formulate a Substrate frame, serving as a framework to construct a Substrate runtime environment using existing libraries, while maintaining substantial control over the blockchain's logic. Group 85178 Develop Substrate Core Substrate Core empowers us to integrate our runtime environment aligned with WebAssembly and in accordance with the fundamental principles of Substrate block construction. This runtime can subsequently be employed within the Substrate node. Group 85179 Testing and Deployment Our blockchain engineers conduct both automated and manual tests, encompassing testnet and load tests, to validate the application's performance. We additionally aid in deploying these nodes on public and private networks, ensuring perpetual network activity. CONSULT OUR SPECIALISTS Reasons to Opt for Us as Your Substrate Blockchain Development Partner Partnering with AradChain Technologies provides access to a team of technical experts with real-world expertise in delivering end-to-end blockchain services.
-Technical Excellence (1) Technical Proficiency Our exclusive focus lies in Blockchain Technologies. We excel in this domain. 3050431 Expert Team Our team comprises over 600 experts who assist in refining your offering, proposing optimal tech strategies, and even aiding in community and campaign setups. Process Accelerated Development We deliver tailor-made blockchain services to yield exceptional products tailored to your target audience. A coherent roadmap ensures seamless and swift development and deployment. 950299 Comprehensive Support Our commitment extends beyond product launch. We provide extensive post-delivery services, freeing you to concentrate on growth. 1611179 Meaningful Results We effect tangible transformations. Your investments yield discernible value. Our Collaborators Our Clientele Common Queries Addressed
-Substrate constitutes a modular framework for expeditious and uncomplicated construction of customized blockchain networks. It furnishes a collection of pre-constructed components, libraries, and tools that facilitate the development and deployment of blockchain networks.
-Insight into Our Blogs Tailored AI Blockchain Development Confluence of Blockchain & AI Blockchain & AI: Prime Use Cases and Hurdles to AI Adoption The confluence of Blockchain and AI stands out as a transformative force, influencing businesses across diverse domains. […] READ MORE
-Exploring Novel Blockchain Applications in Real Estate The real estate sector burgeons, but remains susceptible to fraudulent activities. Recent statistics suggest […] READ MORE Blockchain Advancements in the Beauty Industry Blockchain's Impression on the Beauty Industry: Boon or Bane? The association between Blockchain and beauty might not be immediate. However, these realms are intertwined in more ways than apparent. […] READ MORE Our Proficiency in Blockchain Technology We welcome cordial conversations to delve into your business requisites, without any obligation.
-We earnestly strive to support you through technical assistance. Your inquiries and requests are welcome.
-
-
-
-              </p>
+              <Heading>Substrate</Heading>
             </div>
           </div>
+          
         </div>
       </div>
 
-      {/* Info Section */}
       <div className={style.infoSection}>
+        <div className={style.infoContainer}>
+          <div className="content">
+            <Text align={'center'} letterSpacing={1}>
+            Substrate Blockchain Development Overview The Substrate framework is a versatile toolkit designed for creating and constructing blockchain solutions. Crafted using the RUST programming language, it presents a flexible array of tools that expedite the development process by furnishing all the essential layers required for operating the consensus, network, and application components of a blockchain system.Our team of blockchain developers harnesses the power of the Substrate blockchain framework to construct exceptionally adaptable and future-proof applications, empowering you to disrupt the market. We devise a meticulous plan to propel and hasten your development journey, enabling you to swiftly penetrate the market and attain a crucial competitive advantage.
+            </Text>
+            <Heading as="h2" size="2xl" letterSpacing={2} my={5} textAlign="center" mt={10} mb={10}>AradChain Technologies: Substrate Development Services</Heading>
+
+<Text mt={4} align="center">
+  At AradChain Technologies, we offer an array of comprehensive services tailored to Substrate development. Our team of experts specializes in harnessing the power of the Substrate framework to create diverse platforms and solutions.
+</Text>
+
+<Text mt={4} align="center">
+  <strong>Interconnected Blockchain Bridge:</strong>
+  Our experts excel at building robust cross-chain bridges using Substrate's XCMP protocol. This technology facilitates seamless asset and information exchange across multiple blockchains.
+</Text>
+
+<Text mt={4} align="center">
+  <strong>Integration of Sidechains:</strong>
+  We possess the capability to integrate existing Substrate-powered relay chains and dApps, connecting them with other chains or the Polkadot ecosystem to enhance interoperability.
+</Text>
+
+<Text mt={4} align="center">
+  <strong>Relay Chain Creation:</strong>
+  Our specialization lies in constructing highly secure Substrate-based blockchains tailored to specific use cases, ensuring rapid and secure development.
+</Text>
+
+<Text mt={4} align="center">
+  <strong>Parachain Establishment:</strong>
+  With extensive experience in constructing relay chains and parachains using the Substrate framework and Rust programming language, our team ensures efficient blockchain development.
+</Text>
+
+<Text mt={4} align="center">
+  <strong>Pallets Crafting:</strong>
+  Leveraging Rust, we can create novel pallets within the Substrate framework, ranging from formulating new consensus algorithms to generating NFTs. Our Rust developers are proficient in pallet and relay chain creation.
+</Text>
+
+<Text mt={4} align="center">
+  <strong>Smart Contract Implementation:</strong>
+  We craft smart contracts on Substrate-based blockchains using Parity's ink! technology. These contracts execute business logic on a relay chain.
+</Text>
+
+<SimpleGrid minChildWidth='200px' spacing='20px' mt={10}>
+              <Card><CardBody><Text>Blockchain Innovations</Text></CardBody></Card>
+              <Card><CardBody><Text>Platforms for Decentralized Finance (DeFi)</Text></CardBody></Card>
+              <Card><CardBody><Text>Systems for Supply Chain Management</Text></CardBody></Card>
+              <Card><CardBody><Text> Voting and Governance Networks</Text></CardBody></Card>
+              <Card><CardBody><Text>Solutions for Identity and Access Management</Text></CardBody></Card>
+              <Card><CardBody><Text>Solutions for Identity and Access Management</Text></CardBody></Card>
+              <Card><CardBody><Text>Gaming and Betting Platforms</Text></CardBody></Card>
+</SimpleGrid>
+
+<Text mt={4} align="center">
+  Connect with our domain experts to explore how these applications can benefit your business.
+</Text>
+
+<Heading as="h2" size="2xl" letterSpacing={2} my={5} textAlign="center" mt={10} mb={10}>
+Our Methodology for Building Substrate Applications
+  </ Heading>
+
+<Text mt={4} align="center">
+  <strong>Comprehend:</strong>
+   We work closely with you to understand your business requirements and the envisioned benefits of the project.
+</Text>
+
+<Text mt={4} align="center">
+  <strong>Develop Substrate Node:</strong>
+   This stage involves default implementations for fundamental components like account management, consensus, and more. The genesis block can be customized to initiate the chain.
+</Text>
+
+<Text mt={4} align="center">
+  <strong>Develop Substrate Frame:</strong>
+   We create a Substrate frame, serving as a framework for constructing a Substrate runtime environment using existing libraries while maintaining control over the blockchain's logic.
+</Text>
+
+<Text mt={4} align="center">
+  <strong>Develop Substrate Core:</strong>
+   Substrate Core empowers us to integrate the runtime environment aligned with WebAssembly and Substrate block construction principles, which can be used within the Substrate node.
+</Text>
+
+<Text mt={4} align="center">
+  <strong>Testing and Deployment:</strong>
+   Our blockchain engineers conduct thorough automated and manual tests, including testnet and load tests, to ensure the application's performance. We also assist in deploying these nodes on public and private networks.
+</Text>
+<Heading as="h2" size="2xl" letterSpacing={2} my={5} textAlign="center" mt={10} mb={10}>Reasons to Choose AradChain Technologies as Your Substrate Blockchain Development Partner:</Heading>
+
+<Text mt={4} align="center">
+  <strong>Technical Excellence:</strong> Our exclusive focus on Blockchain Technologies ensures technical proficiency.
+</Text>
+
+<Text mt={4} align="center">
+  <strong>Expert Team:</strong> Our team comprises over 600 experts who excel in refining your offerings and proposing optimal tech strategies.
+</Text>
+
+<Text mt={4} align="center">
+  <strong>Accelerated Development:</strong> We provide tailor-made blockchain services to yield exceptional products, ensuring seamless and swift development and deployment.
+</Text>
+
+<Text mt={4} align="center">
+  <strong>Comprehensive Support:</strong> Our commitment extends beyond product launch, offering extensive post-delivery services to support your growth.
+</Text>
+
+<Text mt={4} align="center">
+  <strong>Meaningful Results:</strong>  We deliver tangible transformations, ensuring discernible value from your investments.
+</Text>
+<Heading as="h2" size="2xl" letterSpacing={2} my={5} textAlign="center" mt={10} mb={10}>Explore Our Blogs:</Heading>
+<Text mt={4} align="center">
+  Tailored AI Blockchain Development
+</Text>
+
+<Text mt={4} align="center">
+  Confluence of Blockchain & AI: Prime Use Cases and Hurdles to AI Adoption
+</Text>
+
+<Text mt={4} align="center">
+  Exploring Novel Blockchain Applications in Real Estate
+</Text>
+
+<Text mt={4} align="center">
+  Blockchain Advancements in the Beauty Industry
+</Text>
+<Heading as="h2" size="2xl" letterSpacing={2} my={5} textAlign="center" mt={10} mb={10}>Our Proficiency in Blockchain Technology:</Heading>
+<Text mt={4} align="center">
+  We welcome cordial conversations to delve into your business requisites, without any obligation. Feel free to reach out with your inquiries and requests.
+</Text>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      {/* Info Section */}
+      {/* <div className={style.infoSection}>
         <div className={style.infoContainer}>
           <div className={style.infoTop}>
             {data.about.map((ele) => {
@@ -73,18 +183,10 @@ We earnestly strive to support you through technical assistance. Your inquiries 
             })}
           </div>
         </div>
-      </div>
-
-      {/* Crypto Section */}
-      {/* <div className={style.cryptoSection}>
-        <div className={style.cryptoContainer}>
-          <img src={crypto1} alt="crypto1" />
-          <img src={crypto2} alt="crypto2" />
-        </div>
-    </div> */}
+      </div> */}
 
       {/* Our Team */}
-      <div className={style.ourTeamSection}>
+      {/* <div className={style.ourTeamSection}>
         <div className={style.ourTeamContainer}>
           <h1>Our Team</h1>
           <p>
@@ -105,7 +207,7 @@ We earnestly strive to support you through technical assistance. Your inquiries 
             })}
           </div>
         </div>
-      </div>
+      </div> */}
       <TelegramFloatingBtn />
       <FloatingWhatsApp
         phoneNumber="447778222221"
@@ -131,7 +233,9 @@ We earnestly strive to support you through technical assistance. Your inquiries 
 
 
       {/* Need Solution */}
-      <Needsolution />
+      <Box mt={20}>
+        <Needsolution />
+      </Box>
 
       {/* Footer Section */}
       <Footer1 />

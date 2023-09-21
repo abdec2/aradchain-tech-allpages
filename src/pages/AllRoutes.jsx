@@ -70,7 +70,7 @@ import BfC from "./bfC/BfC";
 import BfAB from "./bfAB/BfAB";
 import BfPE from "./bfPE/BfPE";
 import BfT from "./bfT/BfT";
-import BfPBl from "./bfPBl/BfPBl";
+import BfPBl from './bfPBl/BfPBl'
 
 import L1l2sBSC from "./l1l2sBSC/L1l2sBSC";
 import L1l2sS from "./l1l2sS/L1l2sS";

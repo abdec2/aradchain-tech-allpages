@@ -1,11 +1,9 @@
 import React from "react";
 import style from "./cdIdoD.module.css";
-// import image from '../../assets/aboutInfo2.png'
 import crypto1 from "../../assets/crypto1.png";
 import crypto2 from "../../assets/crypto2.png";
 import data from "../../database/data";
 import Whyus from "../../components/whyUs/Whyus";
-import Heading from "../../components/heading/Heading";
 import AboutStats from "../../components/aboutStats/AboutStats";
 import Team from "../../components/team/Team";
 import { Link } from "react-router-dom";
@@ -15,23 +13,28 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+
 const About = () => {
-  // console.log(data.aboutStatsData)
   return (
     <div className={style.aboutMain}>
       <div className={style.mainSection}>
         <div className={style.mainSectionContainer}>
-          <Heading heading="About" />
           <div className={style.mainSectionContent}>
             <div>
-              <img src={map} alt="" />
-              <h2>IDO Development Services</h2>
+              <Heading>IDO Development Services</Heading>
             </div>
-            <div>
-              <p>
-              Streamline Your Initial DEX Offering (IDO) Experience:
-The Modern IEO Equivalent
-Initial DEX Offering, or IDO, introduces a new dimension to tokenization. It involves the issuance of tokens representing various types of assets on decentralized exchanges (DEX). The scope of IDOs extends to encompass a wide array of assets, ranging from cryptocurrencies to music albums and more.
+          </div>
+          
+        </div>
+      </div>
+
+      <div className={style.infoSection}>
+        <div className={style.infoContainer}>
+          <div className="content">
+            <Text align={'center'} letterSpacing={1}>
+            Streamline Your Initial DEX Offering (IDO) Experience:
+The Modern IEO Equivalent,Initial DEX Offering, or IDO, introduces a new dimension to tokenization. It involves the issuance of tokens representing various types of assets on decentralized exchanges (DEX). The scope of IDOs extends to encompass a wide array of assets, ranging from cryptocurrencies to music albums and more.
 
 While resembling Initial Exchange Offerings (IEOs), IDOs take a decentralized approach by eliminating the exchange fee associated with centralized offerings. Unlike IEOs, where tokens are launched on centralized exchanges, IDOs occur on decentralized platforms, removing the need for intermediaries and reducing costs.
 
@@ -42,98 +45,42 @@ AradChain Technologies stands as a reliable partner, providing comprehensive IDO
 
 Embark on your IDO journey by sharing your business objectives with us.
 
-CONNECT ON WHATSAPP CONNECT ON TELEGRAM
+             </Text>
+            <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+              
+            </Heading>
 
-              </p>
-              <p>
-              Comprehensive IDO Development Services
-Our services encompass the entire spectrum of IDO development, ensuring impactful outcomes for your business.
-strategy_and_raodmap_icon
-Strategic Roadmap Development
-We create strategic roadmaps to guide your IDO development journey, ensuring purposeful execution.
-white_papper_creation_icon
-White Paper Crafting
-Our expert team creates compelling white papers designed to captivate investor attention and facilitate market entry.
-token_development_icon
-Token Creation
-Leveraging blockchains like Ethereum and Binance Smart Chain, our experienced engineers develop tokens tailored to your project.
-listing_the_token_icon
-Token Listing
-Our blockchain consultants assist in identifying suitable decentralized exchanges for the launch of your token.
-marketing_icon
-Marketing Endeavors
-With a multi-channel marketing approach, we promote your IDO project across digital platforms, ensuring optimal visibility.
-support_icon
-Ongoing Support
-Backed by a team of blockchain engineers, subject matter experts, and marketing specialists, we offer comprehensive support to ensure a successful IDO launch.
-Leverage our expertise and end-to-end services to initiate your Initial DEX Offering.
+            <Text align={'center'} letterSpacing={1}>
+            Our comprehensive IDO development services cover a wide spectrum, guaranteeing impactful results for your business. This includes creating strategic roadmaps to guide your IDO development journey with purposeful execution, crafting compelling white papers to captivate investor attention and facilitate market entry, developing tokens tailored to your project using blockchains like Ethereum and Binance Smart Chain, identifying suitable decentralized exchanges for token listing with the assistance of our blockchain consultants, promoting your IDO project across digital platforms through a multi-channel marketing approach for optimal visibility, and providing ongoing support backed by a team of blockchain engineers, subject matter experts, and marketing specialists to ensure a successful IDO launch. Leverage our expertise and end-to-end services to initiate your Initial DEX Offering with confidence.Backed by a team of blockchain engineers, subject matter experts, and marketing specialists, we offer comprehensive support to ensure a successful IDO launch.Leverage our expertise and end-to-end services to initiate your Initial DEX Offering.
 
-TALK TO OUR EXPERTS
+             </Text>
+            <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+            Benefits of Leveraging an IDO Platform
+            </Heading>
+            <Text align={'center'} letterSpacing={1}>
+            Unlock a realm of opportunities by harnessing the potential of Decentralized Exchanges (DEX) through IDOs. IDO tokens are immediately tradable upon launch, enabling investors to purchase tokens right from the start, potentially leading to token price appreciation and increased owner profits. This immediate availability also fosters instant liquidity, addressing liquidity concerns often faced by new projects and positively impacting token prices. Furthermore, IDOs offer a cost-effective token sale and listing model, as smart contracts eliminate intermediaries and minimize associated costs. This decentralized approach ensures equitable fundraising opportunities for projects, eliminating the need for centralized exchanges and promoting fairness and accessibility in the fundraising process.
+            </Text>
+            <Heading as='h2' size='2xm' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>Why Opt for AradChain Technologies for Your IDO Development?</Heading>
+            <Text align={'center'} letterSpacing={1}>Experience exceptional services tailored to your needs with AradChain Technologies Solutions. Our deep focus on blockchain technologies and extensive industry experience set us apart, ensuring technical proficiency that delivers meaningful impact. Our solutions create tangible value, guaranteeing significant returns on your investment. With a team of 500+ experts, we guide you in refining your offerings and selecting the optimal tech approach for rapid development and deployment. Our commitment extends beyond product launch; post-delivery, we provide comprehensive support, enabling you to focus on your growth. Empower your IDO journey by partnering with AradChain Technologies Solutions. HIRE OUR EXPERTISE and elevate your blockchain endeavors to new heights.</Text>
+            <Heading as='h2' size='2xm' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>Insightful Blog Highlights</Heading>
+            <Text align={'center'} letterSpacing={1}><strong>Developing IDO Launchpad Platform On Different Blockchains - A Guide</strong></Text>
+            <Text align={'center'} letterSpacing={1}>Explore the essential steps involved in creating an IDO launchpad platform that spans across various blockchain networks. This comprehensive guide will walk you through the crucial aspects of launching your IDO platform, ensuring it thrives in the ever-evolving blockchain landscape.</Text>
 
-Benefits of Leveraging an IDO Platform
-Unlock a realm of opportunities by harnessing the potential of Decentralized Exchanges (DEX) through IDOs.
+            <Text mt={6} align={'center'} letterSpacing={1}><strong>The Importance of Security in IDO Platform Development: A Guide</strong></Text>
+            <Text align={'center'} letterSpacing={1}>Security is paramount in the development of any IDO platform. Discover effective strategies and best practices for mitigating risks and ensuring the highest levels of security throughout the IDO platform development process. This guide will equip you with the knowledge to safeguard your project and user assets.</Text>
 
-quick_trading_icon
-Rapid Trading
-IDO tokens are tradeable immediately upon launch, allowing investors to purchase tokens from the outset. This immediate trading can lead to token price appreciation and increased owner profits.
+            <Text mt={6} align={'center'} letterSpacing={1}><strong>Exploring the Opportunity of Initial DEX Offering (IDO) Development in 2023</strong></Text>
+            <Text align={'center'} letterSpacing={1}>As we step into 2023, it's crucial to explore the vast potential of Initial DEX Offering (IDO) development as a viable and lucrative business opportunity. Uncover the latest trends, insights, and opportunities in the IDO space, and learn how to leverage this exciting field for your business growth.</Text>
 
-immediate_liquidity
-Instant Liquidity
-IDO tokens' immediate availability encourages instant liquidity, addressing liquidity concerns often faced by new projects. This liquidity boost can further positively impact token prices.
-
-lower_cost_for_listing
-Cost-Effective Listing
-IDO offers a cost-effective token sale and listing model. The absence of intermediaries, facilitated by smart contracts, minimizes costs associated with the IDO process.
-
-fair_fundraising
-Equitable Fundraising
-IDO eliminates the need for centralized exchanges, providing equal fundraising opportunities for projects. This decentralized approach ensures fairness and accessibility.
-
-Connect with our experts to explore the potential of IDOs.
-
-CONNECT ON WHATSAPP CONNECT ON TELEGRAM
-
-Why Opt for AradChain Technologies for Your IDO Development
-Experience exceptional services tailored to your needs.
-Technical Proficiency
-Our deep focus on blockchain technologies and extensive industry experience set us apart.
-Meaningful Impact
-Our solutions create tangible value, ensuring you realize significant returns on your investment.
-Expert Team
-With a team of 500+ experts, we guide you in refining your offerings and selecting the optimal tech approach.
-Rapid Development
-We deliver customized products aligned with your target audience, employing a clear roadmap for swift development and deployment.
-Complete Support
-Our commitment extends beyond product launch. Post-delivery, we provide comprehensive support, enabling you to focus on your growth.
-
-Empower your IDO journey by partnering with AradChain Technologies Solutions.
-
-HIRE OUR EXPERTISE
-
-Insightful Blog Highlights
-
-Developing IDO Launchpad Platform On Different Blockchains - A Guide
-Learn the crucial steps in creating an IDO launchpad platform across various blockchain networks.
-READ MORE
-
-The Importance of Security in IDO Platform Development: A Guide
-Discover effective strategies for mitigating risks and ensuring security in the IDO platform development process.
-READ MORE
-
-Exploring the Opportunity of Initial DEX Offering (IDO) Development in 2023
-Explore the potential of Initial DEX Offering (IDO) development as a viable business opportunity in 2023.
-READ MORE
-Discover Our Blockchain Expertise
-We're available for an insightful discussion about your business needs, with no obligation attached.
-
-              </p>
-            </div>
+            <Text mt={6} align={'center'} letterSpacing={1}><strong>Discover Our Blockchain Expertise</strong> We invite you to engage in an insightful discussion about your specific business needs with our team of blockchain experts. There's no obligation attached, and we're ready to provide you with valuable insights and recommendations to help you succeed in the blockchain industry.</Text>
           </div>
+
         </div>
+
       </div>
 
       {/* Info Section */}
-      <div className={style.infoSection}>
+      {/* <div className={style.infoSection}>
         <div className={style.infoContainer}>
           <div className={style.infoTop}>
             {data.about.map((ele) => {
@@ -154,18 +101,10 @@ We're available for an insightful discussion about your business needs, with no 
             })}
           </div>
         </div>
-      </div>
-
-      {/* Crypto Section */}
-      {/* <div className={style.cryptoSection}>
-        <div className={style.cryptoContainer}>
-          <img src={crypto1} alt="crypto1" />
-          <img src={crypto2} alt="crypto2" />
-        </div>
-    </div> */}
+      </div> */}
 
       {/* Our Team */}
-      <div className={style.ourTeamSection}>
+      {/* <div className={style.ourTeamSection}>
         <div className={style.ourTeamContainer}>
           <h1>Our Team</h1>
           <p>
@@ -186,7 +125,7 @@ We're available for an insightful discussion about your business needs, with no 
             })}
           </div>
         </div>
-      </div>
+      </div> */}
       <TelegramFloatingBtn />
       <FloatingWhatsApp
         phoneNumber="447778222221"
@@ -212,7 +151,9 @@ We're available for an insightful discussion about your business needs, with no 
 
 
       {/* Need Solution */}
-      <Needsolution />
+      <Box mt={20}>
+        <Needsolution />
+      </Box>
 
       {/* Footer Section */}
       <Footer1 />
