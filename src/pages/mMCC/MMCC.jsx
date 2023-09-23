@@ -1,11 +1,9 @@
 import React from "react";
 import style from "./mMCC.module.css";
-// import image from '../../assets/aboutInfo2.png'
 import crypto1 from "../../assets/crypto1.png";
 import crypto2 from "../../assets/crypto2.png";
 import data from "../../database/data";
 import Whyus from "../../components/whyUs/Whyus";
-import Heading from "../../components/heading/Heading";
 import AboutStats from "../../components/aboutStats/AboutStats";
 import Team from "../../components/team/Team";
 import { Link } from "react-router-dom";
@@ -15,25 +13,31 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+
 const About = () => {
-  // console.log(data.aboutStatsData)
   return (
     <div className={style.aboutMain}>
       <div className={style.mainSection}>
         <div className={style.mainSectionContainer}>
-          <Heading heading="About" />
           <div className={style.mainSectionContent}>
             <div>
-              <img src={map} alt="" />
-              <h2>Metaverse Consulting Company</h2>
+              <Heading>Metaverse Consulting Company</Heading>
             </div>
-            <div>
-              <p>
-              Enter the Metaverse seamlessly and unlock a new dimension for your business with our strategic Metaverse consulting and development solutions.
+          </div>
+          
+        </div>
+      </div>
 
-TALK TO OUR EXPERTS
+      <div className={style.infoSection}>
+        <div className={style.infoContainer}>
+          <div className="content">
+            <Text align={'center'} letterSpacing={1}>
+            Enter the Metaverse seamlessly and unlock a new dimension for your business with our strategic Metaverse consulting and development solutions.
 
-DID YOU KNOW!
+<strong>TALK TO OUR EXPERTS.</strong>
+
+ DID YOU KNOW!
 As per a report by MarketsandMarkets, the blockchain consulting market is projected to reach $39.7 billion by 2025, growing at a compound annual rate of 82.0% from 2020 to 2025.
 
 Expert Metaverse Consultants to Guide You
@@ -57,103 +61,189 @@ As a premier Metaverse consulting company, we provide strategic guidance to cons
 Metaverse Enterprise Solutions
 We empower enterprises with effective Metaverse solutions, positioning them for success in this new era while staying ahead of competitors.
 
-CONNECT ON WHATSAPP CONNECT ON TELEGRAM
+ <strong>CONNECT ON WHATSAPP CONNECT ON TELEGRAM</strong>
 
-              </p>
-              <p>
-              DID YOU KNOW!
-A report by McKinsey & Company states that the Metaverse has the potential to generate up to $5 trillion, a potential companies cannot afford to overlook.
 
-Benefits of Metaverse Consulting Services
-Discover the advantages of leveraging Metaverse consulting services.
+            </Text>
+            <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+  <strong>DID YOU KNOW!</strong>
+</Heading>
 
-Personalized User Experiences
-Metaverse delivers hyper-personalized user experiences, enhancing customer satisfaction and loyalty.
-Enhanced User Engagement
-Businesses harness Metaverse for improved services, user engagement, and connections.
-Seamless Training and Skills
-Metaverse facilitates seamless training and skill delivery for onboarding employees.
-Immersive Experiences
-Metaverse creates highly immersive experiences, captivating users and creating appealing environments.
-Digital Twin Creation
-Metaverse enables the creation of digital twins for simulation and deeper analysis.
-Global Accessibility
-Metaverse's global accessibility allows users worldwide to easily access the platform.
+<Text align={'center'}>
+  A report by McKinsey & Company states that the Metaverse has the potential to generate up to $5 trillion, a potential companies cannot afford to overlook.
+</Text>
 
-TALK TO OUR EXPERTS
+<Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+  <strong>Benefits of Metaverse Consulting Services</strong>
+</Heading>
 
-Our Metaverse Consulting and Development Process
-Explore our comprehensive Metaverse consulting and development process for a detailed understanding.
+<Text align={'center'}>
+  <strong>Personalized User Experiences</strong>
+  Metaverse delivers hyper-personalized user experiences, enhancing customer satisfaction and loyalty.
+</Text>
 
-Metaverse Project Proposal
-We begin by dissecting the problem statement, prioritizing components to discuss project feasibility.
-Discovery Phase
-Understanding your goals, brainstorming sessions shape a perfect plan to realize your objectives.
-Requirements Gathering
-We collect project requirements, conduct market analysis, and develop a roadmap to guide development.
-Solution and Strategy Design
-Crafting solutions and strategies aligned with project requirements paves the way for development.
+<Text align={'center'}>
+  <strong>Enhanced User Engagement</strong>
+  Businesses harness Metaverse for improved services, user engagement, and connections.
+</Text>
 
-Maintenance and Support
-Post-launch, our team ensures smooth operations, providing necessary support and addressing glitches.
-Deployment Phase
-Post QA approval, the Metaverse project is launched, focusing on client satisfaction and a successful deployment.
-Testing and Quality Analysis
-Our dedicated QA team conducts thorough testing and quality analysis post-development.
-Development Phase
-Core technical development, based on approved designs and strategies, shapes the Metaverse project for deployment.
+<Text align={'center'}>
+  <strong>Seamless Training and Skills</strong>
+  Metaverse facilitates seamless training and skill delivery for onboarding employees.
+</Text>
 
-Why Choose AradChain Technologies as Your Metaverse Consulting Company?
-AradChain Technologies, a premier Metaverse consulting company, caters to diverse business needs, transforming the delivery of products and services through Metaverse implementation.
+<Text align={'center'}>
+  <strong>Immersive Experiences</strong>
+  Metaverse creates highly immersive experiences, captivating users and creating appealing environments.
+</Text>
 
-Explore the key benefits of selecting us as your Metaverse development consulting partner:
+<Text align={'center'}>
+  <strong>Digital Twin Creation</strong>
+  Metaverse enables the creation of digital twins for simulation and deeper analysis.
+</Text>
 
-Experienced Metaverse Consultants
-Strategic Metaverse Consulting Services
-In-Depth Metaverse Knowledge
-Efficient Solutions for Optimal Outcomes
+<Text align={'center'}>
+  <strong>Global Accessibility</strong>
+  Metaverse's global accessibility allows users worldwide to easily access the platform.
+</Text>
 
-Ready to Embrace the Metaverse for Your Business?
+<Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+  <strong>Our Metaverse Consulting and Development Process</strong>
+</Heading>
 
-CONNECT ON WHATSAPP CONNECT ON TELEGRAM
+<Text align={'center'}>
+  <strong>Metaverse Project Proposal</strong>
+  We begin by dissecting the problem statement, prioritizing components to discuss project feasibility.
+</Text>
 
-Our Partners
-Our Clients
-Frequently Asked Questions
+<Text align={'center'}>
+  <strong>Discovery Phase</strong>
+  Understanding your goals, brainstorming sessions shape a perfect plan to realize your objectives.
+</Text>
 
-1What is Metaverse Consulting?
-Metaverse consulting offers professional guidance to businesses, organizations, and individuals interested in exploring the Metaverse's opportunities and integrating it into their operations. The process involves analyzing project requirements to devise a strategic implementation plan.
-2What Role Does a Metaverse Consultant Play?
-3What are the Latest Trends in the Metaverse?
-4Do You Provide Metaverse Consulting and Development Services Across Industries?
-5What is the Expected Timeline for Metaverse Development?
+<Text align={'center'}>
+  <strong>Requirements Gathering</strong>
+  We collect project requirements, conduct market analysis, and develop a roadmap to guide development.
+</Text>
 
-Blogs at a Glance
+<Text align={'center'}>
+  <strong>Solution and Strategy Design</strong>
+  Crafting solutions and strategies aligned with project requirements paves the way for development.
+</Text>
 
-Metaverse in Manufacturing: Role and Future Prospects
-The Metaverse has seamlessly woven itself into our lives. The amalgamation of blockchain, metaverse, and AI has dramatically revolutionized industries.
-READ MORE
+<Text align={'center'}>
+  <strong>Maintenance and Support</strong>
+  Post-launch, our team ensures smooth operations, providing necessary support and addressing glitches.
+</Text>
 
-AI Empowering NPCs: Breathing Life into the Metaverse
-The 21st century's innovative trio – blockchain, metaverse, and AI – have ushered in transformative changes across industries. Explore the shift.
-READ MORE
-White Label Crypto Bank
-How to Get Started with a White Label Crypto Banking Platform?
-Opportunities knock, and we seek swift leverage. The dynamic crypto industry beckons, offering a quick and efficient white label solution.
-READ MORE
-Our Blockchain Tech Expertise
-We're here to discuss your business requirements in a friendly chat, with no obligations.
+<Text align={'center'}>
+  <strong>Deployment Phase</strong>
+  Post QA approval, the Metaverse project is launched, focusing on client satisfaction and a successful deployment.
+</Text>
 
-Count on us for technical support and to address your inquiries effectively!
+<Text align={'center'}>
+  <strong>Testing and Quality Analysis</strong>
+  Our dedicated QA team conducts thorough testing and quality analysis post-development.
+</Text>
 
-              </p>
-            </div>
+<Text align={'center'}>
+  <strong>Development Phase</strong>
+  Core technical development, based on approved designs and strategies, shapes the Metaverse project for deployment.
+</Text>
+
+<Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+  <strong>Why Choose AradChain Technologies as Your Metaverse Consulting Company?</strong>
+</Heading>
+
+<Text align={'center'}>
+  AradChain Technologies, a premier Metaverse consulting company, caters to diverse business needs, transforming the delivery of products and services through Metaverse implementation.
+</Text>
+
+<Text align={'center'}>
+  <strong>Explore the key benefits of selecting us as your Metaverse development consulting partner:</strong>
+</Text>
+
+<Text align={'center'}>
+  <strong>Experienced Metaverse Consultants</strong>
+</Text>
+
+<Text align={'center'}>
+  <strong>Strategic Metaverse Consulting Services</strong>
+</Text>
+
+<Text align={'center'}>
+  <strong>In-Depth Metaverse Knowledge</strong>
+</Text>
+
+<Text align={'center'}>
+  <strong>Efficient Solutions for Optimal Outcomes</strong>
+</Text>
+
+<Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+  <strong>Frequently Asked Questions</strong>
+</Heading>
+
+<Text align={'center'}>
+  <strong>1. What is Metaverse Consulting?</strong>
+  Metaverse consulting offers professional guidance to businesses, organizations, and individuals interested in exploring the Metaverse's opportunities and integrating it into their operations. The process involves analyzing project requirements to devise a strategic implementation plan.
+</Text>
+
+<Text align={'center'}>
+  <strong>2. What Role Does a Metaverse Consultant Play?</strong>
+</Text>
+
+<Text align={'center'}>
+  <strong>3. What are the Latest Trends in the Metaverse?</strong>
+</Text>
+
+<Text align={'center'}>
+  <strong>4. Do You Provide Metaverse Consulting and Development Services Across Industries?</strong>
+</Text>
+
+<Text align={'center'}>
+  <strong>5. What is the Expected Timeline for Metaverse Development?</strong>
+</Text>
+
+<Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+  <strong>Blogs at a Glance</strong>
+</Heading>
+
+<Text align={'center'}>
+  <strong>Metaverse in Manufacturing: Role and Future Prospects</strong>
+  The Metaverse has seamlessly woven itself into our lives. The amalgamation of blockchain, metaverse, and AI has dramatically revolutionized industries.
+</Text>
+
+<Text align={'center'}>
+  <strong>AI Empowering NPCs: Breathing Life into the Metaverse</strong>
+  The 21st century's innovative trio – blockchain, metaverse, and AI – have ushered in transformative changes across industries. Explore the shift.
+</Text>
+
+<Text align={'center'}>
+  <strong>White Label Crypto Bank</strong>
+  How to Get Started with a White Label Crypto Banking Platform?
+  Opportunities knock, and we seek swift leverage. The dynamic crypto industry beckons, offering a quick and efficient white label solution.
+</Text>
+
+<Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+  <strong>Our Blockchain Tech Expertise</strong>
+</Heading>
+
+<Text align={'center'}>
+  We're here to discuss your business requirements in a friendly chat, with no obligations.
+</Text>
+
+<Text align={'center'}>
+  Count on us for technical support and to address your inquiries effectively!
+</Text>
+
           </div>
+
         </div>
+
       </div>
 
       {/* Info Section */}
-      <div className={style.infoSection}>
+      {/* <div className={style.infoSection}>
         <div className={style.infoContainer}>
           <div className={style.infoTop}>
             {data.about.map((ele) => {
@@ -174,18 +264,10 @@ Count on us for technical support and to address your inquiries effectively!
             })}
           </div>
         </div>
-      </div>
-
-      {/* Crypto Section */}
-      {/* <div className={style.cryptoSection}>
-        <div className={style.cryptoContainer}>
-          <img src={crypto1} alt="crypto1" />
-          <img src={crypto2} alt="crypto2" />
-        </div>
-    </div> */}
+      </div> */}
 
       {/* Our Team */}
-      <div className={style.ourTeamSection}>
+      {/* <div className={style.ourTeamSection}>
         <div className={style.ourTeamContainer}>
           <h1>Our Team</h1>
           <p>
@@ -206,7 +288,7 @@ Count on us for technical support and to address your inquiries effectively!
             })}
           </div>
         </div>
-      </div>
+      </div> */}
       <TelegramFloatingBtn />
       <FloatingWhatsApp
         phoneNumber="447778222221"
@@ -232,7 +314,9 @@ Count on us for technical support and to address your inquiries effectively!
 
 
       {/* Need Solution */}
-      <Needsolution />
+      <Box mt={20}>
+        <Needsolution />
+      </Box>
 
       {/* Footer Section */}
       <Footer1 />
