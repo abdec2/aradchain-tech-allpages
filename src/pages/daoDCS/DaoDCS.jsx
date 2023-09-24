@@ -1,11 +1,9 @@
 import React from "react";
 import style from "./daoDCS.module.css";
-// import image from '../../assets/aboutInfo2.png'
 import crypto1 from "../../assets/crypto1.png";
 import crypto2 from "../../assets/crypto2.png";
 import data from "../../database/data";
 import Whyus from "../../components/whyUs/Whyus";
-import Heading from "../../components/heading/Heading";
 import AboutStats from "../../components/aboutStats/AboutStats";
 import Team from "../../components/team/Team";
 import { Link } from "react-router-dom";
@@ -15,136 +13,177 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+
 const About = () => {
-  // console.log(data.aboutStatsData)
   return (
     <div className={style.aboutMain}>
       <div className={style.mainSection}>
         <div className={style.mainSectionContainer}>
-          <Heading heading="About" />
           <div className={style.mainSectionContent}>
             <div>
-              <img src={map} alt="" />
-              <h2>DAO Consulting Service</h2>
-            </div>
-            <div>
-              <p>
-              Empowering you with knowledge, tools, and expertise, we pave the way for you to build your DAO efficiently.
-
-REQUEST YOUR FREE DEMO
-
-Revolutionize the Market with Top-tier DAO Consulting Solutions
-Irrespective of your query—whether it's as basic as understanding the benefits of DAO implementation for your existing business or as intricate as crafting a roadmap for your DAO development journey—we have all the solutions.
-
-Recognizing that one-size-fits-all solutions are inadequate, our DAO consulting services are meticulously tailored to diverse business scenarios.
-
-Engage with our experts to transform your concept into an industry-leading product that has the potential to disrupt the market.
-
-CONSULT OUR EXPERTS
-
-Our Comprehensive DAO Consulting Services
-Our wide array of services equips you with the tools needed to effectively launch your DAO into the market.
-
-              </p>
-              <p>
-              DAO Selection
-From the myriad DAO options available, choosing the right fit can be overwhelming. Our experts do the heavy lifting to guide you toward the optimal DAO model.
-
-Token Creation
-Crafting tailor-made DAO tokens to align with your unique business needs, we ensure you harness their full potential, leading to optimal business outcomes. We create utility and governance tokens for your DAO model.
-
-Governance Model
-Selecting an appropriate governance model can be intricate. We provide expert guidance on industry standards and legal documentation, aiding you in selecting the best organizational structure.
-
-Smart Contract Development
-Constructing a robust DAO governance model revolves around smart contracts. Our adept services assist you in developing custom smart contracts that prioritize institutional-grade security and streamline your business processes.
-
-Platform Creation
-A thriving DAO platform hinges on an intuitive user interface and expert insight. Our proficient team aids you in crafting an exceptional platform that aligns seamlessly with your vision.
-
-Community Building
-Nurturing a vibrant community within a DAO is pivotal yet challenging. Our expert services furnish optimal strategies to help you rise above the noise and successfully cultivate your community.
-
-Advantages of Leveraging Our DAO Consulting Services
-experience
-Expertise and Knowledge
-Our subject matter experts boast extensive familiarity with DAO technology, trends, and industry best practices. We offer invaluable insights, advice, and guidance to inform your informed DAO decisions.
-guidance
-Customized Solutions
-Our bespoke DAO solutions are tailored to meet your unique business requisites. These solutions are meticulously designed to address your distinct needs and aspirations, ensuring you attain optimal outcomes.
-income
-Cost-efficient Solutions
-Our DAO consulting services assist you in cost-effectively devising and implementing DAO solutions, steering clear of costly errors and ensuring your project stays within budget.
-back-in-time
-Time Efficiency
-Delegate the intricate and time-consuming aspects of your DAO project to our consulting services, saving you valuable time and enabling you to focus on other business-critical facets.
-customer-service
-Ongoing Support
-We offer continuous support and upkeep to ensure your DAO platform functions seamlessly. Our experts troubleshoot issues, oversee upgrades, and offer assistance whenever you require it.
-advantage
-Competitive Edge
-Harnessing our expertise empowers you with a competitive edge in your industry. You can adopt cutting-edge technology and innovative solutions that set your business apart from competitors.
-
-GET IN TOUCH ON WHATSAPP GET IN TOUCH ON TELEGRAM
-
-Embark on the Journey of Building Your DAO Platform
-Our seasoned DAO experts encompass a diverse skill set, including technology assessment, product design, prototyping, project development, quality assurance, security auditing, DevOps, and deployment. With real-world experience in delivering DAO solutions to global enterprises, we've established ourselves as a reliable and dependable DAO consulting firm.
-
-Share your business use case with us. Not only will we offer end-to-end DAO consulting services, but we'll also deliver tailor-made development solutions to transform your concept into reality. Unleash the potential of DAO for your business.
-
-CONSULT OUR EXPERTS
-
-Why Choose Us as Your Preferred DAO Consulting Partner?
-By partnering with AradChain Technologies, you're entrusting a team of technical experts armed with real-world experience in delivering comprehensive consulting services.
-
-tech
-Technical Expertise
-team
-Skilled Team
-development[1]
-Accelerated Development
-assistance
-Complete Support
-Group 60171
-Meaningful Outcomes
-Our Partners
-Our Clients
-Frequently Asked Questions
-
-1What Does a DAO Consulting Service Encompass?
-DAO consulting services encompass answering queries related to DAO and suggesting best practices for its construction. These services include various aspects such as DAO model selection, token creation, governance model, smart contract development, community building, and ongoing support.
-
-2What Considerations Should I Weigh When Selecting a DAO Consulting Service?
-3How Can a DAO Consulting Service Aid in Community Building?
-4How Can a DAO Consulting Service Assist in Governance Modeling?
-5What Sort of Ongoing Maintenance and Support Do DAO Consulting Services Provide After Project Completion?
-
-Discover More in Our Blogs
-
-Metaverse in the Manufacturing Industry: Role and Future Prospects
-The term "Metaverse" needs no introduction, as it has already woven itself into the fabric of our lives. The unending surge in […]
-READ MORE
-
-Breathing Life into the Metaverse: How AI Empowers NPCs
-Blockchain, metaverse, and artificial intelligence are the most remarkable innovations of the 21st century. These technologies have brought a big change in […]
-READ MORE
-
-White Label Crypto Bank
-How to Get Started with White Label Crypto Banking Platform?
-When opportunity knocks at the door, we all look for a quick and easy way to leverage it for a better […]
-READ MORE
-
-Our Expertise in Blockchain Technology
-We're here to engage in a friendly chat about your business requirements. No obligations, just effective technical support. Your inquiries and requests are most welcome!
-
-              </p>
+              <Heading>DAO Consulting Service</Heading>
             </div>
           </div>
+          
         </div>
       </div>
 
-      {/* Info Section */}
       <div className={style.infoSection}>
+        <div className={style.infoContainer}>
+          <div className="content">
+            <Text align={'center'} letterSpacing={1}>
+            Empowering you with knowledge, tools, and expertise, we pave the way for you to build your DAO efficiently.<strong>REQUEST YOUR FREE DEMO</strong>,Revolutionize the Market with Top-tier DAO Consulting Solutions.Irrespective of your query—whether it's as basic as understanding the benefits of DAO implementation for your existing business or as intricate as crafting a roadmap for your DAO development journey—we have all the solutions.Recognizing that one-size-fits-all solutions are inadequate, our DAO consulting services are meticulously tailored to diverse business scenarios.Engage with our experts to transform your concept into an industry-leading product that has the potential to disrupt the market.<strong>CONSULT OUR EXPERTS</strong>Our Comprehensive DAO Consulting Services.Our wide array of services equips you with the tools needed to effectively launch your DAO into the market.
+            </Text>
+            <Heading as='h2' size='2xl' letterSpacing={2} my={4} textAlign={'center'} mt={4} mb={4}>
+  DAO Selection
+</Heading>
+
+<Text align={'center'} letterSpacing={1}>
+  From the myriad DAO options available, choosing the right fit can be overwhelming. Our experts do the heavy lifting to guide you toward the optimal DAO model.
+</Text>
+
+<Text align={'center'} letterSpacing={1} mt={4}>
+  <strong>Token Creation</strong>
+  Crafting tailor-made DAO tokens to align with your unique business needs, we ensure you harness their full potential, leading to optimal business outcomes. We create utility and governance tokens for your DAO model.
+</Text>
+
+<Text align={'center'} letterSpacing={1} mt={4}>
+  <strong>Governance Model</strong>
+  Selecting an appropriate governance model can be intricate. We provide expert guidance on industry standards and legal documentation, aiding you in selecting the best organizational structure.
+</Text>
+
+<Text align={'center'} letterSpacing={1} mt={4}>
+  <strong>Smart Contract Development</strong>
+  Constructing a robust DAO governance model revolves around smart contracts. Our adept services assist you in developing custom smart contracts that prioritize institutional-grade security and streamline your business processes.
+</Text>
+
+<Text align={'center'} letterSpacing={1} mt={4}>
+  <strong>Platform Creation</strong>
+  A thriving DAO platform hinges on an intuitive user interface and expert insight. Our proficient team aids you in crafting an exceptional platform that aligns seamlessly with your vision.
+</Text>
+
+<Text align={'center'} letterSpacing={1} mt={4}>
+  <strong>Community Building</strong>
+  Nurturing a vibrant community within a DAO is pivotal yet challenging. Our expert services furnish optimal strategies to help you rise above the noise and successfully cultivate your community.
+</Text>
+
+<Heading as='h2' size='2xl' letterSpacing={2} my={4} textAlign={'center'} mt={4} mb={4}>
+  Advantages of Leveraging Our DAO Consulting Services
+</Heading>
+
+<Text align={'center'} letterSpacing={1}>
+  <strong>Experience</strong>
+  Our subject matter experts boast extensive familiarity with DAO technology, trends, and industry best practices. We offer invaluable insights, advice, and guidance to inform your informed DAO decisions.
+</Text>
+
+<Text align={'center'} letterSpacing={1} mt={4}>
+  <strong>Customized Solutions</strong>
+  Our bespoke DAO solutions are tailored to meet your unique business requisites. These solutions are meticulously designed to address your distinct needs and aspirations, ensuring you attain optimal outcomes.
+</Text>
+
+<Text align={'center'} letterSpacing={1} mt={4}>
+  <strong>Cost-efficient Solutions</strong>
+  Our DAO consulting services assist you in cost-effectively devising and implementing DAO solutions, steering clear of costly errors and ensuring your project stays within budget.
+</Text>
+
+<Text align={'center'} letterSpacing={1} mt={4}>
+  <strong>Time Efficiency</strong>
+  Delegate the intricate and time-consuming aspects of your DAO project to our consulting services, saving you valuable time and enabling you to focus on other business-critical facets.
+</Text>
+
+<Text align={'center'} letterSpacing={1} mt={4}>
+  <strong>Ongoing Support</strong>
+  We offer continuous support and upkeep to ensure your DAO platform functions seamlessly. Our experts troubleshoot issues, oversee upgrades, and offer assistance whenever you require it.
+</Text>
+
+<Text align={'center'} letterSpacing={1} mt={4}>
+  <strong>Competitive Edge</strong>
+  Harnessing our expertise empowers you with a competitive edge in your industry. You can adopt cutting-edge technology and innovative solutions that set your business apart from competitors.
+</Text>
+
+<Text align={'center'} letterSpacing={1} mt={4}>
+  GET IN TOUCH ON WHATSAPP GET IN TOUCH ON TELEGRAM
+</Text>
+
+<Heading as='h2' size='2xl' letterSpacing={2} my={4} textAlign={'center'} mt={4} mb={4}>
+  Embark on the Journey of Building Your DAO Platform
+</Heading>
+
+<Text align={'center'} letterSpacing={1}>
+  Our seasoned DAO experts encompass a diverse skill set, including technology assessment, product design, prototyping, project development, quality assurance, security auditing, DevOps, and deployment. With real-world experience in delivering DAO solutions to global enterprises, we've established ourselves as a reliable and dependable DAO consulting firm.
+</Text>
+
+<Text align={'center'} letterSpacing={1} mt={4}>
+  Share your business use case with us. Not only will we offer end-to-end DAO consulting services, but we'll also deliver tailor-made development solutions to transform your concept into reality. Unleash the potential of DAO for your business.
+</Text>
+
+<Heading as='h2' size='2xl' letterSpacing={2} my={4} textAlign={'center'} mt={4} mb={4}>
+  Why Choose Us as Your Preferred DAO Consulting Partner?
+</Heading>
+
+<Text align={'center'} letterSpacing={1}>
+  By partnering with AradChain Technologies, you're entrusting a team of technical experts armed with real-world experience in delivering comprehensive consulting services.
+</Text>
+<SimpleGrid minChildWidth='200px' spacing='20px' mt={10}>
+              <Card><CardBody><Text>Tech</Text></CardBody></Card>
+              <Card><CardBody><Text>Technical Expertise</Text></CardBody></Card>
+              <Card><CardBody><Text>Skilled Team</Text></CardBody></Card>
+              <Card><CardBody><Text>Development</Text></CardBody></Card>
+              <Card><CardBody><Text>Accelerated Development</Text></CardBody></Card>
+              <Card><CardBody><Text>Assistance</Text></CardBody></Card>
+              <Card><CardBody><Text>Complete Support</Text></CardBody></Card>
+              <Card><CardBody><Text>Group 60171</Text></CardBody></Card>
+              <Card><CardBody><Text>Meaning Full Outcomes</Text></CardBody></Card>
+              <Card><CardBody><Text>Our Partners and Clients</Text></CardBody></Card>
+</SimpleGrid>
+
+<Heading as='h2' size='2xl' letterSpacing={2} my={4} textAlign={'center'} mt={4} mb={4}>
+  Frequently Asked Questions
+</Heading>
+
+<Text align={'center'} letterSpacing={1}>
+  <strong>What Does a DAO Consulting Service Encompass?</strong>
+  <Text mt={4}>
+    DAO consulting services encompass answering queries related to DAO and suggesting best practices for its construction. These services include various aspects such as DAO model selection, token creation, governance model, smart contract development, community building, and ongoing support.
+  </Text>
+
+  <strong>What Considerations Should I Weigh When Selecting a DAO Consulting Service?</strong>
+  <strong>How Can a DAO Consulting Service Aid in Community Building?</strong>
+  <strong>How Can a DAO Consulting Service Assist in Governance Modeling?</strong>
+  <strong>What Sort of Ongoing Maintenance and Support Do DAO Consulting Services Provide After Project Completion?</strong>
+</Text>
+
+<Heading as='h2' size='2xl' letterSpacing={2} my={4} textAlign={'center'} mt={4} mb={4}>
+  Discover More in Our Blogs
+</Heading>
+
+<Text align={'center'} letterSpacing={1}>
+  Metaverse in the Manufacturing Industry: Role and Future Prospects
+  The term "Metaverse" needs no introduction, as it has already woven itself into the fabric of our lives. The unending surge in [...]
+  READ MORE
+
+  Breathing Life into the Metaverse: How AI Empowers NPCs
+  Blockchain, metaverse, and artificial intelligence are the most remarkable innovations of the 21st century. These technologies have brought a big change in [...]
+  READ MORE
+
+  White Label Crypto Bank
+  How to Get Started with White Label Crypto Banking Platform?
+  When opportunity knocks at the door, we all look for a quick and easy way to leverage it for a better [...]
+  READ MORE
+
+  Our Expertise in Blockchain Technology
+  We're here to engage in a friendly chat about your business requirements. No obligations, just effective technical support. Your inquiries and requests are most welcome!
+</Text>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      {/* Info Section */}
+      {/* <div className={style.infoSection}>
         <div className={style.infoContainer}>
           <div className={style.infoTop}>
             {data.about.map((ele) => {
@@ -165,18 +204,10 @@ We're here to engage in a friendly chat about your business requirements. No obl
             })}
           </div>
         </div>
-      </div>
-
-      {/* Crypto Section */}
-      {/* <div className={style.cryptoSection}>
-        <div className={style.cryptoContainer}>
-          <img src={crypto1} alt="crypto1" />
-          <img src={crypto2} alt="crypto2" />
-        </div>
-    </div> */}
+      </div> */}
 
       {/* Our Team */}
-      <div className={style.ourTeamSection}>
+      {/* <div className={style.ourTeamSection}>
         <div className={style.ourTeamContainer}>
           <h1>Our Team</h1>
           <p>
@@ -197,7 +228,7 @@ We're here to engage in a friendly chat about your business requirements. No obl
             })}
           </div>
         </div>
-      </div>
+      </div> */}
       <TelegramFloatingBtn />
       <FloatingWhatsApp
         phoneNumber="447778222221"
@@ -223,7 +254,9 @@ We're here to engage in a friendly chat about your business requirements. No obl
 
 
       {/* Need Solution */}
-      <Needsolution />
+      <Box mt={20}>
+        <Needsolution />
+      </Box>
 
       {/* Footer Section */}
       <Footer1 />
