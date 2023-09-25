@@ -71,6 +71,11 @@
     width: 30%;
     background: linear-gradient(89.98deg, #1CE3C7 -50.39%, #7668E7 99.98%);
 }
+.custom-icon {
+    background: linear-gradient(89.98deg, #1CE3C7 -50.39%, #7668E7 99.98%), #1CE3C7;
+    /* Other CSS properties for your component */
+  }
+  
 
 /* Footer  Bottom */
 .footerBottom{
@@ -109,6 +114,7 @@
 
 /* Mobile View */
 @media all and (max-width:900px) {
+    
     .footer1Container{
         width: 90%;
         flex-direction: column;
