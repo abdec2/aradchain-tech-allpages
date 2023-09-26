@@ -1,11 +1,9 @@
 import React from "react";
 import style from "./bfsiCDBC.module.css";
-// import image from '../../assets/aboutInfo2.png'
 import crypto1 from "../../assets/crypto1.png";
 import crypto2 from "../../assets/crypto2.png";
 import data from "../../database/data";
 import Whyus from "../../components/whyUs/Whyus";
-import Heading from "../../components/heading/Heading";
 import AboutStats from "../../components/aboutStats/AboutStats";
 import Team from "../../components/team/Team";
 import { Link } from "react-router-dom";
@@ -15,25 +13,29 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+
 const About = () => {
-  // console.log(data.aboutStatsData)
   return (
     <div className={style.aboutMain}>
       <div className={style.mainSection}>
         <div className={style.mainSectionContainer}>
-          <Heading heading="About" />
           <div className={style.mainSectionContent}>
             <div>
-              <img src={map} alt="" />
-              <h2>Central Bank Digital Currency</h2>
+              <Heading>Central Bank Digital Currency</Heading>
             </div>
-            <div>
-              <p>
-              Adopt a Universal Digital Payment Solution for the Digital Age.
+          </div>
+          
+        </div>
+      </div>
 
-CONNECT WITH OUR EXPERTS
-Central Bank Digital Currency:
-Shaping the Future Monetary Landscape
+      <div className={style.infoSection}>
+        <div className={style.infoContainer}>
+          <div className="content">
+            <Text align={'center'} letterSpacing={1}>
+            Adopt a Universal Digital Payment Solution for the Digital Age.
+
+Central Bank Digital Currency is shaping the future Monetary Landscape.
 The fusion of advanced technologies and the emergence of information systems have led to a revolution in the banking and financial domain. Financial institutions are embracing transformative shifts driven by innovative technologies like blockchain.
 
 The rise of Bitcoin and other cryptocurrencies acted as a catalyst for this revolution. The concept of digital currencies has gained significant traction, paving the way for the emergence of central bank digital currencies (CBDCs).
@@ -44,77 +46,131 @@ Central Bank-Issued Digital Currency:
 Transitioning from Concept to Design
 The Bank for International Settlements (BIS) has reported that more than 70% of central banks express interest in exploring central bank digital currencies. Initial CBDC trials have showcased their potential to enhance efficiency and transparency in central bank operations. Moreover, CBDCs empower central banks to leverage real-time data, reinforcing their decision-making processes.
 
-              </p>
-              <p>
-              LAUNCH YOUR CBDC
-AradChain Technologies's Expertise in Developing
-Central Bank-Backed Digital Currencies
-As numerous central banks delve into the possibilities of CBDCs and initiate pilot programs, the demand for central bank-issued digital currency development is on the rise.
 
-At AradChain Technologies Solutions, we offer top-tier solutions for developing digital central bank currencies. Our team of experienced blockchain engineers and subject matter experts chart a clear course for your development journey. Starting with a deep understanding of your specific requirements, we harness blockchain innovation to meet your unique infrastructure needs, address challenges, and realize your strategic vision.
+            </Text>
+            <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+  LAUNCH YOUR CBDC
+</Heading>
 
-Engage with our subject matter experts to discuss your business plan.
+<Text textAlign={'center'} mt={4}>
+  AradChain Technologies's Expertise in Developing Central Bank-Backed Digital Currencies
+</Text>
 
-CONNECT ON WHATSAPP CONNECT ON TELEGRAM
-Your Pathway to Successful CBDC Development
-STEP 1
+<Text textAlign={'center'} mt={4}>
+  As numerous central banks delve into the possibilities of CBDCs and initiate pilot programs, the demand for central bank-issued digital currency development is on the rise.
+</Text>
 
-Grasp the implications, risks, and opportunities presented by CBDCs.
+<Text textAlign={'center'} mt={4}>
+  At AradChain Technologies Solutions, we offer top-tier solutions for developing digital central bank currencies. Our team of experienced blockchain engineers and subject matter experts chart a clear course for your development journey. Starting with a deep understanding of your specific requirements, we harness blockchain innovation to meet your unique infrastructure needs, address challenges, and realize your strategic vision.
+</Text>
 
-STEP 2
+<Text textAlign={'center'} mt={4}>
+  Engage with our subject matter experts to discuss your business plan.
+</Text>
 
-Devising an intelligent strategy for seamless adoption across both business and technology aspects.
+<Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+  Your Pathway to Successful CBDC Development
+</Heading>
 
-STEP 3
+<Text textAlign={'center'} mt={4}>
+  <strong>STEP 1</strong>
+</Text>
 
-Evaluate, implement, and deploy the core technological infrastructure for central bank digital currency systems.
+<Text textAlign={'center'} mt={2}>
+  Grasp the implications, risks, and opportunities presented by CBDCs.
+</Text>
 
-STEP 4
+<Text textAlign={'center'} mt={4}>
+  <strong>STEP 2</strong>
+</Text>
 
-Strengthen CBDC systems with robust security measures and resilience protocols.
+<Text textAlign={'center'} mt={2}>
+  Devising an intelligent strategy for seamless adoption across both business and technology aspects.
+</Text>
 
-Why Opt for AradChain Technologies for Central Bank Digital Currency Development?Why Choose us
-Central Bank Digital Currency Development
-Tangible Outcomes
-We create measurable impacts, ensuring your investments yield value.
-Central Bank Digital Currency Development
-Swift Development
-We provide tailor-made solutions that resonate with your target audience. A well-structured roadmap expedites the development and deployment process.
-Central Bank Digital Currency Development
-Comprehensive Support
-Our commitment extends beyond product launch. We offer extensive post-delivery services, enabling you to focus on your growth.
-Central Bank Digital Currency Development
-Expert Team
-With over 300 experts, we refine your offerings, suggest optimal tech approaches, and assist in setting up communities and campaigns.
-TALK TO US ON WHATSAPP TALK TO US ON TELEGRAM
-By joining forces with AradChain Technologies, you gain access to a team of technical experts armed with real-world experience in crafting success stories.
+<Text textAlign={'center'} mt={4}>
+  <strong>STEP 3</strong>
+</Text>
 
-A Glimpse into Our Blogs
+<Text textAlign={'center'} mt={2}>
+  Evaluate, implement, and deploy the core technological infrastructure for central bank digital currency systems.
+</Text>
 
-Maximizing Profits With Crypto Arbitrage Bot in 2023
-As cryptocurrency trading has become increasingly popular, there has been a constant buzz around crypto arbitrage bots. This groundbreaking development empowers traders […]
-READ MORE
+<Text textAlign={'center'} mt={4}>
+  <strong>STEP 4</strong>
+</Text>
 
-How to Develop a Poloniex-like Bitcoin Exchange Software
-Table of Contents Introduction What is Poloniex? Salient Features of Bitcoin Exchange Software Modeled After Poloniex Setting Up Your Exchange Platform Using […]
-READ MORE
+<Text textAlign={'center'} mt={2}>
+  Strengthen CBDC systems with robust security measures and resilience protocols.
+</Text>
 
-From Bland To Brilliant: Building Advanced Crypto Exchange Software in 2023
-The onset of 2023 witnessed a robust cryptocurrency market, and as the year progressed, we observed market fluctuations and the entry of […]
-READ MORE
-Our Proficiency in Blockchain Technology
-We are ready for a friendly chat to delve into your business needs, obligation-free.
+<Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+  Why Opt for AradChain Technologies for Central Bank Digital Currency Development?
+</Heading>
 
-We are dedicated to offering technical support, open to inquiries and requests.
+<Text textAlign={'center'} mt={4}>
+  <strong>Tangible Outcomes</strong>
+  We create measurable impacts, ensuring your investments yield value.
+</Text>
 
-              </p>
-            </div>
+<Text textAlign={'center'} mt={4}>
+  <strong>Swift Development</strong>
+  We provide tailor-made solutions that resonate with your target audience. A well-structured roadmap expedites the development and deployment process.
+</Text>
+
+<Text textAlign={'center'} mt={4}>
+  <strong>Comprehensive Support</strong>
+  Our commitment extends beyond product launch. We offer extensive post-delivery services, enabling you to focus on your growth.
+</Text>
+
+<Text textAlign={'center'} mt={4}>
+  <strong>Expert Team</strong>
+  With over 300 experts, we refine your offerings, suggest optimal tech approaches, and assist in setting up communities and campaigns.
+</Text>
+
+<Text textAlign={'center'} mt={4}>
+  By joining forces with AradChain Technologies, you gain access to a team of technical experts armed with real-world experience in crafting success stories.
+</Text>
+
+<Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+  A Glimpse into Our Blogs
+</Heading>
+
+<Text textAlign={'center'} mt={4}>
+  <strong>Maximizing Profits With Crypto Arbitrage Bot in 2023</strong>
+  As cryptocurrency trading has become increasingly popular, there has been a constant buzz around crypto arbitrage bots. This groundbreaking development empowers traders [...]
+</Text>
+
+<Text textAlign={'center'} mt={4}>
+  <strong>How to Develop a Poloniex-like Bitcoin Exchange Software</strong>
+  Table of Contents Introduction What is Poloniex? Salient Features of Bitcoin Exchange Software Modeled After Poloniex Setting Up Your Exchange Platform Using [...]
+</Text>
+
+<Text textAlign={'center'} mt={4}>
+  <strong>From Bland To Brilliant: Building Advanced Crypto Exchange Software in 2023</strong>
+  The onset of 2023 witnessed a robust cryptocurrency market, and as the year progressed, we observed market fluctuations and the entry of [...]
+</Text>
+
+<Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+  Our Proficiency in Blockchain Technology
+</Heading>
+
+<Text textAlign={'center'} mt={4}>
+  We are ready for a friendly chat to delve into your business needs, obligation-free.
+</Text>
+
+<Text textAlign={'center'} mt={4}>
+  We are dedicated to offering technical support, open to inquiries and requests.
+</Text>
+ 
           </div>
+
         </div>
+
       </div>
 
       {/* Info Section */}
-      <div className={style.infoSection}>
+      {/* <div className={style.infoSection}>
         <div className={style.infoContainer}>
           <div className={style.infoTop}>
             {data.about.map((ele) => {
@@ -135,18 +191,10 @@ We are dedicated to offering technical support, open to inquiries and requests.
             })}
           </div>
         </div>
-      </div>
-
-      {/* Crypto Section */}
-      {/* <div className={style.cryptoSection}>
-        <div className={style.cryptoContainer}>
-          <img src={crypto1} alt="crypto1" />
-          <img src={crypto2} alt="crypto2" />
-        </div>
-    </div> */}
+      </div> */}
 
       {/* Our Team */}
-      <div className={style.ourTeamSection}>
+      {/* <div className={style.ourTeamSection}>
         <div className={style.ourTeamContainer}>
           <h1>Our Team</h1>
           <p>
@@ -167,7 +215,7 @@ We are dedicated to offering technical support, open to inquiries and requests.
             })}
           </div>
         </div>
-      </div>
+      </div> */}
       <TelegramFloatingBtn />
       <FloatingWhatsApp
         phoneNumber="447778222221"
@@ -193,7 +241,9 @@ We are dedicated to offering technical support, open to inquiries and requests.
 
 
       {/* Need Solution */}
-      <Needsolution />
+      <Box mt={20}>
+        <Needsolution />
+      </Box>
 
       {/* Footer Section */}
       <Footer1 />
