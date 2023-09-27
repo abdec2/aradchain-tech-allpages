@@ -484,7 +484,12 @@ form > input:nth-child(3) {
 }
 
 /* Laptop View ------------------------------------------ */
-@media all and (min-width: 901px) and (max-width: 1250px) {
+
+@media all and (min-width: 901px) and (max-width: 1280px) {
+  .buttonposition {
+    margin-top: 48%;
+    margin-left: -41%;
+  }
   .heroSectionContainer {
     width: 90%;
   }
@@ -503,7 +508,9 @@ form > input:nth-child(3) {
 
   /* About Section */
   .aboutSectionContainer {
-    width: 90%;
+    width: 76%;
+    margin-left: 4%;
+
   }
   .aboutTextBox {
     width: 58%;

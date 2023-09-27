@@ -344,8 +344,8 @@ const Home = () => {
             {dataCard.map((ele) => {
               return <AnimatedCard ele={ele} />;
             })}
-            <div>
-            <Stack spacing={4} mt={"1%"} direction="row" align="center">
+            <div className={style.buttonposition}>
+            <Stack  spacing={4} mt={"1%"} direction="row" align="center">
               <Link to="https://t.me/aradchain" target="_blank">
                 <Button
                   size={window.innerWidth <= 680 ? "xs" : "md"} // Check the window width and change button size accordingly
