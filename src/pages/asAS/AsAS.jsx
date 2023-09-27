@@ -131,7 +131,7 @@ Get in touch with us for a friendly chat about your business needs, and we're he
       </div> */}
       <TelegramFloatingBtn />
       <FloatingWhatsApp
-        phoneNumber="447778222221"
+       phoneNumber="+447432284026"
         accountName="AradChain Support"
         chatMessage="Welcome to AradChain Technologies. One of our representative will be with you shortly."
         allowEsc

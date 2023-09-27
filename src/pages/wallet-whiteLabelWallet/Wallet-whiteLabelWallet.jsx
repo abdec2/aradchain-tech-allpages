@@ -583,7 +583,7 @@ Table of Contents Introduction Understanding the Essence of White-Label Crypto W
       </div> */}
       <TelegramFloatingBtn />
       <FloatingWhatsApp
-        phoneNumber="447778222221"
+       phoneNumber="+447432284026"
         accountName="AradChain Support"
         chatMessage="Welcome to AradChain Technologies. One of our representative will be with you shortly."
         allowEsc

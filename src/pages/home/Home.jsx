@@ -355,7 +355,7 @@ const Home = () => {
                   Connect on Telegram
                 </Button>
               </Link>
-              <Link to="https://wa.me/97333227262" target="_blank">
+              <Link to="https://wa.me/+447432284026" target="_blank">
                 <Button
                   size={window.innerWidth <= 680 ? "xs" : "md"} // Check the window width and change button size accordingly
                   rightIcon={<MdCall />}
@@ -843,7 +843,7 @@ const Home = () => {
 
       <TelegramFloatingBtn />
       <FloatingWhatsApp
-        phoneNumber="447778222221"
+       phoneNumber="+447432284026"
         accountName="AradChain Support"
         chatMessage="Welcome to AradChain Technologies. One of our representative will be with you shortly."
         allowEsc
