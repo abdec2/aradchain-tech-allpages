@@ -13,7 +13,8 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 
 const About = () => {
@@ -29,13 +30,37 @@ const About = () => {
           
         </div>
       </div>
-
-      <div className={style.infoSection}>
+       <div className={style.infoSection}>
         <div className={style.infoContainer}>
           <div className="content">
             <Text align={'center'} letterSpacing={1}>
             Hybrid Crypto Exchange Software: Integrating the Strengths of Centralized and Decentralized Exchanges Centralized and decentralized exchanges have played significant roles in the cryptocurrency landscape since its inception. Centralized exchanges are known for their high liquidity and fast transaction speeds. On the other hand, decentralized exchanges prioritize anonymity and robust security. However, both types of exchanges face certain drawbacks. Centralized exchanges are vulnerable to hacking and often charge high transaction fees, while decentralized exchanges struggle with handling high-frequency transactions. These limitations have given rise to the concept of a hybrid crypto exchange. A hybrid exchange aims to combine the advantages of centralized and decentralized exchanges. This entails offering the high liquidity and rapid transactions of centralized exchanges, coupled with the anonymity and security features characteristic of decentralized exchanges. Given these benefits, hybrid exchanges are garnering attention among traders and businesses aiming to establish their own crypto trading platforms.
             </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+              <Text textAlign={'center'} mt={4}>
+                <Button
+                  size={window.innerWidth <= 680 ? "xs" : "md"} // Check the window width and change button size accordingly
+                  rightIcon={<MdCall />}
+                  colorScheme="telegram"
+                >
+                  Connect on Telegram
+                </Button>
+                <Link to="https://wa.me/+447432284026" target="_blank">
+                <Button
+                  ml={5}
+                  size={window.innerWidth <= 680 ? "xs" : "md"} // Check the window width and change button size accordingly
+                  rightIcon={<MdCall />}
+                  colorScheme="whatsapp"
+                >
+                  Connect on Whatsapp
+                </Button>
+              </Link>
+            
+                </Text>
+              
+              </Link>
+             
+
             <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
             EMBARK ON YOUR HYBRID EXCHANGE JOURNEY
             </Heading>
@@ -49,51 +74,51 @@ const About = () => {
             <SimpleGrid minChildWidth='200px' spacing='20px' mt={10}>
             <Card>
   <CardBody>
-    <Text>High Liquidity: Our hybrid exchanges incorporate options such as API connections or market maker integrations to ensure robust liquidity.</Text>
+    <Text><strong>High Liquidity:</strong> Our hybrid exchanges incorporate options such as API connections or market maker integrations to ensure robust liquidity.</Text>
   </CardBody>
 </Card>
 <Card>
   <CardBody>
-    <Text>Two-Factor Authentication: A seamless two-factor authentication process enhances security by confirming legitimate user access to the exchange.</Text>
+    <Text><strong>Two-Factor Authentication:</strong> A seamless two-factor authentication process enhances security by confirming legitimate user access to the exchange.</Text>
   </CardBody>
 </Card>
 <Card>
   <CardBody>
-    <Text>Smart Contract Integration: Immutable smart contracts enable automated verification and seamless processing of transactions.</Text>
+    <Text><strong>Smart Contract Integration:</strong> Immutable smart contracts enable automated verification and seamless processing of transactions.</Text>
   </CardBody>
 </Card>
 <Card>
   <CardBody>
-    <Text>Payment Gateway Integration: The integration of multiple secure payment gateways allows users to make payments using their preferred methods.</Text>
+    <Text><strong>Payment Gateway Integration:</strong> The integration of multiple secure payment gateways allows users to make payments using their preferred methods.</Text>
   </CardBody>
 </Card>
 <Card>
   <CardBody>
-    <Text>User-Friendly Dashboard: An intuitive user dashboard simplifies trading and facilitates fund management for exchange users.</Text>
+    <Text><strong>User-Friendly Dashboard:</strong> An intuitive user dashboard simplifies trading and facilitates fund management for exchange users.</Text>
   </CardBody>
 </Card>
 <Card>
   <CardBody>
-    <Text>Robust Admin Panel: An institutional-grade admin panel assists exchange owners in effectively managing user profiles and activities.</Text>
+    <Text><strong>Robust Admin Panel:</strong> An institutional-grade admin panel assists exchange owners in effectively managing user profiles and activities.</Text>
   </CardBody>
 </Card>
 <Card>
   <CardBody>
-    <Text>Secure and Swift Transactions: High-performance trading tools integrated into the platform enable secure and rapid transactions.</Text>
+    <Text><strong>Secure and Swift Transactions: </strong>High-performance trading tools integrated into the platform enable secure and rapid transactions.</Text>
   </CardBody>
 </Card>
 <Card>
   <CardBody>
-    <Text>Institutional-Grade Security: Security features such as two-factor authentication and KYC help maintain a high level of security for safe and risk-free trading.</Text>
+    <Text><strong>Institutional-Grade Security: </strong>Security features such as two-factor authentication and KYC help maintain a high level of security for safe and risk-free trading.</Text>
   </CardBody>
 </Card>
 <Card>
   <CardBody>
-    <Text>KYC Verification: KYC verification comes into play when large withdrawal amounts are requested, ensuring legitimate transactions.</Text>
+    <Text><strong>KYC Verification:</strong> KYC verification comes into play when large withdrawal amounts are requested, ensuring legitimate transactions.</Text>
   </CardBody>
 </Card>
 </SimpleGrid>
-<Text align={'center'} letterSpacing={1} mt={10}> Launch your hybrid exchange equipped with advanced features to lead the industry.</Text>
+<Text align={'center'} letterSpacing={1} mt={10}> <strong>Launch your hybrid exchange equipped with advanced features to lead the industry.</strong></Text>
             <SimpleGrid minChildWidth='200px' spacing='20px' mt={10}>
               <Card>
   <CardBody>

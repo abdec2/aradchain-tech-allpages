@@ -13,7 +13,8 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   // console.log(data.aboutStatsData)
@@ -34,23 +35,42 @@ const About = () => {
         <div className={style.infoContainer}>
           <div className="content">
             <Text align={'center'} letterSpacing={1}>
-            WORTH NOTING! As per the "Crypto Market Sizing" report by Imarc Group, the global cryptocurrency market reached an estimated value of $2,019 billion in 2022 and is projected to grow at a CAGR of 11.7%, reaching approximately $4,008 billion by 2028.
+           <strong>WORTH NOTING!</strong>  As per the "Crypto Market Sizing" report by Imarc Group, the global cryptocurrency market reached an estimated value of $2,019 billion in 2022 and is projected to grow at a CAGR of 11.7%, reaching approximately $4,008 billion by 2028.
               White Label Cryptocurrency Exchange is your Gateway to Competitive Edge in the Crypto Realm With an ever-increasing number of users globally and a consistently rising adoption rate in recent years, cryptocurrency has surpassed its status as a mere buzzword. The expanding market capitalization, influential newcomers in the crypto domain, and the limitless possibilities introduced by distributed ledger technology all contribute to its exponential popularity. This widespread acceptance of digital currency creates vast opportunities for exchange businesses.
               White label cryptocurrency exchange development provides businesses with a strategic advantage, offering a quick, straightforward, and cost-effective way to launch digital asset trading software. AradChain Technologies offers a top-notch pre-built crypto trading platform with a customizable front-end and a deployable backend. Initiate your crypto trading venture efficiently using a white label cryptocurrency exchange script, bolstered with exceptional features, an appealing user interface, and robust security.
            </Text>
+           <Link to="https://t.me/aradchain" target="_blank">
+              <Text textAlign={'center'} mt={4}>
+                <Button
+                  size={window.innerWidth <= 680 ? "xs" : "md"} // Check the window width and change button size accordingly
+                  rightIcon={<MdCall />}
+                  colorScheme="telegram"
+                >
+                  Connect on Telegram
+                </Button>
+                <Link to="https://wa.me/+447432284026" target="_blank">
+                <Button
+                  ml={5}
+                  size={window.innerWidth <= 680 ? "xs" : "md"} // Check the window width and change button size accordingly
+                  rightIcon={<MdCall />}
+                  colorScheme="whatsapp"
+                >
+                  Connect on Whatsapp
+                </Button>
+              </Link>
+            
+                </Text>
+              
+              </Link>
+             
+
             <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
             CONNECT WITH OUR EXPERTS
             </Heading>
 
             <Text align={'center'} letterSpacing={1}>
             A Ready-to-Market White Label Crypto Exchange AradChain Technologies specializes in crafting market-ready white label crypto trading platforms for forward-thinking businesses aiming for success in the cryptocurrency market. White label crypto exchange development significantly reduces costs. The factors influencing the cost of white label crypto exchange solutions include
-              <a href="#" style={{ fontSize: "20px" }}>
-                &nbsp;SCHEDULE A FREE DEMO
-              </a>
-              , Gain a competitive advantage in the industry and swiftly
-              establish a revenue stream using our cryptocurrency exchange
-              script solutions. CONNECT VIA WHATSAPP CONNECT VIA TELEGRAM
-            </Text>
+              </Text>
             
 
             <SimpleGrid minChildWidth='200px' spacing='20px' mt={10}>

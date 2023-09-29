@@ -13,7 +13,9 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -33,10 +35,37 @@ const About = () => {
         <div className={style.infoContainer}>
           <div className="content">
             <Text align={'center'} letterSpacing={1}>
-            Development of Secure Token Exchange Platforms Security tokens are revolutionizing the landscape of fundraising. As a catalyst for legally compliant fundraising, security tokens are rapidly gaining popularity, widespread traction, and global acceptance. With the increasing demand for security tokens, the imperative need for a robust security token exchange platform to facilitate the trading of these tokens emerges.  A security token exchange operates within the realm of Alternative Trading Systems (ATS), regulated as broker-dealers. ATS platforms provide a marketplace that connects buyers and sellers of securities.Our proficiency in technology, IT management, and blockchain positions us as a reliable security token exchange development company. Our adept team of blockchain developers possesses expertise in every facet of STO exchange development – encompassing design, functionality, security, performance, and SEC compliance. Our well-structured roadmap, combined with strategically aligned activities, expedites the deployment process. Embark on your STO exchange development journey with AradChain Technologies Solutions to harness an unparalleled opportunity to maintain a competitive edge.CONNECT VIA WHATSAPP CONNECT VIA TELEGRAM
-            Features Embedded in Our Security Token Exchange,our STO exchange platform boasts a range of features designed to ensure top-tier security and user experience.
+            Development of Secure Token Exchange Platforms Security tokens are revolutionizing the landscape of fundraising. As a catalyst for legally compliant fundraising, security tokens are rapidly gaining popularity, widespread traction, and global acceptance. With the increasing demand for security tokens, the imperative need for a robust security token exchange platform to facilitate the trading of these tokens emerges.  A security token exchange operates within the realm of Alternative Trading Systems (ATS), regulated as broker-dealers. ATS platforms provide a marketplace that connects buyers and sellers of securities.Our proficiency in technology, IT management, and blockchain positions us as a reliable security token exchange development company. Our adept team of blockchain developers possesses expertise in every facet of STO exchange development – encompassing design, functionality, security, performance, and SEC compliance. Our well-structured roadmap, combined with strategically aligned activities, expedites the deployment process. Embark on your STO exchange development journey with AradChain Technologies Solutions to harness an unparalleled opportunity to maintain a competitive edge.Features Embedded in Our Security Token Exchange,our STO exchange platform boasts a range of features designed to ensure top-tier security and user experience.
 
             </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
+
+             
             <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>Security Exchange Development</Heading>
 <Text align={'center'} letterSpacing={2} marginTop={4}>Our premier security token exchange platform integrates a robust matching engine capable of efficiently pairing buy and sell orders at lightning speed. This engine accommodates diverse order types, including market, limit, and stop orders.</Text>
 
@@ -114,10 +143,11 @@ We oversee every facet of security token trading platform development to propel 
 <Text align={'center'} letterSpacing={2} marginTop={4}>What role does the broker-dealer component play in an STO exchange?</Text>
 <Text align={'center'} letterSpacing={2} marginTop={4}>In what ways can STO impact the global landscape?</Text>
 
-<Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>Our Proficiency in Blockchain Technology
-
-We're available for a friendly conversation to discuss your business requirements, without any obligation.
-</Heading>            
+<Text  letterSpacing={2} my={5} textAlign={'center'} mt={6} mb={10}>
+ <strong>
+ Our Proficiency in Blockchain Technology We're available for a friendly conversation to discuss your business requirements, without any obligation.
+ </strong>
+</Text>            
   </div>
 
 </div>

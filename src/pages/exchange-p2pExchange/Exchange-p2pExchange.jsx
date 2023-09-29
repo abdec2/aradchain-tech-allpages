@@ -13,7 +13,9 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -35,6 +37,30 @@ const About = () => {
             <Text align={'center'} letterSpacing={1}>
             Development of Secure Token Exchange Platforms Security tokens are revolutionizing the landscape of fundraising. As a catalyst for legally compliant fundraising, security tokens are rapidly gaining popularity, widespread traction, and global acceptance. With the increasing demand for security tokens, the imperative need for a robust security token exchange platform to facilitate the trading of these tokens emerges. A security token exchange operates within the realm of Alternative Trading Systems (ATS), regulated as broker-dealers. ATS platforms provide a marketplace that connects buyers and sellers of securities. Our proficiency in technology, IT management, and blockchain positions us as a reliable security token exchange development company. Our adept team of blockchain developers possesses expertise in every facet of STO exchange development – encompassing design, functionality, security, performance, and SEC compliance. Our well-structured roadmap, combined with strategically aligned activities, expedites the deployment process. Embark on your STO exchange development journey with AradChain Technologies Solutions to harness an unparalleled opportunity to maintain a competitive edge.
             </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+              <Text textAlign={'center'} mt={4}>
+                <Button
+                  size={window.innerWidth <= 680 ? "xs" : "md"} // Check the window width and change button size accordingly
+                  rightIcon={<MdCall />}
+                  colorScheme="telegram"
+                >
+                  Connect on Telegram
+                </Button>
+                <Link to="https://wa.me/+447432284026" target="_blank">
+                <Button
+                  ml={5}
+                  size={window.innerWidth <= 680 ? "xs" : "md"} // Check the window width and change button size accordingly
+                  rightIcon={<MdCall />}
+                  colorScheme="whatsapp"
+                >
+                  Connect on Whatsapp
+                </Button>
+              </Link>
+            
+                </Text>
+              
+              </Link>
+             
             <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
             Features Embedded in Our Security Token Exchange
             </Heading>
@@ -42,63 +68,63 @@ const About = () => {
             <SimpleGrid minChildWidth='200px' spacing='20px' mt={10}>
             <Card>
     <CardBody>
-        <Text>Robust Matching Engine</Text>
+        <Text><strong>Robust Matching Engine</strong></Text>
         <Text>Our premier security token exchange platform integrates a robust matching engine capable of efficiently pairing buy and sell orders at lightning speed. This engine accommodates diverse order types, including market, limit, and stop orders.</Text>
     </CardBody>
 </Card>
 
 <Card>
     <CardBody>
-        <Text>Hot Wallet Integration</Text>
+        <Text><strong>Hot Wallet Integration</strong></Text>
         <Text>We incorporate a resilient multi-crypto hot wallet into our security token exchange, bolstered by leading security features such as multi-signature support, secure storage, and seamless transactions for various cryptocurrencies.</Text>
     </CardBody>
 </Card>
 
 <Card>
     <CardBody>
-        <Text>Multi-layered Security</Text>
+        <Text><strong>Multi-layered Security</strong></Text>
         <Text>Each security token exchange we provide is fortified with advanced security solutions, including two-factor authentication, data encryption, SSL encryption, HTTP authentication, anti-Distributed Denial of Service (DDoS) measures, Cross-Site Request Forgery (CSRF) Protection, and more.</Text>
     </CardBody>
 </Card>
 
 <Card>
     <CardBody>
-        <Text>API Integration with External Exchange</Text>
+        <Text><strong>API Integration with External Exchange</strong></Text>
         <Text>We establish a secure API connection to an external security token exchange platform to ensure heightened liquidity for your exchange. Liquidity is influenced by the funds deposited in the external exchange's account.</Text>
     </CardBody>
 </Card>
 
 <Card>
     <CardBody>
-        <Text>Payment Gateway Incorporation</Text>
+        <Text><strong>Payment Gateway Incorporation</strong></Text>
         <Text>A payment gateway is seamlessly integrated into our security token exchange, enabling users to transact tokens using fiat currencies through credit cards, debit cards, and other payment systems, enhancing the overall user experience.</Text>
     </CardBody>
 </Card>
 
 <Card>
     <CardBody>
-        <Text>Multi-currency Transactions</Text>
+        <Text><strong>Multi-currency Transactions</strong></Text>
         <Text>Our scalable security token exchange platform effortlessly accommodates the integration of multiple cryptocurrencies as per your business requirements. Additionally, the exchange supports a plethora of fiat currencies.</Text>
     </CardBody>
 </Card>
 
 <Card>
     <CardBody>
-        <Text>Multi-language Support</Text>
+        <Text><strong>Multi-language Support</strong></Text>
         <Text>The incorporation of multi-language support expands the global reach of your STO exchange platform. Integration with major languages like English, Russian, French, Spanish, Arabic, and more ensures seamless communication.</Text>
     </CardBody>
 </Card>
 
 <Card>
     <CardBody>
-        <Text>KYC and AML Verification</Text>
+        <Text><strong>KYC and AML Verification</strong></Text>
         <Text>Geographically oriented KYC protocols facilitate secure user identity verification, ensuring only legitimate and authenticated users gain access to your security token exchange.</Text>
     </CardBody>
 </Card>
 
 <Card>
     <CardBody>
-        <Text>Trustworthy Escrow System</Text>
+        <Text><strong>Trustworthy Escrow System</strong></Text>
         <Text>A secure, smart-contract-based escrow system facilitates direct trading between users, automating and expediting payment processing.</Text>
     </CardBody>
 </Card>

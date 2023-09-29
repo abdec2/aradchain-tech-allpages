@@ -13,7 +13,8 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -35,6 +36,30 @@ const About = () => {
             <Text align={'center'} letterSpacing={1}>
             Margin trading has emerged as a prevailing trend in the cryptocurrency market. This practice involves borrowing funds to amplify potential gains when trading cryptocurrencies. Through margin trading, traders can utilize increased buying or selling power, enabling them to initiate positions that exceed their actual account balance. For instance, if a trader possesses a balance of 5 BTC and opts for 10X leverage (equivalent to 10 times their account value), they can open a position valued at 50 BTC. This means that if market conditions are favorable, traders can enhance their profits by a factor of 10. The opportunity to multiply earnings has positioned margin trading as a favored option among crypto traders. Recognizing this, crypto exchange proprietors are integrating margin trading into their platforms to attract more users and bolster their revenue. At AradChain Technologies, we specialize in developing leverage and margin trading exchanges that empower users to take long or short positions on multiple cryptocurrencies. At the heart of each margin trading exchange we create lies institutional-grade security and a potent trading engine, ensuring secure and swift transactions.
             </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+              <Text textAlign={'center'} mt={4}>
+                <Button
+                  size={window.innerWidth <= 680 ? "xs" : "md"} // Check the window width and change button size accordingly
+                  rightIcon={<MdCall />}
+                  colorScheme="telegram"
+                >
+                  Connect on Telegram
+                </Button>
+                <Link to="https://wa.me/+447432284026" target="_blank">
+                <Button
+                  ml={5}
+                  size={window.innerWidth <= 680 ? "xs" : "md"} // Check the window width and change button size accordingly
+                  rightIcon={<MdCall />}
+                  colorScheme="whatsapp"
+                >
+                  Connect on Whatsapp
+                </Button>
+              </Link>
+            
+                </Text>
+              
+              </Link>
+             
             <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
             Advantages of Leverage and Margin Trading Exchange Software
             </Heading>

@@ -13,7 +13,9 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -35,8 +37,34 @@ const About = () => {
             <Text align={'center'} letterSpacing={1}>
             Development of Decentralized Exchange Software Empower financial autonomy through truly decentralized exchange software Since their inception in 2014, solutions involving decentralized crypto exchange software have been gradually reshaping the landscape of cryptocurrency trading, elevating user experience and accessibility. Decentralized exchanges (DEXs) are crypto trading platforms that utilize smart contracts to facilitate buy or sell orders, eliminating the necessity for any centralized entity to oversee or authorize transactions within a trading ecosystem.In recent years, decentralized exchange software solutions have undergone significant evolution, positioning themselves to challenge established centralized exchanges (CEXs). The new generation of DEXs emerging in the Web3 era offers numerous benefits to businesses and individuals alike. These advantages encompass enhanced data security, reduced risks, improved overall efficiency, increased liquidity, and an enriched user experience.AradChain Technologies's expertise and experience in crafting innovative solutions ensure that your decentralized crypto exchange software aligns seamlessly with the Web3 vision and is well-prepared to navigate the evolving crypto landscape.Embark on your journey towards a future-ready decentralized exchange development with AradChain Technologies!
              </Text>
+             <Link to="https://t.me/aradchain" target="_blank">
+  <Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
              <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>White Label Decentralized Exchange:</Heading>
-<Heading as='h3' size='xl' letterSpacing={2} my={3} textAlign={'center'} mt={6} mb={6}>For 2X Cost Efficiency and Faster DEX Deployment</Heading>
+<Text letterSpacing={2} my={3} textAlign={'center'} mt={6} mb={6}><strong>For 2X Cost Efficiency and Faster DEX Deployment</strong></Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
     The cryptocurrency exchange industry is swiftly moving toward a promising future, with an ever-growing number of entrepreneurs and users entering the scene. Consequently, the industry has turned increasingly competitive, underscoring the pivotal role of time in achieving success. As a leading white label decentralized exchange software development company, we strive to provide an innovative solution for entering the decentralized exchange sector. Our signature white label DEX exchange, meticulously crafted to adhere to the highest industry standards for performance and security, serves as a potent tool to empower users to trade securely and seamlessly.

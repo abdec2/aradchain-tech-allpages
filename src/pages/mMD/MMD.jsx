@@ -13,7 +13,8 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -35,6 +36,32 @@ const About = () => {
             <Text align={'center'} letterSpacing={1}>
             Expand the limits of what's achievable in the digital realm with AradChain Technologies's comprehensive Metaverse development solutions.<strong>VIEW LIVE DEMO REQUEST FREE DEMO</strong>.Metaverse Development Venturing Beyond Reality.The Metaverse is not just a far-off concept anymore; it's a dynamic digital universe that's evolving in the present. This immersive virtual world is reshaping how we work, play, socialize, and conduct business from the comfort of our homes. Whether you're an entrepreneur aiming to launch a virtual store, a gaming enthusiast, or someone eager to redefine human interaction, AradChain Technologies excels in Metaverse development. We bring your vision to life with the right tools, expertise, and dedication.At AradChain Technologies, our commitment to Metaverse development goes beyond creating next-gen experiences. Our experts empower you with the insights needed to thrive in this ever-evolving digital landscape. With a deep understanding of user engagement and seamless integration, our Metaverse development offers unmatched experiences. We're not just constructing digital realms; we're crafting virtual ecosystems where you can immerse yourself in digital avatars.<strong>CONNECT VIA WHATSAPP CONNECT VIA TELEGRAM</strong>
             </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
             <Heading as='h2' size='2xl' letterSpacing={2} my={4} textAlign={'center'} mt={4} mb={4}>
   Metaverse Application Development for Transforming Ideas
 </Heading>
@@ -74,43 +101,40 @@ const About = () => {
 </Text>
 
 <Text align={'center'} letterSpacing={1} mt={4}>
-  <strong>Avatar Variety</strong>
-  Customize your virtual presence with a plethora of options, from skin tone and attire to body shape, reflecting your unique style and personality.
+  <strong>Avatar Variety: </strong>
+   Customize your virtual presence with a plethora of options, from skin tone and attire to body shape, reflecting your unique style and personality.
+</Text> 
+
+<Text align={'center'} letterSpacing={1} mt={4}>
+  <strong>Virtual Marketplaces: </strong>
+   Engage in a thriving ecosystem of virtual commerce where you can explore, trade, and own a range of digital assets, collectibles, and unique items of real value.
 </Text>
 
 <Text align={'center'} letterSpacing={1} mt={4}>
-  <strong>Virtual Marketplaces</strong>
-  Engage in a thriving ecosystem of virtual commerce where you can explore, trade, and own a range of digital assets, collectibles, and unique items of real value.
+  <strong>Gamification Elements: </strong>
+   Our solution merges virtual reality with exclusive gamification elements, making interactions rewarding, engaging, and captivating, pushing the boundaries of entertainment.
 </Text>
 
 <Text align={'center'} letterSpacing={1} mt={4}>
-  <strong>Gamification Elements</strong>
-  Our solution merges virtual reality with exclusive gamification elements, making interactions rewarding, engaging, and captivating, pushing the boundaries of entertainment.
+  <strong>Multiplayer Interaction: </strong>
+   Connect with a global community of like-minded individuals through our Metaverse development solutions. Collaborate, compete, and form friendships in real time.
 </Text>
 
 <Text align={'center'} letterSpacing={1} mt={4}>
-  <strong>Multiplayer Interaction</strong>
-  Connect with a global community of like-minded individuals through our Metaverse development solutions. Collaborate, compete, and form friendships in real time.
+  <strong>Chat and Voice Communication: </strong>
+   Converse with fellow explorers via text or voice communication, powered by AR/VR technology, fostering meaningful connections, teamwork, and the exchange of ideas.
 </Text>
 
 <Text align={'center'} letterSpacing={1} mt={4}>
-  <strong>Chat and Voice Communication</strong>
-  Converse with fellow explorers via text or voice communication, powered by AR/VR technology, fostering meaningful connections, teamwork, and the exchange of ideas.
+  <strong>User-Friendly Navigation: </strong>
+   Navigate vast virtual landscapes with ease using a user-friendly mini-map, providing guidance as you explore the limitless wonders of the Metaverse.
 </Text>
 
 <Text align={'center'} letterSpacing={1} mt={4}>
-  <strong>User-Friendly Navigation</strong>
-  Navigate vast virtual landscapes with ease using a user-friendly mini-map, providing guidance as you explore the limitless wonders of the Metaverse.
+  <strong>Dynamic Login: </strong>
+   Experience the flexibility of our Metaverse app development with dynamic login options. Seamlessly switch between different login methods based on your preference and convenience.
 </Text>
 
-<Text align={'center'} letterSpacing={1} mt={4}>
-  <strong>Dynamic Login</strong>
-  Experience the flexibility of our Metaverse app development with dynamic login options. Seamlessly switch between different login methods based on your preference and convenience.
-</Text>
-
-<Text align={'center'} letterSpacing={1} mt={4}>
-  <strong>CONNECT VIA WHATSAPP CONNECT VIA TELEGRAM</strong>
-</Text>
 
 <Heading as='h2' size='2xl' letterSpacing={2} my={4} textAlign={'center'} mt={4} mb={4}>
   Metaverse Applications: From Fantasy to Reality

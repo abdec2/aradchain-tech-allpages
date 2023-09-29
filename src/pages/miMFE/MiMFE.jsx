@@ -13,7 +13,9 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -36,13 +38,42 @@ const About = () => {
             Exploring Metaverse Applications in Education
 Leveraging Metaverse's Full Potential to Revolutionize Learning and Education.
 <strong>VIEW LIVE DEMO TALK TO OUR EXPERTS</strong>.
-<strong>DID YOU KNOW?</strong>
-As reported by InsightAce Analytic, the global metaverse market in education was valued at $5.60 billion in 2022 and is projected to surge to $102.57 billion by 2031, boasting a compound annual growth rate of 38.42% from 2023 to 2031.
+</Text>
+<Text align={'center'} letterSpacing={1} mt={4}>
+     
+<strong>DID YOU KNOW? </strong>
+ As reported by InsightAce Analytic, the global metaverse market in education was valued at $5.60 billion in 2022 and is projected to surge to $102.57 billion by 2031, boasting a compound annual growth rate of 38.42% from 2023 to 2031.
 Harnessing Metaverse's Expertise to Transform Education
 The metaverse is making its mark across various industries, and the education sector is no exception. Over the past years, the education landscape has evolved through the integration of emerging technologies.
 Metaverse for education holds the potential to be a game-changer, offering a plethora of opportunities and benefits, including immersive learning experiences, enhanced learning speed, and much more, extending its influence to the eCommerce industry.
 At AradChain Technologies, we offer top-notch metaverse learning platform development services and solutions, ushering in a complete educational transformation by delivering immersive and highly engaging learning experiences.
 </Text>
+<Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
 <Heading as='h2' size='2xl' letterSpacing={2} my={4} textAlign={'center'} mt={4} mb={4}>
   DID YOU KNOW?
 </Heading>

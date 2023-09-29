@@ -13,7 +13,9 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -35,6 +37,30 @@ const About = () => {
             <Text align={'center'} letterSpacing={1}>
             A crypto derivative represents a tradable security or an automated financial contract between parties, based on the future price of an asset. AradChain Technologies Solutions, a trusted smart contract development company, offers top-tier derivatives exchange development services, introducing new investment opportunities to traders.
             </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+              <Text textAlign={'center'} mt={4}>
+                <Button
+                  size={window.innerWidth <= 680 ? "xs" : "md"} // Check the window width and change button size accordingly
+                  rightIcon={<MdCall />}
+                  colorScheme="telegram"
+                >
+                  Connect on Telegram
+                </Button>
+                <Link to="https://wa.me/+447432284026" target="_blank">
+                <Button
+                  ml={5}
+                  size={window.innerWidth <= 680 ? "xs" : "md"} // Check the window width and change button size accordingly
+                  rightIcon={<MdCall />}
+                  colorScheme="whatsapp"
+                >
+                  Connect on Whatsapp
+                </Button>
+              </Link>
+            
+                </Text>
+              
+              </Link>
+             
             <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>How Crypto Derivatives Work</Heading>
 <Text align={'center'} letterSpacing={2} marginTop={4}>
     In crypto derivatives trading, the underlying asset can be any cryptocurrency token. Two parties involved in a financial contract speculate on the price of the cryptocurrency on a specific future date. At the contract's initiation, both parties agree on the buying/selling price of the cryptocurrency on the predetermined date, regardless of the market price at that time. This enables investors to profit from fluctuations in the underlying asset's price by buying at a lower price and selling at a higher price.
@@ -50,10 +76,19 @@ const About = () => {
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    - Opportunity to venture into the world of Decentralized Finance (DeFi)
-    - Access to an untapped pool of cryptocurrency holders
-    - Accelerated transaction processing through automated smart contracts
-    - Efficient execution of complex strategies such as shorting
+    Opportunity to venture into the world of Decentralized Finance (DeFi),
+    </Text>
+    <Text align={'center'} letterSpacing={2} marginTop={4}>
+
+    Access to an untapped pool of cryptocurrency holders,
+    </Text>
+    <Text align={'center'} letterSpacing={2} marginTop={4}>
+
+    Accelerated transaction processing through automated smart contracts,
+    </Text>
+    <Text align={'center'} letterSpacing={2} marginTop={4}>
+
+     Efficient execution of complex strategies such as shorting.
 </Text>
 
 <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>Supported Derivative Strategies</Heading>
@@ -62,10 +97,10 @@ const About = () => {
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    - Advanced Order Types & Long-Short Contracts
-    - High Transaction Throughput Rates & Minimal Latency
-    - Multi-layered Security and a Robust Trade Engine
-    - Incredibly User-Friendly Admin Panel
+     Advanced Order Types & Long-Short Contracts,
+     High Transaction Throughput Rates & Minimal Latency,
+     Multi-layered Security and a Robust Trade Engine,
+     Incredibly User-Friendly Admin Panel.
 </Text>
 
 <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>Derivatives Trading Features Supported by Our Exchange Platform</Heading>

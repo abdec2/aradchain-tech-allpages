@@ -13,7 +13,9 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -35,6 +37,32 @@ const About = () => {
             <Text align={'center'} letterSpacing={1}>
             Industry-Tailored Solutions the potential of the metaverse spans various use cases. We offer specialized enterprise-focused solutions to empower businesses to leverage the metaverse.Metaverse for Gaming Axie Infinity, a prominent metaverse game, boasts over 1 million daily active users.The gaming industry has witnessed a transformative shift with the integration of the metaverse. It has unlocked diverse earning opportunities for both business owners and players.At AradChain Technologies, we deliver top-notch metaverse NFT game development services to assist businesses in embracing the next wave of digital gaming. Whether you seek to create a move-to-earn (M2E) game, player-vs-player (PvP) experience, play-to-earn (P2E) game, or any other concept, our adept metaverse game developers facilitate the creation of a comprehensive metaverse environment.Seamlessly advance your NFT metaverse game development journey with our expertise.
             </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
             <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
             Metaverse for Fashion
             </Heading>
@@ -73,38 +101,47 @@ const About = () => {
   If you envision an immersive metaverse experience for a business meeting, corporate launch, concert, or any social event, we possess the capability to transform your vision into reality.
 </Text>
 
-<Text align={'center'} letterSpacing={1} mt={4}>
-  CONNECT VIA WHATSAPP CONNECT VIA TELEGRAM
-</Text>
 
 <Heading as='h2' size='2xl' letterSpacing={2} my={4} textAlign={'center'} mt={4} mb={4}>
   Metaverse Elements
 </Heading>
 
 <Text align={'center'} letterSpacing={1}>
-  <strong>How Our Metaverse App Development Journey Accelerates</strong>
+  <strong>How Our Metaverse App Development Journey Accelerates ?</strong>
+</Text>
+<Text align={'center'} letterSpacing={1}>
 
-  <strong>Theme Selection</strong>
-  Our subject matter experts guide you in selecting the appropriate theme – be it Game, EduTech, Spiritual, and more – based on your business ideas.
+  <strong>Theme Selection: </strong>
+   Our subject matter experts guide you in selecting the appropriate theme – be it Game, EduTech, Spiritual, and more – based on your business ideas.
+</Text>
+<Text align={'center'} letterSpacing={1}>
 
-  <strong>Land NFT Creation</strong>
-  Every metaverse project requires land NFTs to host virtual buildings. We develop the necessary land NFTs or any other required NFTs for your metaverse ecosystem.
+  <strong>Land NFT Creation: </strong>
+   Every metaverse project requires land NFTs to host virtual buildings. We develop the necessary land NFTs or any other required NFTs for your metaverse ecosystem.
+</Text>
+<Text align={'center'} letterSpacing={1}>
 
-  <strong>NFT Marketplace Establishment</strong>
-  Our metaverse engineers construct world-class NFT marketplace platforms, enabling seamless buying and selling of various NFTs.
+  <strong>NFT Marketplace Establishment: </strong>
+   Our metaverse engineers construct world-class NFT marketplace platforms, enabling seamless buying and selling of various NFTs.
+</Text>
+<Text align={'center'} letterSpacing={1}>
 
-  <strong>Storyboard Creation</strong>
-  AradChain Technologies's creative minds design a comprehensive storyboard outlining user journeys and navigation across the platform.
+  <strong>Storyboard Creation: </strong>
+   AradChain Technologies's creative minds design a comprehensive storyboard outlining user journeys and navigation across the platform.
+</Text>
+<Text align={'center'} letterSpacing={1}>
 
-  <strong>Economic Model</strong>
-  Our professionals provide comprehensive assistance and consulting services to help you understand how revenue will be generated through the metaverse platform.
+  <strong>Economic Model: </strong>
+   Our professionals provide comprehensive assistance and consulting services to help you understand how revenue will be generated through the metaverse platform.
+</Text>
+<Text align={'center'} letterSpacing={1}>
 
-  <strong>MVP Delivery</strong>
-  We deliver a minimum viable product (MVP) that undergoes continuous scaling and improvement based on user feedback and technological evolution.
+  <strong>MVP Delivery: </strong>
+   We deliver a minimum viable product (MVP) that undergoes continuous scaling and improvement based on user feedback and technological evolution.
 </Text>
 
 <Heading as='h2' size='2xl' letterSpacing={2} my={4} textAlign={'center'} mt={4} mb={4}>
-  How Our Metaverse Developers Help You Seize Metaverse Opportunities
+  How Our Metaverse Developers Help You Seize Metaverse Opportunities?
 </Heading>
 
 <Text align={'center'} letterSpacing={1}>

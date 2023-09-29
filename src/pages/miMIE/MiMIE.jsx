@@ -13,7 +13,8 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -35,26 +36,43 @@ const About = () => {
             <Text align={'center'} letterSpacing={1}>
             Discovering the Metaverse for Ecommerce - Expanding Horizons
 Embark on a journey into the metaverse's new realm for ecommerce and explore the diverse spectrum of opportunities it presents.
-<strong>REQUEST A FREE DEMO
-</strong>
+<strong>REQUEST A FREE DEMO .</strong>
 
 As per a Technavio report, the metaverse ecommerce market is poised to grow with a compounded annual growth rate of 39% between 2022 and 2027, culminating in an impressive increase of $85,885 million.
 
 Metaverse's Role in Ecommerce Ventures
 The metaverse is being hailed as a merchant's dream due to its boundless potential for online goods sales. Although metaverse integration in ecommerce is a relatively novel domain, its advantages are far-reaching, significantly impacting the ecommerce sector.
-
 With the metaverse gaining ground and its substantial benefits for ecommerce, business owners are avidly exploring its possibilities for their enterprises. The increasing popularity of metaverse within the ecommerce landscape is testament to its potential.
-
 We provide premium-grade services and solutions for metaverse integration in ecommerce. Our team of experts ensures that ecommerce enterprises can harness the metaverse's potential to capitalize on a plethora of opportunities, augmenting their business success.
-
-CONNECT ON WHATSAPP CONNECT ON TELEGRAM
 A Google Survey highlights that approximately 66% of individuals are eager to engage with augmented reality (AR) while shopping.
-
 Deloitte's research also indicates that augmented reality experiences lead to a remarkable 94% increase in conversion rates.
-<strong>TALK TO OUR EXPERTS</strong>
-
-
             </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
             <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
             Metaverse Applications in Ecommerce
             </Heading>
@@ -109,36 +127,45 @@ Metaverse's potential for ecommerce lies in its ability to cultivate profound cu
 Mitigating Returns and Replacements
 Buyers can virtually try on or evaluate products like clothing, footwear, cosmetics, and home goods—items difficult to assess online. The metaverse ecommerce platform empowers them to make informed choices, reducing return rates.
 <Text  mt={4} align={'center'} letterSpacing={1}>
-Our Development Process
+<strong>Our Development Process: </strong>
 We adhere to a meticulous development process, delivering premier metaverse ecommerce services to our esteemed clients.
-
-Consultation Phase
+</Text>
+<Text  mt={4} align={'center'} letterSpacing={1}>
+<strong>Consultation Phase: </strong>
 Our metaverse ecommerce consulting caters to newcomers, aiding them in harnessing metaverse benefits optimally.
-
-Discovery Phase
+</Text>
+<Text  mt={4} align={'center'} letterSpacing={1}>
+<strong>Discovery Phase: </strong>
 In the discovery phase, we understand your objectives, devising a plan through brainstorming to fulfill your ecommerce goals.
-
-Requirements Gathering
+</Text>
+<Text  mt={4} align={'center'} letterSpacing={1}>
+<strong>Requirements Gathering: </strong>
 We gather project requirements, conduct in-depth analysis, and formulate a roadmap, laying the foundation for metaverse ecommerce platform development.
-
-Solution and Strategy Design
+</Text>
+<Text  mt={4} align={'center'} letterSpacing={1}>
+<strong>Solution and Strategy Design: </strong>
 This phase crafts tailored solutions and strategies, aligning with project requirements and paving the way for effective development.
-
-Maintenance and Support
+</Text>
+<Text  mt={4} align={'center'} letterSpacing={1}>
+<strong>Maintenance and Support: </strong>
 Following the metaverse ecommerce platform's successful launch, our team ensures seamless operation through comprehensive maintenance and support.
-
-Deployment Phase
+</Text>
+<Text  mt={4} align={'center'} letterSpacing={1}>
+<strong>Deployment Phase: </strong>
 Upon receiving QA approval, the metaverse ecommerce platform is ready for launch, ensuring complete client satisfaction and concluding the deployment phase.
-
-Testing and Quality Analysis
+</Text>
+<Text  mt={4} align={'center'} letterSpacing={1}>
+<strong>Testing and Quality Analysis: </strong>
 Post-development, our dedicated QA team conducts rigorous testing, ensuring a smooth, issue-free platform for optimal user experience.
-
-Development Phase
+</Text>
+<Text  mt={4} align={'center'} letterSpacing={1}>
+<strong>Development Phase: </strong>
 The core development unfolds, shaping the metaverse ecommerce platform based on approved designs and strategies.
-
+</Text>
+<Text  mt={4} align={'center'} letterSpacing={1}>
 Ready to Explore Metaverse Ecommerce Possibilities?
-
-CONNECT ON WHATSAPP CONNECT ON TELEGRAM
+</Text>
+<Text  mt={4} align={'center'} letterSpacing={1}>
 Why Opt for AradChain Technologies for Your Metaverse Ecommerce Project?
 AradChain Technologies stands as a frontrunner in metaverse ecommerce services, delivering tailored solutions to diverse ecommerce needs.
 
@@ -157,37 +184,37 @@ Our solutions yield measurable benefits, addressing ecommerce sector needs effec
 Unmatched Post-Sales Support
 Our support extends beyond launch, offering unparalleled assistance for continuous smooth operation.
 </Text>
-            </Text>
-            <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+</Text>
+<Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
   Frequently Asked Questions
 </Heading>
 
 <Text align={'center'} letterSpacing={1}>
-  <strong>How Can I Integrate Metaverse into My Ecommerce Business?</strong><br />
+  <strong>How Can I Integrate Metaverse into My Ecommerce Business? </strong><br />
   Metaverse ecommerce platform integration involves weaving together augmented reality, virtual reality, artificial intelligence, and other enabling technologies. This fusion creates immersive online shopping experiences for consumers.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={8}>
   <strong>I'm New to the Concept of Metaverse. Can You Offer Metaverse Consulting for Ecommerce?</strong>
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={8}>
   <strong>What is the Estimated Cost for Developing a Metaverse Ecommerce Platform?</strong>
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={8}>
   <strong>Can You Provide Customized Metaverse Solutions for My Ecommerce Business?</strong>
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={8}>
   <strong>How Long Does It Take to Develop a Metaverse Ecommerce Platform?</strong>
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={8}>
   <strong>Why is Metaverse Significant for Ecommerce?</strong>
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={8}>
   <strong>How Can Metaverse Benefit Ecommerce Businesses?</strong>
 </Text>
 

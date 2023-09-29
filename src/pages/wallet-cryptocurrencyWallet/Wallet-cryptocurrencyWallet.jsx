@@ -13,7 +13,9 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -35,9 +37,33 @@ const About = () => {
             <Text align={'center'} letterSpacing={1}>
             Your Reliable Partner for Creating Cryptocurrency Wallets where you aware that the global cryptocurrency market had 76.32 million users in 2021, which increased to 84.02 million in 2022? Financial institutions and cryptocurrency firms are capitalizing on their investments by collaborating with experts in cryptocurrency wallet development, reaping profitable returns. Cryptocurrency wallet development encompasses a range of activities carried out by blockchain wallet developers to conceptualize, create, and deploy these wallets.Selecting the right team for wallet development can be daunting, especially with numerous providers available. This is where AradChain Technologies, a leading company in cryptocurrency wallet development, comes into play. As a well-established firm, our goal is to streamline the process of launching cryptocurrency wallets for global corporations. Our experts boast extensive experience and profound domain knowledge, integrating cutting-edge technologies like blockchain, web3, and smart contracts to craft next-generation cryptocurrency wallets that prioritize security, compatibility, and future sustainability. We craft customizable digital wallets, tailoring them to specific requirements and purposes. With our vast experience and expertise, we can either build web or mobile-based cryptocurrency wallets from scratch or provide a ready-made White-Label wallet solution. Receive top-quality and punctual cryptocurrency wallet development solutions – consult our experts in the subject today!TALK TO OUR EXPERTS Our Solutions for Cryptocurrency Wallet Development Launch robust and scalable crypto wallets for DEXs, NFT marketplaces, crypto trading, and reward platforms. Our experts assist businesses interested in developing customized wallets, ensuring swift launches. We offer effective solutions to enhance engagement with modern-day crypto enthusiasts.REQUEST A FREE DEMO
             </Text>
-            <Text>
-            Varieties of Cryptocurrency Wallet Development Services, We specialize in developing a range of crypto wallets to ensure secure storage and seamless transfer of crypto assets.
-            </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
+
             <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>Web Wallet Development</Heading>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -333,17 +359,6 @@ const About = () => {
     Simplify sending cryptocurrencies to multiple recipients through the Airdrop feature.
 </Text>
 
-<Text align={'center'} letterSpacing={2} marginTop={4}>
-    Add Custom Tokens
-</Text>
-
-<Text align={'center'} letterSpacing={2} marginTop={4}>
-    Manually add and manage tokens not natively supported by the wallet.
-</Text>
-
-<Text align={'center'} letterSpacing={2} marginTop={4}>
-    Address Book
-</Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
     Save and manage frequently used cryptocurrency addresses through the address book.
