@@ -13,7 +13,8 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -35,6 +36,32 @@ const About = () => {
             <Text align={'center'} letterSpacing={1}>
             Embark on your business journey with AradChain Technologies's expertise in Binance Smart Chain Development.Skyrocket Your Business Through Binance Smart Chain DevelopmentSince its launch in August 2020, Binance Smart Chain (BSC) has stood as an independent blockchain running alongside Binance Chain. This innovation addresses the need for enhanced smart contract flexibility, which was absent in Binance Chain, while also ensuring Ethereum Virtual Machine (EVM) compatibility. Binance Smart Chain is a recent advancement that grants users access to a thriving and expanding digital asset ecosystem.AradChain Technologies delivers flawless Binance Smart Chain development services, offering best-in-class solutions that merge your customized features with industry-leading traits, amplifying your business growth. We provide comprehensive blockchain development services, ensuring efficient and self-sufficient blockchain operations with swift transaction times and cost-effective fee structures. Whether you equire a dApp or a token, we are your ultimate destination, building robust Binance Smart Chain solutions that align with your business needs and deliver perfection.
             </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
             <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
             Exceptional BSC Blockchain Development Solutions
             </Heading>

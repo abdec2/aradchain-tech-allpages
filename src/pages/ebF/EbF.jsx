@@ -13,7 +13,8 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -33,56 +34,80 @@ const About = () => {
         <div className={style.infoContainer}>
           <div className="content">
             <Text align={'center'} letterSpacing={1}>
-            Empower Your Financial Transactions with Security, Transparency, and Speed
-            <br></br><strong>Blockchain Revolution in Finance: Shaping the Future</strong>
-             ,Blockchain has the potential to revolutionize financial operations by transitioning from centralized to decentralized authority. This shift promises substantial savings in administrative, infrastructure, and transaction costs. It disintermediates the transfer of digital assets and reduces the role of central counterparties. Integrating blockchain technology in finance enhances trust, accuracy, and resilience.
+            Empower Your Financial Transactions with Security, Transparency,Speed,Blockchain has the potential to revolutionize financial operations by transitioning from centralized to decentralized authority. This shift promises substantial savings in administrative, infrastructure, and transaction costs. It disintermediates the transfer of digital assets and reduces the role of central counterparties. Integrating blockchain technology in finance enhances trust, accuracy, and resilience.
             Top financial leaders and Chartered Accountants are captivated by blockchain's potential. Many industry giants have embraced blockchain financial services to reshape their financial offerings – from payments to post-trade processing.If you're looking to leverage the power of blockchain to redefine your financial services, AradChain Technologies Solutions is here to assist.Adopt Blockchain in FinTech: Ride the New Wave of Financial Operations.At AradChain Technologies Solutions, our team of financial experts, blockchain engineers, and subject matter experts leverage their profound domain knowledge, technical prowess, and blockchain expertise to provide a comprehensive range of blockchain financial services. We empower our clients to integrate blockchain technology into FinTech, addressing business transformation challenges, unlocking new revenue streams, reducing operational costs, complying with regulations, capitalizing on fresh business opportunities, and achieving efficiency and effectiveness.
             Be an early adopter, optimize costs, and drive new revenue with blockchain financial services. Connect with our experts to discuss how to integrate blockchain applications into finance for your business.
             </Text>
-            <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
+<Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
     Blockchain Use Cases in Financial Services
 </Heading>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     Blockchain's transformative potential extends across the financial services landscape, offering organizations an entirely new way to operate. The possibilities are extensive and encompass a variety of use cases:
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     <strong>Capital Markets</strong><br/>
     Streamline capital markets by eliminating single points of failure through decentralized utilities, reducing settlement time and costs. Digitize processes for improved operational efficiency and lower counterparty risk.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     <strong>Payments and Remittance</strong><br/>
     Accelerate payments, particularly international remittances, using blockchain for finance. Benefit from peer-to-peer exchange, heightened security, disintermediation, and reduced transaction processing fees.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     <strong>Trade Finance</strong><br/>
     Simplify trade finance by removing third-party functions and paperwork, streamlining the trading process. Maintain real-time, single copies of documents and unlock the future of digital transactions.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     <strong>Banking and Lending</strong><br/>
     Maintain authenticated documentation and real-time verified KYC/AML data. Enable automated syndicate formation and fund disbursement while lowering operational expenses.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     <strong>KYC and AML</strong><br/>
     Automate and facilitate identity verification using blockchain financial services. Create a single, trusted repository of identifying information, shared only with chosen parties.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     <strong>Insurance</strong><br/>
     Streamline and automate data verification, claims processing, and payment disbursement while shortening processing time. Minimize fraud risk and expedite claims assessment through blockchain in insurance.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     <strong>Asset Management</strong><br/>
     Automate fund launch and streamline stakeholder management with digital assets. Gain broader market access, liquidity, and fractionalization through digitized portfolios.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     <strong>Risk Management</strong><br/>
     Automate, accelerate, and streamline risk management processes, including counterparty risk, operational risk, systemic risk, liquidity risk, fraud risk, capital risk, and identity theft, using blockchain financial services.
 </Text>
@@ -91,21 +116,21 @@ const About = () => {
     Key Elements of Blockchain for Finance: Integration Advantages
 </Heading>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     The following three key blockchain features contribute to the advantages businesses gain from integrating blockchain in the FinTech industry:
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     <strong>Cryptographic Security</strong><br/>
     Blockchain, fortified with cryptographic security, ensures data immutability and credibility. Transaction records stored on the blockchain become reliable, tamper-proof, and verifiable by all network participants. Permissioned access rights guarantee data confidentiality and privacy.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     <strong>Distributed Ledger Architecture</strong><br/>
     Distributed ledgers offer transparency and traceability of transactions, enhancing visibility into tracking processes and automating operations through smart contracts. Networks remain resilient to downtime and manipulation risks.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     <strong>Network Consensus Mechanism</strong><br/>
     The consensus mechanism establishes a single source of truth, enabling the issuance of financial assets. It eliminates issues like double spending, fraud, and the need for constant reconciliation between trading and financing parties in digital asset transfers.
 </Text>
@@ -114,11 +139,11 @@ const About = () => {
     Potential Benefits of Blockchain in Finance
 </Heading>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     Integrating blockchain brings a range of business benefits. Blockchain technology offers:
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     <strong>Enhanced Security</strong><br/>
     Elimination of single points of failure and the need for intermediaries.<br/><br/>
     
@@ -137,8 +162,6 @@ const About = () => {
     <strong>High Performance</strong><br/>
     Private and hybrid blockchain networks designed to process hundreds of transactions per second.<br/><br/>
     
-    <a href="#" style={{ color: 'blue' }}>Connect on WhatsApp</a><br/>
-    <a href="#" style={{ color: 'blue' }}>Connect on Telegram</a>
 </Text>
 
 <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
@@ -149,7 +172,7 @@ const About = () => {
     Digitizing financial instruments takes blockchain's benefits further, enhancing efficiency and reducing errors. Leverage blockchain applications in finance to your advantage.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text mt={6} align={'center'} letterSpacing={1}>
     <strong>Reduction in Errors</strong><br/>
     Elimination of unsynchronized ledgers and reconciliations.<br/><br/>
     
@@ -162,18 +185,18 @@ const About = () => {
     <strong>Improved Customer Experience</strong><br/>
     Accelerated processing and utilization of digital channels.<br/><br/>
     
-    <a href="#" style={{ color: 'blue' }}>Get in Touch</a>
+    
 </Text>
 
 <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
     Why Choose Us for Your Blockchain-Based Solution
 </Heading>
 
-<Text align={'center'} letterSpacing={1}>
+<Text mt={6} align={'center'} letterSpacing={1}>
     Partnering with AradChain Technologies ensures access to a team of finance and technical experts experienced in delivering comprehensive end-to-end blockchain financial services.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text mt={6} align={'center'} letterSpacing={1}>
     <strong>Technical Expertise</strong><br/>
     Our exclusive focus on blockchain technologies guarantees unmatched expertise.<br/><br/>
     
@@ -189,14 +212,14 @@ const About = () => {
     <strong>Meaningful Outcomes</strong><br/>
     We deliver tangible impacts, ensuring value generation from your investments.<br/><br/>
     
-    <a href="#" style={{ color: 'blue' }}>Explore Our Blogs</a>
+    
 </Text>
 
 <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
     Our Blockchain Tech Expertise
 </Heading>
 
-<Text align={'center'} letterSpacing={1}>
+<Text mt={6} align={'center'} letterSpacing={1}>
     We're here for a friendly chat to discuss your business needs, obligation-free.<br/><br/>
     
     Count on us for technical support, inquiries, and requests.

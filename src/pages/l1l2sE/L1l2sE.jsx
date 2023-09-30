@@ -13,7 +13,8 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -35,6 +36,32 @@ const About = () => {
             <Text align={'center'} letterSpacing={1}>
             Empowering Secure, Decentralized, and Scalable Transformation on Ethereum Blockchain,Request a Complimentary Demo
             </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
             <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
     Ethereum Blockchain Development: Pioneering the Path to Decentralization
 </Heading>
@@ -51,53 +78,49 @@ const About = () => {
     We offer a full spectrum of solutions to facilitate your integration into the Ethereum ecosystem.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     <strong>dApp Development</strong><br/>
     The future belongs to dApps – business applications with no single point of failure. Our Ethereum-based dApp development services ensure the creation of fully operational dApps with zero downtime.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     <strong>Smart Contract Development</strong><br/>
     We design self-governing, rapid, secure, and precise smart contracts that facilitate direct transactions between parties, eliminating the need for intermediaries. This results in expedited transactions, accelerated processes, and minimized fraud for businesses.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     <strong>Token Development</strong><br/>
     Our Ethereum blockchain-based token creation services encompass security tokens, utility tokens, asset tokens, and more. These tokens optimize business operations, enhance overall functionality, and eliminate intermediary reliance.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     <strong>Private Ethereum Blockchain Development</strong><br/>
     We guide businesses in launching their own scalable, secure, and permission-based private networks on the Ethereum blockchain with minimal downtime. These networks ensure high transactional speeds and data security, enabling smooth business operations.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     <strong>Ethereum Node Development</strong><br/>
     Our certified Ethereum blockchain developers assist in launching custom Ethereum nodes and connecting them to the primary Ethereum network, enabling you to contribute to network security while earning cryptocurrencies.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1}mt={6}>
     <strong>Wallet Development</strong><br/>
     We craft decentralized wallets fortified with enterprise-grade security, user-friendly interfaces, and seamless scalability, supporting various cryptocurrencies.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     Engage with our domain experts to delve into your business use case.
-</Text>
-
-<Text align={'center'} letterSpacing={1}>
-    <strong>Connect on WhatsApp Connect on Telegram</strong>
 </Text>
 
 <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
     Diverse Industries We Cater To
 </Heading>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     Our solutions are tailored to suit diverse business sectors.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     Finance and Accounting<br/>
     Real Estate<br/>
     Crowdfunding<br/>
@@ -111,74 +134,71 @@ const About = () => {
     Our Robust Ethereum Technology Stack
 </Heading>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     <strong>Remix</strong><br/>
     Remix is a browser-based integrated development environment (IDE) that facilitates the creation, execution, and validation of smart contracts written in the Solidity programming language.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     <strong>Truffle</strong><br/>
     Truffle is a development framework designed to simplify Ethereum Smart Contract testing and deploy customized Ethereum applications on private and public networks.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     <strong>Embark</strong><br/>
     Embark is a multifunctional tool offering service monitoring, real-time deployment, and interactive REPL (Read-Evaluate-Print Loop) to expedite modular smart contract development.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     <strong>openzeppelin</strong><br/>
     Zeppelin provides smart contract management and security audit checks for reusable smart contracts.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     <strong>ganache</strong><br/>
     Ganache, with local test nodes, is employed by our blockchain engineers for smart contract deployment and interaction testing.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     <strong>parity</strong><br/>
     Parity tools facilitate Ethereum dApp development, cross-chain autonomous blockchain connection, and smart contract public blockchain permissioning.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
-    <strong>Connect on WhatsApp Connect on Telegram</strong>
-</Text>
 
 <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
     Why Choose Us for Ethereum Blockchain Development
 </Heading>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     AradChain Technologies ensures your Ethereum blockchain journey is guided by a team of skilled experts with hands-on experience in delivering end-to-end blockchain services.
 </Text>
 
-<Text mt={4} align={'center'} letterSpacing={1}>
+<Text  align={'center'} letterSpacing={1} mt={6}>
     <strong>Technical Excellence</strong><br/>
     Our expertise is solely focused on blockchain technologies, enabling us to excel in this domain.
 </Text>
 
-<Text mt={4} align={'center'} letterSpacing={1}>
+<Text  align={'center'} letterSpacing={1} mt={6}>
     <strong>Expert Team</strong><br/>
     Our team of 500+ professionals fine-tunes your offerings, recommends optimal tech strategies, and aids in community setup and campaigns.
 </Text>
 
-<Text align={'center'} mt={4} letterSpacing={1}>
+<Text align={'center'}  letterSpacing={1} mt={6}>
     <strong>Rapid Development</strong><br/>
     We deliver personalized products tailored to your target audience. A cohesive roadmap ensures swift development and deployment.
 </Text>
 
-<Text align={'center'} mt={4} letterSpacing={1}>
+<Text align={'center'}  letterSpacing={1} mt={6}>
     <strong>Complete Support</strong><br/>
     Our commitment extends beyond product launch. We provide comprehensive post-delivery services, enabling you to concentrate on growth.
 </Text>
 
-<Text align={'center'} mt={4} letterSpacing={1}>
+<Text align={'center'}  letterSpacing={1} mt={6}>
     <strong>Meaningful Outcomes</strong><br/>
     We deliver tangible results, ensuring substantial value from your investments.
 </Text>
 
-<Text align={'center'} mt={4} letterSpacing={1}>
+<Text align={'center'}  letterSpacing={1} mt={6}>
     <strong>Explore Our Partners</strong><br/>
     <strong mt={4}>Browse Through Our Clients</strong>
 </Text>
@@ -186,20 +206,20 @@ const About = () => {
     Frequently Asked Questions
 </Heading>
 
-<Text mt={3} align={'center'} letterSpacing={1}>
+<Text  align={'center'} letterSpacing={1} mt={6}>
     <strong>How secure is the Ethereum blockchain?</strong><br/>
     While the Ethereum blockchain is generally secure due to its distributed structure and cryptographic protocols, it is not immune to attacks. Developers must write their smart contracts securely to prevent vulnerabilities.
 </Text>
 
-<Text mt={4} align={'center'} letterSpacing={1}>
+<Text  align={'center'} letterSpacing={1} mt={6}>
     <strong>How does Ethereum ensure security and prevent hacks?</strong>
 </Text>
 
-<Text mt={4} align={'center'} letterSpacing={1}>
+<Text  align={'center'} letterSpacing={1} mt={6}>
     <strong>How can I integrate Ethereum into my existing business?</strong>
 </Text>
 
-<Text mt={4} align={'center'} letterSpacing={1}>
+<Text  align={'center'} letterSpacing={1} mt={6}>
     <strong>What advantages does Ethereum offer for decentralized application (dApp) development?</strong>
 </Text>
 

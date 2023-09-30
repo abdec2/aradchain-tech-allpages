@@ -13,7 +13,8 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -35,6 +36,32 @@ const About = () => {
             <Text align={'center'} letterSpacing={1}>
             Enable your entry and engagement in the blockchain market with a secure blockchain network.Consult Our Experts,Leverage AradChain Technologies’s Proficiency to Develop Your Custom Blockchain with 2.8 percent of the global population using blockchain and the projected worth of the blockchain market being $1,432 billion by 2030, this is a billion-dollar opportunity.As a leading layer 1 blockchain company, AradChain Technologies can help you seize this opportunity by creating your own network based on Layer 1 Blockchain. Whether you intend to fork an existing blockchain or initiate layer 1 blockchain development from scratch, our experienced blockchain engineers will transform your blockchain vision into a transformative reality.Maximize the value of your blockchain investment through our expertise in custom blockchain app development.
             </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
             <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
             Custom Blockchain Development Services Tailored to Your Objectives:
             </Heading>

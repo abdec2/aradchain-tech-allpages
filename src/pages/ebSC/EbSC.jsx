@@ -13,7 +13,8 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -33,8 +34,35 @@ const About = () => {
         <div className={style.infoContainer}>
           <div className="content">
             <Text align={'center'} letterSpacing={1}>
-            Blockchain Solutions for Supply Chain Management Achieve Comprehensive Visibility, Transparency, and Total Asset Control across Your Supply Chain Network Blockchain-Powered Supply Chain Development: Creating a Transparent, Reliable, and Resilient Supply Chain Network.The supply chain industry is rapidly evolving, with new technologies disrupting operations and processes in the modern era. Businesses adhering to traditional supply chain methods, including disjointed data systems and paper-based practices, struggle to access and utilize vast data repositories. The incorporation of blockchain into supply chain management has gained substantial attention in recent years for its ability to offer enhanced transparency, traceability, and reduced administrative costs in business operations.AradChain Technologies offers business-oriented blockchain supply chain solutions to help digitize supply chains, lower operational costs, and unlock opportunities without introducing risk to ongoing operations. Our supply chain solutions, developed by AradChain Technologies's experts, empower supply chain leaders to address disruptions in operations and establish resilience for the future.Common Challenges in Traditional Supply Chain Management.The conventional supply chain management process is riddled with inefficiencies that lead to information silos and complicate asset tracking, resulting in a time-consuming task.Lack of Security and Transparency,Costly Data Reconciliation Processes,Disconnected Supply Chain Participants,Complicated and Manual Record Keeping Methods,Inefficient Asset Traceability,Error-Prone and Delayed Business Operations,Overcome Supply Chain Challenges with Our Blockchain Supply Chain Solutions<strong>Get a Quote</strong>
+            Blockchain Solutions for Supply Chain Management Achieve Comprehensive Visibility, Transparency, and Total Asset Control across Your Supply Chain Network Blockchain-Powered Supply Chain Development: Creating a Transparent, Reliable, and Resilient Supply Chain Network.The supply chain industry is rapidly evolving, with new technologies disrupting operations and processes in the modern era. Businesses adhering to traditional supply chain methods, including disjointed data systems and paper-based practices, struggle to access and utilize vast data repositories. The incorporation of blockchain into supply chain management has gained substantial attention in recent years for its ability to offer enhanced transparency, traceability, and reduced administrative costs in business operations.AradChain Technologies offers business-oriented blockchain supply chain solutions to help digitize supply chains, lower operational costs, and unlock opportunities without introducing risk to ongoing operations. Our supply chain solutions, developed by AradChain Technologies's experts, empower supply chain leaders to address disruptions in operations and establish resilience for the future.Common Challenges in Traditional Supply Chain Management.The conventional supply chain management process is riddled with inefficiencies that lead to information silos and complicate asset tracking, resulting in a time-consuming task.Lack of Security and Transparency,Costly Data Reconciliation Processes,Disconnected Supply Chain Participants,Complicated and Manual Record Keeping Methods,Inefficient Asset Traceability,Error-Prone and Delayed Business Operations,Overcome Supply Chain Challenges with Our Blockchain Supply Chain Solutions<strong>  Get a Quote</strong>
             </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
+
             <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
     Traditional vs. Blockchain-Powered Supply Chains
 </Heading>
@@ -50,7 +78,7 @@ const About = () => {
     - Minimal supply chain insight
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     <strong>Supply Chains with Blockchain</strong><br/><br/>
     - Ethical sourcing uncertain<br/>
     - Measure and reduce environmental impacts. Complete data visibility on a single shared ledger<br/>
@@ -107,27 +135,27 @@ const About = () => {
     Why Choose AradChain Technologies for Blockchain Supply Chain Development?
 </Heading>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     <strong>Technical Expertise</strong><br/>
     Our exclusive focus on blockchain technology ensures unmatched proficiency in the field.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     <strong>Expert Team</strong><br/>
     Our 500+ experts help refine your offering, suggest optimal tech approaches, and assist in community setup and campaigns.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     <strong>Rapid Development</strong><br/>
     Customized solutions are delivered for your target audience, ensuring swift development and deployment.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     <strong>Complete Support</strong><br/>
     Our commitment extends beyond product launch, providing extensive post-delivery services for your growth.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     <strong>Meaningful Outcomes</strong><br/>
     We ensure you generate tangible value from your investments.
 </Text>
@@ -136,23 +164,23 @@ const About = () => {
     Explore Our Blogs
 </Heading>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     Delve into our blog for insights into blockchain, cryptocurrencies, NFTs, the metaverse, and related technologies.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     <strong>Metaverse in the Manufacturing Industry: Role and Future Prospects</strong><br/>
     Explore the concept of the Metaverse and its role in the manufacturing industry, along with future prospects.
     <br/><strong>READ MORE</strong>
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     <strong>AI Empowers NPCs: Breathing Life into the Metaverse</strong><br/>
     Discover how AI is empowering NPCs (non-player characters) in the Metaverse, breathing life into virtual worlds.
     <br/><strong>READ MORE</strong>
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     <strong>Getting Started with White Label Crypto Banking Platform</strong><br/>
     Learn about the essentials of getting started with a white label crypto banking platform.
     <br/><strong>READ MORE</strong>
@@ -162,11 +190,11 @@ const About = () => {
     Our Blockchain Tech Expertise
 </Heading>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     We are available for a friendly chat to discuss your business needs without any obligation.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
     <strong>Our commitment to providing technical support ensures we're here to assist with inquiries and requests.</strong>
 </Text>
 

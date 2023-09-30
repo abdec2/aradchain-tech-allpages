@@ -13,7 +13,9 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -35,6 +37,32 @@ const About = () => {
             <Text align={'center'} letterSpacing={1}>
             Elevate your business with a range of services designed for Algorand-based applications.<strong>CONNECT WITH OUR EXPERTS</strong>
             </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
             <Heading as="h2" size="2xl" letterSpacing={2} my={5} textAlign="center" mt={10} mb={10}>
   Business-Centric Algorand Blockchain Development Services
 </Heading>
@@ -52,32 +80,32 @@ const About = () => {
 </Heading>
 
 <Text mt={4} align="center">
-  <strong>Solution to Blockchain Trilemma</strong>
+  <strong>Solution to Blockchain Trilemma  </strong>
   Algorand addresses the blockchain trilemma, aiming for a delicate balance among decentralization, scalability, and security while fortifying the system against errors and malicious attacks. To overcome this challenge, Algorand employs Pure Proof-of-Stake (PPoS).
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Efficient Algorand Transactions</strong>
+  <strong>Efficient Algorand Transactions  </strong>
   Algorand expedites transactions, completing most within five seconds. Transactions have a low transfer threshold of 0.0001 ALGO and are cost-effective, with a minimum transaction fee of 0.001 ALGO (equivalent to $0.0014 based on current exchange rates).
 </Text>
 
 <Text mt={4} align="center">
-  <strong>NFT Support</strong>
+  <strong>NFT Support  </strong>
   Algorand stands as a prominent platform for Non-Fungible Tokens (NFTs), embracing Fractional NFT technology for tokenized asset ownership by multiple individuals.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>dApps Facilitation</strong>
+  <strong>dApps Facilitation  </strong>
   Algorand supports the creation of decentralized applications (dApps) through APIs and SDKs for languages like JavaScript, Python, Java, and Go. Algorand has developed diverse dApps, from crowdfunding apps to COVID-19 trackers.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Robust App Environment</strong>
+  <strong>Robust App Environment  </strong>
   Algorand offers extensive capabilities for building DeFi and dApps, enhancing scalability with a new smart contract function that handles millions of transactions daily.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Seamless E-Money Integration</strong>
+  <strong>Seamless E-Money Integration  </strong>
   Algorand seamlessly integrates with the e-Money protocol, facilitating stablecoin issuance backed by European fiat currencies, broadening accessibility and benefits within the Algorand ecosystem.
 </Text>
 
@@ -90,42 +118,39 @@ const About = () => {
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Our Algorand Blockchain Development Services</strong>
+  <strong>Our Algorand Blockchain Development Services  </strong>
 </Text>
 
 <Text mt={4} align="center">
-  <strong>dApp Development</strong>
+  <strong>dApp Development  </strong>
   Leveraging our expertise in Golang, Java, Python, and Javascript, we craft robust, institutional-grade Algorand Apps. Security and ease remain paramount, empowering your app to disrupt the market.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>NFT Marketplace Creation</strong>
+  <strong>NFT Marketplace Creation  </strong>
   Addressing the surging demand for NFTs, our blockchain engineers employ Algorand to design seamless NFT marketplace platforms, enhancing trading experiences with custom features.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Smart Contract Crafting</strong>
+  <strong>Smart Contract Crafting  </strong>
   Our smart contract experts specialize in Python and TEAL (PyTeal) programming languages, creating secure contract codes tailored to your automation needs.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>DeFi & DEX Solution Building</strong>
+  <strong>DeFi & DEX Solution Building  </strong>
   We engineer resilient DeFi and DEX solutions on Algorand, leveraging its low carbon footprint and high scalability for seamless exchange processes.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Node Establishment</strong>
+  <strong>Node Establishment  </strong>
   With extensive expertise, we build optimized and efficient Algorand network nodes, ensuring compliance with the consensus algorithm for optimal performance.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Algorand Blockchain Consultation</strong>
+  <strong>Algorand Blockchain Consultation </strong>
   Our experts provide comprehensive technical and business analysis of Algorand's two-tier blockchain architecture, enabling you to harness scalability, security, and speed.
 </Text>
 
-<Heading as="h2" size="xl" letterSpacing={2} my={5} textAlign="center" mt={10} mb={10}>
-  Connect with Us
-</Heading>
 
 <Text mt={4} align="center">
   We are ready for a friendly chat to discuss your business needs, without any obligations.
@@ -160,32 +185,32 @@ const About = () => {
 </Heading>
 
 <Text mt={4} align="center">
-  <strong>Solution to Blockchain Trilemma</strong>
+  <strong>Solution to Blockchain Trilemma </strong>
   Algorand addresses the blockchain trilemma, aiming for a delicate balance among decentralization, scalability, and security while fortifying the system against errors and malicious attacks. To overcome this challenge, Algorand employs Pure Proof-of-Stake (PPoS).
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Efficient Algorand Transactions</strong>
+  <strong>Efficient Algorand Transactions </strong>
   Algorand expedites transactions, completing most within five seconds. Transactions have a low transfer threshold of 0.0001 ALGO and are cost-effective, with a minimum transaction fee of 0.001 ALGO (equivalent to $0.0014 based on current exchange rates).
 </Text>
 
 <Text mt={4} align="center">
-  <strong>NFT Support</strong>
+  <strong>NFT Support  </strong>
   Algorand stands as a prominent platform for Non-Fungible Tokens (NFTs), embracing Fractional NFT technology for tokenized asset ownership by multiple individuals.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>dApps Facilitation</strong>
+  <strong>dApps Facilitation  </strong>
   Algorand supports the creation of decentralized applications (dApps) through APIs and SDKs for languages like JavaScript, Python, Java, and Go. Algorand has developed diverse dApps, from crowdfunding apps to COVID-19 trackers.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Robust App Environment</strong>
+  <strong>Robust App Environment  </strong>
   Algorand offers extensive capabilities for building DeFi and dApps, enhancing scalability with a new smart contract function that handles millions of transactions daily.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Seamless E-Money Integration</strong>
+  <strong>Seamless E-Money Integration  </strong>
   Algorand seamlessly integrates with the e-Money protocol, facilitating stablecoin issuance backed by European fiat currencies, broadening accessibility and benefits within the Algorand ecosystem.
 </Text>
 
@@ -198,42 +223,39 @@ const About = () => {
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Our Algorand Blockchain Development Services</strong>
+  <strong>Our Algorand Blockchain Development Services </strong>
 </Text>
 
 <Text mt={4} align="center">
-  <strong>dApp Development</strong>
+  <strong>dApp Development  </strong>
   Leveraging our expertise in Golang, Java, Python, and Javascript, we craft robust, institutional-grade Algorand Apps. Security and ease remain paramount, empowering your app to disrupt the market.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>NFT Marketplace Creation</strong>
+  <strong>NFT Marketplace Creation  </strong>
   Addressing the surging demand for NFTs, our blockchain engineers employ Algorand to design seamless NFT marketplace platforms, enhancing trading experiences with custom features.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Smart Contract Crafting</strong>
+  <strong>Smart Contract Crafting  </strong>
   Our smart contract experts specialize in Python and TEAL (PyTeal) programming languages, creating secure contract codes tailored to your automation needs.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>DeFi & DEX Solution Building</strong>
+  <strong>DeFi & DEX Solution Building  </strong>
   We engineer resilient DeFi and DEX solutions on Algorand, leveraging its low carbon footprint and high scalability for seamless exchange processes.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Node Establishment</strong>
+  <strong>Node Establishment  </strong>
   With extensive expertise, we build optimized and efficient Algorand network nodes, ensuring compliance with the consensus algorithm for optimal performance.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Algorand Blockchain Consultation</strong>
+  <strong>Algorand Blockchain Consultation  </strong>
   Our experts provide comprehensive technical and business analysis of Algorand's two-tier blockchain architecture, enabling you to harness scalability, security, and speed.
 </Text>
 
-<Heading as="h2" size="xl" letterSpacing={2} my={5} textAlign="center" mt={10} mb={10}>
-  Connect with Us
-</Heading>
 
 <Text mt={4} align="center">
   We are ready for a friendly chat to discuss your business needs, without any obligations.
@@ -274,7 +296,7 @@ const About = () => {
 </Heading>
 
 <Text mt={4} align="center">
-  <strong>Custom AI Blockchain Development</strong>
+  <strong>Custom AI Blockchain Development  </strong>
 </Text>
 <Text mt={2} align="center">
   Blockchain & AI: Top Use Cases and Barriers to AI Adoption
@@ -284,14 +306,14 @@ const About = () => {
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Unveiling Emerging Blockchain Use Cases in Real Estate</strong>
+  <strong>Unveiling Emerging Blockchain Use Cases in Real Estate  </strong>
 </Text>
 <Text mt={2} align="center">
   Real estate holds great promise for blockchain technology. Delve into the intriguing use cases in our detailed blog.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Blockchain Development for the Beauty Industry</strong>
+  <strong>Blockchain Development for the Beauty Industry </strong>
 </Text>
 <Text mt={2} align="center">
   Blockchain transforms the beauty industry. Explore how in our captivating blog.

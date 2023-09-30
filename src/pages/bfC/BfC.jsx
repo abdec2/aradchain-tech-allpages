@@ -13,7 +13,8 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -35,6 +36,32 @@ const About = () => {
             <Text align={'center'} letterSpacing={1}>
             Cosmos Blockchain Development-Comprehensive Solutions from AtoZ Enlist the expertise of our blockchain professionals to empower your business with the potential of the Cosmos blockchain, propelling you ahead in a competitive market.
             </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
             <Heading as="h2" size="2xl" letterSpacing={2} my={5} textAlign="center" mt={10} mb={10}>
   Cosmos Blockchain Network - An Overview
 </Heading>
@@ -52,41 +79,41 @@ const About = () => {
 </Text>
 
 <Text mt={4} align="center">
-  <strong>FUN FACT!</strong> Cosmos (ATOM) holds the 23rd rank among global cryptocurrencies.
+  <strong>FUN FACT! </strong> Cosmos (ATOM) holds the 23rd rank among global cryptocurrencies.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Our Cosmos Blockchain Development Services</strong>
+  <strong>Our Cosmos Blockchain Development Services: </strong>
   AradChain Technologies, a prominent cosmos blockchain development firm, extends premier cosmos blockchain solutions and services, catering to diverse business requirements, aiding in the creation and deployment of decentralized applications and services with ease.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Cosmos Blockchain Consulting</strong>
+  <strong>Cosmos Blockchain Consulting: </strong>
   Our cosmos blockchain consulting solutions are tailored to guide businesses in implementing or enhancing the use of cosmos blockchain technology effectively.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Cosmos Marketplace Creation</strong>
+  <strong>Cosmos Marketplace Creation: </strong>
   We provide top-tier cosmos marketplace creation services, crafting platforms equipped with the necessary features and functionalities to fulfill business goals.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Cosmos dApp Development</strong>
+  <strong>Cosmos dApp Development: </strong>
   Our accomplished team offers exceptional Cosmos dApp development services, building high-quality decentralized applications on the Cosmos network, complete with essential features and user-friendly interfaces.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Data Transfer Across Chains</strong>
+  <strong>Data Transfer Across Chains: </strong>
   As a leading cosmos blockchain development company, we facilitate seamless data transfer across chains within the Cosmos network, ensuring effortless processes for businesses.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Interchain Bridge Establishment</strong>
+  <strong>Interchain Bridge Establishment: </strong>
   Our interchain bridge creation services play a pivotal role in facilitating the smooth transfer of tokens between various blockchain networks, enhancing scalability and interoperability.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Smart Contract Crafting</strong>
+  <strong>Smart Contract Crafting: </strong>
   Our proficient blockchain developers design interoperable smart contracts for both public and private networks linked on the Cosmos network, supporting diverse dApps.
 </Text>
 
@@ -102,32 +129,32 @@ const About = () => {
 </Text>
 
 <Text mt={4} align="center">
-  <strong>User-Friendly Nature</strong>
+  <strong>User-Friendly Nature: </strong>
   Compared to other platforms, Cosmos blockchain is relatively user-friendly, making it simpler for developers to construct applications on its network.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Exceptional Scalability</strong>
+  <strong>Exceptional Scalability: </strong>
   Cosmos blockchain surpasses conventional networks in terms of scalability, enabling a higher transaction throughput per second.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Customization Ease</strong>
+  <strong>Customization Ease: </strong>
   The Cosmos blockchain platform is effortlessly customizable, empowering developers to swiftly create and launch new applications.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Swift Functioning</strong>
+  <strong>Swift Functioning: </strong>
   The interconnected blockchains within the Cosmos network result in a faster platform, elevating transaction speed.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Self-Governance</strong>
+  <strong>Self-Governance: </strong>
   Cosmos blockchain is inherently self-governing, ensuring applications on the network remain independent of the platform's environment or governance.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Interoperability at its Core</strong>
+  <strong>Interoperability at its Core: </strong>
   The Cosmos network offers innate interoperability, connecting autonomous blockchains through a specialized protocol for seamless inter-blockchain communication.
 </Text>
 
@@ -143,42 +170,42 @@ const About = () => {
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Consultation Phase</strong>
+  <strong>Consultation Phase: </strong>
   Our cosmic journey commences with cosmos blockchain consulting services, particularly tailored for newcomers in the field, aiming to explore and maximize metaverse benefits within their eCommerce endeavors.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Discovery Phase</strong>
+  <strong>Discovery Phase: </strong>
   Subsequently, we delve into the discovery phase, comprehensively understanding your objectives. This is followed by brainstorming sessions to formulate a precise plan to achieve your goals.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Requirements Gathering</strong>
+  <strong>Requirements Gathering: </strong>
   In this step, we gather all project requirements, analyze them meticulously, and create a roadmap for cosmos blockchain development based on your specifications.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Solution and Strategy Design</strong>
+  <strong>Solution and Strategy Design: </strong>
   We proceed to design suitable solutions and strategies, aligned with your project's needs. This phase ensures that our approach perfectly suits the desired outcomes.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Development Phase</strong>
+  <strong>Development Phase: </strong>
   The core development takes place in this stage, transforming approved designs and strategies from the previous step into a fully shaped cosmos blockchain platform, ready for deployment.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Testing and Quality Analysis</strong>
+  <strong>Testing and Quality Analysis: </strong>
   After development, our dedicated QA team conducts rigorous testing and quality analysis to ensure a smooth, glitch-free final product that meets all requirements.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Deployment Phase</strong>
+  <strong>Deployment Phase: </strong>
   Following successful testing, the product is prepared for launch. Our team ensures a seamless launch process to guarantee client satisfaction, marking the culmination of the deployment phase.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Maintenance and Support</strong>
+  <strong>Maintenance and Support: </strong>
   Post-launch, we provide ongoing maintenance and support, ensuring your platform runs smoothly and efficiently, with minimal disruptions.
 </Text>
 
@@ -195,27 +222,27 @@ const About = () => {
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Expert Blockchain Developers</strong>
+  <strong>Expert Blockchain Developers </strong>
   Our team comprises proficient blockchain developers.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Extensive Experience</strong>
+  <strong>Extensive Experience </strong>
   We boast years of experience in the field.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Consistent Results</strong>
+  <strong>Consistent Results </strong>
   We consistently deliver valuable outcomes.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Swift Turnaround</strong>
+  <strong>Swift Turnaround </strong>
   Expect quick project completion times.
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Comprehensive Support</strong>
+  <strong>Comprehensive Support </strong>
   Benefit from superior post-sales assistance.
 </Text>
 
@@ -249,17 +276,17 @@ const About = () => {
 </Heading>
 
 <Text mt={4} align="center">
-  <strong>Metaverse in the Manufacturing Industry: Role and Future Prospects</strong>
+  <strong>Metaverse in the Manufacturing Industry: Role and Future Prospects </strong>
   The term “Metaverse” needs no introduction, as it has already woven itself into the fabric of our lives. The unending surge in […]
 </Text>
 
 <Text mt={4} align="center">
-  <strong>Breathing Life into the Metaverse: How AI Empowers NPCs</strong>
+  <strong>Breathing Life into the Metaverse:  How AI Empowers NPCs?  </strong>
   Blockchain, metaverse, and artificial intelligence are the most remarkable innovations of the 21st century. These technologies have brought a big change in […]
 </Text>
 
 <Text mt={4} align="center">
-  <strong>White Label Crypto Bank</strong>
+  <strong>White Label Crypto Bank </strong>
   How to Get Started with White Label Crypto Banking Platform?
   When the opportunity knocks at the door, we all look for a quick and easy way to leverage it for a better […]
 </Text>

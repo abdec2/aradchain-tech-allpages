@@ -13,7 +13,8 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -35,87 +36,109 @@ const About = () => {
             <Text align={'center'} letterSpacing={1}>
             Comprehensive services for crafting Tezos-based assets and applications from start to finish.Precision-Crafted Tezos dApp Development SolutionsTezos is experiencing rapid growth and adoption owing to its exceptional attributes including efficiency, robust security, and seamless scalability. If you're considering entering the Tezos market with your application, we're here to facilitate your seamless entry and active participation.Our team of adept blockchain developer boasts extensive experience in building blockchain applications across various platforms, rendering them proficient in developing and deploying Tezos dApps. They possess the prowess to swiftly identify both on-chain and off-chain entities, develop microservices, establish Tezos nodes, design Tezos wallets, and seamlessly integrate Tezos APIs into your existing solution or application.TALK TO OUR EXPERTS
             </Text>
-            <Heading as="h2" size="xl" letterSpacing={2} my={5} textAlign="center" mt={10} mb={10}>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
+<Heading as="h2" size="xl" letterSpacing={2} my={5} textAlign="center" mt={10} mb={10}>
   Tezos Blockchain Development Services
 </Heading>
 
-<Text my={2} textAlign="center">
+<Text my={2} textAlign="center" mt={4}>
   <strong>We offer comprehensive Tezos blockchain services to bring your vision to life.</strong>
 </Text>
 
-<Text my={2} align={'center'}>
-  Tezos dApp Development: Create scalable Tezos dApps tailored to your needs.
+<Text my={2} align={'center'} mt={4}>
+  <strong>Tezos dApp Development: </strong> Create scalable Tezos dApps tailored to your needs.
 </Text>
 
-<Text my={2} align={'center'}>
-  Tezos Token Development: Seamlessly develop and support XTZ tokens.
+<Text my={2} align={'center'} mt={4}>
+  <strong>Tezos Token Development: </strong> Seamlessly develop and support XTZ tokens.
 </Text>
 
-<Text my={2} align={'center'}>
-  Tezos Wallet Development: Custom Tezos wallets with easy integration.
+<Text my={2} align={'center'} mt={4}>
+  <strong>Tezos Wallet Development: </strong> Custom Tezos wallets with easy integration.
 </Text>
 
-<Text my={2} align={'center'}>
-  Tezos Smart Contracts: Secure smart contract development.
+<Text my={2} align={'center'} mt={4}>
+  <strong>Tezos Smart Contracts: </strong> Secure smart contract development.
 </Text>
 
-<Text my={2} align={'center'}>
-  Tezos Integration: Seamlessly integrate with Tezos using a range of tools.
+<Text my={2} align={'center'} mt={4}>
+  <strong>Tezos Integration: </strong>Seamlessly integrate with Tezos using a range of tools.
 </Text>
 
-<Text my={2} align={'center'}>
-  Tezos Consulting: Expert consultation for Tezos integration.
+<Text my={2} align={'center'} mt={4}>
+  <strong>Tezos Consulting: </strong>Expert consultation for Tezos integration.
 </Text>
 
-<Heading my={2} textAlign="center">
+<Heading my={2} textAlign="center" mt={4}>
   Advantages of Tezos for dApp Development
 </Heading>
 
-<Text my={2} align={'center'}>
-  Tezos offers features ideal for dApp development:
+<Text my={2} align={'center'} mt={4}>
+  <strong>- Proof of Stake: </strong>Consensus mechanism for stability and security.
 </Text>
 
-<Text my={2} align={'center'}>
-  - Proof of Stake: Consensus mechanism for stability and security.
+<Text my={2} align={'center'} mt={4}>
+  <strong>- On-Chain Governance: </strong>Collaborative protocol amendments.
 </Text>
 
-<Text my={2} align={'center'}>
-  - On-Chain Governance: Collaborative protocol amendments.
+<Text my={2} align={'center'} mt={4}>
+  <strong>- Self-Amendment: </strong>Seamless protocol upgrades.
 </Text>
 
-<Text my={2} align={'center'}>
-  - Self-Amendment: Seamless protocol upgrades.
+<Text align={'center'} my={2} mt={4}>
+  <strong>- Smart Contracts: </strong>Secure, third-party-resistant contracts.
 </Text>
 
-<Text align={'center'} my={2}>
-  - Smart Contracts: Secure, third-party-resistant contracts.
-</Text>
-
-<Heading my={2} textAlign="center">
+<Heading my={2} textAlign="center" mt={4}>
   Why Choose Us for Tezos Blockchain Development
 </Heading>
 
-<Text my={2}  align={'center'}>
+<Text my={2}  align={'center'} mt={4}>
   Partner with AradChain Technologies for end-to-end blockchain solutions:
 </Text>
 
-<Text my={2} align={'center'}>
+<Text my={2} align={'center'} mt={2}>
   - Technical Proficiency
 </Text>
 
-<Text my={2} align={'center'}>
+<Text my={2} align={'center'}  mt={2}>
   - Expert Team
 </Text>
 
-<Text my={2} align={'center'}>
+<Text my={2} align={'center'} mt={2}>
   - Rapid Development
 </Text>
 
-<Text my={2} align={'center'}>
+<Text my={2} align={'center'} mt={2}>
   - Complete Support
 </Text>
 
-<Text my={2} align={'center'}>
+<Text my={2} align={'center'} mt={2}>
   - Meaningful Outcomes
 </Text>
 <Heading as="h2" size="xl" letterSpacing={2} my={5} textAlign="center">
@@ -154,7 +177,7 @@ const About = () => {
 </Heading>
 
 <Text mt={5} textAlign="center">
-  Metaverse in the Manufacturing Industry: Role and Future Prospects
+  <strong>Metaverse in the Manufacturing Industry </strong> Role and Future Prospects
 </Text>
 
 <Text mt={5} textAlign="center">
@@ -162,7 +185,7 @@ const About = () => {
 </Text>
 
 <Text mt={5} textAlign="center">
-  Empowering NPCs with AI in the Metaverse
+< strong>Empowering NPCs with AI in the Metaverse</strong>
 </Text>
 
 <Text mt={5} textAlign="center">
@@ -170,7 +193,7 @@ const About = () => {
 </Text>
 
 <Text mt={5} textAlign="center">
-  Initiating a White Label Crypto Banking Platform
+  <strong>Initiating a White Label Crypto Banking Platform: </strong>
 </Text>
 
 <Text mt={5} textAlign="center">
@@ -182,12 +205,9 @@ const About = () => {
 </Heading>
 
 <Text mt={5} textAlign="center">
-  We're available for a friendly chat to address your business needs, without any obligations.
+  We're available for a friendly chat to address your business needs, without any obligations.Count on our technical support to assist with inquiries and requests.
 </Text>
 
-<Text mt={5} textAlign="center">
-  Count on our technical support to assist with inquiries and requests.
-</Text>
 
 
           </div>

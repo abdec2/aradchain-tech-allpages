@@ -13,7 +13,9 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -36,6 +38,32 @@ const About = () => {
             Accelerate your market presence with our highly scalable applications designed for rapid deployment.Unleash the Power of Polygon Edge Blockchain Polygon Edge offers a robust ecosystem for building tokens, wallets, and applications with swift time-to-market.At AradChain Technologies, we harness the capabilities of Polygon Edge to expedite application development and deployment, enabling you to swiftly enter and thrive in the market. Our comprehensive services cover consulting, development, deployment, and maintenance, ensuring the success of your project.
 
             </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
             <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
             Business Advantages of Polygon Edge for Development
             </Heading>
@@ -67,9 +95,6 @@ const About = () => {
   Uncover the Potential of Polygon Edge for Your Business.
 </Heading>
 
-<Text mt={2} align="center">
-  <strong>CONNECT WITH OUR EXPERTS</strong>
-</Text>
 
 <Heading as="h2" size="xl" letterSpacing={2} my={5} textAlign="center" mt={10} mb={10}>
   Our Polygon Edge Blockchain Development Offerings
@@ -145,55 +170,38 @@ Industries We Serve
   Partner with AradChain Technologies for a team of technical experts delivering end-to-end consulting services with real-world experience.
 </Text>
 
-<Heading as="h2" size="xl" letterSpacing={2} my={5} textAlign="center" mt={3} mb={10}>
-  Technical Proficiency
-</Heading>
-
-<Text mt={2} align="center">
-  Benefit from our technical expertise.
+<Text letterSpacing={2} my={5} textAlign="center" mt={3} mb={10}>
+  <strong>Technical Proficiency: </strong>Benefit from our technical expertise.
 </Text>
 
-<Heading as="h2" size="xl" letterSpacing={2} my={5} textAlign="center" mt={3} mb={10}>
-  Expert Team
-</Heading>
 
-<Text mt={2} align="center">
-  Rely on our seasoned team.
+<Text letterSpacing={2} my={5} textAlign="center" mt={3} mb={10}>
+  <strong>Expert Team: </strong> Rely on our seasoned team.
 </Text>
 
-<Heading as="h2" size="xl" letterSpacing={2} my={5} textAlign="center" mt={3} mb={10}>
-  Rapid Development
-</Heading>
-
-<Text mt={2} align="center">
+<Text  letterSpacing={2} my={5} textAlign="center" mt={3} mb={10}>
+ <strong> Rapid Development: </strong>
   Experience swift project execution.
 </Text>
 
-<Heading as="h2" size="xl" letterSpacing={2} my={5} textAlign="center" mt={3} mb={10}>
-  Complete Support
-</Heading>
+<Text letterSpacing={2} my={5} textAlign="center" mt={3} mb={10}>
+  <strong>Complete Support: </strong>Access comprehensive assistance.
 
-<Text  align="center">
-  Access comprehensive assistance.
 </Text>
 
-<Heading as="h2" size="xl" letterSpacing={2} my={5} textAlign="center" mt={3} mb={10}>
-  Meaningful Outcomes
-</Heading>
-
-<Text  align="center">
-  Expect impactful results.
+<Text letterSpacing={2} my={5} textAlign="center" mt={3} mb={10}>
+  <strong>Meaningful Outcomes: </strong>Expect impactful results.
 </Text>
 
 <Heading as="h2" size="xl" letterSpacing={2} my={5} textAlign="center" mt={10} mb={10}>
   Frequently Asked Questions
 </Heading>
 
-<Text align="center">
+<Text align="center" mt={4}>
   How does Polygon Edge ensure the security of decentralized applications?
 </Text>
 
-<Text align="center">
+<Text align="center" mt={5}>
   Polygon employs security measures including checkpoints, double-validation, and fraud proofs to safeguard against breaches, ensuring network integrity and protection against attacks.
 </Text>
 
