@@ -13,7 +13,8 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -35,11 +36,37 @@ const About = () => {
             <Text align={'center'} letterSpacing={1}>
             Empowering Real Estate with Blockchain Solutions.Our expertise in Blockchain development for real estate is unmatched. We specialize in creating solutions that smartly and accurately simplify data capture, analysis, and tracing of real estate properties. Our digital real estate Blockchain solutions eliminate data silos while ensuring transparency at reduced costs. Leveraging our Blockchain know-how, we help businesses and individuals overcome major industry challenges and achieve their objectives.The Need for Blockchain Development in Real Estate.Addressing Real Estate Challenges with Blockchain.The real estate landscape grapples with paper-based land titles vulnerable to loss, fraud, and mismanagement. Property transfers and permits entail complex, time-consuming legal procedures, often locking land in unproductive use.Managing large construction projects has grown increasingly challenging due to fragmented sub-contracting, unclear procurement practices, and a lack of supply chain transparency.Property development firms struggle to secure finances for new projects. Relying on single loan sources results in high interest rates, while crowd financing and loan syndication prove difficult to administer.
             </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
             <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
             Blockchain in Real Estate
            </Heading>
 
-            <Text align={'center'} letterSpacing={1}>
+            <Text align={'center'} letterSpacing={1} mt={6}>
             A Game-Changer Our team simplifies legacy systems, offering a secure, immutable digital registry complete with document authentication and transaction transparency.A trusted asset title and documentation process bolsters investor confidence, facilitates market transactions, grants access to finance opportunities, and propels economic and social community development.Blockchain applications in real estate enable secure data sharing, streamline rental collections and payments to property owners, and provide thorough due diligence across portfolios. This enhances operational efficiency, reduces overhead costs, and generates comprehensive data for informed decision-making.With our Blockchain Applications in Real Estate, Enterprises Can Secure, enhance, and transparently manage land registries.Revolutionize loan and mortgage securitization.Optimize property search processes.Unlock alternative financing options for property development.Accelerate real estate investment management with digital assets.From Blockchain real estate tokenization to smart contracts, our solutions revolutionize traditional real estate processes. We pave the way for a streamlined, trusted future of real estate with efficient Blockchain solutions.
 
             </Text>
@@ -47,46 +74,46 @@ const About = () => {
     Explore Blockchain Use Cases in Healthcare
 </Heading>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1}  mt={6}>
     As a trusted blockchain healthcare solutions development company, AradChain Technologies has served clients from the healthcare industry, fulfilling specific project requirements.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1}  mt={6}>
     <strong>Clinical Trials & Research</strong><br/>
     Facilitate secure, transparent data sharing and collaboration in clinical trials and research to accelerate scientific discovery.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1}  mt={6}>
     <strong>Healthcare Data Sharing</strong><br/>
     Enable secure patient health information exchange across providers and third parties like insurers, enhancing care coordination and industry efficiency.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1}  mt={6}>
     <strong>Health Insurance and Claims Management</strong><br/>
     Streamline claims processing by eliminating errors and improving payment speed and accuracy through blockchain development for healthcare.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1}  mt={6}>
     <strong>Identity Management</strong><br/>
     Boost security with a secure medical credential verification system, reducing fraud and ensuring professional and patient information is verified.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1}  mt={6}>
     <strong>Drug Traceability</strong><br/>
     Conveniently trace prescription medications from manufacturing to the end customer, minimizing counterfeiting risks.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1}  mt={6}>
     <strong>Supply Chain Management</strong><br/>
     Enhance supply chain transparency and efficiency with specialized blockchain healthcare solutions.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1}  mt={6}>
     <strong>Medical Device Management</strong><br/>
     Simplify medical device data management, enhancing patient safety and minimizing faults with blockchain.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1}  mt={6}>
     <strong>Personalized Medicine</strong><br/>
     Store and share genomic data securely through blockchain, enabling more personalized and efficient medical treatments.
 </Text>
@@ -95,7 +122,7 @@ const About = () => {
     Choose AradChain Technologies for Blockchain Development in Healthcare
 </Heading>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1}  mt={6}>
     <strong>Technical Expertise</strong><br/>
     Benefit from our exclusive focus on blockchain technologies and unmatched expertise.<br/><br/>
     
@@ -111,14 +138,14 @@ const About = () => {
     <strong>Meaningful Outcomes</strong><br/>
     We ensure tangible impacts that generate value from your investments.<br/><br/>
     
-    <a href="#" style={{ color: 'blue' }}>Explore Our Blogs</a>
+    
 </Text>
 
 <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
     Our Blockchain Tech Expertise
 </Heading>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1}  mt={6}>
     We're here for a friendly chat to discuss your business needs, obligation-free.<br/><br/>
     
     Count on us for technical support, inquiries, and requests.

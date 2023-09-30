@@ -13,7 +13,8 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -35,6 +36,32 @@ const About = () => {
             <Text align={'center'} letterSpacing={1}>
             AradChain Technologies specializes in empowering asset tokenization platforms with security and resilience. We unveil the potential of digital asset tokenization, which involves converting the value and ownership of assets into digital tokens on a blockchain. These tokens represent fractional or entire ownership of the asset, enabling seamless transfer, trading, and ownership distribution. Asset tokenization transcends geographic barriers, reduces transaction costs, and enhances transparency, offering advantages to asset owners and investors. In today's digital era, it revolutionizes traditional asset interactions, boosting liquidity, accessibility, and efficiency across global markets, spanning real estate, artwork, commodities, and securities. AradChain Technologies, as a pioneering asset tokenization company, leverages its expertise to provide unmatched solutions for diverse clients. Request a free demo and discover the potential of digital asset tokenization.
             </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
             <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
             Empowering Digital Asset Tokenization
             </Heading>
@@ -73,8 +100,7 @@ const About = () => {
             
             <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>Insights from Our Blog</Heading>
             <Text align={'center'} letterSpacing={1}>Explore our blog for insights on asset tokenization platforms, the economic empowerment it brings, and the evolution of asset tokenization from physical to digital.
-
-Get in touch with us for a friendly chat about your business needs, and we're here to offer technical support and address any inquiries.</Text>
+            Get in touch with us for a friendly chat about your business needs, and we're here to offer technical support and address any inquiries.</Text>
       
           </div>
 

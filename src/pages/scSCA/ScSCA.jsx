@@ -13,7 +13,8 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -45,10 +46,33 @@ These statistics underscore the compelling case for prominent cryptocurrency ent
 
 Effortlessly Secure Your Smart Contracts Through Auditing
 
-CONNECT WITH OUR EXPERTS
-
-
             </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
             <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
             Our Comprehensive Smart Contract Security Audit Services
             </Heading>
@@ -82,31 +106,31 @@ Contact us to experience our comprehensive smart contract security audit service
             Frequently Asked Questions
             </Heading>
 
-          <Text align={'center'} letterSpacing={1}>
+          <Text align={'center'} letterSpacing={1} mt={6}>
 How much does a smart contract audit cost?
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1}  mt={6}>
 The cost of a smart contract security audit varies depending on factors such as project size, Blockchain platform, audit team size, and the audit process followed.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1}  mt={6}>
 What is the duration of an Ethereum smart contract security audit?
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1}  mt={6}>
 Why is smart contract security auditing crucial?
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1}  mt={6}>
 Where can I find reliable smart contract security audit services?
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1}  mt={6}>
 What are the benefits of having my smart contract audited?
 </Text>
 
-<Text align={'center'} letterSpacing={1} mt={4}><strong>Our Blockchain Expertise
+<Text align={'center'} letterSpacing={1} mt={8}><strong>Our Blockchain Expertise
 
 Contact us for a friendly chat about your business needs.
 

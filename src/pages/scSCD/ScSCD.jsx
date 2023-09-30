@@ -13,7 +13,8 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -38,6 +39,32 @@ const About = () => {
             <Text align={'center'} letterSpacing={1}>
             When it comes to smart contract development, our team of highly skilled developers is at the forefront. We not only possess in-depth knowledge of blockchain platforms like Ethereum, EOS, Hyperledger, TRON, and more, but we also prioritize security and reliability in every contract we create. We understand that each business is unique, which is why we specialize in crafting custom smart contract solutions that are perfectly tailored to your specific needs. Whether you're looking to automate agreements or streamline business processes, we have the expertise to make it happen.
             </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
             <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
             Streamlined Development Process
             </Heading>
@@ -63,13 +90,13 @@ const About = () => {
             <Text align={'center'} letterSpacing={1} mt={4}><strong>How long does DeFi smart contract development take?</strong></Text>
            
            <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>Our Blog Highlights</Heading>
-           <Text align={'center'} letterSpacing={1} mt={4}><strong>Smart Contract Auditing:</strong>Trends and Case Studies
+           <Text align={'center'} letterSpacing={1} mt={4}><strong>Smart Contract Auditing: </strong> Trends and Case Studies
 Explore emerging trends and real-world case studies in smart contract auditing to ensure secure and reliable blockchain transactions.</Text>
-           <Text align={'center'} letterSpacing={1} mt={4}><strong>Future Trends in DeFi Smart Contract Development
-</strong>Discover the future trends in DeFi smart contract development, including oracles and NFTs integration.
+           <Text align={'center'} letterSpacing={1} mt={4}><strong>Future Trends in DeFi Smart Contract Development:
+ </strong> Discover the future trends in DeFi smart contract development, including oracles and NFTs integration.
 </Text>
-           <Text align={'center'} letterSpacing={1} mt={4}><strong>Preparing for a Smart Contract Security Audit
-</strong>Enhance the reliability of your blockchain applications through a 10-step checklist for smart contract security audits.
+           <Text align={'center'} letterSpacing={1} mt={4}><strong>Preparing for a Smart Contract Security Audit:
+ </strong> Enhance the reliability of your blockchain applications through a 10-step checklist for smart contract security audits.
 </Text>
 <Text align={'center'} letterSpacing={1} mt={4}><strong>Contact us for a friendly chat about your business needs.
 
