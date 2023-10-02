@@ -13,7 +13,8 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -22,7 +23,7 @@ const About = () => {
         <div className={style.mainSectionContainer}>
           <div className={style.mainSectionContent}>
             <div>
-              <Heading>Cryptocurrency Exchange Development Company</Heading>
+              <Heading>Decentralized Finance and Decentralized Data Contracts</Heading>
             </div>
           </div>
           
@@ -32,22 +33,40 @@ const About = () => {
       <div className={style.infoSection}>
         <div className={style.infoContainer}>
           <div className="content">
-            <Text align={'center'} letterSpacing={1}>
-              Tailored Development Services for Crypto Exchanges Empowering You to Create Extraordinary Success Stories The financial industry is undergoing a substantial paradigm shift, driven by factors such as liberal trade policies, customer demands, technological innovation, and macroeconomic forces. Both emerging and established businesses must embrace cryptocurrency to remain relevant as service providers. Crypto exchange software resembles traditional exchanges but is digital, more secure, and not bound by geographical limitations. AradChain Technologies, a leading cryptocurrency exchange development firm, specializes in crafting innovative solutions for progressive businesses seeking to enter the multi-billion dollar industry. Leverage AradChain Technologies's expertise in cryptocurrency exchange platform development to establish a strong foundation for success in the cryptocurrency sector. Acquire advanced yet user-friendly Bitcoin exchange software equipped with cutting-edge features, industry-leading functionalities, and robust security, all tailored to meet your specific requirements. CONNECT VIA WHATSAPP CONNECT VIA TELEGRAM
+            <Text align={'center'} letterSpacing={1} mt={5}>
+            Decentralized Finance, often abbreviated as DeFi, has emerged as a groundbreaking concept in the world of blockchain technology. Unlike traditional financial systems, DeFi operates on a decentralized network of computers, offering a range of financial services without the need for intermediaries like banks. Through smart contracts, DeFi platforms enable users to engage in activities such as lending, borrowing, trading, and earning interest on their cryptocurrencies. This democratization of finance empowers individuals by providing them with greater control over their assets and financial transactions, all while enhancing transparency and reducing the barriers to entry.
             </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
             <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
-              Features of Cryptocurrency Exchange Software Development Basic
-              Level
+            The Role of Web Developers in DeFi and Blockchain
             </Heading>
 
-            <Text align={'center'} letterSpacing={1}>
-              Our forward-looking cryptocurrency exchange development services ensure that your exchange software thrives in the competitive landscape. Whether you're a large fintech institution, a digital currency startup, or a tech investor, we provide comprehensive services tailored to your venture's size. Over 7 Years of Expertise in Blockchain Thorough Testing & Effective Error Handling Technology-Agnostic, First-Rate Deliverables Full Transparency During Development Modern Coding Techniques & Agile Methods In-House Design and Development Proficiency Exceptional Post-Development Support Driven by Mission, Delivering Quality & Customization AradChain Technologies utilizes its wealth of experience and knowledge to provide futuristic solutions that offer a unique customer experience, surpassing expectations. Our team, comprising experienced fintech consultants, certified engineers, and cryptocurrency experts, grasps your business goals to formulate a distinctive blueprint for achieving success. Seize the Growing Trend of Digital Currency with a Crypto Exchange Clone. We assist companies in scaling their operations by offering on-demand exchange software development services and market-ready cryptocurrency exchange clone script solutions. Our diverse portfolio enables us to deliver exchange scripts that exceed market standards. Cut down the time and cost required to launch a crypto exchange using our cryptocurrency trading script solutions. With our experience in building cutting-edge exchanges, we enable you to replicate popular trading platforms, leveraging our enterprise-class scripts. 
-              <a href="#" style={{ fontSize: "20px" }}>
-                &nbsp;SCHEDULE A FREE DEMO
-              </a>
-              , Gain a competitive advantage in the industry and swiftly
-              establish a revenue stream using our cryptocurrency exchange
-              script solutions. CONNECT VIA WHATSAPP CONNECT VIA TELEGRAM
+            <Text align={'center'} letterSpacing={1} mt={5}>
+              Web developers play a crucial role in the DeFi and blockchain ecosystem. They are responsible for creating user-friendly interfaces and applications that interact with blockchain networks. Web-based DeFi platforms, decentralized exchanges, wallets, and data visualization tools all rely on the expertise of web developers to design and develop seamless and secure user experiences. Additionally, web developers can contribute to the blockchain space by working on smart contract development, blockchain integration, and ensuring the security and efficiency of decentralized applications (DApps). As the DeFi and blockchain industries continue to grow, web developers will remain in high demand to build the next generation of decentralized financial solutions and blockchain-powered applications.
             </Text>
             <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
               Cryptocurrency Exchange Software Development Process
@@ -57,20 +76,20 @@ const About = () => {
             </Text>
 
             <SimpleGrid minChildWidth='200px' spacing='20px' mt={10}>
-              <Card><CardBody><Text>Spot Trading Module</Text></CardBody></Card>
-              <Card><CardBody><Text>Various Advanced Order Types</Text></CardBody></Card>
-              <Card><CardBody><Text>Automated Third-Party KYC</Text></CardBody></Card>
-              <Card><CardBody><Text>Multichain USDT Integration</Text></CardBody></Card>
-              <Card><CardBody><Text>Crypto Swapping</Text></CardBody></Card>
-              <Card><CardBody><Text>Referral and Rewards Programs</Text></CardBody></Card>
-              <Card><CardBody><Text>Mobile Applications</Text></CardBody></Card>
+              <Card><CardBody><Text>Digital assets on blockchain.</Text></CardBody></Card>
+              <Card><CardBody><Text>Transaction processing costs.</Text></CardBody></Card>
+              <Card><CardBody><Text>Storage for cryptocurrencies.</Text></CardBody></Card>
+              <Card><CardBody><Text> Returns on DeFi investments.</Text></CardBody></Card>
+              <Card><CardBody><Text>Process of creating new blockchain blocks.</Text></CardBody></Card>
+              <Card><CardBody><Text>Agreement among network nodes.</Text></CardBody></Card>
+              <Card><CardBody><Text>Decentralized Autonomous Organization.</Text></CardBody></Card>
               <Card><CardBody><Text>News and Announcements Section</Text></CardBody></Card>
-              <Card><CardBody><Text>Admin Panel</Text></CardBody></Card>
-              <Card><CardBody><Text>Intermediate Level</Text></CardBody></Card>
+              <Card><CardBody><Text>Computers in a blockchain network.</Text></CardBody></Card>
+              <Card><CardBody><Text> Blockchain's tamper-resistant nature.</Text></CardBody></Card>
 
-              <Card><CardBody><Text>Native/Utility Token Integration</Text></CardBody></Card>
-              <Card><CardBody><Text>Fiat On/Off Ramp</Text></CardBody></Card>
-              <Card><CardBody><Text>External Liquidity Module</Text></CardBody></Card>
+              <Card><CardBody><Text>Protection of user data.</Text></CardBody></Card>
+              <Card><CardBody><Text> Data on the blockchain is unchangeable.</Text></CardBody></Card>
+              <Card><CardBody><Text>Platforms for buying/selling cryptocurrencies.</Text></CardBody></Card>
               <Card><CardBody><Text>Automated Market Making Bot</Text></CardBody></Card>
               <Card><CardBody><Text>Fiat Payment Gateway</Text></CardBody></Card>
               <Card><CardBody><Text>Airdrop Functionality</Text></CardBody></Card>

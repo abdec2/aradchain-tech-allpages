@@ -13,7 +13,8 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -35,9 +36,35 @@ const About = () => {
             <Text align={'center'} letterSpacing={1}>
             Connect With Our Global Web 3.0 Development Firm to Expand Your Global Market Presence.The landscape of the internet has seen remarkable transformations over the past thirty years. Web 3.0, often referred to as the read-write-own web, represents the third generation of the internet, enabling websites and decentralized applications (dApps) to interact in a manner akin to human interactions. Entrepreneurs can seize the opportunity to forge global business connections with their customers by leveraging Decentralized Ledger Technology for secure and trustless transactions. Enhance your marketing infrastructure with Big Data, AI, and ML. Our team provides comprehensive end-to-end web3 development services to streamline and accelerate your transition to the evolved web, characterized by openness, intelligence, and autonomy. Leverage our expertise to embark on your web3 development journey with ease.Ready to Opt for Our Web 3.0 Development Solutions?
              </Text>
+             <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
              <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={5} mb={10}>
-  Group 65894
-</Heading>
+              Group 65894
+              </Heading>
 <Text align={'center'} letterSpacing={1}>
   Decentralization
   Central to Web 3.0 is decentralization, a distributed network that eliminates central authorities governing the internet. Users regain control over their data and content.
@@ -167,7 +194,7 @@ const About = () => {
 </Text>
 
 <Text align="center" mt={5}>
-  <strong>How quickly can AradChain Technologies initiate my project's development?</strong>
+  <strong>How quickly can AradChain Technologies initiate my project's development? </strong>
 </Text>
 
 <Text align="center" mt={5}>
@@ -175,26 +202,26 @@ const About = () => {
 </Text>
 
 <Text align="center" mt={5}>
-  <strong>Metaverse in the Manufacturing Industry: Role and Future Prospects</strong>
+  <strong>Metaverse in the Manufacturing Industry: Role and Future Prospects: </strong>
   The term "Metaverse" needs no introduction, as it has already woven itself into the fabric of our lives. The unending surge in [...]
   READ MORE
 </Text>
 
 <Text align="center" mt={5}>
-  <strong>Breathing Life into the Metaverse: How AI Empowers NPCs</strong>
-  Blockchain, metaverse, and artificial intelligence are the most remarkable innovations of the 21st century. These technologies have brought a big change in [...]
+  <strong>Breathing Life into the Metaverse: How AI Empowers NPCs?  </strong>
+   Blockchain, metaverse, and artificial intelligence are the most remarkable innovations of the 21st century. These technologies have brought a big change in [...]
   READ MORE
 </Text>
 
 <Text align="center" mt={5}>
-  <strong>White Label Crypto Bank</strong>
+  <strong>White Label Crypto Bank:  </strong>
   Getting Started with a White Label Crypto Banking Platform
   Opportunities often come knocking, and when they do, we all seek an expedient way to leverage them for a brighter future [...]
   READ MORE
 </Text>
 
 <Text align="center" mt={5}>
-  <strong>Our Blockchain Tech Expertise</strong>
+  <strong>Our Blockchain Tech Expertise  </strong>
   We are here for a friendly discussion about your business needs. No obligations.
 </Text>
 

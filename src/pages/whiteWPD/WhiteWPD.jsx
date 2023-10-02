@@ -13,7 +13,9 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
+
 
 const About = () => {
   return (
@@ -35,6 +37,32 @@ const About = () => {
             <Text align={'center'} letterSpacing={1}>
             Tailored White Paper Crafting Solutions,A personalized white paper is an authoritative, persuasive, and all-encompassing formal dossier detailing a business venture, elucidating its quandary and the corresponding resolution. White papers assume a pivotal role in business operations, constructing authority within an industry, augmenting credibility, and displaying thought leadership. Enriched with data-driven insights, a white paper serves as an exceptional instrument to infiltrate the cryptocurrency market and seize the attention of potential investors.Creating a white paper necessitates exhaustive research, coupled with profound knowledge and an intricate comprehension of solution architecture and token economics. At AradChain Technologies, our technical white paper writers are well-versed in the domain, collaborating with our subject matter experts to craft an intricate, technically sound white paper imbued with substantiated statistical data that bolsters the document's authority. Beyond connt generation, our white paper development procedure encompasses white paper design services, guaranteeing a content-rich document that is visually enticing for your prospective investors.Assert your position as industry experts and erect a robust foundation for your cryptocurrency project via our purpose-oriented white paper creation services.
             </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
             <Heading as="h2" size="lg" textAlign="center" mt={5}>
   Our White Paper Formulation Process
 </Heading>

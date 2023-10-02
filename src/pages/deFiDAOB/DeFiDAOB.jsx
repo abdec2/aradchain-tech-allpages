@@ -13,7 +13,8 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -33,70 +34,97 @@ const About = () => {
         <div className={style.infoContainer}>
           <div className="content">
           <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
-  DAO vs Traditional Organizations
-</Heading>
+            DAO vs Traditional Organizations
+          </Heading>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   <strong style={{ marginTop: '4rem' }}>Traditional Organizations</strong>
 </Text>
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   Governance: Centralized top-down management, fostering information and decision bottlenecks.
 </Text>
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   Trust: Anchored in experience and past relationships.
 </Text>
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   Decision-Making: Hinges on expertise and seniority.
 </Text>
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   Operational Costs: Elevated.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   <strong style={{ marginTop: '4rem' }}>AI DAOs</strong>
 </Text>
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   Governance: Embedded in code through smart contracts.
 </Text>
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   Trust: Anchored in cryptography (Blockchain).
 </Text>
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   Decision-Making: Automated through AI (independent agents or AGI) and smart contracts.
 </Text>
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   Operational Costs: Minimal.
 </Text>
+
+<Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
 
 <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
   Features of a Decentralized Autonomous Network
 </Heading>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   <strong style={{ marginTop: '4rem' }}>Open Source Code</strong>
 </Text>
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   DAOs remain closed until the financing phase concludes, at which point they evolve into independent autonomous entities detached from external influences. By open-sourcing the code, all participants gain access to it.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   <strong style={{ marginTop: '4rem' }}>DAO Token</strong>
 </Text>
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   The financing phase endures while setting up DAO rules. Ensuring these rules inherently foster genuine economic growth and accommodate financing is pivotal during this phase.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   <strong style={{ marginTop: '4rem' }}>Based on Smart Contracts</strong>
 </Text>
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   Effective decentralized autonomous organization blockchain operation necessitates well-defined guidelines dictating platform behavior. These guidelines, or rules, are encapsulated within smart contracts, rendering them valid and enforceable in the future.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   <strong style={{ marginTop: '4rem' }}>Using Blockchain Technology</strong>
 </Text>
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   Leveraging blockchain technology, organizations can function autonomously and in a decentralized fashion. Users wield authority and decision-making power on the platform, rendering DAOs transparent, immune to corruption, and immutable.
 </Text>
 
@@ -104,19 +132,19 @@ const About = () => {
   How Does a DAO Function?
 </Heading>
 
-<Text align={'center'} letterSpacing={1} style={{ marginTop: '4rem' }}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   A core community team establishes DAO rules using smart contracts.
 </Text>
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   Smart contracts lay the groundwork on which the DAO operates, visible, verifiable, and auditable by all members.
 </Text>
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   Tokens are issued by the DAO platform to facilitate funding decisions and governance allocation.
 </Text>
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   This protocol enables the DAO to vend tokens for fundraising, thereby bolstering the treasury.
 </Text>
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4} >
   Token holders receive voting rights in proportion to their holdings.
 </Text>
 <Text align={'center'} letterSpacing={1}>
@@ -147,38 +175,38 @@ const About = () => {
   Why Choose AradChain Technologies for DAO Development Services?
 </Heading>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   <strong style={{ marginTop: '4rem' }}>Technical Prowess</strong>
 </Text>
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   Our focus is exclusively on Blockchain technologies. We specialize in one domain and excel at it.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   <strong style={{ marginTop: '4rem' }}>Expert Team</strong>
 </Text>
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   A team of 500 experts aids in refining your offerings, suggesting optimal tech approaches, and aiding in the establishment of communities and campaigns.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   <strong style={{ marginTop: '4rem' }}>Swift Development</strong>
 </Text>
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   Tailored products aligned with your target audience are our hallmark. A coherent roadmap ensures efficient, expedited development and deployment.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1}mt={4}>
   <strong style={{ marginTop: '4rem' }}>Comprehensive Support</strong>
 </Text>
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   Our commitment transcends product launch. Extensive post-delivery services are offered, enabling your unwavering focus on growth.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   <strong style={{ marginTop: '4rem' }}>Meaningful Outcomes</strong>
 </Text>
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   We bring your aspirations to life, ensuring tangible value emerges from your investments.
 </Text>
 
@@ -186,27 +214,27 @@ const About = () => {
   A Glimpse of Our Blogs
 </Heading>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   <strong style={{ marginTop: '4rem' }}>Get-Ready-For-Deploying-DAO-In-Healthcare</strong>
 </Text>
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   Harnessing DAO Blockchain Development to Empower Healthcare and Related Businesses in 2023
   Blockchain technology is revamping enterprise operations, providing a secure, transparent approach to data management and sharing. It is [...]
   READ MORE
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   <strong style={{ marginTop: '4rem' }}>Building and Executing DAO Governance Models in 2023</strong>
 </Text>
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   Cryptocurrencies and blockchain technology merely scratch the surface; the upcoming buzz centers on Decentralized Autonomous Organizations (DAOs). DAO Governance Models are [...]
   READ MORE
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   <strong style={{ marginTop: '4rem' }}>Introduction to DAO Governance Tokens: Why and How to Construct Them</strong>
 </Text>
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   The decentralized world orbits the concept of empowering users with authority and ownership. However, this hinges on the participation of individuals [...]
   READ MORE
 </Text>
