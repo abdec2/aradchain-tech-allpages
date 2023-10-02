@@ -71,7 +71,7 @@ When considering the development of DeFi staking platforms, there are several op
   Our Process
 </Heading>
 <Text align={'center'} letterSpacing={1}>
-  A Glimpse into How Our DeFi Yield Farming Development Company Operates:
+  A Glimpse into How Our DeFi Stacking Company Operates:
 </Text>
 
 <Heading as='h3' size='xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
@@ -85,21 +85,21 @@ When considering the development of DeFi staking platforms, there are several op
   PLAN
 </Heading>
 <Text align={'center'} letterSpacing={1}>
-  We guide clients in preparing for potential market disruptions following the successful launch of a DeFi yield farming platform. Our strategic and advisory services help assess organizational readiness, predict business impacts, and formulate a comprehensive go-to-market strategy.
+  We guide clients in preparing for potential market disruptions following the successful launch of a DeFi Stacking platform. Our strategic and advisory services help assess organizational readiness, predict business impacts, and formulate a comprehensive go-to-market strategy.
 </Text>
 
 <Heading as='h3' size='xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
   BUILD
 </Heading>
 <Text align={'center'} letterSpacing={1}>
-  Leveraging our profound domain knowledge and extensive expertise, we design and architect the DeFi yield farming platform. This entails collaboration across various organizational sectors, engaging stakeholders in legal, compliance, and business aspects to develop solutions primed for deployment.
+  Leveraging our profound domain knowledge and extensive expertise, we design and architect the DeFi stacking platform. This entails collaboration across various organizational sectors, engaging stakeholders in legal, compliance, and business aspects to develop solutions primed for deployment.
 </Text>
 
 <Heading as='h3' size='xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
   IMPLEMENT
 </Heading>
 <Text align={'center'} letterSpacing={1}>
-  We put the DeFi yield farming solution into action, authorizing updates and modifications. Our commitment extends beyond product deployment, as we continue delivering services and support to ensure our solutions tangibly enhance your business.
+  We put the DeFi stacking solution into action, authorizing updates and modifications. Our commitment extends beyond product deployment, as we continue delivering services and support to ensure our solutions tangibly enhance your business.
 </Text>
 
 <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
@@ -120,7 +120,7 @@ DeFi Staking Platform
 </Text>
 
 <Heading as='h2' size='xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
-  DeFi Yield Farming Development Services
+  DeFi Development Services
 </Heading>
 <Text align={'center'} letterSpacing={1}>
   Agile Development
@@ -130,7 +130,7 @@ DeFi Staking Platform
 </Text>
 
 <Heading as='h2' size='xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
-  DeFi Yield Farming Development Services
+  DeFi Yield Staking Development Services
 </Heading>
 <Text align={'center'} letterSpacing={1}>
   Expert Team
@@ -140,7 +140,7 @@ DeFi Staking Platform
 </Text>
 
 <Heading as='h2' size='xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
-  DeFi Yield Farming Development Services
+  DeFi Yield Staking Development Services
 </Heading>
 <Text align={'center'} letterSpacing={1}>
   Comprehensive Support
@@ -150,17 +150,17 @@ DeFi Staking Platform
 </Text>
 
 <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
-  Partner with AradChain Technologies Solutions to swiftly launch your DeFi Yield Farming platform.
+  Partner with AradChain Technologies Solutions to swiftly launch your DeFi Staking platform.
 </Heading>
 <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
   Frequently Asked Questions
 </Heading>
 
 <Text align={'center'} letterSpacing={1} mt={4}>
-  <strong style={{ marginTop: '4rem' }}>What is the concept of yield farming?</strong>
+  <strong style={{ marginTop: '4rem' }}>What is the concept of Staking?</strong>
 </Text>
 <Text align={'center'} letterSpacing={1} mt={4}>
-  Yield farming involves locking or lending crypto assets via DeFi protocols to earn rewards in the form of interest, governance tokens, or other tokens that provide access to certain products/services at a discounted price. The higher the lending amount, higher the reward.
+DeFi staking, or decentralized finance staking, is a concept where users lock up their cryptocurrency assets in smart contracts within a DeFi platform. In return, they earn rewards, typically in the form of additional tokens or interest, for participating in the network's operations. Staking helps secure the blockchain network and maintain its integrity by incentivizing users to hold and stake their assets, reducing the circulating supply. It also allows users to passively generate income from their holdings while contributing to the DeFi ecosystem's overall functionality. Staking often involves specific rules and time frames for participation and can be an essential element of various DeFi protocols and projects.
 </Text>
 
 <Text align={'center'} letterSpacing={1} mt={4}>
@@ -168,11 +168,11 @@ DeFi Staking Platform
 </Text>
 
 <Text align={'center'} letterSpacing={1} mt={4}>
-  <strong style={{ marginTop: '4rem' }}>Can anyone initiate a DeFi Yield Farming platform?</strong>
+  <strong style={{ marginTop: '4rem' }}>Can anyone initiate a DeFi Yield Staking platform?</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={1} mt={4}>
-  <strong style={{ marginTop: '4rem' }}>How long does it take to develop a DeFi Yield Farming Platform?</strong>
+  <strong style={{ marginTop: '4rem' }}>How long does it take to develop a DeFi Staking Platform?</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={1} mt={4}>

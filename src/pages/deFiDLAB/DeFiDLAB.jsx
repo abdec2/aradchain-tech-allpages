@@ -13,7 +13,11 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
+
+
 
 const About = () => {
   return (
@@ -35,17 +39,43 @@ const About = () => {
             <Text align={'center'} letterSpacing={1}>
             Business-Focused DeFi Lending Platform Development Solutions In 2020, the DeFi market surged, and by April 2021, the DeFi market's size, assessed by the total locked value, exceeded USD 61 billion. Within this impressive value, DeFi lending and borrowing played a pivotal role.Around the world, startups and corporations are seizing the chance to tap into the billion-dollar DeFi market by launching their own DeFi lending and borrowing software. If you're a startup or an established enterprise aiming to ride the next DeFi lending wave, AradChain Technologies Solutions is your guiding partner.We lay out a coherent roadmap to construct a DeFi lending platform fortified with pioneering features. Our fusion of blockchain, finance, and IT expertise empowers us to proficiently deliver high-performance lending platforms aligned with your business objectives.Connect with our subject matter experts to expedite your DeFi lending platform development journey.
             </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
             <Text align={'center'} letterSpacing={1} marginTop={3}>
               <strong>DeFi Wallet:</strong>
               Our secure DeFi wallet integration empowers borrowers and lenders to deposit crypto assets seamlessly for borrowing and lending. The wallet supports various tokens and stablecoins.
             </Text>
             
             <Text align={'center'} letterSpacing={1} marginTop={3}>
-              <strong>Smart Contract:</strong>
+              <strong>Smart Contract: </strong>
               Complete decentralization is achieved through smart contracts. These automated digital intermediaries manage fund flow, transactions, and calculations on the platform.
             </Text>
             <Text align={'center'} letterSpacing={1} marginTop={3}>
-              <strong>Liquidity Pool:</strong>
+              <strong>Liquidity Pool: </strong>
               Funds provided by lenders constitute the liquidity pool, ensuring ample borrowing funds are available on the platform.
             </Text>
             <Text align={'center'} letterSpacing={1} marginTop={3}>
@@ -55,83 +85,83 @@ const About = () => {
             <Text align={'center'} letterSpacing={1} marginTop={3}><strong>Risk Management: </strong>
             A meticulously designed risk management system shields lenders from losses if a borrowing account's value exceeds 100% of borrowing capacity due to collateral or asset volatility.
             </Text>
-            <Text align={'center'} letterSpacing={1} marginTop={3}><strong>Institutional-Grade Security:</strong>
+            <Text align={'center'} letterSpacing={1} marginTop={3}><strong>Institutional-Grade Security: </strong>
             The platform integrates market-leading security elements, ensuring top-tier safety for borrowers' and lenders' funds.
             </Text>
             <Heading align={'center'} marginTop={5} marginBottom={5} size={'lg'}>Why Opt for AradChain Technologies's DeFi Borrowing Software Development</Heading>
-            <Text align={'center'} letterSpacing={1} marginTop={3}><strong>Institutional-Grade Security:</strong>
+            <Text align={'center'} letterSpacing={1} marginTop={5}><strong>Institutional-Grade Security: </strong>
             The platform integrates market-leading security elements, ensuring top-tier safety for borrowers' and lenders' funds.
             </Text>
-            <Text align={'center'} letterSpacing={1} marginTop={3}>
+            <Text align={'center'} letterSpacing={1} marginTop={6}>
               <strong>Technical Excellence:</strong>
               Our domain is Blockchain technologies, and we excel in it.
             </Text>
-            <Text align={'center'} letterSpacing={1} marginTop={3}>
+            <Text align={'center'} letterSpacing={1} marginTop={6}>
               <strong>Expert Team:</strong>
               With 500 experts, we refine your offerings, suggest optimal tech strategies, and assist in community setup.
             </Text>
 
-<Text align={'center'} letterSpacing={1} marginTop={3}>
-<strong>Agile Development:</strong>
+<Text align={'center'} letterSpacing={1} marginTop={6}>
+<strong>Agile Development: </strong>
 Customized products tailored to your audience, with a well-structured roadmap ensuring smooth and swift development.
 </Text>
 
-<Text align={'center'} letterSpacing={1} marginTop={3}>
-<strong>Comprehensive Support:</strong>
+<Text align={'center'} letterSpacing={1} marginTop={6}>
+<strong>Comprehensive Support: </strong>
 Our commitment extends past launch, providing extensive post-delivery services for your sustained growth.
 </Text>
 
-<Text align={'center'} letterSpacing={1} marginTop={3}>
-<strong>Meaningful Outcomes:</strong>
+<Text align={'center'} letterSpacing={1} marginTop={6}>
+<strong>Meaningful Outcomes: </strong>
 We guarantee tangible impact, ensuring you see the value of your investment.
 </Text>
 <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
   Frequently Asked Questions
 </Heading>
 
-<Text align={'center'} letterSpacing={1}>
-  <strong style={{ marginTop: '4rem' }}>How does DeFi lending and borrowing differ from traditional lending and borrowing?</strong>
+<Text align={'center'} letterSpacing={1} mt={6}>
+  <strong style={{ marginTop: '6rem' }}>How does DeFi lending and borrowing differ from traditional lending and borrowing?</strong>
 </Text>
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
   In traditional lending and borrowing, intermediaries oversee platform activities. In DeFi lending platforms, third-party involvement is eliminated.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
-  <strong style={{ marginTop: '4rem' }}>Who holds control over decentralized borrowing and lending platforms?</strong>
+<Text align={'center'} letterSpacing={1} mt={6}>
+  <strong style={{ marginTop: '6rem' }}>Who holds control over decentralized borrowing and lending platforms?</strong>
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
-  <strong style={{ marginTop: '4rem' }}>Can I replicate a renowned DeFi lending platform?</strong>
+<Text align={'center'} letterSpacing={1} mt={6}>
+  <strong style={{ marginTop: '6rem' }}>Can I replicate a renowned DeFi lending platform?</strong>
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
-  <strong style={{ marginTop: '4rem' }}>What are the costs associated with building a DeFi lending platform?</strong>
+<Text align={'center'} letterSpacing={1} mt={6}>
+  <strong style={{ marginTop: '6rem' }}>What are the costs associated with building a DeFi lending platform?</strong>
 </Text>
 
 <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
   Explore More in Our Blogs
 </Heading>
 
-<Text align={'center'} letterSpacing={1}>
-  <strong style={{ marginTop: '4rem' }}>Safeguarding DeFi Profits Guide to Private Key Security</strong>
+<Text align={'center'} letterSpacing={1} mt={6}>
+  <strong style={{ marginTop: '6rem' }}>Safeguarding DeFi Profits Guide to Private Key Security</strong>
 </Text>
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={3}>
   Navigating DeFi Safely: 9 Ways to Protecting Your Private Keys and Securing Your Financial Future
   While the cryptocurrency, blockchain, and DeFi developments present exciting opportunities, they also highlight the paramount importance of safeguarding private keys to ensure [...]
   READ MORE
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
-  <strong style={{ marginTop: '4rem' }}>Future of DeFi ZKP-based Apps</strong>
+<Text align={'center'} letterSpacing={1} mt={6}>
+  <strong style={{ marginTop: '6rem' }}>Future of DeFi ZKP-based Apps</strong>
 </Text>
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={3}>
   Zero Knowledge Proof-Based Applications Are the Future of DeFi
   Decentralized Finance development (DeFi) has disrupted the financial sector, offering a trustless and transparent alternative to traditional financial services. However, the DeFi landscape [...]
   READ MORE
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
-  <strong style={{ marginTop: '4rem' }}>Popular Use Cases of DeFi</strong>
+<Text align={'center'} letterSpacing={1} mt={6}>
+  <strong style={{ marginTop: '6rem' }}>Popular Use Cases of DeFi</strong>
 </Text>
 <Text align={'center'} letterSpacing={1}>
   Top 12 Use Cases of DeFi
