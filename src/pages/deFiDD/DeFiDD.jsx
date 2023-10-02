@@ -13,7 +13,8 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -35,6 +36,32 @@ const About = () => {
             <Text align={'center'} letterSpacing={1}>
             Shifting from Traditional Business Models to DeFi Development Have you been grappling with issues like delayed settlement cycles, inefficient price discovery, liquidity constraints, suboptimal decision-making, and uncertainties around underlying assets due to conventional financial approaches? Decentralized Finance (DeFi) Development has the potential to alleviate these challenges.Whether you're a startup or a Fortune 500 company, the decentralized future is within reach through DeFi blockchain development. From enhanced stakeholder control and rapid settlements to improved auditability and reduced counterparty risks, the services offered by a DeFi development company hold immense promise for emerging businesses, propelling them to new heights.Embrace a Larger Audience with Generative NFT Art.AradChain Technologies is here to assist you in creating generative NFTs and deploying them on your chosen blockchain using NFT generator software development. Embark on the journey of building a future-ready generative NFT art marketplace that accommodates various media types such as images, videos, and GIFs. Whether on Solana, Ethereum, or another blockchain of your preference, AradChain Technologies is your comprehensive solution for generative NFT art marketplace development.
             </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
             <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
             Advanced Features of Our NFT Program
             </Heading>
@@ -98,42 +125,44 @@ const About = () => {
   AradChain Technologies empowers you to develop NFT generator software that customizes, creates, and deploys smart contracts to your chosen blockchain. Establish your generative art NFT marketplace, enabling users to mint and sell their unique collections directly from your platform.
 </Text>
 
-<Heading as='h2' size='1xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
-  HIRE US!
+<Heading as='h2' size='1xl' letterSpacing={2} my={5} textAlign={'center'} mt={7} mb={10}>
+<Link to="/contact" target="_blank">
+<Button colorScheme="blue" size="lg">HIRE US !</Button>
+</Link>
 </Heading>
 <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
   Advantages of NFT Generator Software for Your Business
 </Heading>
 <Text align={'center'} letterSpacing={1} mt={5}>
-  Authenticity & Indivisibility.
+<strong>Authenticity & Indivisibility.</strong>
 </Text>
 <Text align={'center'} letterSpacing={1} mt={5}>
   Generate NFT art that preserves its authenticity, as each piece remains indivisible and is secured by copyright. Information verification ensures 100% authenticity, and NFT generative software development supports the entire process.
 </Text>
 
 <Text align={'center'} letterSpacing={1} mt={5}>
-  Enhanced Liquidity.
+<strong>Enhanced Liquidity.</strong>
 </Text>
 <Text align={'center'} letterSpacing={1} mt={5}>
   Facilitate swift online trading of generated NFT art, augmenting token liquidity and broadening the pool of potential buyers for these assets.
 </Text>
 
 <Text align={'center'} letterSpacing={1} mt={5}>
-  Diverse Trading Opportunities
+<strong>Diverse Trading Opportunities</strong>
 </Text>
 <Text align={'center'} letterSpacing={1} mt={5}>
   Empower artists to transform their work into distinctive NFTs, surpassing other forms of digital currencies. NFT generative art leverages advanced trading systems.
 </Text>
 
 <Text align={'center'} letterSpacing={1} mt={5}>
-  Establishing Scarcity
+<strong>Establishing Scarcity</strong>
 </Text>
 <Text align={'center'} letterSpacing={1} mt={5}>
   Reinvent ownership and exclusivity by exclusively minting NFT generative art on your marketplace. Control information flow and sell digital assets as premium commodities.
 </Text>
 
 <Text align={'center'} letterSpacing={1} mt={5}>
-  Interoperable Excellence
+<strong>Interoperable Excellence</strong>
 </Text>
 <Text align={'center'} letterSpacing={1} mt={5}>
   Generated NFTs retain their uniqueness, making them irreplicable digital assets. Artists can earn revenue on a generative crypto art marketplace that ensures accuracy and authenticity.
@@ -147,7 +176,7 @@ const About = () => {
 </Text>
 
 <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
-  Explore Generative Art Today!
+<strong>Explore Generative Art Today!</strong>
 </Heading>
 <Text align={'center'} letterSpacing={1} mt={5}>
   Consult AradChain Technologies for NFT generator software or generative art NFT marketplace development and unlock the potential of your business concept.
@@ -155,25 +184,25 @@ const About = () => {
 <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
   Frequently Asked Questions
 </Heading>
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
   Looking for more information about NFT programs? Find answers below or chat with our support team for further guidance.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
   <strong> Where can I find a reputable NFT generative software development company near me?</strong>
 </Text>
 
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
   <strong>What is the cost of NFT generator software?</strong>
 </Text>
 
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
   <strong>How long does it take to develop customized NFT Programs?</strong>
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={6}>
  <strong> Can I access a live demo of NFT programs or NFT generator software?</strong>
 </Text>
 

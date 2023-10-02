@@ -13,7 +13,9 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -44,19 +46,45 @@ Enterprises are on the lookout for avenues to expand their crypto operations and
 CONNECT ON WHATSAPP CONNECT ON TELEGRAM
 
             </Text>
-            <Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     What Sets White Label Cryptocurrency Wallet Development Apart?
 </Heading>
 
-<Text align={'center'} letterSpacing={2} marginTop={4}>
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+
     Multi-Signature Crypto Wallet Development
-</Text>
+</Heading>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
     Enhance wallet security by requiring multiple signatures to authorize transactions, thwarting fraudulent activities and money laundering.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Blockchain Wallet Development
 </Heading>
 
@@ -64,7 +92,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
     Our certified developers employ cutting-edge tools to craft integrated wallets deployed on your chosen blockchain. The strong security mechanisms ensure the content remains secure and immutable.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Custom Crypto Wallet Development
 </Heading>
 
@@ -72,7 +100,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
     We specialize in offering bespoke crypto wallet solutions, swiftly developing white-label Bitcoin wallets and more to meet your specific requirements.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Centralized Wallet Development
 </Heading>
 
@@ -80,7 +108,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
     Managed by a third party, a White Label centralized wallet enables users to focus on vital business tasks. The platform facilitates transaction authentication and address whitelisting.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Decentralized Wallet Development
 </Heading>
 
@@ -88,7 +116,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
     Bestowed with complete asset control, decentralized wallets empower users to manage digital assets independently, free from third-party involvement.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Web3 Wallet Development
 </Heading>
 
@@ -96,14 +124,10 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
     Our top-tier Web3 wallet development services grant access to various currencies like cryptocurrencies, NFTs, tokens, and more. Seamlessly access prominent decentralized applications and engage in token swaps.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
-    CONSULT OUR EXPERTS
-</Heading>
-
 <Text align={'center'} letterSpacing={2} marginTop={4}>
     Unsure about the best wallet solution for your business? Let our consultation guide you!
 </Text>
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     White Label Wallet Clone Script
 </Heading>
 
@@ -111,7 +135,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
     Here are the white-label wallet clones meticulously tailored to meet client needs.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Trust Wallet Clone
 </Heading>
 
@@ -119,7 +143,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
     Similar to Trust Wallet, this clone offers secure storage, sending, and receiving of cryptocurrencies, tokens, stablecoins, and NFTs.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Metamask Wallet Clone
 </Heading>
 
@@ -127,7 +151,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
     Our clone solution mirrors Metamask's interaction with Ethereum-based blockchain apps, facilitating faster transactions on both web and mobile platforms.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     TRON Link Wallet Clone
 </Heading>
 
@@ -135,7 +159,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
     The TRON link wallet clone simplifies access to TRON blockchain, installable as browser extensions or Android and iOS apps for asset transfers.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Exodus Wallet Clone
 </Heading>
 
@@ -143,7 +167,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
     Perform secure crypto storage, exchange, and trading with the Exodus wallet clone. Our platform-compatible clones are customizable to your needs.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Electrum Wallet Clone
 </Heading>
 
@@ -151,20 +175,16 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
     Replicating the Electrum wallet, our solution safeguards Bitcoins with password protection. Users retain private key control and recover wallets via seed phrases.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Launch a Robust, Scalable White Label Clone Script Solution!
 </Heading>
 
-<Text align={'center'} letterSpacing={2} marginTop={4}>
-    REQUEST A FREE DEMO
-</Text>
-
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Advanced Features Integrated into the White Label Crypto Wallet Platform
 </Heading>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    Cross-Chain Crypto Swap
+<strong>Cross-Chain Crypto Swap</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -172,7 +192,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    Multichain Wallets
+<strong>Multichain Wallets</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -180,7 +200,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    Multi-Wallet Support
+<strong>Multi-Wallet Support</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -188,7 +208,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    On-Chain Crypto Swap
+<strong>On-Chain Crypto Swap</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -196,7 +216,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    Fiat On/Off Ramp
+<strong>Fiat On/Off Ramp</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -204,7 +224,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    Multichain DApp Browser
+<strong>Multichain DApp Browser</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -212,7 +232,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    Real-Time Trading Insights
+<strong>Real-Time Trading Insights</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -220,7 +240,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    NFT Collectibles
+<strong>NFT Collectibles</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -228,7 +248,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    Prepaid Cards
+<strong>Prepaid Cards</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -236,7 +256,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    Over-the-Counter Trading
+<strong>Over-the-Counter Trading</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -244,7 +264,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    Wallet Connect
+<strong>Wallet Connect</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -252,7 +272,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    Chrome Wallet Extension
+<strong>Chrome Wallet Extension</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -260,7 +280,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    Ledger Wallet Integration
+<strong>Ledger Wallet Integration</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -268,7 +288,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    Peer-to-Peer Trading (P2P)
+<strong>Peer-to-Peer Trading (P2P)</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -276,7 +296,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    Watch-Only Wallet
+<strong>Watch-Only Wallet</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -284,7 +304,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    Group Transfer/Airdrop
+<strong> Group Transfer/Airdrop</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -292,7 +312,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    Add Custom Token
+    <strong>Add Custom Token</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -300,7 +320,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    Address Book
+<strong> Address Book</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -308,7 +328,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    Native Fiat Currency Selection
+<strong> Native Fiat Currency Selection</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -316,7 +336,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    Referral
+<strong>Referral</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -328,7 +348,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
 </Heading>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    Biometric Authentication
+<strong> Biometric Authentication</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -336,7 +356,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    Multi-Signature
+<strong> Multi-Signature</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -344,7 +364,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    Passcode-PIN Protection
+<strong>Passcode-PIN Protection</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -352,7 +372,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    Automatic Session Logout
+<strong> Automatic Session Logout</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -360,7 +380,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    Credit Card Enabled Transactions
+<strong> Credit Card Enabled Transactions</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -368,7 +388,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    Multi-Coin & Multi-Asset Support
+<strong>Multi-Coin & Multi-Asset Support</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -383,7 +403,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    1. Create an Account
+<strong> 1. Create an Account</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -391,7 +411,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    2. Send Funds
+<strong>2. Send Funds</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -399,7 +419,7 @@ CONNECT ON WHATSAPP CONNECT ON TELEGRAM
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    3. Receive Funds
+<strong>3. Receive Funds</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -518,12 +538,11 @@ AradChain Technologies is the preferred choice for white-label crypto wallet dev
     Yes, we implement security measures in White Label wallet solutions to ensure the safety of users' assets and data.
 </Text>
 
-<Text align={'center'} letterSpacing={2} marginTop={4}> 
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
 Explore More in Our Blogs
-White Label Crypto Wallet
-Exploring the Cost of Developing a White Label Crypto Wallet
-Table of Contents Introduction Understanding the Essence of White-Label Crypto Wallets In-Depth Market Overview Benefits of a White-Label Crypto Wallet Solution […]
-
+</Heading>
+<Text align={'center'} letterSpacing={2} marginTop={4}> 
+White Label Crypto Wallet.Exploring the Cost of Developing a White Label Crypto Wallet,table of Contents Introduction Understanding the Essence of White-Label Crypto Wallets In-Depth Market Overview Benefits of a White-Label Crypto Wallet Solution <strong>Read More[…]</strong>
 </Text>
             
 

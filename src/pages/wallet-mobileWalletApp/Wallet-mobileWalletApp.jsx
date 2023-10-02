@@ -13,7 +13,11 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
+
+
 
 const About = () => {
   return (
@@ -34,7 +38,33 @@ const About = () => {
           <div className="content">
             <Text align={'center'} letterSpacing={1}>
             Revolutionize your revenue potential with AradChain Technologies' cutting-edge crypto wallet app development services. In a rapidly expanding global crypto market, projected to reach 1 billion users by December 2022, we offer secure and scalable solutions. Leveraging our extensive experience, we craft tailor-made white-label wallet apps to expedite market entry. As your trusted technology partner, we provide crypto wallet consultation, Bitcoin wallet development, multi-currency wallet creation, crypto coin development, and crypto mining assistance. Our meticulous development process includes requirement analysis, designing, development, deployment, and continuous post-deployment updates. Our distinctive offerings encompass a robust infrastructure, an expert development team, domain expertise, budget-friendly projects, tailored solutions, punctual delivery, and a transparent process. Choose AradChain Technologies for your crypto wallet app development and benefit from our highly experienced team, proficiency in frameworks and SDKs, unparalleled assistance, comprehensive service spectrum, and a proven track record. Depending on your specific needs, a crypto mobile app should include features like real-time conversion rates, robust authentication measures, QR code scanners for quick payments, and a comprehensive statistical scale—all seamlessly integrated by our reputable crypto wallet development company. The cost of developing a crypto wallet app varies based on complexity, features, and requirements. We prioritize data security and implement stringent measures to protect crypto wallet app users' data. The development timeframe depends on project specifics, and our experts can provide estimates based on your requirements. Explore our insightful blogs on white-label crypto wallet development, digital identity wallets, and mobile wallet app development. Reach out to us for a friendly discussion about your business needs, with no obligations attached.
-              </Text>
+            </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
             
           </div>
 

@@ -13,7 +13,9 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
+
 
 const About = () => {
   return (
@@ -35,7 +37,33 @@ const About = () => {
             <Text align={'center'} letterSpacing={1}>
             AradChain Technologies serves as a prominent Bitcoin wallet development firm, playing a pivotal role in the success and revenue growth of numerous businesses. Our team of experts meticulously deconstructs the development process into sequential steps, ensuring thorough completion of each task. With a keen eye on the rapidly evolving trends in Bitcoin wallet app development, we remain vigilant to seamlessly incorporate these advancements into our wallet solutions. Our company has consistently delivered top-tier Bitcoin wallet development services to global enterprises, spanning various domains, including consulting, Bitcoin wallet creation, multicurrency wallet development, ICO development, and Bitcoin coin mining. We take pride in crafting advanced Bitcoin wallets, operating on a private key basis for secure transactions, and assisting with token mining and secure storage within decentralized databases. Connect with AradChain Technologies today to discuss your Bitcoin wallet requirements with our experts and unlock the potential for enhanced financial solutions.
             </Text>
-            <Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
+            <Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
   Our Distinctiveness as a Bitcoin Wallet Development Company
 </Heading>
 <Text align="center"><strong >Uniqueness:</strong></Text>
@@ -55,7 +83,7 @@ const About = () => {
   - 24/7 Customer Assistance
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
   Discover the Attributes of Our Enterprise-Grade Bitcoin Wallet Solutions
 </Heading>
 
@@ -81,7 +109,7 @@ const About = () => {
   - Our centralized Bitcoin wallet design integrates with an EVM dashboard, facilitating real-time tracking of wallet activities.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
   Our Development Process
 </Heading>
 <Text align="center"><strong >Requirment Gathering</strong></Text>
@@ -115,7 +143,7 @@ const About = () => {
   - Continuous updates and bug fixes occur during the post-deployment phase.
   - Monthly or yearly packages can be tailored to your requirements.
 </Text>
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">Our Proficency:</Heading>
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">Our Proficency:</Heading>
 <SimpleGrid minChildWidth='200px' spacing='20px' mt={10}>
 <Card>
     <CardBody>
@@ -270,15 +298,15 @@ const About = () => {
   <strong>Cost Estimate:</strong> The cost of Bitcoin wallet development depends on the app's features and complexity. Our experts will provide a free cost estimate tailored to your preferences.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
   How Long Does It Take to Develop a Bitcoin Wallet?
 </Heading>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
   Do You Implement Security Measures during Bitcoin Wallet Development?
 </Heading>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
   A Glance at Our Blogs
 </Heading>
 
@@ -306,7 +334,7 @@ const About = () => {
   <strong>Table of Contents:</strong> Introduction to Mobile Wallet Apps Current Market Trends in Mobile Crypto Wallet Apps Reasons for Businesses to Invest in Mobile […]
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
   Our Blockchain Tech Expertise
 </Heading>
 

@@ -13,7 +13,8 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -33,16 +34,40 @@ const About = () => {
         <div className={style.infoContainer}>
           <div className="content">
             <Text align={'center'} letterSpacing={1}>
-            Collaborate with Global Leaders for Multi-Currency Wallet Development
-AradChain Technologies boasts an exceptionally skilled team specializing in cryptocurrency wallet development. We offer secure and scalable solutions for multi-currency wallets, deployable on your preferred platform. Our approach encompasses diverse industry requirements and project scopes, leveraging top-notch blockchain technology. Each application we create is both secure and scalable, propelling your business objectives. Our integration of captivating designs, coupled with agile development techniques, aims to enhance the user's wallet experience.
-
-
+            Collaborate with Global Leaders for Multi-Currency Wallet Development AradChain Technologies boasts an exceptionally skilled team specializing in cryptocurrency wallet development. We offer secure and scalable solutions for multi-currency wallets, deployable on your preferred platform. Our approach encompasses diverse industry requirements and project scopes, leveraging top-notch blockchain technology. Each application we create is both secure and scalable, propelling your business objectives. Our integration of captivating designs, coupled with agile development techniques, aims to enhance the user's wallet experience.
             </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+                <Text textAlign={'center'} mt={4}>
+                    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
+
             <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
             Security Features of Whitelabel Multi-Currency Wallet
              </Heading>
 
-             <Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+             <Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Dual-Factor Authentication (1)
 </Heading>
 
@@ -54,7 +79,7 @@ AradChain Technologies boasts an exceptionally skilled team specializing in cryp
     Employing the safest verification method, dual-factor authentication adds an additional security layer, safeguarding users' personal and financial data. Combining a secure PIN or password with fingerprint or facial recognition grants access to wallet features.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Automated Session Logout (2)
 </Heading>
 
@@ -66,7 +91,7 @@ AradChain Technologies boasts an exceptionally skilled team specializing in cryp
     To prevent misuse, users can toggle the session logout feature based on their preferences. In cases of inactivity, the mobile wallet sends notifications to users before initiating session logout.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Comprehensive Threat Protection (1)
 </Heading>
 
@@ -78,7 +103,7 @@ AradChain Technologies boasts an exceptionally skilled team specializing in cryp
     Our wallet actively monitors data flow to swiftly detect and address vulnerabilities. Robust security measures are implemented to shield wallets from potential threats.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Wallet Backup (1)
 </Heading>
 
@@ -90,7 +115,7 @@ AradChain Technologies boasts an exceptionally skilled team specializing in cryp
     In the event of technical glitches or failures, digital assets are safeguarded through the wallet backup feature. Users generate a backup phrase, crucial for a seamless backup process.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Email-Based Authentication (1)
 </Heading>
 
@@ -102,7 +127,7 @@ AradChain Technologies boasts an exceptionally skilled team specializing in cryp
     Among other security mechanisms, we incorporate email authentication in wallet solutions. After a user generates a withdrawal request, an authorization email is dispatched. Transactions proceed post-approval.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Explore Our Inclusive Multi-Currency Wallet Development Services
 </Heading>
 
@@ -110,7 +135,7 @@ AradChain Technologies boasts an exceptionally skilled team specializing in cryp
     The digital economy heavily features multi-currency wallets, a segment introducing innovative concepts like multi-currency apps for secure online transactions. As an expanding crypto wallet development company, we stand as your trusted technology ally, armed with extensive experience in the IT domain.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     1 Multi-Currency Wallet Consultation
 </Heading>
 
@@ -118,7 +143,7 @@ AradChain Technologies boasts an exceptionally skilled team specializing in cryp
     Being a well-established firm in multi-currency wallet development, we extend feasible solutions to streamline business processes for enterprises.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     2 Multi-Currency Wallet Development
 </Heading>
 
@@ -126,7 +151,7 @@ AradChain Technologies boasts an exceptionally skilled team specializing in cryp
     We craft solutions for multi-cryptocurrency wallets, ensuring secure storage and facilitating future transactions in a safe environment. Our experts harness advanced technologies in wallet development.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     3 Deployment
 </Heading>
 
@@ -134,7 +159,7 @@ AradChain Technologies boasts an exceptionally skilled team specializing in cryp
     Beyond employing cutting-edge tools and technologies, we ensure seamless interoperability with various blockchain networks.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Token Encryption & Mining
 </Heading>
 
@@ -142,14 +167,11 @@ AradChain Technologies boasts an exceptionally skilled team specializing in cryp
     We offer token mining support and store tokens in decentralized databases. Our developers implement robust encryption techniques to thwart hacking attempts.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
-    Connect with AradChain Technologies now and engage in discussions with our Multi-Currency Wallet experts TODAY!
-</Heading>
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading  as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Outstanding Attributes of Our Multi-Currency Wallet
 </Heading>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     OTC Assistance (3)
 </Heading>
 
@@ -161,7 +183,7 @@ AradChain Technologies boasts an exceptionally skilled team specializing in cryp
     A standout feature of our wallet is OTC trading support. This ensures highly secure transactions with minimal latency for traders.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Support for Multiple Currencies (2)
 </Heading>
 
@@ -173,7 +195,7 @@ AradChain Technologies boasts an exceptionally skilled team specializing in cryp
     Our dependable multi-currency wallet solutions cater to Bitcoins and other popular Altcoins. Wallets are tailored to business needs, offering trading facilities as per client requirements.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Push Alerts (2)
 </Heading>
 
@@ -185,7 +207,7 @@ AradChain Technologies boasts an exceptionally skilled team specializing in cryp
     Users can activate or deactivate push notifications, receiving transaction-related alerts at their convenience. Notifications cover signals, prices, and marketing activities.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     QR Code Scanner (2)
 </Heading>
 
@@ -197,7 +219,7 @@ AradChain Technologies boasts an exceptionally skilled team specializing in cryp
     The integrated QR code scanner expedites instant payments. Users can swiftly make payments at PoS terminals or through online services.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Risk Oversight (2)
 </Heading>
 
@@ -209,7 +231,7 @@ AradChain Technologies boasts an exceptionally skilled team specializing in cryp
     Our wallets offer risk management, detecting illicit wallet addresses and preventing duplicate payments.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Multi-Signature Support (3)
 </Heading>
 
@@ -221,7 +243,7 @@ AradChain Technologies boasts an exceptionally skilled team specializing in cryp
     Activate the Multi-Signature function, enabling users to view transactions, authorize them, and access individual recovery options.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Our Multi-Currency Wallet Development Process
 </Heading>
 
@@ -234,7 +256,7 @@ AradChain Technologies boasts an exceptionally skilled team specializing in cryp
     Assessing features and implementation conditions
     Creating a development roadmap for multi-currency wallets.
 </Text>
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">Design Phase</Heading>
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">Design Phase</Heading>
 <SimpleGrid minChildWidth='200px' spacing='20px' mt={10}>
 <Card>
     <CardBody>
@@ -260,7 +282,7 @@ AradChain Technologies boasts an exceptionally skilled team specializing in cryp
     </CardBody>
 </Card>
 </SimpleGrid>
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">Development Stage</Heading>
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">Development Stage</Heading>
 <SimpleGrid minChildWidth='200px' spacing='20px' mt={10}>
 <Card>
     <CardBody>
@@ -281,7 +303,7 @@ AradChain Technologies boasts an exceptionally skilled team specializing in cryp
 </Card>
 
 </SimpleGrid>
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">Development Stage</Heading>         
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">Development Stage</Heading>         
 <SimpleGrid minChildWidth='200px' spacing='20px' mt={10}>
 <Card>
     <CardBody>
@@ -302,7 +324,7 @@ AradChain Technologies boasts an exceptionally skilled team specializing in cryp
 </Card>
 
 </SimpleGrid>
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">Deployment</Heading>
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">Deployment</Heading>
 <SimpleGrid minChildWidth='200px' spacing='20px' mt={10}>
 <Card>
     <CardBody>
@@ -321,7 +343,7 @@ AradChain Technologies boasts an exceptionally skilled team specializing in cryp
 </Card>
 
 </SimpleGrid>
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">Our Unique Offerings:</Heading>
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">Our Unique Offerings:</Heading>
 <SimpleGrid minChildWidth='200px' spacing='20px' mt={10}>
 <Card>
     <CardBody>
@@ -390,11 +412,11 @@ AradChain Technologies boasts an exceptionally skilled team specializing in cryp
 </Card>
 
 </SimpleGrid>
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">Why Choose Us for Multi-Currency Wallet Development?</Heading>
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">Why Choose Us for Multi-Currency Wallet Development?</Heading>
 <Text align={'center'} letterSpacing={2} marginTop={4}>
 AradChain Technologies stands as a trustworthy IT partner, providing futuristic and enterprise-grade solutions for multi-currency wallet development. Our unparalleled accessibility and support empower businesses in achieving their goals.
 </Text>
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Frequently Asked Questions
 </Heading>
 
@@ -422,7 +444,7 @@ AradChain Technologies stands as a trustworthy IT partner, providing futuristic 
     Security is a paramount concern in our multi-currency wallet development. We implement robust measures to ensure user data and assets are safeguarded.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     A Peek into Our Blogs
 </Heading>
 
@@ -450,7 +472,7 @@ AradChain Technologies stands as a trustworthy IT partner, providing futuristic 
     Elevating User Experience through Mobile Wallet App Development Solutions
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Our Expertise in Blockchain Technology
 </Heading>
 

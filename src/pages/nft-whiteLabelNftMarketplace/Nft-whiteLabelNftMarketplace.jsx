@@ -13,7 +13,8 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -35,6 +36,33 @@ const About = () => {
             <Text align={'center'} letterSpacing={1}>
               White Label NFT Marketplace Creation for Quick Market Entry Unleash the full potential of NFTs through our white label NFT marketplace platform, offering secure minting, listing, transactions, and trading of NFT collections. Our expertise spans real estate, event ticketing, gaming, royalties, and more, making AradChain Technologies a specialist in diverse white label NFT marketplace development services. Crafted to align with the expectations of modern market players, customers, and millennials, we stand as your digital partner for navigating the billion-dollar NFT landscape. Effortlessly launch a contemporary white label NFT marketplace equipped with essential features and cutting-edge technologies.
               </Text>
+              <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
+
             <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
             DID YOU KNOW? "The average revenue per user in the NFT segment is currently $114.80."
             </Heading>
@@ -226,26 +254,36 @@ const About = () => {
 
 <Text align="center">
   <strong>What are the benefits of choosing a white-label NFT platform for businesses?</strong>
+  </Text>
+  <Text align="center" mt={6}>
   Opting for a white-label NFT platform offers several advantages for startups, including rapid entry into the NFT space, access to integrated wallets, cost savings, customization opportunities, control over the platform, and faster time to market.
 </Text>
 
 <Text align="center">
   <strong>How long does it take to develop a white-label NFT marketplace?</strong>
+  </Text>
+  <Text align="center" mt={6}>
   The time required for white-label NFT marketplace development varies based on the complexity and specific requirements of the project. It can range from a few weeks to a few months.
 </Text>
 
-<Text align="center">
+<Text align="center" mt={6}>
   <strong>How can I create a white-label NFT marketplace like OpenSea?</strong>
+  </Text>
+  <Text align="center" mt={3}>
   To create a white-label NFT marketplace similar to OpenSea, you would need to engage a skilled development team experienced in blockchain technology and NFTs. They will help you design, develop, and deploy the marketplace while ensuring its security, functionality, and user-friendliness.
 </Text>
 
-<Text align="center">
+<Text align="center" mt={6}>
   <strong>What is the cost of developing a white-label NFT marketplace?</strong>
+  </Text>
+  <Text align="center" mt={3}>
   The cost of developing a white-label NFT marketplace depends on factors such as features, functionalities, complexity, design, and development time. It's best to consult with a development company to get an accurate cost estimate based on your specific project requirements.
 </Text>
 
-<Text align="center">
+<Text align="center" mt={6}>
   <strong>Which is the best white-label NFT marketplace script?</strong>
+  </Text>
+  <Text align="center" mt={3}>
   The choice of the best white-label NFT marketplace script depends on your project's unique needs and goals. It's essential to work with a reputable development company that can customize the script to align with your specific requirements.
 </Text>
 
@@ -253,21 +291,21 @@ const About = () => {
   Blogs at a Glance
 </Heading>
 
-<Text align="center">
-  <strong>NFTs: Revolutionizing Digital Identity Management</strong>
+<Text align="center" mt={6}>
+  <strong>NFTs: Revolutionizing Digital Identity Management </strong>
   NFTs and Digital Identity: A Symbiotic Relationship
   In a world where digital interactions reign supreme, the concept of digital identity has taken center stage. Enter Non-Fungible Tokens (NFTs), which have emerged as a powerful tool for managing and representing digital identities in a secure and efficient manner.
 </Text>
 
-<Text align="center">
-  <strong>Designing Tomorrow's NFT Marketplace: Exploring Advanced Features</strong>
+<Text align="center" mt={6}>
+  <strong>Designing Tomorrow's NFT Marketplace: Exploring Advanced Features </strong>
   Next-Generation NFT Marketplaces: Unlocking Advanced Features
   In the rapidly evolving landscape of blockchain technology and digital assets, Non-Fungible Tokens (NFTs) have captured significant attention. NFT marketplaces are bustling hubs of activity, with each platform aiming to provide a unique experience to users.
 </Text>
 
-<Text align="center">
-  <strong>Cost Considerations for Developing a White-Label NFT Marketplace</strong>
-  Calculating the Cost: Building a White-Label NFT Marketplace in 2023
+<Text align="center" mt={6}>
+  <strong>Cost Considerations for Developing a White-Label NFT Marketplace: </strong>
+  Calculating the Cost Building a White-Label NFT Marketplace in 2023
   In the swiftly evolving realm of non-fungible tokens (NFTs), white-label NFT marketplaces hold immense promise. These platforms offer versatility and customization while allowing startups to enter the NFT landscape with a competitive edge.
 </Text>
 

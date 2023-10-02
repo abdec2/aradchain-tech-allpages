@@ -13,7 +13,8 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -35,10 +36,36 @@ const About = () => {
             <Text align={'center'} letterSpacing={1}>
             How Secure are Our NFT Wallet Services?NFTs are renowned for their authenticity, integrity, and immutability, making them impervious to hacking and often utilized as collateral. Security is of paramount importance to our NFT wallet development professionals, who meticulously incorporate it into our solutions. As an esteemed NFT wallet development company, our blockchain experts possess a wealth of domain knowledge and technical expertise. They adeptly craft robust and scalable NFT wallets from the ground up. Moreover, our experts stay abreast of the latest advancements in the crypto sector, seamlessly integrating them into our wallet solutions. Count on us for a comprehensive range of crypto-related services, including NFT wallet development, NFT marketplace creation, NFT desktop app development, and much more. Our globally acclaimed wallet development services testify to our dedication.
             </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
             <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
              Varieties of NFT Wallets
             </Heading>
-            <Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+            <Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Custodial Wallets (1)
 </Heading>
 
@@ -50,7 +77,7 @@ const About = () => {
     Custodial NFT wallets entrust a third party with storing credentials such as assets, coins, tokens, and private keys on their servers. Users access the wallet by logging in for transactions.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Non-Custodial Wallets (1)
 </Heading>
 
@@ -62,7 +89,7 @@ const About = () => {
     Non-custodial wallets offer users complete control over their funds. Users bear the responsibility of safeguarding their keys and confidential data, without involving third parties.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Hot Wallets (1)
 </Heading>
 
@@ -74,7 +101,7 @@ const About = () => {
     Hot wallets, including desktop and mobile apps, facilitate buying, selling, and exchanging NFTs. These NFTs are accessible online, and tampering with the integrated security measures proves challenging.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Distinctive Features of Our White Label NFT Wallet
 </Heading>
 
@@ -126,7 +153,7 @@ const About = () => {
     FIAT Conversion via Credit Card
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Our NFT Wallet Development Process
 </Heading>
 
@@ -201,7 +228,7 @@ const About = () => {
 <Text align={'center'} letterSpacing={2} marginTop={2}>
     Prioritizing backlog tasks during the updating process
 </Text>
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center"> Our Unique Offerings:</Heading>
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center"> Our Unique Offerings:</Heading>
 <SimpleGrid minChildWidth='200px' spacing='20px' mt={10}>
 <Card>
     <CardBody>
@@ -253,7 +280,7 @@ const About = () => {
 </SimpleGrid>
 <Text align={'center'} letterSpacing={2} marginTop={4} fontWeight={800}><strong>Why Opt for Our NFT Wallet Development?</strong></Text>
 <Text align={'center'} letterSpacing={2} marginTop={2}>Our NFT wallet development services are renowned for their quality and reliability. We have a team of highly skilled and experienced blockchain developers who are well-versed in the latest technologies and tools. Our experts are well-versed in the intricacies of the crypto sector, enabling them to create cutting-edge NFT wallets. We provide a wide range of services, including NFT wallet development, NFT marketplace creation, NFT desktop app development, and much more. Our NFT wallet development services are renowned for their quality and reliability. We have a team of highly skilled and experienced blockchain developers who are well-versed in the latest technologies and tools. Our experts are well-versed in the intricacies of the crypto sector, enabling them to create cutting-edge NFT wallets. We provide a wide range of services, including NFT wallet development, NFT marketplace creation, NFT desktop app development, and much more.</Text>
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Frequently Asked Questions
 </Heading>
 
@@ -289,7 +316,7 @@ const About = () => {
     The timeline for NFT wallet development varies based on project specifics. Our experts can provide an estimated timeframe based on your requirements.
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     A Glimpse into Our Blogs
 </Heading>
 
@@ -317,7 +344,7 @@ const About = () => {
     Elevating and Empowering User Experience through Mobile Wallet App Development Solutions
 </Text>
 
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Our Blockchain Tech Proficiency
 </Heading>
 

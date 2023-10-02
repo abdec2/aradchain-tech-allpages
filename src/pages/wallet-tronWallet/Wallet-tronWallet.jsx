@@ -13,7 +13,9 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, CardHeader, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid,CardHeader ,CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
+
 
 const About = () => {
   return (
@@ -35,12 +37,38 @@ const About = () => {
             <Text align={'center'} letterSpacing={1}>
             Innovative Tron Wallet Development Solutions to Lead the IndustryDid you know that TRON boasts a market cap of $5,710,814,069 and a 24-hour trading volume of $358,074,402? Additionally, TRON wallets have become a highly searched term on the internet. This blockchain is exceptionally progressive and inherently decentralized. Moreover, it features smart protocols and a blockchain explorer. Operating on a peer-to-peer network, TRON handles transactions with remarkable speed. With its native cryptocurrency, TRONIX (TRX), and the integration of Smart Contract functionality, the transaction process is simplified.As a prominent TRON wallet development company, we specialize in creating robust and feature-rich TRON wallets. We blend stunning designs with agile development techniques to deliver exceptional TRON wallet development services that elevate user experiences. With almost a decade of industry presence, our blockchain analysts meticulously grasp project requirements and craft detailed development roadmaps.
            </Text>
+           <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
             <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
               Features of Cryptocurrency Exchange Software Development Basic
               Level
             </Heading>
             <>
-  <Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+  <Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Unique Features of the TRON Wallet
   </Heading>
 
@@ -88,7 +116,7 @@ const About = () => {
     GET IN TOUCH
   </Text>
 
-  <Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+  <Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     Explore Our Premium TRON Wallet Development Services
   </Heading>
 
@@ -144,7 +172,7 @@ const About = () => {
     Unlock the Potential of the TRON Wallet. Schedule a Live Meeting Today!
   </Text>
   <>
-  <Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+  <Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
     How We Craft a TRON Wallet
   </Heading>
   <SimpleGrid minChildWidth='200px' spacing='20px' mt={10}>
@@ -232,7 +260,7 @@ const About = () => {
     </CardBody>
   </Card>
 </SimpleGrid>
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">Our Distinctive Offerings</Heading>
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">Our Distinctive Offerings</Heading>
 <SimpleGrid minChildWidth='200px' spacing='20px' mt={10}>
 <Card>
     <CardBody>
@@ -318,7 +346,7 @@ const About = () => {
     </CardBody>
 </Card>
 </SimpleGrid>
-<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">Why Opt for Our TRON Wallet Development?</Heading>
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">Why Opt for Our TRON Wallet Development?</Heading>
 <Text align={'center'} letterSpacing={2} marginTop={4}>
 AradChain Technologies stands as a reliable IT partner, delivering futuristic and enterprise-grade TRON wallet development solutions. Our unmatched accessibility and support empower enterprises to achieve their goals. We prioritize decentralization, offering advantages like no central control. Our services come with unparalleled technical proficiency and are backed by a proficient framework and SDK management. Our team provides exceptional support, and our comprehensive services cater to various aspects of TRON wallet development.
 

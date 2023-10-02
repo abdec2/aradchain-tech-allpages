@@ -13,7 +13,8 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -36,31 +37,57 @@ const About = () => {
             Join the Web3 Revolution: Build Your Own Web3 Wallet TODAY!AradChain Technologies stands at the forefront of Web3 wallet development companies. Our mission is to create Web 3 wallets supported by secure and interoperable blockchain platforms. These robust wallet solutions facilitate seamless digital currency transfer and tokenization.Web3 wallets form trustless blockchain ecosystems, where transaction parties can access real-time data, preventing confusion and conflicts. As a leading Web3 wallet development firm, we've catered to startups and established enterprises, delivering tailored solutions. Moreover, we excel in White-Label solutions, reducing the time and effort required for wallet creation. Interested? Connect with our experts today!CONNECT ON WHATSAPP CONNECT ON TELEGRAM.The Unique Aspects of Web3 Wallets
 Did you know that venture capital firms invested over $27 billion in crypto projects in 2021, with even more in Web3 projects? Regardless of your business size, you can optimize your investments by venturing into Web3 solutions, expanding your earning potential.Web3, also known as the third-generation internet, succeeds Web2. It captivates with peer-to-peer communication devoid of third-party involvement. While some perceive Web3 as imminent, it's a solid reality deeply rooted in NFTs, cryptocurrencies, trading, and DeFi borrowing and lending.Web3 wallets extend blockchain wallets' capabilities, enabling users to store and trade crypto assets. Packed with advanced features such as top-tier security, multi-currency support, and seamless crypto-to-local currency conversion.
             </Text>
-            <Heading as="h2" size="2xl" letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>Web3 Wallet Development: Profitable Models</Heading>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
+<Heading as="h2" size="2xl" letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>Web3 Wallet Development: Profitable Models</Heading>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
     Our Web3 cryptocurrency wallet development company offers secure, scalable wallet solutions. Moreover, we integrate diverse Web3 wallet generation methods to amplify your earning potential:
 </Text>
 
-<Heading align={'center'}  as="h3" size="lg" letterSpacing={1} my={3} mt={5} mb={3}>Transaction Fees</Heading>
+<Heading align={'center'}  as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3}>Transaction Fees</Heading>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
     Earn revenue through transaction fees, levying fixed or variable charges based on transaction values. More wallet activity translates to more revenue streams.
 </Text>
 
-<Heading as="h3" align={'center'}  size="lg" letterSpacing={1} my={3} mt={5} mb={3}>Swapping Fees</Heading>
+<Heading as="h2" align={'center'}  size="lg" letterSpacing={1} my={3} mt={5} mb={3}>Swapping Fees</Heading>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
     Generate profits from swapping fees, akin to Trustwallet's model. However, the wallet admin pays swapping fees for transactions.
 </Text>
 
-<Heading align={'center'}  as="h3" size="lg" letterSpacing={1} my={3} mt={5} mb={3}>DeFi Integration</Heading>
+<Heading align={'center'}  as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3}>DeFi Integration</Heading>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
     Combine Web3 wallets with various DeFi platforms, offering fixed gains and enabling transactions. Enhance revenue streams by merging this model with others.
 </Text>
 
-<Heading align={'center'}  as="h3" size="lg" letterSpacing={1} my={3} mt={5} mb={3}>Trading Fees</Heading>
+<Heading align={'center'}  as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3}>Trading Fees</Heading>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
     Leverage Web3 wallets for trading activities, connecting them with NFT marketplaces and crypto exchanges to earn profits through fixed transaction fees.
@@ -72,37 +99,37 @@ Did you know that venture capital firms invested over $27 billion in crypto proj
     As a leading Web3 wallet development company, we deliver exceptional wallet solutions. Our offerings cater to various needs, ensuring secure storage and seamless crypto asset transfer.
 </Text>
 
-<Heading align={'center'}  as="h3" size="lg" letterSpacing={1} my={3} mt={5} mb={3}>Multi-Currency Web3 Wallets</Heading>
+<Heading align={'center'}  as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3}>Multi-Currency Web3 Wallets</Heading>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
     Empower users to store and trade crypto assets, including NFTs, game tokens, and more, through internet-accessible multi-currency Web3 wallets.
 </Text>
 
-<Heading align={'center'}  as="h3" size="lg" letterSpacing={1} my={3} mt={5} mb={3}>Web3 Mobile Wallets</Heading>
+<Heading align={'center'}  as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3}>Web3 Mobile Wallets</Heading>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
     Rely on our Web3 crypto wallet developers for single and multi-currency wallet solutions, allowing seamless storage and transfer via the internet.
 </Text>
 
-<Heading align={'center'}  as="h3" size="lg" letterSpacing={1} my={3} mt={5} mb={3}>White Label Web3 Wallets</Heading>
+<Heading align={'center'}  as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3}>White Label Web3 Wallets</Heading>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
     Swiftly enter the wallet arena with our ready-to-use White Label Web3 Wallet solutions, reducing development efforts while ensuring scalability.
 </Text>
 
-<Heading align={'center'}  as="h3" size="lg" letterSpacing={1} my={3} mt={5} mb={3}>Centralized Web3 Wallets</Heading>
+<Heading align={'center'}  as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3}>Centralized Web3 Wallets</Heading>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
     In a ddition to decentralized solutions, we excel in developing centralized wallets with private key integration, guarding assets against breaches.
 </Text>
 
-<Heading align={'center'}  as="h3" size="lg" letterSpacing={1} my={3} mt={5} mb={3}>Decentralized Web3 Wallets</Heading>
+<Heading align={'center'}  as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3}>Decentralized Web3 Wallets</Heading>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
     Harness complete asset control with Decentralized Web3 wallets, developed using Web3 protocols and easily connected with other dApps.
 </Text>
 
-<Heading align={'center'}  as="h3" size="lg" letterSpacing={1} my={3} mt={5} mb={3}>Web3 TRON Wallet</Heading>
+<Heading align={'center'}  as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3}>Web3 TRON Wallet</Heading>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
     Unleash TRON's potential with our Web3 Tron wallet solutions, suitable for startups and established enterprises to manage TRX with ease.
@@ -116,37 +143,37 @@ Did you know that venture capital firms invested over $27 billion in crypto proj
 
 <Heading as="h2" size="2xl" letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>Our Web3 Wallet Development Process</Heading>
 
-<Heading align={'center'}  as="h3" size="lg" letterSpacing={1} my={3} mt={5} mb={3}>Requirement Gathering</Heading>
+<Heading align={'center'}  as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3}>Requirement Gathering</Heading>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
     Understand client requirements, ensuring the best possible solution for Web3 crypto wallets.
 </Text>
 
-<Heading align={'center'}  as="h3" size="lg" letterSpacing={1} my={3} mt={5} mb={3}>Project Roadmap</Heading>
+<Heading align={'center'}  as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3}>Project Roadmap</Heading>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
     Map out the project's journey, setting the stage for seamless development.
 </Text>
 
-<Heading align={'center'}  as="h3" size="lg" letterSpacing={1} my={3} mt={5} mb={3}>Designing & Development</Heading>
+<Heading align={'center'}  as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3}>Designing & Development</Heading>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
     Craft stunning UI/UX designs and develop the application to leave a lasting impact.
 </Text>
 
-<Heading align={'center'}  as="h3" size="lg" letterSpacing={1} my={3} mt={5} mb={3}>Testing</Heading>
+<Heading align={'center'}  as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3}>Testing</Heading>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
     Thoroughly test the application to deliver a bug-free solution.
 </Text>
 
-<Heading align={'center'}  as="h3" size="lg" letterSpacing={1} my={3} mt={5} mb={3}>Post-Delivery Assistance</Heading>
+<Heading align={'center'}  as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3}>Post-Delivery Assistance</Heading>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
     Offer round-the-clock assistance for any concerns or queries.
 </Text>
 
-<Heading align={'center'}  as="h3" size="lg" letterSpacing={1} my={3} mt={5} mb={3}>Post-Deployment</Heading>
+<Heading align={'center'}  as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3}>Post-Deployment</Heading>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
     Provide post-deployment services, ensuring smooth wallet performance.
@@ -198,7 +225,7 @@ Did you know that venture capital firms invested over $27 billion in crypto proj
 <Heading as="h2" size="2xl" letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>Why AradChain Technologies for Web3 Wallet Development?</Heading>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    Technical Expertise
+<strong>Technical Expertise</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -206,7 +233,7 @@ Did you know that venture capital firms invested over $27 billion in crypto proj
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    Experienced Team
+<strong> Experienced Team</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -214,7 +241,7 @@ Did you know that venture capital firms invested over $27 billion in crypto proj
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    Rapid Development
+<strong>Rapid Development</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -222,7 +249,7 @@ Did you know that venture capital firms invested over $27 billion in crypto proj
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    Complete Support
+<strong>Complete Support</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -230,7 +257,7 @@ Did you know that venture capital firms invested over $27 billion in crypto proj
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    Meaningful Outcomes
+<strong>Meaningful Outcomes</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -238,19 +265,19 @@ Did you know that venture capital firms invested over $27 billion in crypto proj
 </Text>
 <Heading as="h2" size="2xl" letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>Frequently Asked Questions</Heading>
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    <Heading as="h3" size="lg" letterSpacing={1} my={3} mt={5} mb={3}>1. How long will it take to develop a Web3 Wallet?</Heading>
+    <Text size="lg" letterSpacing={1} my={3} mt={5} mb={3}>1. How long will it take to develop a Web3 Wallet?</Text>
 
     The timeline depends on the desired functionality and features. We prioritize quick turnaround without compromising quality.
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    <Heading as="h3" size="lg" letterSpacing={1} my={3} mt={5} mb={3}>2. How much does Web3 Wallet Development cost?</Heading>
+    <Text size="lg" letterSpacing={1} my={3} mt={5} mb={3}>2. How much does Web3 Wallet Development cost?</Text>
 
     Cost varies based on complexity and requirements.
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    <Heading as="h3" size="lg" letterSpacing={1} my={3} mt={5} mb={3}>3. Can I store multiple cryptocurrencies in one wallet?</Heading>
+    <Text  size="lg" letterSpacing={1} my={3} mt={5} mb={3}>3. Can I store multiple cryptocurrencies in one wallet?</Text>
 
     Absolutely, our Web3 wallets support multi-currency storage.
 </Text>
@@ -263,7 +290,7 @@ Did you know that venture capital firms invested over $27 billion in crypto proj
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    Web3 Wallet Development
+<strong>Web3 Wallet Development</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -275,7 +302,7 @@ Did you know that venture capital firms invested over $27 billion in crypto proj
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    Web3 Wallet Development
+<strong>Web3 Wallet Development</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
@@ -287,7 +314,7 @@ Did you know that venture capital firms invested over $27 billion in crypto proj
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>
-    Web3 Wallet Development
+<strong>Web3 Wallet Development</strong>
 </Text>
 
 <Text align={'center'} letterSpacing={2} marginTop={4}>

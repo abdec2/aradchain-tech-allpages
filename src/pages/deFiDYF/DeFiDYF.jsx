@@ -13,7 +13,8 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -35,11 +36,37 @@ const About = () => {
             <Text align={'center'} letterSpacing={1}>
           DeFi Yield Farming: Catalyzing DeFi Growth Yield farming, a process involving staking or lending cryptocurrency assets to yield high returns or rewards in the form of cryptocurrency, has gained substantial traction. This concept incentivizes liquidity providers to stake or lock their crypto assets within smart-contract-based liquidity pools. The larger the funds contributed to these pools, the greater the potential rewards.Positioned as an ingenious application within the realm of decentralized finance (DeFi), yield farming has garnered significant global recognition. The yield farming market surged from $500 million to $10 billion in 2020, establishing itself as a primary driver of growth within the emerging DeFi sector.The Imperative of DeFi Yield Farming Maintaining robust liquidity is a paramount concern for any crypto trading platform. Liquidity, denoting the ease of converting an asset into cash or other coins without delay, is crucial. Platforms with ample liquidity can promptly fulfill users' buy/sell orders, enhancing user satisfaction.Yield farming is instrumental in ensuring that exchange platforms possess an adequate supply of coins and tokens within their protocols. This facilitates substantial liquidity, addressing the needs of traders and fostering platform credibility.To harness the potential of DeFi yield farming for enhancing liquidity on your exchange platform, AradChain Technologies is at your service. We specialize in developing business-oriented DeFi yield farming platforms that align with your strategic objectives.DeFi Yield Farming Platform Development Services DeFi yield farming offers both liquidity providers and platform owners opportunities for earnings. This dynamic has fueled heightened demand for DeFi yield farming development.Whether you are an aspiring startup or an established entity embarking on your DeFi yield farming platform journey, AradChain Technologies Solutions can be your trusted guide. We extend comprehensive DeFi yield farming services, encompassing the creation of smart contract-driven liquidity pools, solution implementation, and deployment. Our expertise empowers you to leverage innovative solutions, enrich user experiences, and expedite time to market.
             </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
             <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
   Our Process
 </Heading>
 <Text align={'center'} letterSpacing={1}>
-  A Glimpse into How Our DeFi Yield Farming Development Company Operates
+  A Glimpse into How Our DeFi Yield Farming Development Company Operates:
 </Text>
 
 <Heading as='h3' size='xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
@@ -124,26 +151,26 @@ const About = () => {
   Frequently Asked Questions
 </Heading>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   <strong style={{ marginTop: '4rem' }}>What is the concept of yield farming?</strong>
 </Text>
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   Yield farming involves locking or lending crypto assets via DeFi protocols to earn rewards in the form of interest, governance tokens, or other tokens that provide access to certain products/services at a discounted price. The higher the lending amount, higher the reward.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   <strong style={{ marginTop: '4rem' }}>What constitutes a liquidity pool?</strong>
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   <strong style={{ marginTop: '4rem' }}>Can anyone initiate a DeFi Yield Farming platform?</strong>
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   <strong style={{ marginTop: '4rem' }}>How long does it take to develop a DeFi Yield Farming Platform?</strong>
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   <strong style={{ marginTop: '4rem' }}>Are there any successful DeFi Yield Farming platforms on the market?</strong>
 </Text>
 
@@ -151,19 +178,19 @@ const About = () => {
   A Peek into Our Blogs
 </Heading>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   Metaverse in Manufacturing: Role and Future Prospects
   The term "Metaverse" needs no introduction, being intricately woven into the fabric of our lives. The persistent rise of cryptocurrencies [...]
   READ MORE
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   Empowering NPCs in the Metaverse with AI
   The 21st century's most remarkable innovations – blockchain, metaverse, and artificial intelligence – have generated substantial transformation. These technologies have spurred significant change in [...]
   READ MORE
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
+<Text align={'center'} letterSpacing={1} mt={4}>
   White Label Crypto Banking Platform
   Initiating Your Journey with a White Label Crypto Banking Platform
   When opportunity knocks, we all seek streamlined ways to seize it for optimal advantage. The advent of cryptocurrencies has presented the concept [...]

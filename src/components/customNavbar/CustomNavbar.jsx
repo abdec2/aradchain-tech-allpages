@@ -852,7 +852,7 @@ const NAV_ITEMS = [
             innerLabel: "Defi Wallet",
             context:
               "A wallet that is fortified from hacks, & immune to cross-border regulations",
-            href: "/wallet-mobileWalletApp",
+            href: "/wallet-defiWallet",
           },
         ],
       },

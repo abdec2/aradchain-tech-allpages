@@ -13,7 +13,8 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -35,6 +36,32 @@ const About = () => {
             <Text align={'center'} letterSpacing={1}>
             Understanding Music NFTs and Their Mechanism.A music NFT represents a distinct audio or music asset that is tradeable and can be stored on a blockchain. Non-fungible tokens have gained significant popularity due to their characteristics such as immutability, public verification, and the ability to establish scarcity. These features enable musicians and creators to distribute their music and digital content to fans without the risk of counterfeits.GET IN TOUCHLaunch Your Own Music Marketplace.An NFT music marketplace provides music producers with a comprehensive platform to showcase their creations across various blockchains. Invest in NFT marketplace music development to establish a user-centric marketplace for selling, trading, and auctioning music NFTs. Build a global fanbase while democratizing access to emerging music marketplaces, benefiting music creators and live streamers worldwide.
              </Text>
+             <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
              <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
   Album Releases
 </Heading>
@@ -119,28 +146,36 @@ const About = () => {
   Frequently Asked Questions
 </Heading>
 
-<Text align={'center'} letterSpacing={1}>
-  1. What is an NFT music marketplace?
+<Text align={'center'} letterSpacing={1} mt={6}>
+<strong> What is an NFT music marketplace?</strong>
+</Text>
+<Text align={'center'} letterSpacing={1} mt={4}>
   An NFT music marketplace provides artists with a platform to create and sell exclusive collectible digital content for their music fans.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
-  2. Which is the best NFT music marketplace?
+<Text align={'center'} letterSpacing={1} mt={6}>
+<strong>Which is the best NFT music marketplace?</strong>
+  </Text>
+  <Text align={'center'} letterSpacing={1} mt={4}>
   Selecting the best NFT music marketplace depends on your specific needs and requirements. It's advised to evaluate different platforms and consult with experts to make an informed decision.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
-  3. How can I develop an NFT marketplace for music?
+<Text align={'center'} letterSpacing={1} mt={6}>
+<strong>How can I develop an NFT marketplace for music?</strong>
+  </Text><Text align={'center'} letterSpacing={1} mt={4}>
   To develop an NFT music marketplace, you need to engage a skilled development company experienced in blockchain technology and NFTs. They will help you design, develop, and launch the marketplace while ensuring its functionality, security, and user-friendliness.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
-  4. How long does it take to develop an NFT music marketplace?
+<Text align={'center'} letterSpacing={1} mt={6}>
+<strong> How long does it take to develop an NFT music marketplace?</strong>
+  </Text><Text align={'center'} letterSpacing={1} mt={4}>
   The development timeline for an NFT music marketplace can vary based on its complexity and specific features. It typically takes several weeks to a few months to design, develop, test, and launch the platform.
 </Text>
 
-<Text align={'center'} letterSpacing={1}>
-  5. Where can I find an NFT music marketplace development company?
+<Text align={'center'} letterSpacing={1} mt={6}>
+<strong> Where can I find an NFT music marketplace development company?</strong>
+  </Text>
+  <Text align={'center'} letterSpacing={1} mt={4}>
   You can find NFT music marketplace development companies through online research, industry networks, and recommendations. It's essential to choose a reputable and experienced company that can deliver a high-quality platform.
 </Text>
 
@@ -148,7 +183,7 @@ const About = () => {
   A Glance at Our Blog Content
 </Heading>
 <Text align={'center'} letterSpacing={1}>
-  NFTs: Revolutionizing Digital Identity Management
+ <strong> NFTs: Revolutionizing Digital Identity Management </strong>
   NFTs for Digital Identity: A Symbiotic Relationship
   In a world where digital interactions are the norm, digital identity's significance has never been more apparent. Enter Non-Fungible Tokens (NFTs), a powerful tool for managing and representing digital identities securely and efficiently.
   READ MORE
