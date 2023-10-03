@@ -13,7 +13,8 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -33,31 +34,85 @@ const About = () => {
         <div className={style.infoContainer}>
           <div className="content">
             <Text align={'center'} letterSpacing={1}>
-            Embrace Secure, Agile, and Cost-Effective Frameworks Blockchain Applications in Government Services.<strong>REQUEST A FREE DEMO</strong>Blockchain Adoption in Government Sector: What Does it Entail?The integration of blockchain in the government sector holds the potential for numerous advantages, including data protection, streamlined processes, and a reduction in instances of fraud, waste, and abuse. Moreover, it can enhance trust and accountability within the system. In a government model based on blockchain, a decentralized ledger fortified by cryptographic techniques facilitates the sharing of resources among individuals, businesses, and governments without intermediaries. This approach mitigates the risk of a single point of failure and ensures the safeguarding of sensitive data owned by citizens and government bodies.
-            AradChain Technologies’s Proficiency: Enabling Blockchain Implementation in Government Sector
-            At AradChain Technologies, we are poised to assist you in incorporating blockchain into your government structure, fortifying it with enhanced security, agility, and cost efficiency. Our experienced blockchain engineers and domain experts comprehend your unique requirements, devising a coherent roadmap to steer your journey towards blockchain-powered systems.
-           Leveraging their vast experience, expertise, and deep domain knowledge, our experts deliver meaningful outcomes that drive your business growth.<strong>TALK TO OUR EXPERTS</strong>
+            The integration of blockchain in the government sector holds the potential for numerous advantages, including data protection, streamlined processes, and a reduction in instances of fraud, waste, and abuse. Moreover, it can enhance trust and accountability within the system. In a government model based on blockchain, a decentralized ledger fortified by cryptographic techniques facilitates the sharing of resources among individuals, businesses, and governments without intermediaries. This approach mitigates the risk of a single point of failure and ensures the safeguarding of sensitive data owned by citizens and government bodies.
 
+AradChain Technologies’s Proficiency: Enabling Blockchain Implementation in the Government Sector
+
+At AradChain Technologies, we are poised to assist you in incorporating blockchain into your government structure, fortifying it with enhanced security, agility, and cost efficiency. Our experienced blockchain engineers and domain experts comprehend your unique requirements, devising a coherent roadmap to steer your journey towards blockchain-powered systems.
+
+Leveraging their vast experience, expertise, and deep domain knowledge, our experts deliver meaningful outcomes that drive your business growth.
+
+           
               </Text>
+              <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
             <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
             Blockchain Utilization Scenarios in Government
             </Heading>
 
-            <Text align={'center'} letterSpacing={1}>
+            <Text align={'center'} letterSpacing={1} mt={5}>
             The adoption of blockchain technology within government organizations can revolutionize the following government functions.
-
-<strong>Digital Identity</strong> Empower users to establish and manage their own secure digital identities using cryptography. Additionally, eliminate the dependence on a single profile provider, thus alleviating the burden of excessive documentation.
+<Text align={'center'} letterSpacing={1} mt={5}>
+<strong>Digital Identity</strong> 
+</Text>
+<Text align={'center'} letterSpacing={1} mt={3}>
+Empower users to establish and manage their own secure digital identities using cryptography. Additionally, eliminate the dependence on a single profile provider, thus alleviating the burden of excessive documentation.
+</Text>
+<Text align={'center'} letterSpacing={1} mt={5}>
 <strong>Voting Systems</strong>
+</Text>
+<Text align={'center'} letterSpacing={1} mt={3}>
 Embrace a decentralized blockchain-based voting system that significantly curbs the influence or compromise of any party. Prevent electoral fraud and achieve swift results with minimal room for error.
+</Text>
+<Text align={'center'} letterSpacing={1} mt={5}>
 <strong>Land Registration</strong>
+</Text>
+<Text align={'center'} letterSpacing={1} mt={3}>
 Eradicate layers of cost and friction, expedite verification processes, and introduce enhanced flexibility for modular products. Broaden access to fractional property ownership and establish proof of origin for traded fractional properties.
+</Text>
+<Text align={'center'} letterSpacing={1} mt={5}>
 <strong>Secure Data Storage</strong> 
+</Text>
+<Text align={'center'} letterSpacing={1} mt={3}>
 Store encrypted and tamper-proof data within a decentralized network to eliminate the vulnerabilities of a single point of failure. Enhance transparency and reduce data storage costs.
+</Text>
+<Text align={'center'} letterSpacing={1} mt={5}>
 <strong>Regulatory Processes</strong>
+</Text>
+<Text align={'center'} letterSpacing={1} mt={3}>
 Facilitate secure and transparent data sharing across diverse agencies for improved coordination and regulation enforcement. Leverage self-executing smart contracts for automated regulatory enforcement, reducing non-compliance risks and boosting efficiency.
+</Text>
+<Text align={'center'} letterSpacing={1} mt={5}>
 <strong>Administrative Tasks</strong>
+</Text>
+<Text align={'center'} letterSpacing={1} mt={4}>
 Automate and streamline administrative procedures, reducing the need for paperwork, manual validation, and bureaucratic red tape. Establish a faster, more efficient payment system for government services and benefits.
 What's Your Business Use Case? Engage with our domain experts to discuss your use case and embark on the next era of digital governance.
+</Text>
 </Text>
 <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
   <strong>Advantages of Blockchain Integration in Government Operations</strong>
@@ -66,22 +121,22 @@ What's Your Business Use Case? Engage with our domain experts to discuss your us
 <Text align={'center'} letterSpacing={1}>
   The application of blockchain in government initiatives has the potential to alleviate longstanding challenges and confer the following advantages:
 </Text>
-<Text align={'center'} letterSpacing={1}><strong>Value-added tools </strong></Text>
-<Text align={'center'} letterSpacing={1}><strong>User-friendly interface </strong></Text>
-<Text align={'center'} letterSpacing={1}><strong>Real-time tracking </strong></Text>
-<Text align={'center'} letterSpacing={1}><strong>Effortless operations </strong></Text>
-<Text align={'center'} letterSpacing={1}><strong>Cost-saving options </strong></Text>
-<Text align={'center'} letterSpacing={1}><strong>Autonomous nature </strong></Text>
-<Text align={'center'} letterSpacing={1}><strong>Secure storage</strong></Text>
-<Text align={'center'} letterSpacing={1}><strong>Preservation of sensitive data</strong></Text>
+<Text align={'center'} letterSpacing={1} mt={3}><strong>Value-added tools </strong></Text>
+<Text align={'center'} letterSpacing={1} mt={3}><strong>User-friendly interface </strong></Text>
+<Text align={'center'} letterSpacing={1} mt={3}><strong>Real-time tracking </strong></Text>
+<Text align={'center'} letterSpacing={1} mt={3}><strong>Effortless operations </strong></Text>
+<Text align={'center'} letterSpacing={1} mt={3}><strong>Cost-saving options </strong></Text>
+<Text align={'center'} letterSpacing={1} mt={3}><strong>Autonomous nature </strong></Text>
+<Text align={'center'} letterSpacing={1} mt={3}><strong>Secure storage</strong></Text>
+<Text align={'center'} letterSpacing={1} mt={3}><strong>Preservation of sensitive data</strong></Text>
 <Text align={'center'} letterSpacing={1} mt={4}><strong>Why Opt for AradChain Technologies to Harness Blockchain for Government Services</strong></Text>
 <Text align={'center'} letterSpacing={1} mt={4}>By collaborating with AradChain Technologies, you gain access to a team of technical experts equipped with hands-on experience in delivering comprehensive end-to-end blockchain services.</Text>
 
-<Text align={'center'} letterSpacing={1}>Technical Expertise</Text>
-<Text align={'center'} letterSpacing={1}>Experienced Team</Text>
-<Text align={'center'} letterSpacing={1}>Swift Development</Text>
-<Text align={'center'} letterSpacing={1}>Complete support</Text>
-<Text align={'center'} letterSpacing={1}>Tangible Results</Text>
+<Text align={'center'} letterSpacing={1} mt={3}>Technical Expertise</Text>
+<Text align={'center'} letterSpacing={1} mt={3}>Experienced Team</Text>
+<Text align={'center'} letterSpacing={1} mt={3}>Swift Development</Text>
+<Text align={'center'} letterSpacing={1} mt={3}>Complete support</Text>
+<Text align={'center'} letterSpacing={1} mt={3}>Tangible Results</Text>
 
 <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
   <strong>Frequently Asked Questions</strong>
@@ -89,26 +144,28 @@ What's Your Business Use Case? Engage with our domain experts to discuss your us
 
 <Text textAlign={'center'} mt={4}>
   <strong>How does blockchain enhance transparency and accountability in government services?</strong>
+  </Text>
+<Text textAlign={'center'} mt={4}>
   Blockchain enhances transparency and accountability in government services through various mechanisms:
 </Text>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>Immutable Records</strong>
+  <strong>Immutable Records: </strong>
   Once recorded on the blockchain, transactions are permanently stored, establishing a transparent and auditable record that aids in reducing corruption and improving accountability.
 </Text>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>Smart Contracts</strong>
+  <strong>Smart Contracts: </strong>
   Smart contracts automate government services, mitigating the risks of fraud or corruption.
 </Text>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>Public/Private Key Cryptography</strong>
+  <strong>Public/Private Key Cryptography: </strong>
   Blockchain employs public and private key cryptography to ensure authorized access and modification of data. This curbs unauthorized access to government data, bolstering data security.
 </Text>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>Audit Trails</strong>
+  <strong>Audit Trails: </strong>
   Blockchain provides a transparent audit trail of transactions, enhancing accountability and diminishing fraud risks.
 </Text>
 
@@ -117,8 +174,8 @@ What's Your Business Use Case? Engage with our domain experts to discuss your us
 </Heading>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>Custom AI Blockchain Development</strong>
-  Blockchain & AI: Top Use Cases and Barriers to AI Adoption
+  <strong> Blockchain & AI: Top Use Cases and Barriers to AI Adoption</strong>
+  
 </Text>
 
 <Text textAlign={'center'} mt={4}>
@@ -127,13 +184,14 @@ What's Your Business Use Case? Engage with our domain experts to discuss your us
 
 <Text textAlign={'center'} mt={4}>
   <strong>Exploring Emerging Blockchain Applications in Real Estate</strong>
-  The real estate sector is rapidly evolving, but it's also susceptible to scams. Dive into emerging blockchain applications that can transform the industry.
+  </Text>
+<Text textAlign={'center'} mt={4}>
+ The real estate sector is rapidly evolving, but it's also susceptible to scams. Dive into emerging blockchain applications that can transform the industry.
 </Text>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>Blockchain Development for the Beauty Industry</strong>
-  Blockchain Development for Beauty Industry: Boon or Bane?
-</Text>
+  <strong>Blockchain Development for Beauty Industry: Boon or Bane?</strong>
+  </Text>
 
 <Text textAlign={'center'} mt={4}>
   Blockchain and beauty may not seem related, but this technology is making waves in skincare, cosmetics, and more. Explore its impact on the beauty industry.

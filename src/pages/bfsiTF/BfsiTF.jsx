@@ -13,7 +13,10 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading,ListItem, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
+
+
 
 const About = () => {
   return (
@@ -43,6 +46,8 @@ const About = () => {
 <Text style={{ textAlign: 'center' }} mt={4}>
   The domain of trade finance, which relies on financial institutions to provide credit facilities for ensuring the exchange of goods, has clung to a traditional process that has seen minimal evolution despite the expansion of global trade dynamics.
 </Text>
+<Link to="https://t.me/aradchain" target="_blank">
+
 
 <Text style={{ textAlign: 'center' }} mt={4}>
   Compounded by intricate procedures and diverse regulations across geographical boundaries, the existing trade finance framework faces multifaceted challenges. The presence of numerous external parties spanning jurisdictions complicates international trade, resulting in a cumbersome, expensive, and time-consuming process.
@@ -51,6 +56,30 @@ const About = () => {
 <Text style={{ textAlign: 'center' }} mt={4}>
   These challenges underscore the compelling case for integrating blockchain technology into trade finance.
 </Text>
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
 
 <Heading as='h3' size='lg' letterSpacing={2} my={5} style={{ textAlign: 'center' }} mt={10} mb={5}>
   The Need for Blockchain-Enabled Trade Finance: Addressing Current Issues
@@ -61,59 +90,59 @@ const About = () => {
 </Text>
 
 <Text style={{ textAlign: 'center' }} mt={4}>
-  - Manual Contract Creation Process: The importing bank meticulously reviews the financial agreement submitted by the importer and forwards the financial data to the correspondent bank.
+<strong> Manual Contract Creation Process: </strong>The importing bank meticulously reviews the financial agreement submitted by the importer and forwards the financial data to the correspondent bank.
 </Text>
 <Text style={{ textAlign: 'center' }} mt={4}>
-  - Invoice Financing: Exporters seek short-term financing by submitting invoices to multiple banks, which escalates the risk if goods are not delivered.
+<strong> Invoice Financing: </strong>Exporters seek short-term financing by submitting invoices to multiple banks, which escalates the risk if goods are not delivered.
 </Text>
 <Text style={{ textAlign: 'center' }} mt={4}>
-  - Extended Timeline: The shipment of goods is extended due to numerous checks performed by intermediaries and multiple communication touchpoints.
+<strong> Extended Timeline:</strong> The shipment of goods is extended due to numerous checks performed by intermediaries and multiple communication touchpoints.
 </Text>
 <Text style={{ textAlign: 'center' }} mt={4}>
-  - Manual Anti-Money Laundering Assessment: The exporting bank manually conducts anti-money laundering evaluations based on the financial information from the importing bank.
+<strong>Manual Anti-Money Laundering Assessment: </strong>The exporting bank manually conducts anti-money laundering evaluations based on the financial information from the importing bank.
 </Text>
 <Text style={{ textAlign: 'center' }} mt={4}>
-  - Multiplicity of Systems: As each participant across nations employs different platforms, miscommunication is frequent, and fraud risks are heightened.
+<strong> Multiplicity of Systems:</strong> As each participant across nations employs different platforms, miscommunication is frequent, and fraud risks are heightened.
 </Text>
 <Text style={{ textAlign: 'center' }} mt={4}>
-  - Double Bill of Lading: Bills of lading are duplicated as banks struggle to verify their authenticity.
+<strong>Double Bill of Lading: </strong>Bills of lading are duplicated as banks struggle to verify their authenticity.
 </Text>
 <Text style={{ textAlign: 'center' }} mt={4}>
-  - Divergent Versions: As financial information traverses entities, substantial version control issues arise due to alterations made during the process.
+  <strong> Divergent Versions:</strong> As financial information traverses entities, substantial version control issues arise due to alterations made during the process.
 </Text>
 <Text style={{ textAlign: 'center' }} mt={4}>
-  - Delayed Payment: Prior to disbursing funds to the exporting bank, multiple intermediaries must confirm that the importer has received the funds as per the agreement, leading to prolonged settlement times.
+<strong> Delayed Payment: </strong>Prior to disbursing funds to the exporting bank, multiple intermediaries must confirm that the importer has received the funds as per the agreement, leading to prolonged settlement times.
 </Text>
 
 <Text style={{ textAlign: 'center' }} mt={4}>
   Resolve these challenges by embracing blockchain solutions for trade finance.
 </Text>
 
-<Text style={{ textAlign: 'center' }} mt={4}>
+<Heading style={{ textAlign: 'center' }} mt={4}>
   <strong>Advantages of Incorporating Blockchain in Trade Finance</strong>
-</Text>
+</Heading>
 
 <Text style={{ textAlign: 'center' }} mt={4}>
   Blockchain can usher in an enhanced trade finance process with the following benefits:
 </Text>
 
 <Text style={{ textAlign: 'center' }} mt={4}>
-  - Enhanced Transparency: The transparent ledger records transactions and data in an immutable manner, offering visibility and accountability to all involved parties.
+<strong> Enhanced Transparency: </strong> The transparent ledger records transactions and data in an immutable manner, offering visibility and accountability to all involved parties.
 </Text>
 <Text style={{ textAlign: 'center' }} mt={4}>
-  - Accelerated and Streamlined Processes: Blockchain reduces the dependency on intermediaries, thereby expediting, cost-effecting, and enhancing the trade finance process.
+  <strong> Accelerated and Streamlined Processes:</strong> Blockchain reduces the dependency on intermediaries, thereby expediting, cost-effecting, and enhancing the trade finance process.
 </Text>
 <Text style={{ textAlign: 'center' }} mt={4}>
-  - Enhanced Traceability: Blockchain serves as a single source of truth for all parties engaged in a trade transaction, enabling seamless tracking of goods and ensuring transparency in the supply chain.
+<strong>Enhanced Traceability: </strong> Blockchain serves as a single source of truth for all parties engaged in a trade transaction, enabling seamless tracking of goods and ensuring transparency in the supply chain.
 </Text>
 <Text style={{ textAlign: 'center' }} mt={4}>
-  - Augmented Security: The decentralized blockchain ledger ensures secure and tamper-resistant data storage and transaction processing, mitigating the risk of fraud and financial malfeasance.
+<strong> Augmented Security: </strong>The decentralized blockchain ledger ensures secure and tamper-resistant data storage and transaction processing, mitigating the risk of fraud and financial malfeasance.
 </Text>
 <Text style={{ textAlign: 'center' }} mt={4}>
-  - Extended Accessibility: Blockchain facilitates the inclusion of new participants, including SMEs, into the trade finance ecosystem, thereby expanding access to trade financing.
+<strong>Extended Accessibility: </strong>Blockchain facilitates the inclusion of new participants, including SMEs, into the trade finance ecosystem, thereby expanding access to trade financing.
 </Text>
 <Text style={{ textAlign: 'center' }} mt={4}>
-  - Risk Management Reinforcement: Blockchain affords real-time visibility into the trade finance process, minimizing the risk of fraudulent activities and providing a secure repository for trade finance documentation.
+<strong>Risk Management Reinforcement: </strong>Blockchain affords real-time visibility into the trade finance process, minimizing the risk of fraudulent activities and providing a secure repository for trade finance documentation.
 </Text>
 
 <Text style={{ textAlign: 'center' }} mt={4}>
@@ -129,13 +158,13 @@ const About = () => {
 </Text>
 
 <Text style={{ textAlign: 'center' }} mt={4}>
-  - Letter of Credit Processing: Streamline the Letter of Credit (LOC) process by reducing the need for intermediaries and enabling swift, real-time communication between involved parties.
+<strong> Letter of Credit Processing:</strong> Streamline the Letter of Credit (LOC) process by reducing the need for intermediaries and enabling swift, real-time communication between involved parties.
 </Text>
 <Text style={{ textAlign: 'center' }} mt={4}>
-  - Invoice Financing: Automate invoice financing to expedite the process, reduce manual processing, and improve data accuracy.
+<strong> Invoice Financing:</strong> Automate invoice financing to expedite the process, reduce manual processing, and improve data accuracy.
 </Text>
 <Text style={{ textAlign: 'center' }} mt={4}>
-  - Supply Chain Financing: Gain insight into the supply chain and simplify risk assessment for trade transactions, enhancing trade financing accessibility for SMEs.
+<strong>Supply Chain Financing: </strong>Gain insight into the supply chain and simplify risk assessment for trade transactions, enhancing trade financing accessibility for SMEs.
 </Text>
 
 <Text style={{ textAlign: 'center' }} mt={4}>
@@ -147,23 +176,23 @@ const About = () => {
 </Text>
 
 <Text style={{ textAlign: 'center' }} mt={4}>
-  - Technical Proficiency (1): We specialize in Blockchain Technologies exclusively. Our focused expertise ensures unparalleled mastery in the field.
+<strong>Technical Proficiency: </strong>We specialize in Blockchain Technologies exclusively. Our focused expertise ensures unparalleled mastery in the field.
 </Text>
 
 <Text style={{ textAlign: 'center' }} mt={4}>
-  - Expert Team: Our team comprises over 600 experts who guide you in refining your offerings, suggesting optimal tech approaches, and aiding in community and campaign establishment.
+<strong> Expert Team: </strong>Our team comprises over 600 experts who guide you in refining your offerings, suggesting optimal tech approaches, and aiding in community and campaign establishment.
 </Text>
 
 <Text style={{ textAlign: 'center' }} mt={4}>
-  - Rapid Development: Our tailored blockchain services ensure the creation of exceptional products aligned with your target audience. A well-defined roadmap guarantees seamless and expedited development and deployment.
+<strong> Rapid Development: </strong>Our tailored blockchain services ensure the creation of exceptional products aligned with your target audience. A well-defined roadmap guarantees seamless and expedited development and deployment.
 </Text>
 
 <Text style={{ textAlign: 'center' }} mt={4}>
-  - Comprehensive Support: Our commitment goes beyond product launch. We offer extensive post-delivery services to allow you to concentrate on your expansion.
+<strong> Comprehensive Support: </strong>Our commitment goes beyond product launch. We offer extensive post-delivery services to allow you to concentrate on your expansion.
 </Text>
 
 <Text style={{ textAlign: 'center' }} mt={4}>
-  - Tangible Impact: We generate meaningful outcomes, ensuring discernible value from your investments.
+<strong> Tangible Impact: </strong>We generate meaningful outcomes, ensuring discernible value from your investments.
 </Text>
 
 <Text style={{ textAlign: 'center' }} mt={4}>
@@ -174,9 +203,9 @@ const About = () => {
   <strong>Our Clients</strong>
 </Text>
 
-<Text style={{ textAlign: 'center' }} mt={4}>
+<Heading style={{ textAlign: 'center' }} mt={4}>
   <strong>Frequently Asked Questions</strong>
-</Text>
+</Heading>
 
 <Text style={{ textAlign: 'center' }} mt={4}>
   1. How does blockchain work in trade finance?

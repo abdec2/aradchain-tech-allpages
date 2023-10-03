@@ -13,7 +13,11 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
+
+
+
 
 const About = () => {
   return (
@@ -33,8 +37,34 @@ const About = () => {
         <div className={style.infoContainer}>
           <div className="content">
             <Text align={'center'} letterSpacing={1}>
-            Blockchain-Powered E-Voting Solution for the Public Sector.Enhance data management through decentralized, blockchain-based data storage systems for the public sector.<strong>CONNECT WITH OUR EXPERTS</strong>.Voting systems play a pivotal role across various domains and levels, from selecting a school prefect to electing a nation's leader. While digital voting methods have emerged to overcome challenges of paper balloting, a single flaw in this system can lead to significant vote manipulation. Embracing a decentralized voting system with blockchain technology offers a secure avenue for preserving the sanctity of the voting process, ensuring privacy, security, and integrity.Significance of Blockchain in Electronic Voting Systems.Blockchain's distributed nature, spread across multiple nodes, eliminates single points of failure. This inherent resilience shields blockchain-based voting systems from cyberattacks, denial of service incidents, and database deletions. Notably, blockchain's data immutability is pivotal in the voting ecosystem. Once a record is established, any alteration attempts are traceable, rendering tampering with voting results practically impossible.Governments can leverage blockchain to streamline the balloting process, minimizing human intervention. This not only expedites vote counting but also mitigates fraud risks and human errors. Compared to other contemporary e-voting solutions, blockchain-based balloting platforms offer enhanced result verification and audit capabilities.CONNECT WITH OUR EXPERTS
+            Blockchain-Powered E-Voting Solution for the Public Sector.Enhance data management through decentralized, blockchain-based data storage systems for the public sector.Voting systems play a pivotal role across various domains and levels, from selecting a school prefect to electing a nation's leader. While digital voting methods have emerged to overcome challenges of paper balloting, a single flaw in this system can lead to significant vote manipulation. Embracing a decentralized voting system with blockchain technology offers a secure avenue for preserving the sanctity of the voting process, ensuring privacy, security, and integrity.Significance of Blockchain in Electronic Voting Systems.Blockchain's distributed nature, spread across multiple nodes, eliminates single points of failure. This inherent resilience shields blockchain-based voting systems from cyberattacks, denial of service incidents, and database deletions. Notably, blockchain's data immutability is pivotal in the voting ecosystem. Once a record is established, any alteration attempts are traceable, rendering tampering with voting results practically impossible.Governments can leverage blockchain to streamline the balloting process, minimizing human intervention. This not only expedites vote counting but also mitigates fraud risks and human errors. Compared to other contemporary e-voting solutions, blockchain-based balloting platforms offer enhanced result verification and audit capabilities.
             </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
             <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
   Challenges in Government Voting Systems
 </Heading>
@@ -44,42 +74,42 @@ const About = () => {
 </Text>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>Security Vulnerabilities</strong>
+  <strong>Security Vulnerabilities:  </strong>
   Current voting systems are susceptible to hacking and manipulation, endangering the election outcome's integrity.
 </Text>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>Transparency Gap</strong>
+  <strong>Transparency Gap:  </strong>
   Some voting systems lack transparency and auditability, raising doubts about the accuracy of vote counting.
 </Text>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>Voter Exclusion</strong>
+  <strong>Voter Exclusion:  </strong>
   Certain voting methods hinder certain groups from voting, including disabled individuals, rural residents, and those unable to leave work for polling.
 </Text>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>Obsolete Technology</strong>
+  <strong>Obsolete Technology:  </strong>
   Outdated technology leads to lengthy queues, delayed results, and other complications.
 </Text>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>Partisan Influence</strong>
+  <strong>Partisan Influence:  </strong>
   Some voting systems exhibit bias favoring a particular political party, eroding public faith in the electoral process.
 </Text>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>Misinformation</strong>
+  <strong>Misinformation:  </strong>
   Rising misinformation through social media can undermine the legitimacy of election results.
 </Text>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>Lack of Standardization</strong>
+  <strong>Lack of Standardization:  </strong>
   Different jurisdictions employ disparate voting systems, leading to confusion and inconsistencies.
 </Text>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>Absence of Contingency Plans</strong>
+  <strong>Absence of Contingency Plans:  </strong>
   Some systems lack contingency strategies for emergencies, such as natural disasters or cyberattacks.
 </Text>
 
@@ -92,37 +122,37 @@ const About = () => {
 </Text>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>Decentralization</strong>
+  <strong>Decentralization:  </strong>
   Distribute voting records across multiple nodes, preventing tampering, fraud, and manipulation by avoiding single-entity control.
 </Text>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>Transparency</strong>
+  <strong>Transparency: </strong>
   Provide a transparent and tamper-proof record of each vote, enabling anyone to verify election results.
 </Text>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>Security Reinforcement</strong>
+  <strong>Security Reinforcement:  </strong>
   Blockchain safeguards election outcomes from external interference.
 </Text>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>Accessibility</strong>
+  <strong>Accessibility:  </strong>
   Craft inclusive voting systems accessible to all, irrespective of location or ability, elevating voter turnout and inclusivity.
 </Text>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>Efficiency Boost</strong>
+  <strong>Efficiency Boost:  </strong>
   Streamline voting by reducing manual vote counting, ensuring swift and precise results.
 </Text>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>Smart Contracts</strong>
+  <strong>Smart Contracts:  </strong>
   Deploy self-executing smart contracts to automate and enforce voting rules, enhancing efficiency and transparency.
 </Text>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>Immutable Audit Trail</strong>
+  <strong>Immutable Audit Trail:  </strong>
   Create a tamper-proof, transparent record of the complete voting process, instilling trust in the results.
 </Text>
 
@@ -143,16 +173,24 @@ const About = () => {
 
 <Text textAlign={'center'} mt={4}>
   <strong>Metaverse in Manufacturing Industry: Role and Future Prospects</strong>
+  </Text>
+  <Text textAlign={'center'} mt={4}>
   The "Metaverse" requires no introduction, as it's woven into our lives. This article explores the metaverse's role in the manufacturing industry.
 </Text>
 
 <Text textAlign={'center'} mt={4}>
   <strong>Empowering NPCs in the Metaverse with AI</strong>
+  </Text>
+  <Text textAlign={'center'} mt={4}>
+
   Blockchain, metaverse, and AI are 21st-century innovations. Learn how AI empowers NPCs in the metaverse, enriching user experiences.
 </Text>
 
 <Text textAlign={'center'} mt={4}>
   <strong>Getting Started with White Label Crypto Banking Platform</strong>
+  </Text>
+  <Text textAlign={'center'} mt={4}>
+
   Unlock opportunities in crypto banking. This guide helps you explore the steps to get started with a white-label crypto banking platform.
 </Text>
 

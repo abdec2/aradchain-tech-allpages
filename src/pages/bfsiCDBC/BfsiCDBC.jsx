@@ -13,7 +13,11 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
+
+
+
 
 const About = () => {
   return (
@@ -34,20 +38,40 @@ const About = () => {
           <div className="content">
             <Text align={'center'} letterSpacing={1}>
             Adopt a Universal Digital Payment Solution for the Digital Age.
-
 Central Bank Digital Currency is shaping the future Monetary Landscape.
 The fusion of advanced technologies and the emergence of information systems have led to a revolution in the banking and financial domain. Financial institutions are embracing transformative shifts driven by innovative technologies like blockchain.
-
 The rise of Bitcoin and other cryptocurrencies acted as a catalyst for this revolution. The concept of digital currencies has gained significant traction, paving the way for the emergence of central bank digital currencies (CBDCs).
-
 A central bank digital currency (CBDC) is a digital rendition of a traditional fiat currency, integrated into diverse monetary systems to facilitate innovation and serve the public's interest. CBDCs have taken center stage in discussions among governments, central banks, and private sectors, heralded as the future of the digital financial landscape.
-
-Central Bank-Issued Digital Currency:
-Transitioning from Concept to Design
 The Bank for International Settlements (BIS) has reported that more than 70% of central banks express interest in exploring central bank digital currencies. Initial CBDC trials have showcased their potential to enhance efficiency and transparency in central bank operations. Moreover, CBDCs empower central banks to leverage real-time data, reinforcing their decision-making processes.
 
 
             </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
             <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
   LAUNCH YOUR CBDC
 </Heading>
@@ -109,22 +133,22 @@ The Bank for International Settlements (BIS) has reported that more than 70% of 
 </Heading>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>Tangible Outcomes</strong>
+  <strong>Tangible Outcomes:</strong>
   We create measurable impacts, ensuring your investments yield value.
 </Text>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>Swift Development</strong>
+  <strong>Swift Development: </strong>
   We provide tailor-made solutions that resonate with your target audience. A well-structured roadmap expedites the development and deployment process.
 </Text>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>Comprehensive Support</strong>
+  <strong>Comprehensive Support: </strong>
   Our commitment extends beyond product launch. We offer extensive post-delivery services, enabling you to focus on your growth.
 </Text>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>Expert Team</strong>
+  <strong>Expert Team: </strong>
   With over 300 experts, we refine your offerings, suggest optimal tech approaches, and assist in setting up communities and campaigns.
 </Text>
 
@@ -138,16 +162,21 @@ The Bank for International Settlements (BIS) has reported that more than 70% of 
 
 <Text textAlign={'center'} mt={4}>
   <strong>Maximizing Profits With Crypto Arbitrage Bot in 2023</strong>
+  </Text>
+  <Text textAlign={'center'} mt={4}>  
   As cryptocurrency trading has become increasingly popular, there has been a constant buzz around crypto arbitrage bots. This groundbreaking development empowers traders [...]
 </Text>
 
 <Text textAlign={'center'} mt={4}>
   <strong>How to Develop a Poloniex-like Bitcoin Exchange Software</strong>
-  Table of Contents Introduction What is Poloniex? Salient Features of Bitcoin Exchange Software Modeled After Poloniex Setting Up Your Exchange Platform Using [...]
+  </Text><Text textAlign={'center'} mt={4}>
+    Table of Contents Introduction What is Poloniex? Salient Features of Bitcoin Exchange Software Modeled After Poloniex Setting Up Your Exchange Platform Using [...]
 </Text>
 
 <Text textAlign={'center'} mt={4}>
   <strong>From Bland To Brilliant: Building Advanced Crypto Exchange Software in 2023</strong>
+  </Text>
+  <Text textAlign={'center'} mt={4}>
   The onset of 2023 witnessed a robust cryptocurrency market, and as the year progressed, we observed market fluctuations and the entry of [...]
 </Text>
 

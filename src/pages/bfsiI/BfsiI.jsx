@@ -13,7 +13,8 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -33,15 +34,39 @@ const About = () => {
         <div className={style.infoContainer}>
           <div className="content">
             <Text align={'center'} letterSpacing={1}>
-            Blockchain Technology in the Insurance Industry,liminate Claims Delays, Data Duplicity, and Policy Frauds.
-
-<strong>REQUEST A FREE DEMONSTRATION</strong>.Revolutionize your offerings with Blockchain-based Insurance
+            Blockchain Technology in the Insurance Industry,liminate Claims Delays, Data Duplicity, and Policy Frauds.Revolutionize your offerings with Blockchain-based Insurance
 AradChain Technologies's innovative blockchain solution for the insurance sector offers a remedy for critical challenges like redundant data entry, fraudulent claims, and sluggish claims processing. Built on a foundation of trust, this peer-to-peer model ensures complete transparency, expedites processing, and reduces both time and financial expenditures.The Role of Blockchain Applications in the Insurance Sector
 Insurance companies grapple with the storage, verification, and processing of massive volumes of customer data, as well as the facilitation of claims payouts. The absence of an automated solution has resulted in a convoluted ecosystem prone to inaccurate claims handling and policy manipulation. Additionally, this situation leaves customers helpless, forced to engage with an underperforming industry.
 
 In the insurance realm, blockchain securely interlinks claims data, transaction records, and other invaluable datasets from all stakeholders. The ledger's data is duplicated across all nodes, ensuring absolute transparency.
 
             </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
             <Heading as='h2' size='2xl' letterSpacing={2} my={5} style={{ textAlign: 'center' }} mt={10} mb={10}>
   Challenges Addressed:
 </Heading>

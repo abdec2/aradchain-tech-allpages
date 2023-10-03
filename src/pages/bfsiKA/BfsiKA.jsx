@@ -13,7 +13,10 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
+
+
 
 const About = () => {
   return (
@@ -33,11 +36,37 @@ const About = () => {
         <div className={style.infoContainer}>
           <div className="content">
             <Text align={'center'} letterSpacing={1}>
-            Blockchain-Powered KYC Solution.A Secure and Streamlined Approach to Digitizing the KYC Process.Revolutionize Regulatory Technology Innovation,Request a Free Demo
-            <strong>GET EXPERT ADVICE</strong>
+            Blockchain-Powered KYC Solution.A Secure and Streamlined Approach to Digitizing the KYC Process.Revolutionize Regulatory Technology Innovation
+            <strong>, GET EXPERT ADVICE</strong>
 
             </Text>
-            <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
+  <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
   KYC Solution Leveraging Blockchain
 </Heading>
 
@@ -53,49 +82,46 @@ const About = () => {
   These alarming statistics underscore the urgency of modernizing identity management through digital means. We firmly believe that blockchain holds the potential to revolutionize the KYC landscape, enhancing its accessibility and efficacy. To this end, we have harnessed blockchain's capabilities to develop a KYC solution that simplifies the creation, monitoring, and maintenance of digital identities. Our solution is designed to be efficient, user-friendly, secure, and resilient against fraud. Delivered as a white-label solution, it can be tailored to your business requirements and branded accordingly. Leverage our comprehensive KYC solution to drive transformative innovation in the realm of regulatory technology.
 </Text>
 
-<Text textAlign={'center'} mt={4}>
+<Heading textAlign={'center'} mt={4}>
   <strong>Highlights of Our Blockchain-Backed KYC Solution</strong>
-</Text>
+</Heading>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>KYC Solution Highlights</strong>
+  <strong>KYC Solution Highlights: </strong>
   Optical Character Recognition (OCR)
   Our OCR technology converts scanned paper documents—such as driver's licenses, voter IDs, passports, and other ID proofs—into machine-readable text. This information is then recorded on the blockchain, forming a secure digital identity for each user.
 </Text>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>KYC Solution Highlights</strong>
+  <strong>KYC Solution Highlights: </strong>
   Ethereum-Based Identity
   User-related textual data is stored on the Ethereum blockchain, with each user assigned a unique Ethereum address. This address serves as an identifier, facilitating easy access and sharing of user data.
 </Text>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>KYC Solution Highlights</strong>
+  <strong>KYC Solution Highlights: </strong>
   IPFS Integration
   Image files uploaded by users are stored using the InterPlanetary File System (IPFS), a peer-to-peer file-sharing protocol. This accelerates and simplifies the process of sharing user data across global networks.
 </Text>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>KYC Solution Highlights</strong>
+  <strong>KYC Solution Highlights: </strong>
   Digital Signatures
   Enhancing security, multiple digital signatures ensure that user data can only be exchanged when authorized by approved signatories—a user and the platform owner.
 </Text>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>KYC Solution Highlights</strong>
+  <strong>KYC Solution Highlights: </strong>
   Incentive Mechanism
   Share verified user information with financial institutions and other entities seeking the same data and earn incentives in return. Each data share presents an opportunity for substantial rewards.
 </Text>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>KYC Solution Highlights</strong>
+  <strong>KYC Solution Highlights: </strong>
   Wallet Integration
   Our multi-cryptocurrency hot wallet ensures secure storage and seamless transactions for covering gas fees and distributing incentives.
 </Text>
 
-<Text textAlign={'center'} mt={4}>
-  <strong>Blockchain-Powered KYC: Diverse Applications</strong>
-</Text>
 
 <Text textAlign={'center'} mt={4}>
   <strong>KYC Solution Applications:</strong> Cryptocurrency Exchanges, Lending Platforms, Telecommunications, Finance, Healthcare, Real Estate, Government, Travel and Transportation, Insurance, Casinos and Online Gaming.

@@ -13,7 +13,8 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
-import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 
 const About = () => {
   return (
@@ -34,8 +35,33 @@ const About = () => {
           <div className="content">
             <Text align={'center'} letterSpacing={1}>
             Decentralized & Secure Management Systems for Public Sector Digital Identities.Digital identity management holds paramount significance for the growth and sustainability of any digital economy. It is foundational across all organizations within the public sector. Leveraging blockchain for government digital identity emerges as an optimal solution for addressing challenges related to identity and access management. By utilizing advanced cryptographic techniques, credentials can be seamlessly verified without compromising the integrity of actual data, thereby safeguarding against cyber breaches.Significance of Blockchain in Digital Identity.A digital identity encompasses an individual's online presence, including user behavior, images, shopping preferences, and financial information. In essence, it comprises both offline and online aspects of an individual's identity. Blockchain technology offers decentralized security for these identities, incorporating advanced cryptographic techniques to enhance overall security.Blockchain-based digital identity solutions establish decentralized identifiers that link digital identities with verifiable credentials. By integrating blockchain into digital identity systems, prevailing challenges like data vulnerability, restricted access, and fraudulent identities can be mitigated.
-            TALK TO OUR EXPERTS
              </Text>
+             <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
             <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
             Challenges in Government Digital Identity
               </Heading>
@@ -46,7 +72,7 @@ const About = () => {
             <Text mt={4} align={'center'} letterSpacing={1}>
               <strong>Why Select AradChain Technologies for Government Blockchain Identity Solutions?</strong>
             </Text>
-            <Text align={'center'} letterSpacing={1}>
+            <Text align={'center'} letterSpacing={1} mt={4}>
             Collaborate with AradChain Technologies to harness a secure, trusted blockchain-based platform's full potential. We assist in creating unique capabilities to issue, manage, and verify government digital identities. Forge a security-rich hub of user identity data and tap into a results-driven network of digital credentials.
             </Text>
             <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
@@ -54,8 +80,8 @@ const About = () => {
 </Heading>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>Custom AI Blockchain Development</strong>
-  Blockchain & AI: Top Use Cases and Barriers to AI Adoption
+  <strong>Custom AI Blockchain Development: </strong>
+   Top Use Cases and Barriers to AI Adoption
 </Text>
 
 <Text textAlign={'center'} mt={4}>
@@ -63,14 +89,15 @@ const About = () => {
 </Text>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>Exploring Emerging Blockchain Use Cases in Real Estate</strong>
+  <strong>Exploring Emerging Blockchain Use Cases in Real Estate </strong>
+  </Text>
+  <Text textAlign={'center'} mt={4}>
   The real estate industry is growing at a rapid pace; however, it's also susceptible to scams. Dive into emerging blockchain applications that can transform the industry.
 </Text>
 
 <Text textAlign={'center'} mt={4}>
-  <strong>Blockchain Development for the Beauty Industry</strong>
-  Blockchain Development for Beauty Industry: A Boon or Bane?
-</Text>
+  <strong>Blockchain Development for Beauty Industry: A Boon or Bane? </strong>
+  </Text>
 
 <Text textAlign={'center'} mt={4}>
   Blockchain and beauty may not seem related, but this technology is making waves in skincare, cosmetics, and more. Explore its impact on the beauty industry.
