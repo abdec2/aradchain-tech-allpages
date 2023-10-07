@@ -155,24 +155,22 @@ const Home = () => {
   const globalPresence = [
     {
       title: "UAE OFFICE",
-      address:
-        " South Zone, Dubai International Financial Centre (DIFC) Dubai, UAE",
+      address: ["South Zone", "Dubai International Financial Centre", "Dubai, UAE"],
       image: Dubai,
     },
     {
       title: "BH OFFICE",
-      address:
-        "Office 1236, Building 574 Road 31 Block 611 Area Al- Hamriya Kingdom of Bahrain",
+      address:["Building 574 Road 31 Block 611,","Area Al- Hamriya,","Kingdom of Bahrain"],
       image: BH,
     },
     {
       title: "US OFFICE",
-      address: "347 Fifth Ave. New York, NY, United States Of America  10016",
+      address: ["347 Fifth Ave.","New York, NY","United States Of America  10016"],
       image: US,
     },
     {
       title: "UK OFFICE",
-      address: "Docklands Business Centre 10-16 Tiller Road London E14 8PX",
+      address: ["Docklands Business Centre","10-16 Tiller Road","London E14 8PX"],
       image: UK,
     },
   ];
@@ -317,7 +315,7 @@ const Home = () => {
       </div>
 
       {/* Services Section */}
-      <Box bg={'#f9f9f9'} p={20} mt={"5rem"}>
+      <Box bg={'#f9f9f9'} py={20} mt={"5rem"}>
         <Stack spacing={0} align={"center"}  p={2}>
           <Heading
             as="h1"
@@ -835,7 +833,7 @@ const Home = () => {
               <Heading as="h2" fontSize={"2rem"} mt={2}>
                 {ele.title}
               </Heading>
-              <chakra.span fontSize={".8rem"}>{ele.address}</chakra.span>
+              <chakra.span fontSize={".8rem"}>{ele.address[0]}<br />{ele.address[1]}<br />{ele.address[2]}</chakra.span>
             </Box>
           );
         })}

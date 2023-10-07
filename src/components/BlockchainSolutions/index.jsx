@@ -62,7 +62,7 @@ const index = () => {
     },
   ];
   return (
-    <Box bg={"#f9f9f9"} p={20} mt={"8rem"}>
+    <Box bg={"#f9f9f9"} py={20} mt={"8rem"}>
       <Stack spacing={0} align={"center"}>
         <Heading
           as="h1"
