@@ -132,6 +132,7 @@ import projectIcon from '../assets/projecticon.png'
 import blog1 from '../assets/blog1.jpg'
 import blog2 from '../assets/blog2.jpg'
 import blog3 from '../assets/blog3.jpeg'
+import blog4 from '../assets/blog4.jpg'
 
 // Testimonial Flag
 import bahrainFlag from '../assets/bahrain-flag.png'
