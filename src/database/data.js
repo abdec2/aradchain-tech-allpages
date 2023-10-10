@@ -1325,7 +1325,7 @@ const data={
 
         {
             id:5,
-            slug:"blockchain-technology",
+            slug:"the-importance-of-finality-in-blockchain-technology",
             date:"10 October 2023", 
             image:blog5, 
             title:"The Importance of Finality in Blockchain Technology",
