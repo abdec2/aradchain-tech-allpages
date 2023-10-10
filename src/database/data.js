@@ -1332,13 +1332,13 @@ const data={
             desc:"Finality in blockchain technology ensures that once a transaction is confirmed and added to the blockchain, it becomes immutable and tamper-proof, providing trust and security in decentralized applications and financial systems.", 
             content:[
                 {
-                    subHeading1:"Introduction:",
+                   
                     para1:"Blockchain technology has taken the world by storm, revolutionizing various industries, from finance and supply chain management to healthcare and beyond. One of the critical concepts underpinning blockchain's reliability and security is finality.Finality in blockchain technology refers to the irreversible confirmation of a transaction or a block in the blockchain. In this blog post, we will delve into why finality is so important in blockchain technology and its implications for various use cases.",
                     subHeading2:"Understanding Finality in Blockchain:",
                     para2: "Finality is a fundamental characteristic that distinguishes blockchain from traditional databases and ledgers. In traditional systems, transactions can be reversed, altered, or deleted by a centralized authority, leading to issues of trust and security. Finality in blockchain means that once a transaction is added to the blockchain, it is practically impossible to alter or reverse it. This immutability is what makes blockchain technology particularly valuable.",
                 },
                 {
-                    heading:"Key Features and Benefits:",
+                    heading:"Why Finality Matters",
                     subHeading1:"Security and Trust:",
                     para1:" Finality enhances security and trust in blockchain networks. It ensures that once a transaction is confirmed and added to the blockchain, it becomes a permanent and tamper-resistant record. This means that users can have confidence that their transactions are safe from unauthorized changes or fraud.",
                     subHeading2:"Settlement Speed:",
@@ -1356,7 +1356,7 @@ const data={
                      
                 },
                 {
-                    heading:"Challanges and Considerations:",
+                    heading:"Challanges and Considerations",
                     para1:"While finality is a critical feature of blockchain technology, it's essential to acknowledge the challenges and considerations associated with it:",
                     subHeading1:" Scalability:",
                     para2:" Achieving finality in a blockchain network with a large number of transactions and participants can be challenging. Scalability solutions, such as sharding and layer 2 solutions, are being developed to address this issue.",
