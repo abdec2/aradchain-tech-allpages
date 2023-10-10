@@ -1357,20 +1357,18 @@ const data={
                 },
                 {
                     heading:"Challanges and Considerations:",
-                    title:"While finality is a critical feature of blockchain technology, it's essential to acknowledge the challenges and considerations associated with it:",
+                    para1:"While finality is a critical feature of blockchain technology, it's essential to acknowledge the challenges and considerations associated with it:",
                     subHeading1:" Scalability:",
-                    para1:" Achieving finality in a blockchain network with a large number of transactions and participants can be challenging. Scalability solutions, such as sharding and layer 2 solutions, are being developed to address this issue.",
+                    para2:" Achieving finality in a blockchain network with a large number of transactions and participants can be challenging. Scalability solutions, such as sharding and layer 2 solutions, are being developed to address this issue.",
                     subHeading2:"Forks and Consensus Mechanisms:",
-                    para2:" Different blockchain networks use various consensus mechanisms, and the concept of finality may vary between them. Some blockchains, like Bitcoin, rely on probabilistic finality due to the possibility of forks, while others, like Ethereum 2.0, aim for deterministic finality through mechanisms like Casper.",
+                    para3:" Different blockchain networks use various consensus mechanisms, and the concept of finality may vary between them. Some blockchains, like Bitcoin, rely on probabilistic finality due to the possibility of forks, while others, like Ethereum 2.0, aim for deterministic finality through mechanisms like Casper.",
                     subHeading3:"Legal and Ethical Concerns:",
-                    para3:"The immutability of blockchain data may raise legal and ethical concerns in certain situations, such as the right to be forgotten. Striking a balance between immutability and privacy is an ongoing challenge.",
-                    subHeading4:"Voting Systems:",
-                    para4:" Blockchain-based voting systems provide secure, transparent, and tamper-resistant elections. By eliminating voter fraud and ensuring the integrity of the electoral process, blockchain technology enhances democracy.",
+                    para4:"The immutability of blockchain data may raise legal and ethical concerns in certain situations, such as the right to be forgotten. Striking a balance between immutability and privacy is an ongoing challenge.",
                     
                  },
                 {
                     heading:"Conclusion",
-                    para1:"Blockchain technology has emerged as a game-changer across industries, offering unparalleled transparency, security, and efficiency. Its decentralized nature, combined with cryptographic algorithms, empowers individuals and organizations with trust, accountability, and autonomy. As blockchain continues to evolve, we can expect further disruption and innovation, opening up new possibilities and transforming our future. Embracing blockchain technology today will ensure that we stay at the forefront of this transformative revolution tomorrow."
+                    para1:"Finality is a cornerstone of blockchain technology, providing the security, trust, and efficiency that make it a powerful solution for a wide range of applications. Its impact goes beyond financial transactions, extending to supply chain management, identity verification, governance, and more. As blockchain technology continues to evolve and mature, addressing the challenges associated with finality will be essential to realize its full potential and ensure it aligns with legal and ethical standards. Nevertheless, finality remains a critical factor in the adoption and success of blockchain technology across industries."
                 }
             ]
 
