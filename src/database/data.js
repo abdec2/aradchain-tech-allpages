@@ -132,7 +132,8 @@ import projectIcon from '../assets/projecticon.png'
 import blog1 from '../assets/blog1.jpg'
 import blog2 from '../assets/blog2.jpg'
 import blog3 from '../assets/blog3.jpeg'
-import blog4 from '../assets/blog4.jpg'
+import blog4 from '../assets/blog4.png'
+import blog5 from '../assets/blog5.jpg'
 
 // Testimonial Flag
 import bahrainFlag from '../assets/bahrain-flag.png'
@@ -1133,65 +1134,7 @@ const data={
     ],
 
     blogPosts:[
-        {
-            id:1,
-            slug:"Finality in Blockchain Technology",
-            date:"10 October 2023", 
-            image:blog4, 
-            title:"The Importance of Finality in Blockchain Technology",
-            desc:"Finality in blockchain technology ensures that once a transaction is confirmed and added to the blockchain, it becomes immutable and tamper-proof, providing trust and security in decentralized applications and financial systems.", 
-            content:[
-                {
-                    subHeading1:"Introduction:",
-                    para1:"Blockchain technology has taken the world by storm, revolutionizing various industries, from finance and supply chain management to healthcare and beyond. One of the critical concepts underpinning blockchain's reliability and security is finality.Finality in blockchain technology refers to the irreversible confirmation of a transaction or a block in the blockchain. In this blog post, we will delve into why finality is so important in blockchain technology and its implications for various use cases.",
-                    subHeading2:"Understanding Finality in Blockchain:",
-                    para2: "Finality is a fundamental characteristic that distinguishes blockchain from traditional databases and ledgers. In traditional systems, transactions can be reversed, altered, or deleted by a centralized authority, leading to issues of trust and security. Finality in blockchain means that once a transaction is added to the blockchain, it is practically impossible to alter or reverse it. This immutability is what makes blockchain technology particularly valuable.",
-                },
-                {
-                    heading:"Key Features and Benefits:",
-                    subHeading1:"Security and Trust:",
-                    para1:" Finality enhances security and trust in blockchain networks. It ensures that once a transaction is confirmed and added to the blockchain, it becomes a permanent and tamper-resistant record. This means that users can have confidence that their transactions are safe from unauthorized changes or fraud.",
-                    subHeading2:"Settlement Speed:",
-                    para2:"  Finality also impacts settlement speed. In traditional financial systems, settlement can take days, whereas blockchain transactions can achieve finality in a matter of seconds or minutes. This rapid settlement can reduce counterparty risk and enable more efficient financial operations.",
-                    subHeading3:"Smart Contracts:",
-                    para3:"Smart contracts, self-executing contracts with the terms of the agreement directly written into code, rely on finality. When a smart contract is triggered, its execution and outcome are final, ensuring that parties involved can rely on the contract's terms being enforced without intermediaries.",
-                    subHeading4:" Supply Chain Management:",
-                    para4:" Finality is crucial in supply chain management, where tracking goods and verifying their authenticity are essential. Once a product's data is recorded on a blockchain, its history and provenance are immutable, reducing the risk of counterfeit goods entering the supply chain.",
-                    subHeading5:" Identity Verification:",
-                    para5:"In identity management and authentication systems, finality ensures that once an identity is verified and recorded on the blockchain, it cannot be altered or duplicated, reducing the risk of identity theft and fraud.",
-                    subHeading5:" Voting and Governance:",
-                    para5:" For blockchain-based voting systems and governance structures, finality ensures that election results and decisions are tamper-proof. This enhances transparency and trust in democratic processes.",
-                    subHeading5:" Legal and Regulatory Compliance:",
-                    para5:" Many industries are subject to regulatory requirements that demand the permanence and auditability of records. Finality in blockchain technology ensures compliance with these regulations.",
-                     
-                },
-                {
-                    heading:"Challanges and Considerations:",
-                    title:"While finality is a critical feature of blockchain technology, it's essential to acknowledge the challenges and considerations associated with it:",
-                    subHeading1:" Scalability:",
-                    para1:" Achieving finality in a blockchain network with a large number of transactions and participants can be challenging. Scalability solutions, such as sharding and layer 2 solutions, are being developed to address this issue.",
-                    subHeading2:"Forks and Consensus Mechanisms:",
-                    para2:" Different blockchain networks use various consensus mechanisms, and the concept of finality may vary between them. Some blockchains, like Bitcoin, rely on probabilistic finality due to the possibility of forks, while others, like Ethereum 2.0, aim for deterministic finality through mechanisms like Casper.",
-                    subHeading3:"Legal and Ethical Concerns:",
-                    para3:"The immutability of blockchain data may raise legal and ethical concerns in certain situations, such as the right to be forgotten. Striking a balance between immutability and privacy is an ongoing challenge.",
-                    subHeading4:"Voting Systems:",
-                    para4:" Blockchain-based voting systems provide secure, transparent, and tamper-resistant elections. By eliminating voter fraud and ensuring the integrity of the electoral process, blockchain technology enhances democracy.",
-                    
-                 },
-                {
-                    heading:"Conclusion",
-                    para1:"Blockchain technology has emerged as a game-changer across industries, offering unparalleled transparency, security, and efficiency. Its decentralized nature, combined with cryptographic algorithms, empowers individuals and organizations with trust, accountability, and autonomy. As blockchain continues to evolve, we can expect further disruption and innovation, opening up new possibilities and transforming our future. Embracing blockchain technology today will ensure that we stay at the forefront of this transformative revolution tomorrow."
-                }
-            ]
-
-        },
-
-
-
-
-
-
-
+        
 
         {
             id:1,
@@ -1378,7 +1321,60 @@ const data={
                 }
             ]
 
-        }
+        },
+
+        {
+            id:5,
+            slug:"blockchain-technology",
+            date:"10 October 2023", 
+            image:blog5, 
+            title:"The Importance of Finality in Blockchain Technology",
+            desc:"Finality in blockchain technology ensures that once a transaction is confirmed and added to the blockchain, it becomes immutable and tamper-proof, providing trust and security in decentralized applications and financial systems.", 
+            content:[
+                {
+                    subHeading1:"Introduction:",
+                    para1:"Blockchain technology has taken the world by storm, revolutionizing various industries, from finance and supply chain management to healthcare and beyond. One of the critical concepts underpinning blockchain's reliability and security is finality.Finality in blockchain technology refers to the irreversible confirmation of a transaction or a block in the blockchain. In this blog post, we will delve into why finality is so important in blockchain technology and its implications for various use cases.",
+                    subHeading2:"Understanding Finality in Blockchain:",
+                    para2: "Finality is a fundamental characteristic that distinguishes blockchain from traditional databases and ledgers. In traditional systems, transactions can be reversed, altered, or deleted by a centralized authority, leading to issues of trust and security. Finality in blockchain means that once a transaction is added to the blockchain, it is practically impossible to alter or reverse it. This immutability is what makes blockchain technology particularly valuable.",
+                },
+                {
+                    heading:"Key Features and Benefits:",
+                    subHeading1:"Security and Trust:",
+                    para1:" Finality enhances security and trust in blockchain networks. It ensures that once a transaction is confirmed and added to the blockchain, it becomes a permanent and tamper-resistant record. This means that users can have confidence that their transactions are safe from unauthorized changes or fraud.",
+                    subHeading2:"Settlement Speed:",
+                    para2:"  Finality also impacts settlement speed. In traditional financial systems, settlement can take days, whereas blockchain transactions can achieve finality in a matter of seconds or minutes. This rapid settlement can reduce counterparty risk and enable more efficient financial operations.",
+                    subHeading3:"Smart Contracts:",
+                    para3:"Smart contracts, self-executing contracts with the terms of the agreement directly written into code, rely on finality. When a smart contract is triggered, its execution and outcome are final, ensuring that parties involved can rely on the contract's terms being enforced without intermediaries.",
+                    subHeading4:" Supply Chain Management:",
+                    para4:" Finality is crucial in supply chain management, where tracking goods and verifying their authenticity are essential. Once a product's data is recorded on a blockchain, its history and provenance are immutable, reducing the risk of counterfeit goods entering the supply chain.",
+                    subHeading5:" Identity Verification:",
+                    para5:"In identity management and authentication systems, finality ensures that once an identity is verified and recorded on the blockchain, it cannot be altered or duplicated, reducing the risk of identity theft and fraud.",
+                    subHeading5:" Voting and Governance:",
+                    para5:" For blockchain-based voting systems and governance structures, finality ensures that election results and decisions are tamper-proof. This enhances transparency and trust in democratic processes.",
+                    subHeading5:" Legal and Regulatory Compliance:",
+                    para5:" Many industries are subject to regulatory requirements that demand the permanence and auditability of records. Finality in blockchain technology ensures compliance with these regulations.",
+                     
+                },
+                {
+                    heading:"Challanges and Considerations:",
+                    title:"While finality is a critical feature of blockchain technology, it's essential to acknowledge the challenges and considerations associated with it:",
+                    subHeading1:" Scalability:",
+                    para1:" Achieving finality in a blockchain network with a large number of transactions and participants can be challenging. Scalability solutions, such as sharding and layer 2 solutions, are being developed to address this issue.",
+                    subHeading2:"Forks and Consensus Mechanisms:",
+                    para2:" Different blockchain networks use various consensus mechanisms, and the concept of finality may vary between them. Some blockchains, like Bitcoin, rely on probabilistic finality due to the possibility of forks, while others, like Ethereum 2.0, aim for deterministic finality through mechanisms like Casper.",
+                    subHeading3:"Legal and Ethical Concerns:",
+                    para3:"The immutability of blockchain data may raise legal and ethical concerns in certain situations, such as the right to be forgotten. Striking a balance between immutability and privacy is an ongoing challenge.",
+                    subHeading4:"Voting Systems:",
+                    para4:" Blockchain-based voting systems provide secure, transparent, and tamper-resistant elections. By eliminating voter fraud and ensuring the integrity of the electoral process, blockchain technology enhances democracy.",
+                    
+                 },
+                {
+                    heading:"Conclusion",
+                    para1:"Blockchain technology has emerged as a game-changer across industries, offering unparalleled transparency, security, and efficiency. Its decentralized nature, combined with cryptographic algorithms, empowers individuals and organizations with trust, accountability, and autonomy. As blockchain continues to evolve, we can expect further disruption and innovation, opening up new possibilities and transforming our future. Embracing blockchain technology today will ensure that we stay at the forefront of this transformative revolution tomorrow."
+                }
+            ]
+
+        },
     ],
 
     projects:[
