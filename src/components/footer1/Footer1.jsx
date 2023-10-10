@@ -53,14 +53,12 @@ const scriptUrl = "https://script.google.com/macros/s/AKfycbycoNyON-NOkPKEDwnWG8
 
 
   return (
-    
+    // style={{ marginLeft: '-40px', '@media (max-width: 768px)': { marginLeft: '0' } }}
     <div className={style.footer1}>
         <div className={style.footer1Container}>
             <div>
                 <img src={logo} alt="footer_logo" />
-                <div className={style.socialIcons} style={{ marginLeft: '-40px', '@media (max-width: 768px)': { marginLeft: '0' } }}>
-                  
-                    <Link to="https://www.instagram.com/aradchaintech/" onClick={() => {window.scroll(0, 0);}} target="_blank"><img src={insta} alt="instagram-icon" /></Link>
+                <div className={style.socialIcons} >
                     
                     <Link to="https://www.instagram.com/aradchaintech/" target="_blank">
                     

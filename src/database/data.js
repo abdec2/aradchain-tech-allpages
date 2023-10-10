@@ -132,7 +132,6 @@ import projectIcon from '../assets/projecticon.png'
 import blog1 from '../assets/blog1.jpg'
 import blog2 from '../assets/blog2.jpg'
 import blog3 from '../assets/blog3.jpeg'
-import blog4 from '../assets/blog4.jpg'
 
 // Testimonial Flag
 import bahrainFlag from '../assets/bahrain-flag.png'
@@ -205,7 +204,7 @@ const data={
     ],
 
     aboutStatsData: [
-        { id: 1, number: "60+", text: "Successful Projects" },
+        { id: 1, number: "500+", text: "Successful Projects" },
         { id: 2, number: "98%", text: "Satisfied Clients" },
         { id: 3, number: "35+", text: "Countries" }
     ],
@@ -1316,6 +1315,65 @@ const data={
                 {
                     heading:"Conclusion",
                     para1:"Blockchain-based crowdfunding represents a significant shift in the way projects are funded, providing a more transparent, accessible, and efficient approach to raising capital. By leveraging blockchain technology, project creators can reach a global audience, foster trust and transparency, and unlock new opportunities for innovation. As the blockchain ecosystem continues to evolve, we can expect to see further advancements in crowdfunding models, enabling more individuals and organizations to bring their ideas to life and make a positive impact on the world."
+                }
+            ]
+
+        }, 
+        {
+            id:4,
+            slug:"safeguarding-brands-web3",
+            date:"07 October 2023", 
+            image:blog4, 
+            title:"Safeguarding Brands in Web3: The Role of AI in Protecting Against IP Fraud",
+            desc:"The advent of Web3 has brought about exciting possibilities, from decentralized applications to blockchain-based assets", 
+            content:[
+                {
+                    subHeading1:"Introduction:",
+                    para1:"The advent of Web3 has brought about exciting possibilities, from decentralized applications to blockchain-based assets. However, with these new opportunities come unique challenges, especially in the realm of intellectual property (IP) protection. As brands and creators navigate this evolving landscape, AI-powered technologies are emerging as powerful tools to combat IP fraud. In this blog, we will explore how AI is playing a pivotal role in safeguarding brands from IP fraud in Web3.",
+                },
+                {
+                    heading:"Understanding IP Fraud in Web3",
+                    headingDesc: "Web3 encompasses a decentralized and open ecosystem where digital assets are created, bought, sold, and traded on blockchain networks. While this represents a revolutionary shift, it also opens the door to various forms of IP fraud, including:",
+                    subHeading1:"Counterfeit Tokens:",
+                    para1:" Bad actors can create counterfeit tokens or NFTs (non-fungible tokens) using copyrighted or trademarked content without permission.",
+                    subHeading2:"Plagiarized Content:",
+                    para2:"IP theft can take the form of plagiarized content, such as artwork, music, or written material, being tokenized and sold without the creator's consent.",
+                    subHeading3:"Domain Name Squatting:",
+                    para3:"In Web3, domain names are critical digital assets. IP fraudsters may squat on domain names similar to well-known brands, intending to deceive users and damage the brand's reputation.",
+                    subHeading4:"Brand Impersonation:",
+                    para4:"Fraudsters can create fake social media profiles, websites, or accounts that impersonate brands to scam or deceive users..",
+                    subHeading5:"Metadata Manipulation:",
+                    para5:" Malicious actors can alter the metadata of digital assets to hide their true origin, making it difficult to trace back to the original creator.",
+                },
+                {
+                    heading:"AI-Powered Technologies to the Rescue",
+                    subHeading1:"Content Recognition:",
+                    para1:"AI algorithms can scan blockchain networks and marketplaces to identify IP-protected content. These systems can recognize images, text, and even audio to detect unauthorized use of copyrighted material.",
+                    subHeading2:"Smart Contracts:",
+                    para2:"Smart contracts, a key feature of Web3, can include AI-driven verification processes. These contracts can automatically verify the authenticity of digital assets and ensure that they comply with IP regulations before they are bought or sold.",
+                    subHeading3:"Blockchain Analytics:",
+                    para3:" AI-powered blockchain analytics tools can track the provenance of digital assets, helping to uncover the source of IP fraud. These tools use machine learning to identify patterns and anomalies in blockchain transactions.",
+                    subHeading4:"Natural Language Processing (NLP):",
+                    para4:"NLP algorithms can scan social media platforms and websites to detect brand impersonation and fraudulent accounts. They can analyze content for inconsistencies and language patterns indicative of impersonation",
+                    subHeading5:"Decentralized Identity Verification:",
+                    para5:" AI-driven identity verification systems can be integrated into Web3 platforms to ensure that users are who they claim to be, reducing the risk of fraud and impersonation.",
+                },
+                {
+                    heading:"Benefits of AI-Powered IP Protection in Web3",
+                    subHeading1:"Proactive Detection:",
+                    para1:"AI systems can identify IP fraud in real-time or near-real-time, allowing brands to take prompt action to protect their assets.",
+                    subHeading2:"Cost-Efficiency:",
+                    para2:"AI-powered IP protection is more cost-effective than manual monitoring and legal actions, saving brands time and resources.",
+                    subHeading3:"Enhanced Security:",
+                    para3:" Brands can maintain the integrity of their digital assets and reputation, ensuring trust among their customer base.",
+                    subHeading4:"Transparency:",
+                    para4:"Blockchain-based IP protection powered by AI can provide a transparent record of asset ownership and provenance, making it easier to address disputes",
+                    subHeading5:"Adaptability:",
+                    para5:" AI algorithms can evolve and adapt to new forms of IP fraud, staying ahead of emerging threats in the Web3 space.",
+                },
+                {
+                    heading:"Conclusion",
+                    para1:"In the ever-evolving landscape of Web3, brands and creators face unique challenges when it comes to protecting their intellectual property. AI-powered technologies are playing a crucial role in safeguarding brands from IP fraud by providing proactive detection, enhanced security, and cost-efficient solutions. As Web3 continues to grow, the collaboration between AI and blockchain technologies will be essential in maintaining trust, integrity, and innovation in this decentralized ecosystem."
                 }
             ]
 

@@ -56,7 +56,7 @@ const PartnerWithUs = () => {
     {
       title: "Embrace Solution Seeking",
       icon: <HiOutlineLightBulb fontSize={"lg"} />,
-      body: "As someone in search of solutions, you have the opportunity to leverage Antier's extensive expertise, wealth of experience, and profound domain knowledge to access timely and fitting solutions that guide clients through their technical endeavors. Partnering with Antier will act as a catalyst for expanding your global presence, strengthening your capabilities, and achieving substantial growth.",
+      body: "As someone in search of solutions, you have the opportunity to leverage Aradchain's extensive expertise, wealth of experience, and profound domain knowledge to access timely and fitting solutions that guide clients through their technical endeavors. Partnering with Aradchain will act as a catalyst for expanding your global presence, strengthening your capabilities, and achieving substantial growth.",
     },
   ];
   const [isMobile, setIsMobile] = React.useState(window.innerWidth < 768);
@@ -205,6 +205,16 @@ const PartnerWithUs = () => {
       </Container>
 
       <Container maxW="100vw" p={4} mt={10} className={style.companies}>
+        <Stack spacing={0} align={"center"}>
+          <Heading color={"#00234F"} textAlign={"center"}>
+            Choose The Right Partnership
+          </Heading>
+          <Text mt={1} color="#000" maxW={"2xl"} textAlign={"center"}>
+            Forming a partnership boosts a company's profitability and
+            stability. Choose the type of partnership that aligns with your
+            goals to ensure a mutually beneficial coexistence.
+          </Text>
+        </Stack>
         <Stack
           maxW="full"
           display={"flex"}
@@ -215,16 +225,7 @@ const PartnerWithUs = () => {
           gap={10}
           p={{ base: "1px", md: "2rem" }}
         >
-          <Stack spacing={0} align={"center"}>
-            <Heading color={"#00234F"} textAlign={"center"}>
-              Choose The Right Partnership
-            </Heading>
-            <Text mt={1} color="#000" maxW={"2xl"} textAlign={"center"}>
-              Forming a partnership boosts a company's profitability and
-              stability. Choose the type of partnership that aligns with your
-              goals to ensure a mutually beneficial coexistence.
-            </Text>
-          </Stack>
+          
           {data?.map((item, index) => {
             return <CardComponent key={index} item={item} />;
           })}

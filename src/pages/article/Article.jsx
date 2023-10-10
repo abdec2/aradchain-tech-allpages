@@ -45,6 +45,7 @@ const Article = () => {
                 return (
                   <Articletext
                     heading={ele.heading}
+                    desc={ele.headingDesc ? ele.headingDesc : ''}
                     para1={ele.para1}
                     para2={ele.para2}
                     para3={ele.para3}

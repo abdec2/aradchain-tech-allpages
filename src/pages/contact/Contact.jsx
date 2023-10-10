@@ -63,8 +63,8 @@ const Contact = () => {
                   <img src={phone} alt="" />
                 </div>
                 <p>Phone</p>
-                <Link to="https://wa.me/97333227262" target="_blank">
-                  <h3>+973 3322 7262</h3>
+                <Link to="https://wa.me/447778222221" target="_blank">
+                  <h3>+44 7778 222221</h3>
                 </Link>
               </div>
               <div className={style.phone}>
@@ -133,13 +133,13 @@ const Contact = () => {
               </div>
 
               <div>
-                <div>
+                {/* <div>
                   <input type="checkbox" name="checkbox" id="" />
                   <p>
                     By ticking this box, I am consenting to be sent monthly
                     articles and promotions through WaveNet newsletter.
                   </p>
-                </div>
+                </div> */}
                 <input
                   type="submit"
                   value={loading ? "Loading..." : "SUBMIT"}

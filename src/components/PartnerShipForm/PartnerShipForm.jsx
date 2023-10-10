@@ -19,6 +19,7 @@ import {
   InputLeftElement,
   Textarea,
   Stack,
+  Select,
 } from "@chakra-ui/react";
 import {
   MdPhone,
@@ -48,7 +49,7 @@ export default function PartnershipForm() {
           justifyContent={"center"}
           alignItems={"center"}
           flexDirection={"column"}
-          p={{ base: "1px", md: "5rem" }}
+          p={{ base: "2rem", md: "5rem" }}
         >
           <Stack spacing={0} align={"center"}>
             <Heading color={"#00234F"} textAlign={"center"}>
@@ -58,7 +59,7 @@ export default function PartnershipForm() {
               Please fill in the details below. We'll get back to you soon.
             </Text>
           </Stack>
-          <Box p={{ base: "0", md: "4" }}>
+          <Box p={{ base: "4", md: "4" }}>
             <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }} mt={2}>
               <WrapItem>
                 <Box
@@ -90,6 +91,16 @@ export default function PartnershipForm() {
                           </InputLeftElement>
                           <Input type="text" size="md" />
                         </InputGroup>
+                      </FormControl>
+
+                      <FormControl id="partner-type">
+                        <FormLabel>Partnership Type</FormLabel>
+                        <Select placeholder='Select Partnership Type'>
+                          <option value='Solutions Provider'>Solutions Provider</option>
+                          <option value='Tech Partner'>Tech Partner</option>
+                          <option value='Service Provider'>Service Provider</option>
+                          <option value='Solution Seeking'>Solution Seeking</option>
+                        </Select>
                       </FormControl>
                       <FormControl id="companyName">
                         <FormLabel>Company Name</FormLabel>
