@@ -1349,21 +1349,24 @@ const data={
                     para4:" Finality is crucial in supply chain management, where tracking goods and verifying their authenticity are essential. Once a product's data is recorded on a blockchain, its history and provenance are immutable, reducing the risk of counterfeit goods entering the supply chain.",
                     subHeading5:" Identity Verification:",
                     para5:"In identity management and authentication systems, finality ensures that once an identity is verified and recorded on the blockchain, it cannot be altered or duplicated, reducing the risk of identity theft and fraud.",
-                    subHeading5:" Voting and Governance:",
-                    para5:" For blockchain-based voting systems and governance structures, finality ensures that election results and decisions are tamper-proof. This enhances transparency and trust in democratic processes.",
-                    subHeading5:" Legal and Regulatory Compliance:",
-                    para5:" Many industries are subject to regulatory requirements that demand the permanence and auditability of records. Finality in blockchain technology ensures compliance with these regulations.",
                      
                 },
                 {
+                    subHeading1:" Voting and Governance:",
+                    para1:" For blockchain-based voting systems and governance structures, finality ensures that election results and decisions are tamper-proof. This enhances transparency and trust in democratic processes.",
+                    subHeading2:" Legal and Regulatory Compliance:",
+                    para2:" Many industries are subject to regulatory requirements that demand the permanence and auditability of records. Finality in blockchain technology ensures compliance with these regulations.",
+                   
+                },
+                {
                     heading:"Challanges and Considerations",
-                    para1:"While finality is a critical feature of blockchain technology, it's essential to acknowledge the challenges and considerations associated with it:",
+                    title:"While finality is a critical feature of blockchain technology, it's essential to acknowledge the challenges and considerations associated with it:",
                     subHeading1:" Scalability:",
-                    para2:" Achieving finality in a blockchain network with a large number of transactions and participants can be challenging. Scalability solutions, such as sharding and layer 2 solutions, are being developed to address this issue.",
+                    para1:" Achieving finality in a blockchain network with a large number of transactions and participants can be challenging. Scalability solutions, such as sharding and layer 2 solutions, are being developed to address this issue.",
                     subHeading2:"Forks and Consensus Mechanisms:",
-                    para3:" Different blockchain networks use various consensus mechanisms, and the concept of finality may vary between them. Some blockchains, like Bitcoin, rely on probabilistic finality due to the possibility of forks, while others, like Ethereum 2.0, aim for deterministic finality through mechanisms like Casper.",
+                    para2:" Different blockchain networks use various consensus mechanisms, and the concept of finality may vary between them. Some blockchains, like Bitcoin, rely on probabilistic finality due to the possibility of forks, while others, like Ethereum 2.0, aim for deterministic finality through mechanisms like Casper.",
                     subHeading3:"Legal and Ethical Concerns:",
-                    para4:"The immutability of blockchain data may raise legal and ethical concerns in certain situations, such as the right to be forgotten. Striking a balance between immutability and privacy is an ongoing challenge.",
+                    para3:"The immutability of blockchain data may raise legal and ethical concerns in certain situations, such as the right to be forgotten. Striking a balance between immutability and privacy is an ongoing challenge.",
                     
                  },
                 {
