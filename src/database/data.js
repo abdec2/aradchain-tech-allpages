@@ -1360,13 +1360,13 @@ const data={
                 },
                 {
                     heading:"Challanges and Considerations",
-                    title:"While finality is a critical feature of blockchain technology, it's essential to acknowledge the challenges and considerations associated with it:",
-                    subHeading1:" Scalability:",
-                    para1:" Achieving finality in a blockchain network with a large number of transactions and participants can be challenging. Scalability solutions, such as sharding and layer 2 solutions, are being developed to address this issue.",
-                    subHeading2:"Forks and Consensus Mechanisms:",
-                    para2:" Different blockchain networks use various consensus mechanisms, and the concept of finality may vary between them. Some blockchains, like Bitcoin, rely on probabilistic finality due to the possibility of forks, while others, like Ethereum 2.0, aim for deterministic finality through mechanisms like Casper.",
-                    subHeading3:"Legal and Ethical Concerns:",
-                    para3:"The immutability of blockchain data may raise legal and ethical concerns in certain situations, such as the right to be forgotten. Striking a balance between immutability and privacy is an ongoing challenge.",
+                    para1:"While finality is a critical feature of blockchain technology, it's essential to acknowledge the challenges and considerations associated with it:",
+                    subHeading2:" Scalability:",
+                    para2:" Achieving finality in a blockchain network with a large number of transactions and participants can be challenging. Scalability solutions, such as sharding and layer 2 solutions, are being developed to address this issue.",
+                    subHeading3:"Forks and Consensus Mechanisms:",
+                    para3:" Different blockchain networks use various consensus mechanisms, and the concept of finality may vary between them. Some blockchains, like Bitcoin, rely on probabilistic finality due to the possibility of forks, while others, like Ethereum 2.0, aim for deterministic finality through mechanisms like Casper.",
+                    subHeading4:"Legal and Ethical Concerns:",
+                    para4:"The immutability of blockchain data may raise legal and ethical concerns in certain situations, such as the right to be forgotten. Striking a balance between immutability and privacy is an ongoing challenge.",
                     
                  },
                 {
