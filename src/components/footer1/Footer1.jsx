@@ -7,6 +7,8 @@ import twitter from '../../assets/twitter.png'
 import fb from '../../assets/fb.png'
 import discord from '../../assets/discord.png'
 import linkedin from '../../assets/linkedin.png'
+import { SocialIcon } from 'react-social-icons'
+import 'react-social-icons/youtube'
 
 import { useToast } from '@chakra-ui/react'
 
@@ -50,18 +52,53 @@ const scriptUrl = "https://script.google.com/macros/s/AKfycbycoNyON-NOkPKEDwnWG8
 // ___________________________________________________________________
 
 
-
   return (
+    // style={{ marginLeft: '-40px', '@media (max-width: 768px)': { marginLeft: '0' } }}
     <div className={style.footer1}>
         <div className={style.footer1Container}>
             <div>
                 <img src={logo} alt="footer_logo" />
-                <div className={style.socialIcons}>
-                    <Link to="https://www.instagram.com/aradchaintech/" onClick={() => {window.scroll(0, 0);}} target="_blank"><img src={insta} alt="instagram-icon" /></Link>
-                    <Link to="https://www.facebook.com/groups/1464168664328775/" onClick={() => {window.scroll(0, 0);}} target="_blank"><img src={fb} alt="fb-icon" /></Link>
-                    <Link to="https://www.linkedin.com/company/aradchain-technologies-ltd/" onClick={() => {window.scroll(0, 0);}} target="_blank"><img src={linkedin} alt="linkedin-icon" /></Link>
-                    <Link to="https://twitter.com/AradChaintech" onClick={() => {window.scroll(0, 0);}} target="_blank"><img src={twitter} alt="twitter-icon" /></Link>
-                    <Link to="https://discord.gg/zb5876Fj" onClick={() => {window.scroll(0, 0);}} target="_blank"><img src={discord} alt="discord-icon" /></Link>
+                <div className={style.socialIcons} >
+                    
+                    <Link to="https://www.instagram.com/aradchaintech/" target="_blank">
+                    
+                    <SocialIcon bgColor="#00234F" network='instagram'  />
+                    </Link>
+                    
+
+                    <Link to="https://www.facebook.com/profile.php?id=61551692750143" target="_blank">
+                    
+                    <SocialIcon bgColor="#00234F" network='facebook'  />
+                    </Link>
+                    
+
+                    <Link to="https://www.linkedin.com/company/98042992/admin/feed/posts/" target="_blank">
+                    
+                    <SocialIcon bgColor="#00234F" network='linkedin'  />
+                    </Link>
+                    
+
+                    <Link to="https://twitter.com/AradChaintech" target="_blank">
+                    
+                    <SocialIcon bgColor="#00234F" network='twitter'  />
+                    </Link>
+                    
+                    
+                    <Link to="https://www.youtube.com/channel/UC-JSqPE9aPC1hW-LvTIRHXQ" target="_blank">
+                    
+                    <SocialIcon bgColor="#00234F" network='youtube'  />
+                    </Link>
+                    <Link to="https://discord.gg/zb5876Fj" target="_blank">
+                    
+                    <SocialIcon bgColor="#00234F" network='discord'  />
+                    </Link>
+                    
+                    
+                    <Link to="https://www.youtube.com/channel/UC-JSqPE9aPC1hW-LvTIRHXQ" target="_blank">
+                    
+                    <SocialIcon bgColor="#00234F" network='tiktok'  />
+                    </Link>
+                    
                 </div>
             </div>
             <div>

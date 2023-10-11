@@ -45,6 +45,7 @@ const Article = () => {
                 return (
                   <Articletext
                     heading={ele.heading}
+                    desc={ele.headingDesc ? ele.headingDesc : ''}
                     para1={ele.para1}
                     para2={ele.para2}
                     para3={ele.para3}
@@ -96,8 +97,9 @@ const Article = () => {
       <Readytotake />
       <TelegramFloatingBtn />
       <FloatingWhatsApp
-        phoneNumber="447778222221"
-        accountName="Jennie"
+       phoneNumber="+447432284026"
+        accountName="AradChain Support"
+        chatMessage="Welcome to AradChain Technologies. One of our representative will be with you shortly."
         allowEsc
         allowClickAway
         notification
@@ -107,7 +109,15 @@ const Article = () => {
           bottom: "2rem",
           left: "2rem",
         }}
+        statusMessage="Typically Replies With in 5 minutes"
+        chatboxHeight={450}
+        chatboxStyle={{
+          position: "fixed",
+          bottom: "2rem",
+          left: "2rem",
+        }}
       />
+
 
       {/* Foooter Section */}
       <Footer2 />

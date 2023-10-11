@@ -63,8 +63,8 @@ const Contact = () => {
                   <img src={phone} alt="" />
                 </div>
                 <p>Phone</p>
-                <Link to="https://wa.me/97333227262" target="_blank">
-                  <h3>+973 3322 7262</h3>
+                <Link to="https://wa.me/447778222221" target="_blank">
+                  <h3>+44 7778 222221</h3>
                 </Link>
               </div>
               <div className={style.phone}>
@@ -133,13 +133,13 @@ const Contact = () => {
               </div>
 
               <div>
-                <div>
+                {/* <div>
                   <input type="checkbox" name="checkbox" id="" />
                   <p>
                     By ticking this box, I am consenting to be sent monthly
                     articles and promotions through WaveNet newsletter.
                   </p>
-                </div>
+                </div> */}
                 <input
                   type="submit"
                   value={loading ? "Loading..." : "SUBMIT"}
@@ -153,10 +153,10 @@ const Contact = () => {
 
       {/* Need Solution */}
       <Needsolution />
-      <TelegramFloatingBtn />
       <FloatingWhatsApp
-        phoneNumber="447778222221"
-        accountName="Jennie"
+       phoneNumber="+447432284026"
+        accountName="AradChain Support"
+        chatMessage="Welcome to AradChain Technologies. One of our representative will be with you shortly."
         allowEsc
         allowClickAway
         notification
@@ -166,7 +166,16 @@ const Contact = () => {
           bottom: "2rem",
           left: "2rem",
         }}
+        statusMessage="Typically Replies With in 5 minutes"
+        chatboxHeight={450}
+        chatboxStyle={{
+          position: "fixed",
+          bottom: "2rem",
+          left: "2rem",
+        }}
       />
+
+      <TelegramFloatingBtn />
 
       {/* Footer Section */}
       <Footer1 />

@@ -43,7 +43,6 @@ import {
   ModalFooter,
   ModalBody,
   ModalCloseButton,
-  Button,
   useDisclosure,
   useToast,
   Box,
@@ -53,11 +52,15 @@ import {
   Container,
   Image,
   chakra,
+  Button,
 } from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import AnimatedCard from "../../components/animatedCard/AnimatedCard";
 import HeroSection from "../../components/HeroSection/HeroSection";
+
+import BlockchainSolutions from "./../../components/BlockchainSolutions";
 
 const Home = () => {
   // __________________________________________________________________
@@ -152,24 +155,22 @@ const Home = () => {
   const globalPresence = [
     {
       title: "UAE OFFICE",
-      address:
-        " South Zone, Dubai International Financial Centre (DIFC) Dubai, UAE",
+      address: ["South Zone", "Dubai International Financial Centre", "Dubai, UAE"],
       image: Dubai,
     },
     {
       title: "BH OFFICE",
-      address:
-        "Office 1236, Building 574 Road 31 Block 611 Area Al- Hamriya Kingdom of Bahrain",
+      address:["Building 574 Road 31 Block 611,","Area Al- Hamriya,","Kingdom of Bahrain"],
       image: BH,
     },
     {
       title: "US OFFICE",
-      address: "347 Fifth Ave. New York, NY, United States Of America  10016",
+      address: ["347 Fifth Ave.","New York, NY","United States Of America  10016"],
       image: US,
     },
     {
       title: "UK OFFICE",
-      address: "Docklands Business Centre 10-16 Tiller Road London E14 8PX",
+      address: ["Docklands Business Centre","10-16 Tiller Road","London E14 8PX"],
       image: UK,
     },
   ];
@@ -297,7 +298,7 @@ const Home = () => {
               <span className={style.paraBold1}>
                 Your Gateway to Blockchain, Cloud, AI, and IoT:
               </span>{" "}
-              AradChain Technologies driving digital transformation
+              <br /> AradChain Technologies driving digital transformation
             </p>
             <p>
               Transform your bold ideas into reality with AradChain, a leading
@@ -313,144 +314,60 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Why Us Section */}
-      <div className={style.whySection}>
-        <div className={style.whySectionContainer}>
-          <div className={style.whyContent}>
-            <h1>Why Us?</h1>
-            <div className={style.whyBoxes}>
-              {data.whyUs.map((ele) => {
-                return (
-                  <Whyus
-                    key={ele.id}
-                    image={ele.image}
-                    title={ele.title}
-                    desc={ele.desc}
-                    alt={ele.title}
-                  />
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* animatedCards */}
-      <Stack spacing={0} align={"center"} mt={"5rem"} p={2}>
-        <Heading
-          as="h1"
-          fontWeight={"900"}
-          color={"#00234F"}
-          textAlign={"center"}
-          fontSize={"2rem"}
-        >
-          Our Services
-        </Heading>
-        <Text mt={1} color="#000" textAlign={"center"} maxW={"2xl"}>
-          We provide customized solutions that meet our clients' unique needs
-          and help them succeed in an increasingly digital world.
-        </Text>
-      </Stack>
-      <div className={style.animatedCardArea}>
-        <Box
-          className={style.animatedCardArea}
-          maxW={"7xl"}
-          display={"flex"}
-          justifyContent={"center"}
-          alignItems={"center"}
-        >
-          {dataCard.map((ele) => {
-            return <AnimatedCard ele={ele} />;
-          })}
-        </Box>
-      </div>
-
       {/* Services Section */}
-      {/* <div className={style.servicesSection}>
-        <div className={style.servicesContainer}>
-          <div className={style.servicesLeft}>
-            <div>
-              <Link
-                to="/services/nft-marketplace"
-                onClick={() => {
-                  window.scroll(0, 0);
-                }}
-              >
-                <h2>NFT Marketplace</h2>
-              </Link>
-              <Link
-                to="/services/blockchain-development"
-                onClick={() => {
-                  window.scroll(0, 0);
-                }}
-              >
-                <h2>Blockchain Development</h2>
-              </Link>
-              <Link
-                to="/services/blockchain-mlm"
-                onClick={() => {
-                  window.scroll(0, 0);
-                }}
-              >
-                <h2>Blockchain Based MLM</h2>
-              </Link>
-            </div>
-          </div>
-          <div className={style.servicesMid}>
-            <div>
-              <Link
-                to="/services/crypto-funding"
-                onClick={() => {
-                  window.scroll(0, 0);
-                }}
-              >
-                <h2>Crypto Funding</h2>
-              </Link>
-              <Link
-                to="/services/crypto-websites"
-                onClick={() => {
-                  window.scroll(0, 0);
-                }}
-              >
-                <h2>Crypto Websites</h2>
-              </Link>
-            </div>
-          </div>
-          <div className={style.servicesRight}>
-            <h1>Services</h1>
-            <p>
-              We provide customized solutions that meet our clients' unique
-              needs and help them succeed in an increasingly digital world.
-            </p>
-            <OutlineBtns link="/services" text="Explore Our Services" />
-          </div>
-        </div>
-      </div> */}
-
-      {/* Project Section */}
-      <div className={style.projectsSection}>
-        <div className={style.projectsContainer}>
-          <div className={style.projectHeading}>
-            <h1>Project</h1>
-            <OutlineBtns text="More Projects" link="/projects" />
-          </div>
-          <div className={style.projectContent}>
-            {data.projects.slice(0, 3).map((ele) => {
-              return (
-                <Homeproject
-                  slug={ele.slug}
-                  key={ele.id}
-                  index={ele.id}
-                  client={ele.client}
-                  year={ele.year}
-                  image={ele.image}
-                  shortDesc={ele.shortDesc}
-                />
-              );
+      <Box bg={'#f9f9f9'} py={20} mt={"5rem"}>
+        <Stack spacing={0} align={"center"}  p={2}>
+          <Heading
+            as="h1"
+            fontWeight={"900"}
+            color={"#00234F"}
+            textAlign={"center"}
+            fontSize={"2rem"}
+          >
+            Our Services
+          </Heading>
+          <Text mt={1} color="#000" textAlign={"center"} maxW={"2xl"}>
+            We provide customized solutions that meet our clients' unique needs
+            and help them succeed in an increasingly digital world.
+          </Text>
+        </Stack>
+        <div className={style.animatedCardArea}>
+          <Box
+            className={style.animatedCardArea}
+            maxW={"7xl"}
+            display={"flex"}
+            justifyContent={"center"}
+            alignItems={"center"}
+          >
+            {dataCard.map((ele) => {
+              return <AnimatedCard ele={ele} />;
             })}
-          </div>
+            <div className={style.buttonposition}>
+            <Stack  spacing={4} mt={"1%"} direction="row" align="center">
+              <Link to="https://t.me/aradchain" target="_blank">
+                <Button
+                  size={window.innerWidth <= 680 ? "xs" : "md"} // Check the window width and change button size accordingly
+                  rightIcon={<MdCall />}
+                  colorScheme="telegram"
+                >
+                  Connect on Telegram
+                </Button>
+              </Link>
+              <Link to="https://wa.me/+447432284026" target="_blank">
+                <Button
+                  size={window.innerWidth <= 680 ? "xs" : "md"} // Check the window width and change button size accordingly
+                  rightIcon={<MdCall />}
+                  colorScheme="whatsapp"
+                >
+                  Connect on Whatsapp
+                </Button>
+              </Link>
+            </Stack>
+            </div>
+          </Box>
         </div>
-      </div>
+      </Box>
+      {/*Tech Experties*/}
 
       <Stack spacing={0} align={"center"} mt={"8rem"} p={2}>
         <Heading
@@ -671,6 +588,144 @@ const Home = () => {
         </Marquee>
       </Container>
 
+      <BlockchainSolutions></BlockchainSolutions>
+
+      {/* Blog Section*/}
+      <div className={style.blogSection}>
+        <div className={style.blogContainer}>
+          <h1>Blog</h1>
+          <div className={style.blogContent}>
+            <OutlineBtns text="READ MORE ARTICLES" link="/blogs" />
+            {data.blogPosts.slice(0, 2).map((ele) => {
+              return (
+                <Link
+                  to={ele.slug}
+                  onClick={() => {
+                    window.scroll(0, 0);
+                  }}
+                >
+                  <div>
+                    <img src={ele.image} alt="" />
+                    <h2>{ele.title}</h2>
+                    <p>{ele.date}</p>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+
+      {/* Project Section */}
+      {/* <div className={style.projectsSection}>
+        <div className={style.projectsContainer}>
+          <div className={style.projectHeading}>
+            <h1>Project</h1>
+            <OutlineBtns text="More Projects" link="/projects" />
+          </div>
+          <div className={style.projectContent}>
+            {data.projects.slice(0, 3).map((ele) => {
+              return (
+                <Homeproject
+                  slug={ele.slug}
+                  key={ele.id}
+                  index={ele.id}
+                  client={ele.client}
+                  year={ele.year}
+                  image={ele.image}
+                  shortDesc={ele.shortDesc}
+                />
+              );
+            })}
+          </div>
+        </div>
+      </div> */}
+
+      {/* Why us */}
+
+      <div className={style.whySection}>
+        <div className={style.whySectionContainer}>
+          <div className={style.whyContent}>
+            <h1>Why Us?</h1>
+            <div className={style.whyBoxes}>
+              {data.whyUs.map((ele) => {
+                return (
+                  <Whyus
+                    key={ele.id}
+                    image={ele.image}
+                    title={ele.title}
+                    desc={ele.desc}
+                    alt={ele.title}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Services Section */}
+      {/* <div className={style.servicesSection}>
+        <div className={style.servicesContainer}>
+          <div className={style.servicesLeft}>
+            <div>
+              <Link
+                to="/services/nft-marketplace"
+                onClick={() => {
+                  window.scroll(0, 0);
+                }}
+              >
+                <h2>NFT Marketplace</h2>
+              </Link>
+              <Link
+                to="/services/blockchain-development"
+                onClick={() => {
+                  window.scroll(0, 0);
+                }}
+              >
+                <h2>Blockchain Development</h2>
+              </Link>
+              <Link
+                to="/services/blockchain-mlm"
+                onClick={() => {
+                  window.scroll(0, 0);
+                }}
+              >
+                <h2>Blockchain Based MLM</h2>
+              </Link>
+            </div>
+          </div>
+          <div className={style.servicesMid}>
+            <div>
+              <Link
+                to="/services/crypto-funding"
+                onClick={() => {
+                  window.scroll(0, 0);
+                }}
+              >
+                <h2>Crypto Funding</h2>
+              </Link>
+              <Link
+                to="/services/crypto-websites"
+                onClick={() => {
+                  window.scroll(0, 0);
+                }}
+              >
+                <h2>Crypto Websites</h2>
+              </Link>
+            </div>
+          </div>
+          <div className={style.servicesRight}>
+            <h1>Services</h1>
+            <p>
+              We provide customized solutions that meet our clients' unique
+              needs and help them succeed in an increasingly digital world.
+            </p>
+            <OutlineBtns link="/services" text="Explore Our Services" />
+          </div>
+        </div>
+      </div> */}
+
       {/* Ready to take */}
       <div className={style.readyToTake}>
         <Readytotake />
@@ -743,49 +798,6 @@ const Home = () => {
         </ModalContent>
       </Modal>
 
-      {/* Blog Section*/}
-
-      <div className={style.blogSection}>
-        <div className={style.blogContainer}>
-          <h1>Blog</h1>
-          <div className={style.blogContent}>
-            <OutlineBtns text="READ MORE ARTICLES" link="/blogs" />
-            {data.blogPosts.slice(0, 2).map((ele) => {
-              return (
-                <Link
-                  to={ele.slug}
-                  onClick={() => {
-                    window.scroll(0, 0);
-                  }}
-                >
-                  <div>
-                    <img src={ele.image} alt="" />
-                    <h2>{ele.title}</h2>
-                    <p>{ele.date}</p>
-                  </div>
-                </Link>
-              );
-            })}
-
-            {/* <Link to="article/blockchain-technology" onClick={() => {window.scroll(0, 0);}}>
-              <div>
-                <p>TECH</p>
-                <h2>Blockchain Technology: Revolutionizing the Future</h2>
-                <h3>30.06</h3>
-              </div>
-            </Link>
-            
-            <Link to="/article/nft-marketplaces" onClick={() => {window.scroll(0, 0);}}>
-              <div>
-                <p>TECH</p>
-                <h2>NFT Marketplaces: Transforming the World of Digital Assets</h2>
-                <h3>25.04</h3>
-              </div>
-            </Link> */}
-          </div>
-        </div>
-      </div>
-
       {/* our global presence */}
       <Stack spacing={0} align={"center"} mt={"8rem"} p={2}>
         <Heading
@@ -821,7 +833,7 @@ const Home = () => {
               <Heading as="h2" fontSize={"2rem"} mt={2}>
                 {ele.title}
               </Heading>
-              <chakra.span fontSize={".8rem"}>{ele.address}</chakra.span>
+              <chakra.span fontSize={".8rem"}>{ele.address[0]}<br />{ele.address[1]}<br />{ele.address[2]}</chakra.span>
             </Box>
           );
         })}
@@ -829,13 +841,21 @@ const Home = () => {
 
       <TelegramFloatingBtn />
       <FloatingWhatsApp
-        phoneNumber="447778222221"
-        accountName="Jennie"
+       phoneNumber="+447432284026"
+        accountName="AradChain Support"
+        chatMessage="Welcome to AradChain Technologies. One of our representative will be with you shortly."
         allowEsc
         allowClickAway
         notification
         notificationSound
         buttonStyle={{
+          position: "fixed",
+          bottom: "2rem",
+          left: "2rem",
+        }}
+        statusMessage="Typically Replies With in 5 minutes"
+        chatboxHeight={450}
+        chatboxStyle={{
           position: "fixed",
           bottom: "2rem",
           left: "2rem",

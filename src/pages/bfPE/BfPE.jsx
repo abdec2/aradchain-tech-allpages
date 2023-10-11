@@ -1,11 +1,9 @@
 import React from "react";
 import style from "./bfPE.module.css";
-// import image from '../../assets/aboutInfo2.png'
 import crypto1 from "../../assets/crypto1.png";
 import crypto2 from "../../assets/crypto2.png";
 import data from "../../database/data";
 import Whyus from "../../components/whyUs/Whyus";
-import Heading from "../../components/heading/Heading";
 import AboutStats from "../../components/aboutStats/AboutStats";
 import Team from "../../components/team/Team";
 import { Link } from "react-router-dom";
@@ -15,151 +13,207 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
+
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
+
 const About = () => {
-  // console.log(data.aboutStatsData)
   return (
     <div className={style.aboutMain}>
       <div className={style.mainSection}>
         <div className={style.mainSectionContainer}>
-          <Heading heading="About" />
           <div className={style.mainSectionContent}>
             <div>
-              <img src={map} alt="" />
-              <h2>Polygon Edge Blockchain Development Solutions</h2>
-            </div>
-            <div>
-              <p>
-              Accelerate your market presence with our highly scalable applications designed for rapid deployment.
-
-CONNECT WITH OUR EXPERTS
-
-Unleash the Power of Polygon Edge Blockchain
-Polygon Edge offers a robust ecosystem for building tokens, wallets, and applications with swift time-to-market.
-
-At AradChain Technologies, we harness the capabilities of Polygon Edge to expedite application development and deployment, enabling you to swiftly enter and thrive in the market. Our comprehensive services cover consulting, development, deployment, and maintenance, ensuring the success of your project.
-
-              </p>
-              <p>
-              Business Advantages of Polygon Edge for Development
-Scalability
-Polygon Edge, a Layer 2 scaling solution for Ethereum, processes a high volume of transactions rapidly and efficiently. This empowers the creation of decentralized applications capable of handling heavy traffic and usage without slow transaction speeds or high gas fees.
-
-Lower Transaction Costs
-Polygon Edge prioritizes cost-effectiveness, surpassing other blockchain networks. It adopts a Proof-of-Stake consensus mechanism, minimizing energy consumption and leading to lower transaction fees compared to networks using Proof-of-Work consensus mechanisms.
-
-Interoperability
-Polygon Edge facilitates seamless interaction between diverse blockchain networks, allowing applications built on it to leverage the strengths of different networks. This is achieved through a modular architecture supporting side chains and scaling solutions.
-
-Uncover the Potential of Polygon Edge for Your Business.
-
-CONNECT WITH OUR EXPERTS
-
-Our Polygon Edge Blockchain Development Offerings
-We cater to various business needs with our diverse application development solutions.
-
-Decentralized Application Development
-Crafting state-of-the-art Web3 apps on immutable shared ledgers, ensuring autonomy without single-party control.
-
-Digital Assets Platform Creation
-Building enterprise-level digital asset platforms that excel in security and scalability.
-
-NFT Marketplace Establishment
-Designing carbon-neutral, zero gas fee blockchain marketplaces for digital collectibles.
-
-Decentralized Finance (DeFi)
-Enhancing transaction speed and cross-chain interactions with Ethereum through Polygon Edge.
-
-Gaming Platform Building
-Leveraging Polygon Edge to construct immersive gaming platforms, offering engaging gameplay and rewarding experiences.
-
-Custom Blockchain Development
-Specializing in Ethereum-compatible blockchain construction on Polygon Edge to suit your specific needs.
-
-Connect with Our Experts to Discuss Your Business Case.
-
-CONNECT ON WHATSAPP CONNECT ON TELEGRAM
-
-Industries We Serve
-Our comprehensive solutions cater to a wide range of industries.
-
-Banking and Financial Services
-
-Supply Chain
-
-Media & Entertainment
-
-Healthcare
-
-Insurance
-
-Government & Public Sector
-
-Connect with Our Experts to Discuss Your Business Case.
-
-CONNECT ON WHATSAPP CONNECT ON TELEGRAM
-
-Why Choose Us for Polygon Edge Development
-Partner with AradChain Technologies for a team of technical experts delivering end-to-end consulting services with real-world experience.
-
-Technical Proficiency
-Benefit from our technical expertise.
-
-Expert Team
-Rely on our seasoned team.
-
-Rapid Development
-Experience swift project execution.
-
-Complete Support
-Access comprehensive assistance.
-
-Meaningful Outcomes
-Expect impactful results.
-
-Our Partners
-Our Clients
-Frequently Asked Questions
-
-How does Polygon Edge ensure the security of decentralized applications?
-Polygon employs security measures including checkpoints, double-validation, and fraud proofs to safeguard against breaches, ensuring network integrity and protection against attacks.
-
-
-              </p>
-              <p>How does Polygon Edge support interoperability with other blockchain networks?
-
-How is Polygon Edge environmentally friendly?
-
-What are the advantages of deploying a smart contract on Polygon Edge?
-
-What programming languages are compatible with Polygon Edge?
-
-Discover More in Our Blogs
-
-Metaverse in the Manufacturing Industry: Role and Future Prospects
-Explore the evolving role of the Metaverse in manufacturing and its future prospects in our insightful blog.
-READ MORE
-
-Empowering NPCs with AI in the Metaverse
-Delve into the transformative impact of AI on NPCs within the metaverse in our thought-provoking blog.
-READ MORE
-
-Initiating a White Label Crypto Banking Platform
-Embark on your journey to a white label crypto banking platform with our comprehensive guide.
-READ MORE
-
-Explore Our Blockchain Expertise
-
-We're available for a friendly chat to address your business needs, without any obligations.
-
-Count on our technical support to assist with inquiries and requests.
-</p>
+              <Heading>Polygon Edge Blockchain Development Solutions</Heading>
             </div>
           </div>
+          
         </div>
       </div>
 
-      {/* Info Section */}
       <div className={style.infoSection}>
+        <div className={style.infoContainer}>
+          <div className="content">
+            <Text align={'center'} letterSpacing={1}>
+            Accelerate your market presence with our highly scalable applications designed for rapid deployment.Unleash the Power of Polygon Edge Blockchain Polygon Edge offers a robust ecosystem for building tokens, wallets, and applications with swift time-to-market.At AradChain Technologies, we harness the capabilities of Polygon Edge to expedite application development and deployment, enabling you to swiftly enter and thrive in the market. Our comprehensive services cover consulting, development, deployment, and maintenance, ensuring the success of your project.
+
+            </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
+            <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+            Business Advantages of Polygon Edge for Development
+            </Heading>
+            <Heading as="h2" size="xl" letterSpacing={2} my={5} textAlign="center" mt={10} mb={10}>
+  Scalability
+</Heading>
+
+<Text mt={2} align="center">
+  Polygon Edge, a Layer 2 scaling solution for Ethereum, processes a high volume of transactions rapidly and efficiently. This empowers the creation of decentralized applications capable of handling heavy traffic and usage without slow transaction speeds or high gas fees.
+</Text>
+
+<Heading as="h2" size="xl" letterSpacing={2} my={5} textAlign="center" mt={10} mb={10}>
+  Lower Transaction Costs
+</Heading>
+
+<Text mt={2} align="center">
+  Polygon Edge prioritizes cost-effectiveness, surpassing other blockchain networks. It adopts a Proof-of-Stake consensus mechanism, minimizing energy consumption and leading to lower transaction fees compared to networks using Proof-of-Work consensus mechanisms.
+</Text>
+
+<Heading as="h2" size="xl" letterSpacing={2} my={5} textAlign="center" mt={10} mb={10}>
+  Interoperability
+</Heading>
+
+<Text mt={2} align="center">
+  Polygon Edge facilitates seamless interaction between diverse blockchain networks, allowing applications built on it to leverage the strengths of different networks. This is achieved through a modular architecture supporting side chains and scaling solutions.
+</Text>
+
+<Heading as="h2" size="xl" letterSpacing={2} my={5} textAlign="center" mt={10} mb={10}>
+  Uncover the Potential of Polygon Edge for Your Business.
+</Heading>
+
+
+<Heading as="h2" size="xl" letterSpacing={2} my={5} textAlign="center" mt={10} mb={10}>
+  Our Polygon Edge Blockchain Development Offerings
+</Heading>
+
+<Text mt={2} align="center">
+  We cater to various business needs with our diverse application development solutions.
+</Text>
+
+<Text mt={4} align="center">
+  <strong>Decentralized Application Development</strong>
+</Text>
+<Text mt={2} align="center">
+  Crafting state-of-the-art Web3 apps on immutable shared ledgers, ensuring autonomy without single-party control.
+</Text>
+
+<Text mt={4} align="center">
+  <strong>Digital Assets Platform Creation</strong>
+</Text>
+<Text mt={2} align="center">
+  Building enterprise-level digital asset platforms that excel in security and scalability.
+</Text>
+
+<Text mt={4} align="center">
+  <strong>NFT Marketplace Establishment</strong>
+</Text>
+<Text mt={2} align="center">
+  Designing carbon-neutral, zero gas fee blockchain marketplaces for digital collectibles.
+</Text>
+
+<Text mt={4} align="center">
+  <strong>Decentralized Finance (DeFi)</strong>
+</Text>
+<Text mt={2} align="center">
+  Enhancing transaction speed and cross-chain interactions with Ethereum through Polygon Edge.
+</Text>
+
+<Text mt={4} align="center">
+  <strong>Gaming Platform Building</strong>
+</Text>
+<Text mt={2} align="center">
+  Leveraging Polygon Edge to construct immersive gaming platforms, offering engaging gameplay and rewarding experiences.
+</Text>
+
+<Text mt={4} align="center">
+  <strong>Custom Blockchain Development</strong>
+</Text>
+<Text mt={2} align="center">
+  Specializing in Ethereum-compatible blockchain construction on Polygon Edge to suit your specific needs.
+</Text>
+
+<Heading as="h2" size="xl" letterSpacing={2} my={5} textAlign="center" mt={10} mb={10}>
+  Connect with Our Experts to Discuss Your Business Case.
+</Heading>
+<Heading as="h2" size="xl" letterSpacing={2} my={5} textAlign="center" mt={10} mb={10}>
+Industries We Serve
+</Heading>
+<Text mt={2} align="center">Our comprehensive solutions cater to a wide range of industries.</Text>
+<SimpleGrid minChildWidth='200px' spacing='20px' mt={10}>
+              <Card><CardBody><Text>Banking and Financial Services</Text></CardBody></Card>
+              <Card><CardBody><Text>Supply Chain</Text></CardBody></Card>
+              <Card><CardBody><Text>Media & Entertainment</Text></CardBody></Card>
+              <Card><CardBody><Text>Healthcare</Text></CardBody></Card>
+              <Card><CardBody><Text>Insurance</Text></CardBody></Card>
+              <Card><CardBody><Text>Government & Public Sector</Text></CardBody></Card>
+</SimpleGrid> 
+<Text mt={4} align="center"><strong>Connect with Our Experts to Discuss Your Business Case.</strong></Text>           
+<Heading as="h2" size="xl" letterSpacing={2} my={5} textAlign="center" mt={10} mb={10}>
+  Why Choose Us for Polygon Edge Development
+</Heading>
+
+<Text mt={2} align="center">
+  Partner with AradChain Technologies for a team of technical experts delivering end-to-end consulting services with real-world experience.
+</Text>
+
+<Text letterSpacing={2} my={5} textAlign="center" mt={3} mb={10}>
+  <strong>Technical Proficiency: </strong>Benefit from our technical expertise.
+</Text>
+
+
+<Text letterSpacing={2} my={5} textAlign="center" mt={3} mb={10}>
+  <strong>Expert Team: </strong> Rely on our seasoned team.
+</Text>
+
+<Text  letterSpacing={2} my={5} textAlign="center" mt={3} mb={10}>
+ <strong> Rapid Development: </strong>
+  Experience swift project execution.
+</Text>
+
+<Text letterSpacing={2} my={5} textAlign="center" mt={3} mb={10}>
+  <strong>Complete Support: </strong>Access comprehensive assistance.
+
+</Text>
+
+<Text letterSpacing={2} my={5} textAlign="center" mt={3} mb={10}>
+  <strong>Meaningful Outcomes: </strong>Expect impactful results.
+</Text>
+
+<Heading as="h2" size="xl" letterSpacing={2} my={5} textAlign="center" mt={10} mb={10}>
+  Frequently Asked Questions
+</Heading>
+
+<Text align="center" mt={4}>
+  How does Polygon Edge ensure the security of decentralized applications?
+</Text>
+
+<Text align="center" mt={5}>
+  Polygon employs security measures including checkpoints, double-validation, and fraud proofs to safeguard against breaches, ensuring network integrity and protection against attacks.
+</Text>
+
+            
+          </div>
+
+        </div>
+
+      </div>
+
+      {/* Info Section */}
+      {/* <div className={style.infoSection}>
         <div className={style.infoContainer}>
           <div className={style.infoTop}>
             {data.about.map((ele) => {
@@ -180,18 +234,10 @@ Count on our technical support to assist with inquiries and requests.
             })}
           </div>
         </div>
-      </div>
-
-      {/* Crypto Section */}
-      {/* <div className={style.cryptoSection}>
-        <div className={style.cryptoContainer}>
-          <img src={crypto1} alt="crypto1" />
-          <img src={crypto2} alt="crypto2" />
-        </div>
-    </div> */}
+      </div> */}
 
       {/* Our Team */}
-      <div className={style.ourTeamSection}>
+      {/* <div className={style.ourTeamSection}>
         <div className={style.ourTeamContainer}>
           <h1>Our Team</h1>
           <p>
@@ -212,11 +258,12 @@ Count on our technical support to assist with inquiries and requests.
             })}
           </div>
         </div>
-      </div>
+      </div> */}
       <TelegramFloatingBtn />
       <FloatingWhatsApp
-        phoneNumber="447778222221"
-        accountName="Jennie"
+       phoneNumber="+447432284026"
+        accountName="AradChain Support"
+        chatMessage="Welcome to AradChain Technologies. One of our representative will be with you shortly."
         allowEsc
         allowClickAway
         notification
@@ -226,10 +273,20 @@ Count on our technical support to assist with inquiries and requests.
           bottom: "2rem",
           left: "2rem",
         }}
+        statusMessage="Typically Replies With in 5 minutes"
+        chatboxHeight={450}
+        chatboxStyle={{
+          position: "fixed",
+          bottom: "2rem",
+          left: "2rem",
+        }}
       />
 
+
       {/* Need Solution */}
-      <Needsolution />
+      <Box mt={20}>
+        <Needsolution />
+      </Box>
 
       {/* Footer Section */}
       <Footer1 />

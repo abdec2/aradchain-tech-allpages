@@ -1,21 +1,19 @@
 import React from "react";
+import style from "./customHeader.module.css"
 import {
   useDisclosure,
-  MenuItem,
-  Menu,
-  MenuButton,
-  MenuList,
   Box,
-  Icon,
   chakra,
+  Text,
 } from "@chakra-ui/react";
-import { ChevronDownIcon, ChevronUpIcon, EmailIcon } from "@chakra-ui/icons";
+import { EmailIcon } from "@chakra-ui/icons";
 import logo from "../../assets/logo2.png";
 import "/node_modules/flag-icons/css/flag-icons.min.css";
+
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
-  // finding if the screen is mobile or not
+  // Finding if the screen is mobile or not
   const [isMobile, setIsMobile] = React.useState(window.innerWidth < 768);
   React.useEffect(() => {
     window.addEventListener(
@@ -81,54 +79,81 @@ export default function Navbar() {
               marginLeft: isMobile ? "0.5rem" : "0.5rem",
               _hover: "#B1EDEB",
               cursor: "pointer",
+              marginRight:"1rem"
             }}
             fontSize=".9rem"
           >
-            <chakra.span fontSize="1.2rem" sx={{ marginRight: "0.5rem" }}>
+            <chakra.span fontSize="1.2rem" sx={{ marginRight: "1rem" }}>
               &#127760;
             </chakra.span>
-            Our Global Presence :
+            Our Geographical Presence :
           </chakra.span>
-          <chakra.span
+          <div
+            id="uk"
             className="fi fi-gb"
-            sx={{
-              borderRight: "1px solid white",
-              width: "4rem",
+            style={{
+              marginTop: "-12px",
+              width: "2rem",
               display: "flex",
+              flexDirection: "column",
               alignItems: "center",
               justifyContent: "center",
+              marginRight:"2rem"
+           
             }}
-          ></chakra.span>
-          <chakra.span
+          >
+            <Text fontSize="0.7rem" sx={{ color: "white",  marginTop: "27px"}}>
+              UK
+            </Text>
+          </div>
+          <div
             className="fi fi-bh"
-            sx={{
-              borderRight: "1px solid white",
-              width: "4rem",
+            style={{
+              marginTop: "-12px",
+              width: "2rem",
               display: "flex",
+              flexDirection: "column",
               alignItems: "center",
               justifyContent: "center",
+              marginRight:"2rem"
             }}
-          ></chakra.span>
-          <chakra.span
+          >
+            <Text fontSize="0.7rem" sx={{ color: "white",  marginTop: "27px"}}>
+              BH
+            </Text>
+          </div>
+          <div
             className="fi fi-um"
-            sx={{
-              borderRight: "1px solid white",
-              width: "4rem",
+            style={{
+              marginTop: "-12px",
+              width: "2rem",
               display: "flex",
+              flexDirection: "column",
               alignItems: "center",
               justifyContent: "center",
+              marginRight:"2rem"
             }}
-          ></chakra.span>
-          <chakra.span
+          >
+            <Text fontSize="0.7rem" sx={{ color: "white",  marginTop: "27px" }}>
+              USA
+            </Text>
+           
+          </div>
+          <div
             className="fi fi-ae"
-            sx={{
-              borderRight: "1px solid white",
-              width: "4rem",
+            style={{
+              marginTop: "-12px",
+              width: "2rem",
               display: "flex",
+              flexDirection: "column",
               alignItems: "center",
               justifyContent: "center",
             }}
-          ></chakra.span>
+          >
+            <Text fontSize="0.7rem" sx={{ color: "white",  marginTop: "27px"}}>
+              UAE
+            </Text>
+          </div>
         </Box>
         <Box
           style={{

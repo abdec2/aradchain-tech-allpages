@@ -15,7 +15,7 @@ export default function CardComponent({ item }) {
       <Card
         bgGradient="linear(to-l, #0A6796, #0D8DCD)"
         p={{ base: "2", md: "7" }}
-        maxW={"550px"}
+        maxW={"600px"}
         height={{ base: "100%", md: "450px !important" }}
       >
         <CardHeader

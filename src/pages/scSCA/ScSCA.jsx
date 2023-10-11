@@ -1,11 +1,9 @@
 import React from "react";
 import style from "./scSCA.module.css";
-// import image from '../../assets/aboutInfo2.png'
 import crypto1 from "../../assets/crypto1.png";
 import crypto2 from "../../assets/crypto2.png";
 import data from "../../database/data";
 import Whyus from "../../components/whyUs/Whyus";
-import Heading from "../../components/heading/Heading";
 import AboutStats from "../../components/aboutStats/AboutStats";
 import Team from "../../components/team/Team";
 import { Link } from "react-router-dom";
@@ -15,33 +13,28 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
+
 const About = () => {
-  // console.log(data.aboutStatsData)
   return (
     <div className={style.aboutMain}>
       <div className={style.mainSection}>
         <div className={style.mainSectionContainer}>
-          <Heading heading="About" />
           <div className={style.mainSectionContent}>
             <div>
-              <img src={map} alt="" />
-              <h2>Smart Contract Audit</h2>
+              <Heading>Smart Contract Audit</Heading>
             </div>
-            <div>
-              <p>
-              Ensure the Integrity of Your Blockchain Projects with Our Exceptional Smart Contract Auditing Services
+          </div>
+          
+        </div>
+      </div>
 
-REQUEST A FREE DEMONSTRATION
-
-Smart Contract Auditing: Safeguarding Security and Compliance for Your Applications
-
-In a digital world marked by growing trust concerns, businesses are increasingly turning to smart contract development services to enhance their security measures. However, even a minor mistake during the creation or deployment of smart contracts can lead to significant financial losses. This is precisely where the importance of smart contract security audits becomes evident.
-
-At AradChain Technologies, our team of Blockchain experts leverages their extensive experience and expertise to conduct thorough audits of smart contracts. We identify existing and potential errors, security vulnerabilities, compilation issues, and more to ensure the utmost quality of the code.
-
-Key Facts and Statistics: The Need for Smart Contract Security Audit Services
-
-The second quarter of 2022 witnessed 48 major attacks in the Web3 space, resulting in total losses of around $718.34 million.
+      <div className={style.infoSection}>
+        <div className={style.infoContainer}>
+          <div className="content">
+            <Text align={'center'} letterSpacing={1}>
+            Ensure the Integrity of Your Blockchain Projects with Our Exceptional Smart Contract Auditing Services,In a digital world marked by growing trust concerns, businesses are increasingly turning to smart contract development services to enhance their security measures. However, even a minor mistake during the creation or deployment of smart contracts can lead to significant financial losses. This is precisely where the importance of smart contract security audits becomes evident.At AradChain Technologies, our team of Blockchain experts leverages their extensive experience and expertise to conduct thorough audits of smart contracts. We identify existing and potential errors, security vulnerabilities, compilation issues, and more to ensure the utmost quality of the code.The Need for Smart Contract Security Audit ServicesThe second quarter of 2022 witnessed 48 major attacks in the Web3 space, resulting in total losses of around $718.34 million.
 
 DeFi projects continue to experience the highest frequency of attacks, accounting for approximately 79.2% of all attacks.
 
@@ -53,140 +46,104 @@ These statistics underscore the compelling case for prominent cryptocurrency ent
 
 Effortlessly Secure Your Smart Contracts Through Auditing
 
-CONNECT WITH OUR EXPERTS
+            </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
 
-              </p>
-              <p>
-              Our Comprehensive Smart Contract Security Audit Services
+            <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+            Our Comprehensive Smart Contract Security Audit Services
+            </Heading>
 
-As a reputable smart contract audit company, AradChain Technologies provides end-to-end smart contract security audit services to help businesses of all sizes launch highly secure and flawless Blockchain applications.
+            <Text align={'center'} letterSpacing={1}>
+              
+As a reputable smart contract audit company, AradChain Technologies offers end-to-end smart contract security audit services to help businesses, regardless of their size, launch highly secure and flawless blockchain applications.
 
-Smart Contract Auditing Services
+Our smart contract auditors conduct a thorough security evaluation of your application, meticulously reviewing every aspect of the code to identify potential vulnerabilities that could be exploited by cyberattacks.
 
-Thorough Security Evaluation
+We also assist our clients in threat modeling, helping them identify security requirements and potential entry points for hacks. Our experts quantify the criticality of threats, visualize the project's attack surface, and continually update the threat model to address evolving risks.
 
-Our smart contract auditors meticulously scrutinize your application, ensuring the robust implementation of business logic and the deployment of industry-standard security measures. We meticulously review every aspect of the code to identify potential vulnerabilities exploited by cyberattacks.
+After conducting a comprehensive smart contract security audit, we provide you with detailed audit reports that highlight vulnerabilities and reference relevant portions of your application. Our auditors also offer a detailed executive summary of the project, along with mitigation guidance.
 
-Smart Contract Security Audit
+Our proficient team of smart contract security audit specialists provides comprehensive support throughout the blockchain development lifecycle. Our services include smart contract security auditing, testing, scheduled auto scans, and more, all tailored to meet the specific needs of enterprises.
 
-Threat Modeling
+We conduct smart contract security audits for various popular blockchain platforms, including Ethereum, Hyperledger, Solana, Cardano, Polkadot, TRON, BSC, Polygon, Cosmos, Corda, Tezos, Avalance, and more.
 
-We aid our clients in identifying security requirements and potential points of entry for potential hacks. Our experts quantify the criticality of threats and vulnerabilities, visualize the attack surface of the project, and continually update the threat model to address evolving risks.
+Our audit practices, combined with expert reviews, ensure the security and performance of projects across industries such as banking and finance, real estate, transport and logistics, healthcare, insurance, and media and entertainment.
 
-Smart Contract Security Audit
+Contact us to experience our comprehensive smart contract security audit services and ensure the robust security of your blockchain applications.
+            </Text>
+            <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+            Why Choose AradChain Technologies as Your Smart Contract Audit Company?
+            </Heading>
+            <Text align={'center'} letterSpacing={1}>
+            AradChain Technologies stands out as your smart contract audit company of choice due to its multidisciplinary team of experienced auditors who offer expert assessment, post-launch support, and follow an agile development process. They provide a confidentiality guarantee, ensuring your project's security and discretion. With a strong track record, AradChain Technologies delivers comprehensive smart contract audit services to enhance the security and reliability of your blockchain applications.
+            </Text>
+          </div>
+          <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+            Frequently Asked Questions
+            </Heading>
 
-Comprehensive Audit Reports
-
-We prepare comprehensive audit reports that detail vulnerabilities, accompanied by references to relevant portions of your application. Our smart contract auditors provide a detailed executive summary of the project, along with mitigation guidance, after conducting a thorough smart contract security audit.
-
-Smart Contract Auditing Cost
-
-Enterprise Security Consultation
-
-Our proficient team of smart contract security audit specialists offers comprehensive support throughout the Blockchain development lifecycle. Our services encompass smart contract security auditing, testing, scheduled auto scans, and more, tailored to the needs of enterprises.
-
-Experience Our Comprehensive Smart Contract Security Audit Services
-
-GET IN TOUCH
-
-Blockchain Platforms We Audit
-
-Our multi-faceted smart contract security audits encompass popular Blockchains, ensuring error-free deployment of smart contract applications on your preferred platform.
-
-ethereum-eth-logo
-Ethereum
-Hyperledger
-Hyperledger
-Solana
-Solana
-Cardano
-Cardano
-Polkadot
-Polkadot
-tron
-TRON
-BSC
-BSC
-Polygon
-Polygon
-Cosmos
-Cosmos
-Corda
-Corda
-Tezos (1)
-Tezos
-Avalance
-Avalanche
-
-Projects Requiring Security Audit
-
-Our ingenious audit practices, combined with comprehensive reviews by subject matter experts, ensure the security and performance of various projects.
-
-Smart Contract Auditing Company
-Banking and Finance
-Smart Contract Security Audit
-Real Estate
-Smart Contract Auditing Cost
-Transport & Logistics
-Smart Contract Audit Services
-Healthcare
-metaverse token development company
-Insurance
-Smart Contract Security Audit
-Media & Entertainment
-
-Why Choose AradChain Technologies as Your Smart Contract Audit Company?
-
-By partnering with AradChain Technologies, you gain access to a team of multidisciplinary smart contract auditors with practical experience in achieving success.
-
-tech
-Expert Assessment
-technical-support
-Post-Launch Support
-development
-Agile Development Process
-Group 66061
-Confidentiality Guarantee
-team
-Diverse Team
-
-Our Partners
-
-Our Clients
-
-Frequently Asked Questions
-
+          <Text align={'center'} letterSpacing={1} mt={6}>
 How much does a smart contract audit cost?
+</Text>
+
+<Text align={'center'} letterSpacing={1}  mt={6}>
 The cost of a smart contract security audit varies depending on factors such as project size, Blockchain platform, audit team size, and the audit process followed.
+</Text>
+
+<Text align={'center'} letterSpacing={1}  mt={6}>
 What is the duration of an Ethereum smart contract security audit?
+</Text>
+
+<Text align={'center'} letterSpacing={1}  mt={6}>
 Why is smart contract security auditing crucial?
+</Text>
+
+<Text align={'center'} letterSpacing={1}  mt={6}>
 Where can I find reliable smart contract security audit services?
+</Text>
+
+<Text align={'center'} letterSpacing={1}  mt={6}>
 What are the benefits of having my smart contract audited?
-Insights from Our Blog
+</Text>
 
-Smart Contract Auditing: Trends and Real-World Cases
-Discover emerging trends and real-world case studies in smart contract auditing, ensuring secure and trustworthy blockchain transactions.
-
-Future Trends in DeFi Smart Contract Development
-Explore the future trends in DeFi smart contract development, including integration of oracles and NFTs.
-
-Preparing for a Smart Contract Security Audit: A 10-Step Checklist
-Learn about the benefits of performing a smart contract security audit and follow our 10-step checklist for effective preparation.
-
-Our Blockchain Expertise
+<Text align={'center'} letterSpacing={1} mt={8}><strong>Our Blockchain Expertise
 
 Contact us for a friendly chat about your business needs.
 
 We're here to provide technical support and respond to inquiries.
+</strong></Text>
 
-              </p>
-            </div>
-          </div>
+
         </div>
+
       </div>
 
       {/* Info Section */}
-      <div className={style.infoSection}>
+      {/* <div className={style.infoSection}>
         <div className={style.infoContainer}>
           <div className={style.infoTop}>
             {data.about.map((ele) => {
@@ -207,18 +164,10 @@ We're here to provide technical support and respond to inquiries.
             })}
           </div>
         </div>
-      </div>
-
-      {/* Crypto Section */}
-      {/* <div className={style.cryptoSection}>
-        <div className={style.cryptoContainer}>
-          <img src={crypto1} alt="crypto1" />
-          <img src={crypto2} alt="crypto2" />
-        </div>
-    </div> */}
+      </div> */}
 
       {/* Our Team */}
-      <div className={style.ourTeamSection}>
+      {/* <div className={style.ourTeamSection}>
         <div className={style.ourTeamContainer}>
           <h1>Our Team</h1>
           <p>
@@ -239,11 +188,12 @@ We're here to provide technical support and respond to inquiries.
             })}
           </div>
         </div>
-      </div>
+      </div> */}
       <TelegramFloatingBtn />
       <FloatingWhatsApp
-        phoneNumber="447778222221"
-        accountName="Jennie"
+       phoneNumber="+447432284026"
+        accountName="AradChain Support"
+        chatMessage="Welcome to AradChain Technologies. One of our representative will be with you shortly."
         allowEsc
         allowClickAway
         notification
@@ -253,10 +203,20 @@ We're here to provide technical support and respond to inquiries.
           bottom: "2rem",
           left: "2rem",
         }}
+        statusMessage="Typically Replies With in 5 minutes"
+        chatboxHeight={450}
+        chatboxStyle={{
+          position: "fixed",
+          bottom: "2rem",
+          left: "2rem",
+        }}
       />
 
+
       {/* Need Solution */}
-      <Needsolution />
+      <Box mt={20}>
+        <Needsolution />
+      </Box>
 
       {/* Footer Section */}
       <Footer1 />

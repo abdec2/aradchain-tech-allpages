@@ -22,10 +22,9 @@
     width: 100%;
 }
 .footer1Container .socialIcons{
-    width: 50%;
     display: flex;
-    justify-content: space-between;
-    margin-left: 20px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 .footer1Container li{
     list-style: none;
@@ -44,6 +43,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 .footer1Container > div:nth-child(1), .footer1Container >div:nth-child(4){
     width: 30%;
@@ -71,6 +71,11 @@
     width: 30%;
     background: linear-gradient(89.98deg, #1CE3C7 -50.39%, #7668E7 99.98%);
 }
+.custom-icon {
+    background: linear-gradient(89.98deg, #1CE3C7 -50.39%, #7668E7 99.98%), #1CE3C7;
+    /* Other CSS properties for your component */
+  }
+  
 
 /* Footer  Bottom */
 .footerBottom{
@@ -109,6 +114,7 @@
 
 /* Mobile View */
 @media all and (max-width:900px) {
+    
     .footer1Container{
         width: 90%;
         flex-direction: column;

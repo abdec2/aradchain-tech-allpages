@@ -1,11 +1,9 @@
 import React from "react";
 import style from "./wallet-whiteLabelWallet.module.css";
-// import image from '../../assets/aboutInfo2.png'
 import crypto1 from "../../assets/crypto1.png";
 import crypto2 from "../../assets/crypto2.png";
 import data from "../../database/data";
 import Whyus from "../../components/whyUs/Whyus";
-import Heading from "../../components/heading/Heading";
 import AboutStats from "../../components/aboutStats/AboutStats";
 import Team from "../../components/team/Team";
 import { Link } from "react-router-dom";
@@ -15,21 +13,29 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
+
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
+
 const About = () => {
-  // console.log(data.aboutStatsData)
   return (
     <div className={style.aboutMain}>
       <div className={style.mainSection}>
         <div className={style.mainSectionContainer}>
-          <Heading heading="About" />
           <div className={style.mainSectionContent}>
             <div>
-              <img src={map} alt="" />
-              <h2>White Label Cryptocurrency Wallet</h2>
+              <Heading>White Label Cryptocurrency Wallet</Heading>
             </div>
-            <div>
-              <p>
-              GET IN THE KNOW!
+          </div>
+          
+        </div>
+      </div>
+
+      <div className={style.infoSection}>
+        <div className={style.infoContainer}>
+          <div className="content">
+            <Text align={'center'} letterSpacing={1}>
+            GET IN THE KNOW!
 Did you realize that nearly 4 billion individuals are currently utilizing digital wallets, and by 2024, this market's size is projected to surge by an additional 3.6 billion?
 
 Unveil the Potentials of Our Premium White Label Cryptocurrency Wallet
@@ -39,196 +45,516 @@ Enterprises are on the lookout for avenues to expand their crypto operations and
 
 CONNECT ON WHATSAPP CONNECT ON TELEGRAM
 
-What Sets White Label Cryptocurrency Wallet Development Apart?
-Multi-Signature Crypto Wallet Development
-Enhance wallet security by requiring multiple signatures to authorize transactions, thwarting fraudulent activities and money laundering.
+            </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+    What Sets White Label Cryptocurrency Wallet Development Apart?
+</Heading>
 
-Blockchain Wallet Development
-Our certified developers employ cutting-edge tools to craft integrated wallets deployed on your chosen blockchain. The strong security mechanisms ensure the content remains secure and immutable.
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
 
-Custom Crypto Wallet Development
-We specialize in offering bespoke crypto wallet solutions, swiftly developing white-label Bitcoin wallets and more to meet your specific requirements.
+    Multi-Signature Crypto Wallet Development
+</Heading>
 
-Centralized Wallet Development
-Managed by a third party, a White Label centralized wallet enables users to focus on vital business tasks. The platform facilitates transaction authentication and address whitelisting.
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Enhance wallet security by requiring multiple signatures to authorize transactions, thwarting fraudulent activities and money laundering.
+</Text>
 
-Decentralized Wallet Development
-Bestowed with complete asset control, decentralized wallets empower users to manage digital assets independently, free from third-party involvement.
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+    Blockchain Wallet Development
+</Heading>
 
-Web3 Wallet Development
-Our top-tier Web3 wallet development services grant access to various currencies like cryptocurrencies, NFTs, tokens, and more. Seamlessly access prominent decentralized applications and engage in token swaps.
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Our certified developers employ cutting-edge tools to craft integrated wallets deployed on your chosen blockchain. The strong security mechanisms ensure the content remains secure and immutable.
+</Text>
 
-CONSULT OUR EXPERTS
-Unsure about the best wallet solution for your business? Let our consultation guide you!
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+    Custom Crypto Wallet Development
+</Heading>
 
-CONNECT ON WHATSAPP CONNECT ON TELEGRAM
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    We specialize in offering bespoke crypto wallet solutions, swiftly developing white-label Bitcoin wallets and more to meet your specific requirements.
+</Text>
 
-              </p>
-              <p>
-              White Label Wallet Clone Script
-Here are the white-label wallet clones meticulously tailored to meet client needs.
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+    Centralized Wallet Development
+</Heading>
 
-Trust Wallet Clone
-Similar to Trust Wallet, this clone offers secure storage, sending, and receiving of cryptocurrencies, tokens, stablecoins, and NFTs.
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Managed by a third party, a White Label centralized wallet enables users to focus on vital business tasks. The platform facilitates transaction authentication and address whitelisting.
+</Text>
 
-Metamask Wallet Clone
-Our clone solution mirrors Metamask's interaction with Ethereum-based blockchain apps, facilitating faster transactions on both web and mobile platforms.
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+    Decentralized Wallet Development
+</Heading>
 
-TRON Link Wallet Clone
-The TRON link wallet clone simplifies access to TRON blockchain, installable as browser extensions or Android and iOS apps for asset transfers.
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Bestowed with complete asset control, decentralized wallets empower users to manage digital assets independently, free from third-party involvement.
+</Text>
 
-Exodus Wallet Clone
-Perform secure crypto storage, exchange, and trading with the Exodus wallet clone. Our platform-compatible clones are customizable to your needs.
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+    Web3 Wallet Development
+</Heading>
 
-Electrum Wallet Clone
-Replicating the Electrum wallet, our solution safeguards Bitcoins with password protection. Users retain private key control and recover wallets via seed phrases.
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Our top-tier Web3 wallet development services grant access to various currencies like cryptocurrencies, NFTs, tokens, and more. Seamlessly access prominent decentralized applications and engage in token swaps.
+</Text>
 
-Launch a Robust, Scalable White Label Clone Script Solution!
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Unsure about the best wallet solution for your business? Let our consultation guide you!
+</Text>
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+    White Label Wallet Clone Script
+</Heading>
 
-REQUEST A FREE DEMO
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Here are the white-label wallet clones meticulously tailored to meet client needs.
+</Text>
 
-Advanced Features Integrated into the White Label Crypto Wallet Platform
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+    Trust Wallet Clone
+</Heading>
 
-Cross-Chain Crypto Swap
-Exchange cryptocurrencies across different blockchains without relying on external exchanges.
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Similar to Trust Wallet, this clone offers secure storage, sending, and receiving of cryptocurrencies, tokens, stablecoins, and NFTs.
+</Text>
 
-Multichain Wallets
-Manage various blockchain networks in one place, enabling seamless crypto management.
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+    Metamask Wallet Clone
+</Heading>
 
-Multi-Wallet Support
-Create and manage multiple wallets from a single application, each designated for specific purposes.
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Our clone solution mirrors Metamask's interaction with Ethereum-based blockchain apps, facilitating faster transactions on both web and mobile platforms.
+</Text>
 
-On-Chain Crypto Swap
-Exchange cryptocurrencies directly on the blockchain with the built-in wallet functionality.
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+    TRON Link Wallet Clone
+</Heading>
 
-Fiat On/Off Ramp
-Transition between cryptocurrencies and fiat seamlessly with the fiat on/off ramp feature.
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    The TRON link wallet clone simplifies access to TRON blockchain, installable as browser extensions or Android and iOS apps for asset transfers.
+</Text>
 
-Multichain DApp Browser
-Explore decentralized applications on different blockchains using the DApp browser.
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+    Exodus Wallet Clone
+</Heading>
 
-Real-Time Trading Insights
-Access real-time market data, price charts, and trading analysis for informed decisions.
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Perform secure crypto storage, exchange, and trading with the Exodus wallet clone. Our platform-compatible clones are customizable to your needs.
+</Text>
 
-NFT Collectibles
-Support NFTs to signify asset or physical item ownership.
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+    Electrum Wallet Clone
+</Heading>
 
-Prepaid Cards
-Facilitate payments and top-ups with crypto-loaded prepaid debit cards.
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Replicating the Electrum wallet, our solution safeguards Bitcoins with password protection. Users retain private key control and recover wallets via seed phrases.
+</Text>
 
-Over-the-Counter Trading
-Engage in trading and profit enhancement without intermediaries.
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+    Launch a Robust, Scalable White Label Clone Script Solution!
+</Heading>
 
-Wallet Connect
-Enable secure communication between web DApps and mobile crypto wallets.
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+    Advanced Features Integrated into the White Label Crypto Wallet Platform
+</Heading>
 
-Chrome Wallet Extension
-Add wallet functionality to web browsers through the Chrome Wallet Extension.
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+<strong>Cross-Chain Crypto Swap</strong>
+</Text>
 
-Ledger Wallet Integration
-Integrate with Ledger Hardware wallets for added security.
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Exchange cryptocurrencies across different blockchains without relying on external exchanges.
+</Text>
 
-Peer-to-Peer Trading (P2P)
-Directly trade cryptocurrencies with peers using an Escrow system.
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+<strong>Multichain Wallets</strong>
+</Text>
 
-Watch-Only Wallet
-Monitor crypto balance and transactions without private keys via this feature.
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Manage various blockchain networks in one place, enabling seamless crypto management.
+</Text>
 
-Group Transfer/Airdrop
-Simplify sending cryptocurrencies to multiple recipients with the Airdrop feature.
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+<strong>Multi-Wallet Support</strong>
+</Text>
 
-Add Custom Token
-Manually manage tokens not automatically supported by the wallet.
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Create and manage multiple wallets from a single application, each designated for specific purposes.
+</Text>
 
-Address Book
-Organize frequently used crypto addresses with the address book feature.
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+<strong>On-Chain Crypto Swap</strong>
+</Text>
 
-Native Fiat Currency Selection
-Choose native fiat currency and value for conversions.
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Exchange cryptocurrencies directly on the blockchain with the built-in wallet functionality.
+</Text>
 
-Referral
-Earn rewards by inviting users through the integrated referral feature.
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+<strong>Fiat On/Off Ramp</strong>
+</Text>
 
-TALK TO OUR EXPERTS
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Transition between cryptocurrencies and fiat seamlessly with the fiat on/off ramp feature.
+</Text>
 
-Security Features Integrated into the Crypto Wallet White Label Solution
-Biometric Authentication
-Double up security with two-factor authentication to thwart hacks and breaches.
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+<strong>Multichain DApp Browser</strong>
+</Text>
 
-Multi-Signature
-Enhance wallet security by requiring multiple signatures for access.
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Explore decentralized applications on different blockchains using the DApp browser.
+</Text>
 
-Passcode-PIN Protection
-Protect wallets with a passcode, chosen from private keys or PIN.
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+<strong>Real-Time Trading Insights</strong>
+</Text>
 
-Automatic Session Logout
-Ensure security with automatic session logouts during inactivity.
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Access real-time market data, price charts, and trading analysis for informed decisions.
+</Text>
 
-Credit Card Enabled Transactions
-Conduct secure credit card transactions with low latency.
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+<strong>NFT Collectibles</strong>
+</Text>
 
-Multi-Coin & Multi-Asset Support
-Support stable coins, cryptocurrencies, ERC-20 tokens, altcoins, and more.
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Support NFTs to signify asset or physical item ownership.
+</Text>
 
-              </p>
-              <p>How to Access the White Label Cryptocurrency Wallet for Fund Transfer?
-Accessing a white-label wallet solution is straightforward, following these steps:
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+<strong>Prepaid Cards</strong>
+</Text>
 
-Create an Account
-Select and sign up on your chosen crypto wallet. This generates public (wallet addresses) and private keys (PIN).
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Facilitate payments and top-ups with crypto-loaded prepaid debit cards.
+</Text>
 
-Send Funds
-Enter the recipient's wallet address, specify the cryptos, and input private keys.
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+<strong>Over-the-Counter Trading</strong>
+</Text>
 
-Receive Funds
-Share your wallet's public key or address with senders to receive funds.
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Engage in trading and profit enhancement without intermediaries.
+</Text>
 
-VIEW LIVE DEMO REQUEST A FREE DEMO
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+<strong>Wallet Connect</strong>
+</Text>
 
-AradChain Technologies: Your Trusted White Label Cryptocurrency Wallet Development Partner
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Enable secure communication between web DApps and mobile crypto wallets.
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+<strong>Chrome Wallet Extension</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Add wallet functionality to web browsers through the Chrome Wallet Extension.
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+<strong>Ledger Wallet Integration</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Integrate with Ledger Hardware wallets for added security.
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+<strong>Peer-to-Peer Trading (P2P)</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Directly trade cryptocurrencies with peers using an Escrow system.
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+<strong>Watch-Only Wallet</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Monitor crypto balance and transactions without private keys via this feature.
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+<strong> Group Transfer/Airdrop</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Simplify sending cryptocurrencies to multiple recipients with the Airdrop feature.
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    <strong>Add Custom Token</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Manually manage tokens not automatically supported by the wallet.
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+<strong> Address Book</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Organize frequently used crypto addresses with the address book feature.
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+<strong> Native Fiat Currency Selection</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Choose native fiat currency and value for conversions.
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+<strong>Referral</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Earn rewards by inviting users through the integrated referral feature.
+</Text>
+
+<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+    Security Features Integrated into the Crypto Wallet White Label Solution
+</Heading>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+<strong> Biometric Authentication</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Double up security with two-factor authentication to thwart hacks and breaches.
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+<strong> Multi-Signature</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Enhance wallet security by requiring multiple signatures for access.
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+<strong>Passcode-PIN Protection</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Protect wallets with a passcode, chosen from private keys or PIN.
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+<strong> Automatic Session Logout</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Ensure security with automatic session logouts during inactivity.
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+<strong> Credit Card Enabled Transactions</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Conduct secure credit card transactions with low latency.
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+<strong>Multi-Coin & Multi-Asset Support</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Support stable coins, cryptocurrencies, ERC-20 tokens, altcoins, and more.
+</Text>
+<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+    How to Access the White Label Cryptocurrency Wallet for Fund Transfer?
+</Heading>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Accessing a white-label wallet solution is straightforward, following these steps:
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+<strong> 1. Create an Account</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Select and sign up on your chosen crypto wallet. This generates public (wallet addresses) and private keys (PIN).
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+<strong>2. Send Funds</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Enter the recipient's wallet address, specify the cryptos, and input private keys.
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+<strong>3. Receive Funds</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    Share your wallet's public key or address with senders to receive funds.
+</Text>
+<Text align={'center'} letterSpacing={2} marginTop={4}>
 AradChain Technologies is the preferred choice for white-label crypto wallet development, supported by compelling reasons. With nearly a decade of industry experience, we offer more than our competitors:
+</Text>
+<SimpleGrid minChildWidth='200px' spacing='20px' mt={10}>
+<Card>
+    <CardBody>
+        <Text>Secure Solutions</Text>
+    </CardBody>
+</Card>
 
-Secure Solutions
-Our solutions prioritize security.
-Scalability
-We ensure scalability.
-No Hidden Costs
-Transparent pricing with no hidden charges.
-Constant Communication
-We maintain consistent communication.
-Support and Maintenance
-We provide ongoing support and maintenance.
-Marketing Campaigns
-We can assist with marketing campaigns.
+<Card>
+    <CardBody>
+        <Text>Our solutions prioritize security.</Text>
+    </CardBody>
+</Card>
 
-Our Partners
-Our Clients
+<Card>
+    <CardBody>
+        <Text>Scalability</Text>
+    </CardBody>
+</Card>
 
-Frequently Asked Questions
+<Card>
+    <CardBody>
+        <Text>We ensure scalability.</Text>
+    </CardBody>
+</Card>
 
-1What Advantages Does White Label Cryptocurrency Wallet Development Offer?
-Crafting a wallet from scratch demands significant effort and time. Conversely, a White Label solution offers a pre-built code, database, and infrastructure. Customize the interface and branding, and you're ready to launch the application under your own name.
-2What Is the Cost of Developing a White Label Wallet Solution?
-3How Long Does Deploying a White Label Wallet Take?
-4Do You Implement Security Measures in White Label Wallet Solutions?
+<Card>
+    <CardBody>
+        <Text>No Hidden Costs</Text>
+    </CardBody>
+</Card>
 
+<Card>
+    <CardBody>
+        <Text>Transparent pricing with no hidden charges.</Text>
+    </CardBody>
+</Card>
+
+<Card>
+    <CardBody>
+        <Text>Constant Communication</Text>
+    </CardBody>
+</Card>
+
+<Card>
+    <CardBody>
+        <Text>We maintain consistent communication.</Text>
+    </CardBody>
+</Card>
+
+<Card>
+    <CardBody>
+        <Text>Support and Maintenance</Text>
+    </CardBody>
+</Card>
+
+<Card>
+    <CardBody>
+        <Text>We provide ongoing support and maintenance.</Text>
+    </CardBody>
+</Card>
+
+<Card>
+    <CardBody>
+        <Text>Marketing Campaigns</Text>
+    </CardBody>
+</Card>
+
+<Card>
+    <CardBody>
+        <Text>We can assist with marketing campaigns.</Text>
+    </CardBody>
+</Card>
+
+</SimpleGrid>
+<Heading as="h4" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
+    Frequently Asked Questions
+</Heading>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    <strong>1. What Advantages Does White Label Cryptocurrency Wallet Development Offer?</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={2}>
+    Crafting a wallet from scratch demands significant effort and time. Conversely, a White Label solution offers a pre-built code, database, and infrastructure. Customize the interface and branding, and you're ready to launch the application under your own name.
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    <strong>2. What Is the Cost of Developing a White Label Wallet Solution?</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={2}>
+    The cost of developing a White Label wallet solution can vary based on your specific requirements and customization needs.
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    <strong>3. How Long Does Deploying a White Label Wallet Take?</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={2}>
+    The deployment timeline for a White Label wallet can vary depending on the complexity of the project and customization requirements.
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={4}>
+    <strong>4. Do You Implement Security Measures in White Label Wallet Solutions?</strong>
+</Text>
+
+<Text align={'center'} letterSpacing={2} marginTop={2}>
+    Yes, we implement security measures in White Label wallet solutions to ensure the safety of users' assets and data.
+</Text>
+
+<Heading as="h2" size="lg" letterSpacing={1} my={3} mt={5} mb={3} align="center">
 Explore More in Our Blogs
+</Heading>
+<Text align={'center'} letterSpacing={2} marginTop={4}> 
+White Label Crypto Wallet.Exploring the Cost of Developing a White Label Crypto Wallet,table of Contents Introduction Understanding the Essence of White-Label Crypto Wallets In-Depth Market Overview Benefits of a White-Label Crypto Wallet Solution <strong>Read More[…]</strong>
+</Text>
+            
 
-White Label Crypto Wallet
-Exploring the Cost of Developing a White Label Crypto Wallet
-Table of Contents Introduction Understanding the Essence of White-Label Crypto Wallets In-Depth Market Overview Benefits of a White-Label Crypto Wallet Solution […]
-READ MORE
-White Label Digital Identity Wallet
-Delving Deeper into the White-Label Digital Identity Wallet
 
-</p>
-            </div>
           </div>
+
         </div>
+
       </div>
 
       {/* Info Section */}
-      <div className={style.infoSection}>
+      {/* <div className={style.infoSection}>
         <div className={style.infoContainer}>
           <div className={style.infoTop}>
             {data.about.map((ele) => {
@@ -249,18 +575,10 @@ Delving Deeper into the White-Label Digital Identity Wallet
             })}
           </div>
         </div>
-      </div>
-
-      {/* Crypto Section */}
-      {/* <div className={style.cryptoSection}>
-        <div className={style.cryptoContainer}>
-          <img src={crypto1} alt="crypto1" />
-          <img src={crypto2} alt="crypto2" />
-        </div>
-    </div> */}
+      </div> */}
 
       {/* Our Team */}
-      <div className={style.ourTeamSection}>
+      {/* <div className={style.ourTeamSection}>
         <div className={style.ourTeamContainer}>
           <h1>Our Team</h1>
           <p>
@@ -281,11 +599,12 @@ Delving Deeper into the White-Label Digital Identity Wallet
             })}
           </div>
         </div>
-      </div>
+      </div> */}
       <TelegramFloatingBtn />
       <FloatingWhatsApp
-        phoneNumber="447778222221"
-        accountName="Jennie"
+       phoneNumber="+447432284026"
+        accountName="AradChain Support"
+        chatMessage="Welcome to AradChain Technologies. One of our representative will be with you shortly."
         allowEsc
         allowClickAway
         notification
@@ -295,10 +614,20 @@ Delving Deeper into the White-Label Digital Identity Wallet
           bottom: "2rem",
           left: "2rem",
         }}
+        statusMessage="Typically Replies With in 5 minutes"
+        chatboxHeight={450}
+        chatboxStyle={{
+          position: "fixed",
+          bottom: "2rem",
+          left: "2rem",
+        }}
       />
 
+
       {/* Need Solution */}
-      <Needsolution />
+      <Box mt={20}>
+        <Needsolution />
+      </Box>
 
       {/* Footer Section */}
       <Footer1 />

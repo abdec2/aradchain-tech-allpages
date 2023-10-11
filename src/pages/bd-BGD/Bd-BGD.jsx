@@ -1,11 +1,9 @@
 import React from "react";
 import style from "./bd-BGD.module.css";
-// import image from '../../assets/aboutInfo2.png'
 import crypto1 from "../../assets/crypto1.png";
 import crypto2 from "../../assets/crypto2.png";
 import data from "../../database/data";
 import Whyus from "../../components/whyUs/Whyus";
-import Heading from "../../components/heading/Heading";
 import AboutStats from "../../components/aboutStats/AboutStats";
 import Team from "../../components/team/Team";
 import { Link } from "react-router-dom";
@@ -15,27 +13,62 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
+
 const About = () => {
-  // console.log(data.aboutStatsData)
   return (
     <div className={style.aboutMain}>
       <div className={style.mainSection}>
         <div className={style.mainSectionContainer}>
-          <Heading heading="About" />
           <div className={style.mainSectionContent}>
             <div>
-              <img src={map} alt="" />
-              <h2>Blockchain Game Development</h2>
+              <Heading>Blockchain Game Development</Heading>
             </div>
-            <div>
-              <p>
-              Blockchain Game Development Firm Crafting highly immersive gaming environments for an engaging user experience.
-Pioneering Blockchain Game Development With more than a decade of experience, our team boasts innovative ideas, formidable skills, and a wealth of real-world expertise in delivering exceptional gaming experiences. We leverage the latest blockchain tools to create exhilarating games that have the potential to disrupt the market.
-Whether your goal is to launch a console game, a desktop game, or venture into mobile game development, harness our mission-driven blockchain game development services to achieve your objectives.
-Dominate the gaming industry with a formidable game designed by our seasoned professionals.
-              </p>
-              <p>
-              Our Services in Cryptocurrency Game Development A single concept is all it takes to fashion a new virtual realm. Our video game development company merges cutting-edge tools with comprehensive services to transform your idea into a reality.
+          </div>
+          
+        </div>
+      </div>
+
+      <div className={style.infoSection}>
+        <div className={style.infoContainer}>
+          <div className="content">
+            <Text align={'center'} letterSpacing={1}>
+            Blockchain Game Development Firm Crafting highly immersive gaming environments for an engaging user experience.Pioneering Blockchain Game Development With more than a decade of experience, our team boasts innovative ideas, formidable skills, and a wealth of real-world expertise in delivering exceptional gaming experiences. We leverage the latest blockchain tools to create exhilarating games that have the potential to disrupt the market.Whether your goal is to launch a console game, a desktop game, or venture into mobile game development, harness our mission-driven blockchain game development services to achieve your objectives.Dominate the gaming industry with a formidable game designed by our seasoned professionals.
+           
+            </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
+            <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+            Our Services in Cryptocurrency Game Development 
+            </Heading>
+
+            <Text align={'center'} letterSpacing={1}>
+            A single concept is all it takes to fashion a new virtual realm. Our video game development company merges cutting-edge tools with comprehensive services to transform your idea into a reality.
 Blockchain Game Consultation Our team of specialists provides consulting services in blockchain game development, facilitating a smooth transition for newcomers to the world of blockchain gaming.
 Unity 3D Game Development Capitalizing on the potential of Unity, we create extraordinary games that offer deeply immersive 3D experiences, as 60% of AR/VR content and 50% of mobile games are powered by Unity.
 Unreal Engine 5 Games Our blockchain game developers breathe life into incredibly immersive and realistic interactive experiences by constructing expansive worlds with greater freedom and flexibility.
@@ -46,33 +79,75 @@ Explore the Real-World and Virtual World Connection with Web3 Game Development O
 From simple card games to complex combat games with weaponry and assets, or digital twin cities where players can perform tasks and monetize them, we bring every concept to life.
 The Finest Games Crafted by Premier Game Developers The games listed below are just the tip of the iceberg. We possess the expertise to build any game, be it for the web, mobile, or consoles.
 Metaverse in Real Estate Connect with our experts to discuss your game concept.
-Explore on WhatsApp Explore on Telegram Technologies Utilized by Our Cryptocurrency Game Development Company
-Blender
-After Effects
-Substance Painter
-Unity 3D
-Unreal Engine 5
-Why Choose Us as Your Gaming Software Development Company Actions speak louder than words! Here's what sets us apart as a trusted name in blockchain game development.
-Technical Proficiency Expert Team Swift Development Comprehensive Support Meaningful Outcomes
-Our Partners Our Clients Frequently Asked Questions
-How does blockchain technology enhance gaming experiences? Blockchain-based gaming offers benefits like true ownership of in-game assets, interoperability, transparent and secure transactions, and play-to-earn opportunities.
-What are the advantages of integrating blockchain into game development?
-Which blockchain platforms are commonly used for game development?
-How can blockchain games ensure fairness and prevent cheating?
-A Glimpse of Our Blog Posts
-Carbon Credit Platform Development
-Blockchain in the Beauty Industry
-Custom AI Blockchain Development
-Our Blockchain Technology Expertise We're available for a friendly chat to discuss your business needs, with no obligations.
-Our dedicated team is eager to assist you by providing technical support, and we welcome your inquiries and requests.
-              </p>
-            </div>
+            </Text>
+            <Text align={'center'} letterSpacing={1} mt={5}>Explore on WhatsApp Explore on Telegram Technologies Utilized by Our Cryptocurrency Game Development Company</Text>
+            
+            <SimpleGrid minChildWidth='200px' spacing='20px' mt={10}>
+              <Card><CardBody><Text>Blender</Text></CardBody></Card>
+              <Card><CardBody><Text>After Effects</Text></CardBody></Card>
+              <Card><CardBody><Text>Substance Painter</Text></CardBody></Card>
+              <Card><CardBody><Text></Text>Unity 3D</CardBody></Card>
+              <Card><CardBody><Text>Unreal Engine 5</Text></CardBody></Card>
+            </SimpleGrid>
+
+            <Text align={'center'} letterSpacing={1} mt={5}>Why Choose Us as Your Gaming Software Development Company Actions speak louder than words! Here's what sets us apart as a trusted name in blockchain game development.Technical Proficiency Expert Team Swift Development Comprehensive Support Meaningful Outcomes</Text>
+            <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+  Frequently Asked Questions
+</Heading>
+
+<Text mt={8} align={'center'} letterSpacing={1}>
+  How does blockchain technology enhance gaming experiences?
+  Blockchain-based gaming offers benefits like true ownership of in-game assets, interoperability, transparent and secure transactions, and play-to-earn opportunities.
+</Text>
+
+<Text mt={8} align={'center'} letterSpacing={1}>
+  What are the advantages of integrating blockchain into game development?
+</Text>
+
+<Text mt={8} align={'center'} letterSpacing={1}>
+  Which blockchain platforms are commonly used for game development?
+</Text>
+
+<Text mt={8} align={'center'} letterSpacing={1}>
+  How can blockchain games ensure fairness and prevent cheating?
+</Text>
+
+<Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+  A Glimpse of Our Blog Posts
+</Heading>
+
+<Text mt={8} align={'center'} letterSpacing={1}>
+  Carbon Credit Platform Development
+</Text>
+
+<Text mt={8} align={'center'} letterSpacing={1}>
+  Blockchain in the Beauty Industry
+</Text>
+
+<Text mt={8} align={'center'} letterSpacing={1}>
+  Custom AI Blockchain Development
+</Text>
+
+<Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+  Our Blockchain Technology Expertise
+</Heading>
+
+<Text mt={8} align={'center'} letterSpacing={1}>
+  We're available for a friendly chat to discuss your business needs, with no obligations.
+</Text>
+
+<Text mt={8} align={'center'} letterSpacing={1}>
+  Our dedicated team is eager to assist you by providing technical support, and we welcome your inquiries and requests.
+</Text>
+
           </div>
+
         </div>
+
       </div>
 
       {/* Info Section */}
-      <div className={style.infoSection}>
+      {/* <div className={style.infoSection}>
         <div className={style.infoContainer}>
           <div className={style.infoTop}>
             {data.about.map((ele) => {
@@ -93,18 +168,10 @@ Our dedicated team is eager to assist you by providing technical support, and we
             })}
           </div>
         </div>
-      </div>
-
-      {/* Crypto Section */}
-      {/* <div className={style.cryptoSection}>
-        <div className={style.cryptoContainer}>
-          <img src={crypto1} alt="crypto1" />
-          <img src={crypto2} alt="crypto2" />
-        </div>
-    </div> */}
+      </div> */}
 
       {/* Our Team */}
-      <div className={style.ourTeamSection}>
+      {/* <div className={style.ourTeamSection}>
         <div className={style.ourTeamContainer}>
           <h1>Our Team</h1>
           <p>
@@ -125,11 +192,12 @@ Our dedicated team is eager to assist you by providing technical support, and we
             })}
           </div>
         </div>
-      </div>
+      </div> */}
       <TelegramFloatingBtn />
       <FloatingWhatsApp
-        phoneNumber="447778222221"
-        accountName="Jennie"
+       phoneNumber="+447432284026"
+        accountName="AradChain Support"
+        chatMessage="Welcome to AradChain Technologies. One of our representative will be with you shortly."
         allowEsc
         allowClickAway
         notification
@@ -139,10 +207,20 @@ Our dedicated team is eager to assist you by providing technical support, and we
           bottom: "2rem",
           left: "2rem",
         }}
+        statusMessage="Typically Replies With in 5 minutes"
+        chatboxHeight={450}
+        chatboxStyle={{
+          position: "fixed",
+          bottom: "2rem",
+          left: "2rem",
+        }}
       />
 
+
       {/* Need Solution */}
-      <Needsolution />
+      <Box mt={20}>
+        <Needsolution />
+      </Box>
 
       {/* Footer Section */}
       <Footer1 />

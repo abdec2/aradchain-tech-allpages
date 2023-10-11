@@ -30,6 +30,7 @@ import CustomHeader from "../customHeader/CustomHeader";
 import logo from "../../assets/logo.png";
 import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 export default function CustomNavbar() {
   const { isOpen, onToggle } = useDisclosure();
@@ -505,7 +506,7 @@ const NAV_ITEMS = [
             innerLabel: "Blockchain Development",
             context:
               "Tap into the potential of blockchain technology with our strategic blockchain services",
-            href: "#",
+              href: "/bdBD"
           },
         ],
       },
@@ -519,37 +520,37 @@ const NAV_ITEMS = [
             innerLabel: "Substrate",
             context:
               "Check out the opportunities provided by substrate blockchain development",
-            href: "#",
+            href: "/bfS",
           },
           {
             innerLabel: "Cosmos",
             context:
               "Tap onto the possibilities of cosmos blockchain for your business",
-            href: "#",
+            href: "/bfC",
           },
           {
             innerLabel: "Algorand Blockchain",
             context:
               "Utilize the potential of Algorand blockchain for the benefit of your business",
-            href: "#",
+            href: "/bfAB",
           },
           {
             innerLabel: "Polygon Edge",
             context:
               "High-end Polygon Edge development solutions to craft innovative Layer 2 solutions for Ethereum",
-            href: "#",
+            href: "/bfPE",
           },
           {
             innerLabel: "Tezos",
             context:
               "Explore the potential of Tezos blockchain to conveniently host smart contracts, dApps, and NFTs",
-            href: "#",
+            href: "/bfT",
           },
           {
             innerLabel: "Polygon Blockchain",
             context:
               "Capitalize on the capabilities of Polygon Blockchain for your business’s benefit",
-            href: "#",
+            href: "/bfPBl",
           },
         ],
       },
@@ -563,37 +564,37 @@ const NAV_ITEMS = [
             innerLabel: "BSC",
             context:
               "Use BSC as the right option for decentralized application developmen",
-            href: "#",
+            href: "/l1l2sBSC",
           },
           {
             innerLabel: "Solana",
             context:
               "Empower decentralized application development in a more efficient manner",
-            href: "#",
+            href: "/l1l2sS",
           },
           {
             innerLabel: "Layer 1 Solutions",
             context:
               "Layer 1 blockchain development to bring transformative trust & transparency",
-            href: "#",
+            href: "/l1l2sL1S",
           },
           {
             innerLabel: "Cardano",
             context:
               "Develop & deploy fast, scalable, and eco-friendly dApps with Cardano blockchain",
-            href: "#",
+            href: "/l1l2sC",
           },
           {
             innerLabel: "Ethereum",
             context:
               "Launch next-gen secure and scalable platforms with Ethereum Blockchain solutions",
-            href: "#",
+            href: "/l1l2sE",
           },
           {
             innerLabel: "Polkadot",
             context:
               "Cover data across public, private, open & permission-less blockchain networks",
-            href: "#",
+            href: "/l1l2sP",
           },
         ],
       },
@@ -607,55 +608,55 @@ const NAV_ITEMS = [
             innerLabel: "Supply Chain",
             context:
               "Check out the opportunities provided by substrate blockchain development",
-            href: "#",
+            href: "/ebSC",
           },
           {
             innerLabel: "Transport & Logistics",
             context:
               "Tap onto the possibilities of cosmos blockchain for your business",
-            href: "#",
+            href: "/ebTAL",
           },
           {
             innerLabel: "Entertainment",
             context:
               "Utilize the potential of Algorand blockchain for the benefit of your business",
-            href: "#",
+            href: "/ebEnt",
           },
           {
             innerLabel: "Education",
             context:
               "Utilize the potential of Algorand blockchain for the benefit of your business",
-            href: "#",
+            href: "/ebEdu",
           },
           {
             innerLabel: "Finance",
             context:
               "Utilize the potential of Algorand blockchain for the benefit of your business",
-            href: "#",
+            href: "/ebF",
           },
           {
             innerLabel: "Healthcare",
             context:
               "Utilize the potential of Algorand blockchain for the benefit of your business",
-            href: "#",
+            href: "/ebH",
           },
           {
             innerLabel: "Real Estate",
             context:
               "Utilize the potential of Algorand blockchain for the benefit of your business",
-            href: "#",
+            href: "/ebRE",
           },
           {
             innerLabel: "Procure to pay",
             context:
               "Utilize the potential of Algorand blockchain for the benefit of your business",
-            href: "#",
+            href: "/ebP2P",
           },
           {
             innerLabel: "Carbon Credits",
             context:
               "Utilize the potential of Algorand blockchain for the benefit of your business",
-            href: "#",
+            href: "/ebCC",
           },
         ],
       },
@@ -669,13 +670,13 @@ const NAV_ITEMS = [
             innerLabel: "Smart Contract Development",
             context:
               "Achieve business automation with advanced smart contract development",
-            href: "#",
+            href: "/scSCD",
           },
           {
             innerLabel: "Smart Contract Audit",
             context:
               "Audit smart contracts for errors, security flaws, & compilation issues",
-            href: "#",
+            href: "/scSCA",
           },
         ],
       },
@@ -689,13 +690,13 @@ const NAV_ITEMS = [
             innerLabel: "Asset Tokenization",
             context:
               "Transfer ownership & storage speedily without any centralized finance entity",
-            href: "#",
+            href: "/asAS",
           },
           {
             innerLabel: "Crypto Asset Management",
             context:
               "Steer funds in high-performing asset tokens and crypto products across exchanges",
-            href: "#",
+            href: "/asCAM",
           },
         ],
       },
@@ -709,7 +710,7 @@ const NAV_ITEMS = [
             innerLabel: "STO",
             context:
               "Strategy-driven approach to lay a solid foundation for STO",
-            href: "#",
+            href: "/sSTO",
           },
         ],
       },
@@ -723,7 +724,7 @@ const NAV_ITEMS = [
             innerLabel: "P2P Lending",
             context:
               "Tap into the billion-dollar lending market with a P2P lending platform",
-            href: "#",
+            href: "/p2pPL",
           },
         ],
       },
@@ -742,55 +743,55 @@ const NAV_ITEMS = [
             innerLabel: "Cryptocurrency Exchange",
             context:
               "Gear up for revenue stream with future ready white label crypto exchange",
-            href: "#",
+            href: "/solutionExchangeCryptocurrencyExchange",
           },
           {
             innerLabel: "White Label Exchange",
             context:
               "Launch your own white label crypto exchange effortlessly using a ready-made infrastructure and customizable features.",
-            href: "#",
+            href: "/exchangeWhiteLabelExchange",
           },
           {
             innerLabel: "Hybrid Exchange",
             context:
               "Get the best of both centralized and decentralized exchanges for high liquidity",
-            href: "#",
+            href: "/exchange-hybridExchange",
           },
           {
             innerLabel: "Margin Trading Exchange",
             context:
               "Secure and feature-rich margin trading exchange to disrupt the crypto market",
-            href: "#",
+            href: "/exchange-marginTradingExchange",
           },
           {
             innerLabel: "Security Exchange",
             context:
               "STO exchange platform that ensured world class security & user experience",
-            href: "#",
+            href: "/exchange-securityExchange",
           },
           {
             innerLabel: "P2P Exchange",
             context:
               "Use a smart contract-based Escrow system to foster reliable transactions",
-            href: "#",
+            href: "/exchange-p2pExchange",
           },
           {
             innerLabel: "Market Making Services",
             context:
               "Intensify liquidity provisioning with perfect market making strategies",
-            href: "#",
+            href: "/exchange-marketMakingServices",
           },
           {
             innerLabel: "Derivatives Exchange",
             context:
               "Assured platform liquidity & returns for a huge pool of crypto investors",
-            href: "#",
+            href: "/exchange-derivativesExchange",
           },
           {
             innerLabel: "Decentralized Exchange",
             context:
               "Reduce your time-to-market with a customized DEX exchange script solution",
-            href: "#",
+            href: "/exchange-decentralizedExchange",
           },
         ],
       },
@@ -798,60 +799,60 @@ const NAV_ITEMS = [
         label: "Wallet",
         subLabel:
           "Solutions that help users enjoy transactions in a speedier & secure environment",
-        href: "#",
+        href: "/wallet-cryptocurrencyWallet",
         innerChild: [
           {
             innerLabel: "Cryptocurrency Wallet",
             context:
               "Robust & secure wallet solutions for storing & transferring crypto assets",
-            href: "#",
+            href: "/wallet-cryptocurrencyWallet",
           },
           {
             innerLabel: "Web3 Wallet",
             context:
               "Access data in real time with trustless Web3 blockchain ecosystems",
-            href: "#",
+            href: "/wallet-web3Wallet",
           },
           {
             innerLabel: "White Label Wallet",
             context:
               "Ready-to-deploy white label wallet with high-grade security features",
-            href: "#",
+            href: "/wallet-whiteLabelWallet",
           },
           {
             innerLabel: "Multicurrency Wallet",
             context:
               "Deploy wallets that are intuitive, user-friendly, secure & scalable",
-            href: "#",
+            href: "/wallet-multiCurrencyWallet",
           },
           {
             innerLabel: "NFT Wallet",
             context:
               "Private key-based solutions to buy, sell and exchange non fungible tokens",
-            href: "#",
+            href: "/wallet-nftWallet",
           },
           {
             innerLabel: "TRON Wallet",
             context:
               "Tron wallet hold private keys & TRX coins securely within itself.",
-            href: "#",
+            href: "/wallet-tronWallet",
           },
           {
             innerLabel: "Bitcoin Wallet",
             context:
               "Launch your Bitcoin wallet, enabling speedier transactions & storage.",
-            href: "#",
+            href: "/wallet-bitcoinWallet",
           },
           {
             innerLabel: "Mobile Wallet App",
             context: "Mobile wallet makes payments & transfer process simple.",
-            href: "#",
+            href: "/wallet-mobileWalletApp",
           },
           {
             innerLabel: "Defi Wallet",
             context:
               "A wallet that is fortified from hacks, & immune to cross-border regulations",
-            href: "#",
+            href: "/wallet-defiWallet",
           },
         ],
       },
@@ -859,61 +860,61 @@ const NAV_ITEMS = [
         label: "NFT",
         subLabel:
           "Solutions that help users enjoy transactions in a speedier & secure environment",
-        href: "#",
+        href: "/nft-nftDevelopment",
         innerChild: [
           {
             innerLabel: "NFT Development",
             context:
               "Build decentralized non-fungible tokens aligned with different business needs",
-            href: "#",
+            href: "/nft-nftDevelopment",
           },
           {
             innerLabel: "White Label NFT Marketplace",
             context:
               "Get a customized white label NFT marketplace with multi-platform support",
-            href: "#",
+            href: "/nft-whiteLabelNftMarketplace",
           },
           {
             innerLabel: "NFT Music",
             context:
               "Customer-centric marketplace for selling, trading and auctioning music NFTs",
-            href: "#",
+            href: "/nftMusic",
           },
           {
             innerLabel: "NFT Marketplace",
             context:
               "Top-performing marketplaces for users to mint, sell, buy, and trade NFTs",
-            href: "#",
+            href: "/nftM",
           },
           {
             innerLabel: "NFT Loan",
             context:
               "Facilitate your participation in revolutionized borrowing & lending world",
-            href: "#",
+            href: "/nftL",
           },
           {
             innerLabel: "Semi Fungible Token",
             context:
               "Easy batch token transfers that support both NFTs and fungible tokens",
-            href: "#",
+            href: "/nftSFT",
           },
           {
             innerLabel: "NFT Gaming",
             context:
               "Exclusive gameplay with rare digital assets like characters, tickets, weapons, & skins",
-            href: "#",
+            href: "/nftG",
           },
           {
             innerLabel: "NFT Art",
             context:
               "Tokenize digital and physical assets into a one-of-a-kind, untransferable NFT",
-            href: "#",
+            href: "/nftA",
           },
           {
             innerLabel: "NFT Generative Art",
             context:
               "Future ready NFT generative art marketplace that supports pictures, videos and GIFs",
-            href: "#",
+            href: "/nftGA",
           },
         ],
       },
@@ -927,46 +928,49 @@ const NAV_ITEMS = [
             innerLabel: "DeFi Development",
             context:
               "Drive resiliency and facilitate trust with exceptional DeFi development",
-            href: "#",
+            href: "/deFiDD",
           },
           {
             innerLabel: "DeFi Yield Farming",
             context:
               "Deliver business-oriented DeFi yield farming platforms that accomplish business goals",
-            href: "#",
+            href: "/deFiDYF",
           },
           {
             innerLabel: "DeFi Staking",
             context:
               "Staking software with market-leading features and institutional-grade security",
-            href: "#",
+            href: "/deFiDS",
           },
           {
             innerLabel: "DeFi Lending And Borrowing",
             context:
               "Borrowing and lending platforms that fill the gap lagging in traditional banking",
-            href: "#",
+            href: "/deFiDLAB",
           },
           {
             innerLabel: "DeFi Lottery",
             context:
               "Decentralized lottery ecosystem reinforced with greater security, and traceability",
-            href: "#",
+            href: "/deFiDL",
           },
           {
             innerLabel: "DAO Blockchain",
             context:
               "100% transparent transactions, mandatory voting and handle services in a standardized way",
+              href: "/deFiDAOB",
           },
           {
             innerLabel: "Olympus DAO Development",
             context:
               "Introduce unique economic and game-theoretic dynamics through staking and bonding",
+              href: "/deFiOaoD",
           },
           {
             innerLabel: "Dapp Development Company",
             context:
               "Business growth with unique, innovative, secure and engaging applications",
+              href: "/deFiDDC",
           },
         ],
       },
@@ -980,10 +984,12 @@ const NAV_ITEMS = [
             innerLabel: "Web 3.0 Development",
             context:
               "Develop an en evolved web that is open, intelligent, and autonomous",
+              href:"/w3W3D"
           },
           {
             innerLabel: "Web3 Game Development",
             context: "Amplify your gaming experience with the help of web 3.0",
+            href:"/w3GD"
           },
         ],
       },
@@ -997,6 +1003,8 @@ const NAV_ITEMS = [
             innerLabel: "White Paper Development",
             context:
               "Build a strong foundation for your crypto project with a mission-driven white paper",
+              href:"/whiteWPD"
+
           },
         ],
       },
@@ -1010,6 +1018,7 @@ const NAV_ITEMS = [
             innerLabel: "Crypto Banking",
             context:
               "Crypto bank with industry-leading features and state-of-the-art infrastructure",
+              href:"/cCB"
           },
         ],
       },
@@ -1023,31 +1032,31 @@ const NAV_ITEMS = [
             innerLabel: "Coin/Token Development",
             context:
               "Best services for crypto coin/token development to match your business goals",
-            href: "#",
+            href: "/cCPG",
           },
           {
             innerLabel: "Crypto Launchpad Development",
             context:
               "Build a launchpad to capitalize on the revenue generation opportunity",
-            href: "#",
+            href: "/cdCD",
           },
           {
             innerLabel: "IDO Development",
             context:
               "Create a coherent roadmap to navigate your IDO development journey",
-            href: "#",
+            href: "/cdIdoD",
           },
           {
             innerLabel: "ICO Development",
             context:
               "Maximize fundraising opportunities and drive innovation with ICO development",
-            href: "#",
+            href: "/cdIcoD",
           },
           {
             innerLabel: "Stablecoin Development",
             context:
               "Deploy gold-backed stablecoins to navigate your coin development journey",
-            href: "#",
+            href: "/cdSD",
           },
         ],
       },
@@ -1066,7 +1075,7 @@ const NAV_ITEMS = [
             innerLabel: "Blockchain Consulting Company",
             context:
               "Ours is a blockchain consulting and solution provider company. You idealize, we realize!",
-            href: "#",
+            href: "/bBCC",
           },
         ],
       },
@@ -1080,7 +1089,7 @@ const NAV_ITEMS = [
             innerLabel: "Web3 Consulting Company",
             context:
               "Ours is a blockchain consulting and solution provider company. You idealize, we realize!",
-            href: "#",
+            href: "/w3WCC",
           },
         ],
       },
@@ -1094,7 +1103,7 @@ const NAV_ITEMS = [
             innerLabel: "Metaverse Consulting Company",
             context:
               "Metaverse consulting services to guide you on the right path",
-            href: "#",
+            href: "/mMCC",
           },
         ],
       },
@@ -1108,7 +1117,7 @@ const NAV_ITEMS = [
             innerLabel: "AI Consulting Company",
             context:
               "Our motive is to fully realise business benefits using our expertise in AI, the transformative technology.",
-            href: "#",
+            href: "/aiAlCC",
           },
         ],
       },
@@ -1122,7 +1131,7 @@ const NAV_ITEMS = [
             innerLabel: "Defi Consulting Services",
             context:
               "Maximize your DeFi project’s success with tailored DeFi consulting services. Unlock new business opportunities.",
-            href: "#",
+            href: "/defiDCS",
           },
         ],
       },
@@ -1136,7 +1145,7 @@ const NAV_ITEMS = [
             innerLabel: "DAO Consulting Services",
             context:
               "Get goal-specific DAO consulting services from our industry experts",
-            href: "#",
+            href: "/daoDCS",
           },
         ],
       },
@@ -1150,7 +1159,7 @@ const NAV_ITEMS = [
             innerLabel: "Marketing As A Service",
             context:
               "We deliver tailor-made and agile marketing solutions that unlock your project’s full potential.",
-            href: "#",
+            href: "/msMAAS",
           },
         ],
       },
@@ -1169,54 +1178,54 @@ const NAV_ITEMS = [
             innerLabel: "Metaverse Development",
             context:
               "End-to-end solutions to facilitate your entry and participation in the metaverse",
-            href: "#",
+            href: "mMD",
           },
           {
             innerLabel: "Metaverse App Development",
             context:
               "Tap into the metaverse with enterprise-focused application development",
-            href: "#",
+            href: "mMAD",
           },
           {
             innerLabel: "Metaverse For Education",
             context:
               "Enter into the future of learning by implementing metaverse in education",
-            href: "#",
+            href: "miMFE",
           },
           {
             innerLabel: "Metaverse In The Manufacturing",
             context:
               "Empower design engineers to collaborate and create visual designs remotely",
-            href: "#",
+            href: "mME",
           },
           {
             innerLabel: "Metaverse In The Healthcare",
             context:
               "Deliver cost-effective treatments and improve healthcare outcomes with Metaverse",
-            href: "#",
+            href: "miMITH",
           },
           {
             innerLabel: "Metaverse In Ecommerce",
             context:
               "Accelerate your business with our cutting-edge Metaverse e-commerce platform development.",
-            href: "#",
+            href: "miMITM",
           },
           {
             innerLabel: "Metaverse Events",
             context:
               "Organize unforgettable metaverse events using our expertise",
-            href: "#",
+            href: "miMIE",
           },
           {
             innerLabel: "Metaverse Real Estate",
             context: "Unlock a new dimension of real estate with Metaverse",
-            href: "#",
+            href: "miMIRE",
           },
           {
             innerLabel: "Metaverse Game",
             context:
               "Bring About a Revolution in the World of Gaming with the Metaverse",
-            href: "#",
+            href: "miMCG",
           },
         ],
       },
@@ -1235,31 +1244,31 @@ const NAV_ITEMS = [
             innerLabel: "G2C",
             context:
               "Improve existing G2C services with blockchain-driven intelligent analytics",
-            href: "#",
+            href: "/gG2C",
           },
           {
             innerLabel: "Digital Identity",
             context:
               "Secure digital identities with a decentralized digital identity management system",
-            href: "#",
+            href: "/gDI",
           },
           {
             innerLabel: "Government Data Storage",
             context:
               "Utilize Blockchain-based data storage systems to store and secure data",
-            href: "#",
+            href: "/gGDS",
           },
           {
             innerLabel: "E-Voting System",
             context:
               "Securing the way e-voting works through decentralized blockchain technology",
-            href: "#",
+            href: "/gEVS",
           },
           {
             innerLabel: "Government Regulatory Systems",
             context:
               "Enhancing democratic, open, and self-reliance government regulatory system",
-            href: "#",
+            href: "/gGRS",
           },
         ],
       },
@@ -1267,31 +1276,31 @@ const NAV_ITEMS = [
         label: "BFSI",
         subLabel:
           "Launch your digital asset bank with crypto-friendly banking solutions",
-        href: "#",
+        href: "/bfsiCDBC",
         innerChild: [
           {
             innerLabel: "CBDC",
             context:
               "Leverage near real-time data with a monetary system to solidify banking systems",
-            href: "#",
+            href: "/bfsiCDBC",
           },
           {
             innerLabel: "KYC & AML",
             context:
               "Streamline the KYC process and manage the entire user lifecycle",
-            href: "#",
+            href: "/bfsiKA",
           },
           {
             innerLabel: "Trade Finance",
             context:
               "Embrace greater speed, security, & transparency in transactions",
-            href: "#",
+            href: "/bfsiTF",
           },
           {
             innerLabel: "Insurance",
             context:
               "BFSI products that help cut costs, save resources, and stay compliant",
-            href: "#",
+            href: "/bfsiI",
           },
         ],
       },

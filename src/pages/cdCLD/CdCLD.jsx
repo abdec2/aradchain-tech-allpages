@@ -1,11 +1,9 @@
 import React from "react";
 import style from "./cdCLD.module.css";
-// import image from '../../assets/aboutInfo2.png'
 import crypto1 from "../../assets/crypto1.png";
 import crypto2 from "../../assets/crypto2.png";
 import data from "../../database/data";
 import Whyus from "../../components/whyUs/Whyus";
-import Heading from "../../components/heading/Heading";
 import AboutStats from "../../components/aboutStats/AboutStats";
 import Team from "../../components/team/Team";
 import { Link } from "react-router-dom";
@@ -15,127 +13,104 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card } from "@chakra-ui/react";
+
 const About = () => {
-  // console.log(data.aboutStatsData)
   return (
     <div className={style.aboutMain}>
       <div className={style.mainSection}>
         <div className={style.mainSectionContainer}>
-          <Heading heading="About" />
           <div className={style.mainSectionContent}>
             <div>
-              <img src={map} alt="" />
-              <h2>Crypto Launchpad Development</h2>
-            </div>
-            <div>
-              <p>
-              Accelerate Your Cryptocurrency Launchpad Development Journey
-The anticipation of widespread cryptocurrency adoption by 2022 has paved the way for innovative solutions that cater to investors. One such solution is the cryptocurrency launchpad, which has revolutionized the fundraising landscape. This platform empowers blockchain-based projects to initiate fundraising efforts for their expansion. Being part of the booming crypto industry, a cryptocurrency launchpad offers opportunities to tap into new revenue streams.
-
-
-AradChain Technologies, a leading player in the field, offers comprehensive cryptocurrency launchpad development services. Our seasoned blockchain engineers and subject matter experts collaborate to expedite your time-to-market, ensuring you stay ahead in this dynamic landscape. Leverage our expertise to construct your cryptocurrency launchpad and seize the revenue-generation potential.
-
-TALK TO OUR EXPERTS
-Our Range of Cryptocurrency Launchpad Development Services
-Our offerings cater to diverse business requirements, providing tailored solutions under one roof.
-Group 783
-ICO Launchpad Development
-We specialize in building ICO platforms based on smart contracts, facilitating seamless token listing and fundraising for projects.
-Group 784
-IEO Launchpad Development
-Our blockchain engineers create customized IEO launchpads tailored to unique business needs, enabling effective fundraising through crypto exchanges.
-Group 785
-INO Launchpad Development
-Embrace the growing trend of Initial NFT Offering (INO) with our expert INO launchpad development services, ensuring exceptional user experiences.
-Group 786
-IGO Offering Development
-Venture into the GameFi realm with our user-friendly IGO launchpad solutions, designed to raise funds for blockchain-based games.
-Group 940
-IIO Launchpad Development
-Capitalizing on the rising popularity of Initial Insurance Offering (IIO), we develop secure and scalable IIO launchpads for insurance market participants.
-Group 941
-IFO Launchpad Development
-Our IFO launchpad development service is dedicated to crafting performance-driven platforms for Initial Farming Offering (IFO) events.
-Group 943
-IDO Launchpad Development
-Enter the world of decentralized projects with confidence through our IDO launchpad development, ensuring scalability and security.
-Group 946
-ILO Launchpad Development
-Fuel your startup's growth with our ILO launchpads featuring Automated Market Maker (AMM) integration and liquidity pool support.
-CONNECT ON WHATSAPP CONNECT ON TELEGRAM
-Cryptocurrency Launchpad Development: A Win-Win Proposition
-Cryptocurrency launchpads have simplified the entry of startups into the crypto arena by revolutionizing fundraising processes. Geographical boundaries are eliminated, enabling businesses to attract investors from around the world. This innovation benefits platform owners as well, opening new revenue streams.
-
-AradChain Technologies facilitates your journey into this innovative space by building tailored cryptocurrency launchpads.
-
-TALK TO OUR EXPERTS
-
-              </p>
-              <p>
-              Key Features of a Cryptocurrency Launchpad
-Our launchpads are equipped with essential features to deliver exceptional performance.
-04
-Know Your Customer (KYC)
-Authenticate businesses and potential investors to ensure legitimate platform access.
-Group 947
-Multiple Fundraising Methods
-Our platforms support various fundraising models, providing flexibility to businesses.
-1027836
-Crypto Wallet Integration
-Secure crypto wallets are seamlessly integrated, ensuring safe transactions and asset storage.
-Group 24924
-Multi-Tier Staking
-Facilitate crowdfunding with multiple staking rounds based on token quantity.
-Group 949
-Transparency
-Boost project visibility for higher investments through transparent platforms.
-Group 951
-Compatibility
-Our launchpads accommodate different blockchain networks, enhancing usability.
-Connect with our experts to discuss your requirements.
-CONNECT ON WHATSAPP CONNECT ON TELEGRAM
-
-White Label Crypto Launchpad Development
-In a rapidly evolving cryptocurrency landscape, the need for platform owners to swiftly enter the market is paramount. AradChain Technologies expedites this process through white label crypto launchpad development services. Our cross-functional team analyzes your business use case and devises a comprehensive roadmap, regardless of the launchpad you require. Our experience, expertise, and domain knowledge ensure your successful entry.
-
-TALK TO OUR EXPERTS
-Why Choose AradChain Technologies for Cryptocurrency Launchpad Development
-Our team's synergy results in tailored solutions for optimal outcomes.
-Technical Proficiency
-Benefit from our exclusive focus on blockchain technologies and extensive experience in the field.
-Complete Support
-We provide post-launch support, allowing you to concentrate on growth after product launch.
-Rapid Development
-Our rapid development process delivers customized products, meeting your audience's needs.
-Meaningful Impact
-We ensure tangible value generation from your investments, creating a real impact.
-Explore our blogs for further insights.
-TALK TO OUR EXPERTS
-
-Insightful Blogs at a Glance
-
-Developing IDO Launchpad Platform On Different Blockchains - A Guide
-Discover the steps involved in developing an IDO launchpad platform on various blockchains.
-READ MORE
-
-The Importance of Security in IDO Platform Development: A Guide
-Learn how to mitigate risks and ensure security in the process of developing an IDO platform.
-READ MORE
-
-Exploring the Opportunity of Initial DEX Offering (IDO) Development in 2023
-Explore the significance of Initial DEX Offering (IDO) development as a business opportunity in 2023.
-READ MORE
-Our Blockchain Tech Expertise
-We are available for a friendly chat to discuss your business needs, no obligation.
-
-              </p>
+              <Heading>Cryptocurrency Exchange Development Company</Heading>
             </div>
           </div>
+          
         </div>
       </div>
 
-      {/* Info Section */}
       <div className={style.infoSection}>
+        <div className={style.infoContainer}>
+          <div className="content">
+            <Text align={'center'} letterSpacing={1}>
+              Tailored Development Services for Crypto Exchanges Empowering You to Create Extraordinary Success Stories The financial industry is undergoing a substantial paradigm shift, driven by factors such as liberal trade policies, customer demands, technological innovation, and macroeconomic forces. Both emerging and established businesses must embrace cryptocurrency to remain relevant as service providers. Crypto exchange software resembles traditional exchanges but is digital, more secure, and not bound by geographical limitations. AradChain Technologies, a leading cryptocurrency exchange development firm, specializes in crafting innovative solutions for progressive businesses seeking to enter the multi-billion dollar industry. Leverage AradChain Technologies's expertise in cryptocurrency exchange platform development to establish a strong foundation for success in the cryptocurrency sector. Acquire advanced yet user-friendly Bitcoin exchange software equipped with cutting-edge features, industry-leading functionalities, and robust security, all tailored to meet your specific requirements. CONNECT VIA WHATSAPP CONNECT VIA TELEGRAM
+            </Text>
+            <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+              Features of Cryptocurrency Exchange Software Development Basic
+              Level
+            </Heading>
+
+            <Text align={'center'} letterSpacing={1}>
+              Our forward-looking cryptocurrency exchange development services ensure that your exchange software thrives in the competitive landscape. Whether you're a large fintech institution, a digital currency startup, or a tech investor, we provide comprehensive services tailored to your venture's size. Over 7 Years of Expertise in Blockchain Thorough Testing & Effective Error Handling Technology-Agnostic, First-Rate Deliverables Full Transparency During Development Modern Coding Techniques & Agile Methods In-House Design and Development Proficiency Exceptional Post-Development Support Driven by Mission, Delivering Quality & Customization AradChain Technologies utilizes its wealth of experience and knowledge to provide futuristic solutions that offer a unique customer experience, surpassing expectations. Our team, comprising experienced fintech consultants, certified engineers, and cryptocurrency experts, grasps your business goals to formulate a distinctive blueprint for achieving success. Seize the Growing Trend of Digital Currency with a Crypto Exchange Clone. We assist companies in scaling their operations by offering on-demand exchange software development services and market-ready cryptocurrency exchange clone script solutions. Our diverse portfolio enables us to deliver exchange scripts that exceed market standards. Cut down the time and cost required to launch a crypto exchange using our cryptocurrency trading script solutions. With our experience in building cutting-edge exchanges, we enable you to replicate popular trading platforms, leveraging our enterprise-class scripts. 
+              <a href="#" style={{ fontSize: "20px" }}>
+                &nbsp;SCHEDULE A FREE DEMO
+              </a>
+              , Gain a competitive advantage in the industry and swiftly
+              establish a revenue stream using our cryptocurrency exchange
+              script solutions. CONNECT VIA WHATSAPP CONNECT VIA TELEGRAM
+            </Text>
+            <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+              Cryptocurrency Exchange Software Development Process
+            </Heading>
+            <Text align={'center'} letterSpacing={1}>
+              Creating on-demand crypto exchange software requires time and investment. However, the wait is worthwhile when the platform demands high-level customization and integration of complex use cases. The step-by-step transformation from concept to functional exchange software involves:
+            </Text>
+
+            <SimpleGrid minChildWidth='200px' spacing='20px' mt={10}>
+              <Card><CardBody><Text>Spot Trading Module</Text></CardBody></Card>
+              <Card><CardBody><Text>Various Advanced Order Types</Text></CardBody></Card>
+              <Card><CardBody><Text>Automated Third-Party KYC</Text></CardBody></Card>
+              <Card><CardBody><Text>Multichain USDT Integration</Text></CardBody></Card>
+              <Card><CardBody><Text>Crypto Swapping</Text></CardBody></Card>
+              <Card><CardBody><Text>Referral and Rewards Programs</Text></CardBody></Card>
+              <Card><CardBody><Text>Mobile Applications</Text></CardBody></Card>
+              <Card><CardBody><Text>News and Announcements Section</Text></CardBody></Card>
+              <Card><CardBody><Text>Admin Panel</Text></CardBody></Card>
+              <Card><CardBody><Text>Intermediate Level</Text></CardBody></Card>
+
+              <Card><CardBody><Text>Native/Utility Token Integration</Text></CardBody></Card>
+              <Card><CardBody><Text>Fiat On/Off Ramp</Text></CardBody></Card>
+              <Card><CardBody><Text>External Liquidity Module</Text></CardBody></Card>
+              <Card><CardBody><Text>Automated Market Making Bot</Text></CardBody></Card>
+              <Card><CardBody><Text>Fiat Payment Gateway</Text></CardBody></Card>
+              <Card><CardBody><Text>Airdrop Functionality</Text></CardBody></Card>
+              <Card><CardBody><Text>Multi-Lingual Platform</Text></CardBody></Card>
+              <Card><CardBody><Text>Admin Support Chat</Text></CardBody></Card>
+              <Card><CardBody><Text>Multi-Role Access</Text></CardBody></Card>
+              <Card><CardBody><Text>Advanced Level</Text></CardBody></Card>
+
+              <Card><CardBody><Text>Peer-to-Peer Trading Capability</Text></CardBody></Card>
+              <Card><CardBody><Text>Staking Module</Text></CardBody></Card>
+              <Card><CardBody><Text>Prepaid Cards Support</Text></CardBody></Card>
+              <Card><CardBody><Text>Over-The-Counter (OTC) Trading</Text></CardBody></Card>
+              <Card><CardBody><Text>Merchant Payment Gateway</Text></CardBody></Card>
+              <Card><CardBody><Text>NFT Marketplace Collectibles</Text></CardBody></Card>
+              <Card><CardBody><Text>Launchpad Functionality</Text></CardBody></Card>
+              <Card><CardBody><Text>Crypto Loans Services</Text></CardBody></Card>
+              <Card><CardBody><Text>Copy Trading Feature</Text></CardBody></Card>
+              <Card><CardBody><Text>Crypto Betting Module</Text></CardBody></Card>
+
+              <Card><CardBody><Text>User Chat Feature</Text></CardBody></Card>
+              <Card><CardBody><Text>Price Alerts</Text></CardBody></Card>
+              <Card><CardBody><Text>VIP Account Options</Text></CardBody></Card>
+              <Card><CardBody><Text>Lending and Borrowing Support</Text></CardBody></Card>
+              <Card><CardBody><Text>Grid Trading Capability</Text></CardBody></Card>
+              <Card><CardBody><Text>Margin Spot Trading Module</Text></CardBody></Card>
+              <Card><CardBody><Text>Crypto Arbitrage Bot</Text></CardBody></Card>
+              <Card><CardBody><Text>Derivatives and Perpetual Futures Trading</Text></CardBody></Card>
+              <Card><CardBody><Text>Cryptocurrency Exchange Development</Text></CardBody></Card>
+              <Card><CardBody><Text>Participate in the Next-Generation Financial Paradigm</Text></CardBody></Card>
+
+            </SimpleGrid>
+            
+          </div>
+
+        </div>
+
+      </div>
+
+      {/* Info Section */}
+      {/* <div className={style.infoSection}>
         <div className={style.infoContainer}>
           <div className={style.infoTop}>
             {data.about.map((ele) => {
@@ -156,18 +131,10 @@ We are available for a friendly chat to discuss your business needs, no obligati
             })}
           </div>
         </div>
-      </div>
-
-      {/* Crypto Section */}
-      {/* <div className={style.cryptoSection}>
-        <div className={style.cryptoContainer}>
-          <img src={crypto1} alt="crypto1" />
-          <img src={crypto2} alt="crypto2" />
-        </div>
-    </div> */}
+      </div> */}
 
       {/* Our Team */}
-      <div className={style.ourTeamSection}>
+      {/* <div className={style.ourTeamSection}>
         <div className={style.ourTeamContainer}>
           <h1>Our Team</h1>
           <p>
@@ -188,11 +155,12 @@ We are available for a friendly chat to discuss your business needs, no obligati
             })}
           </div>
         </div>
-      </div>
+      </div> */}
       <TelegramFloatingBtn />
       <FloatingWhatsApp
-        phoneNumber="447778222221"
-        accountName="Jennie"
+       phoneNumber="+447432284026"
+        accountName="AradChain Support"
+        chatMessage="Welcome to AradChain Technologies. One of our representative will be with you shortly."
         allowEsc
         allowClickAway
         notification
@@ -202,10 +170,20 @@ We are available for a friendly chat to discuss your business needs, no obligati
           bottom: "2rem",
           left: "2rem",
         }}
+        statusMessage="Typically Replies With in 5 minutes"
+        chatboxHeight={450}
+        chatboxStyle={{
+          position: "fixed",
+          bottom: "2rem",
+          left: "2rem",
+        }}
       />
 
+
       {/* Need Solution */}
-      <Needsolution />
+      <Box mt={20}>
+        <Needsolution />
+      </Box>
 
       {/* Footer Section */}
       <Footer1 />

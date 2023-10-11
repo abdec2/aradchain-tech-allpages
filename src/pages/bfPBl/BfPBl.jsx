@@ -1,11 +1,9 @@
 import React from "react";
 import style from "./bfPBl.module.css";
-// import image from '../../assets/aboutInfo2.png'
 import crypto1 from "../../assets/crypto1.png";
 import crypto2 from "../../assets/crypto2.png";
 import data from "../../database/data";
 import Whyus from "../../components/whyUs/Whyus";
-import Heading from "../../components/heading/Heading";
 import AboutStats from "../../components/aboutStats/AboutStats";
 import Team from "../../components/team/Team";
 import { Link } from "react-router-dom";
@@ -15,156 +13,125 @@ import map from "../../assets/map-pattern-1.png";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
+import { Box, Text, Heading, UnorderedList, Grid, GridItem, SimpleGrid, CardBody, Card ,Button,Stack} from "@chakra-ui/react";
+import { MdBuild, MdCall } from "react-icons/md";
+
 const About = () => {
-  // console.log(data.aboutStatsData)
   return (
     <div className={style.aboutMain}>
       <div className={style.mainSection}>
         <div className={style.mainSectionContainer}>
-          <Heading heading="About" />
           <div className={style.mainSectionContent}>
             <div>
-              <img src={map} alt="" />
-              <h2>Polygon Blockchain Development Solutions</h2>
-            </div>
-            <div>
-              <p>
-              Experience the full spectrum of Polygon blockchain development services that empower your market presence.
-REQUEST A FREE DEMO
-
-Business-Centric Polygon Development Solutions
-Polygon stands as a prominent choice for crafting decentralized applications. At AradChain Technologies, our adept blockchain engineers assist businesses in harnessing Polygon's potential and diving into the realm of Web 3.0.
-Our holistic approach delivers end-to-end development and consulting solutions, enabling the creation of potent Polygon-based applications that exhibit scalability, interoperability, and robust security. Whether you're an emerging venture or an established entity seeking to integrate Polygon into your operational framework, our mission-oriented solutions are meticulously tailored to align with your objectives, ensuring your business ambitions are achieved.
-
-              </p>
-              <p>
-              Our Polygon Blockchain Development Services
-Our comprehensive offerings, complemented by a coherent roadmap, guide and expedite your development journey, facilitating swift market entry.
-
-Polygon dApp Development
-Our personalized development services pave the way for impeccable dApp creation on Polygon, encompassing DeFi, NFT, gaming, and DAO projects. We extend migration services to seamlessly transition your dApps onto our platform.
-Polygon Wallet Development
-Our forte lies in engineering institutional-grade Polygon-based wallets upheld by world-class security, performance, and user experience. This ensures seamless asset exchange and storage for digital assets.
-Polygon Smart Contract Development
-Leveraging expertise in Polygon SDKs and programming languages like Solidity and Vyper, we forge versatile and Ethereum-compatible smart contracts. Our contracts amalgamate Ethereum's security with Polygon's adaptability, modularity, and extensibility.
-Polygon NFT Marketplace Development
-Our Polygon NFT marketplaces stand as beacons of scalability, security, interoperability, and adaptability. Engineered to surmount challenges posed by low transaction speeds and elevated transaction costs, these marketplaces redefine efficiency.
-Polygon Integration
-Our integration services for Polygon empower you to reap the benefits of the platform, whether you're hosting blockchain full nodes or crafting dApps. We deliver end-to-end Polygon configuration and integration services, ensuring seamless assimilation of your projects into the Polygon ecosystem.
-Polygon Chain Development
-Our comprehensive polygon chain development service encompasses both standalone chains and "Security as a Service" chains, renowned for their security. While standalone chains offer versatility and autonomy, "Security as a Service" chains provide unwavering security and reliability.
-
-Engage with our subject matter experts to explore your business requisites.
-
-CONNECT ON WHATSAPP CONNECT ON TELEGRAM
-
-Advantages of Polygon Development
-
-Ethereum Compatibility
-Polygon's Ethereum compatibility affords access to the Ethereum ecosystem's benefits, including inherent security, established tech stack, tools, and languages. This amalgamation is supplemented by scalability, interoperability, and modularity for your project.
-
-Institutional-Grade Security
-Through "Security as a Service," Polygon introduces top-tier security directly from Ethereum or dedicated validator pools. Blockchain networks founded on Polygon PoS chains can leverage this service, mitigating the need to establish their validator pool.
-
-Sturdy Architecture
-Polygon's robust architecture comprises four composable layers: Ethereum, security, Polygon networks, and execution layers. This architecture forms a resilient foundation for your projects.
-
-Enhanced User Experience
-As an Ethereum layer 2 scaling solution, Polygon prioritizes user experience enhancement. Attributes such as "zero-gas" transactions and instant (deterministic) transaction finality augment the overall user experience.
-
-Seamless Scalability
-Polygon's full-stack blockchain scaling solution seamlessly blends the best of the Ethereum ecosystem and sovereign blockchains. This fusion offers users scalability and flexibility, cultivating a dynamic environment.
-
-Interoperability
-Platforms built on Polygon exhibit profound interoperability with other EVM (Ethereum Virtual Machine) blockchains and Ethereum. This cultivates cross-platform functionality and a seamless user experience with exceptional ease.
-
-CONNECT ON WHATSAPP CONNECT ON TELEGRAM
-
-Industries We Serve
-Our all-encompassing solutions cater adeptly to businesses spanning various industries.
-
-Healthcare
-
-Retail
-
-Travel and Tourism
-
-Education
-
-Finance and Banking
-
-Logistics
-
-Entertainment
-
-Insurance
-
-Real Estate
-
-Why Elect Us for Polygon Blockchain Development
-
-Through collaboration with AradChain Technologies, access a skilled team boasting practical experience in delivering end-to-end blockchain solutions.
-
-Technical Mastery
-Harness the prowess of our technical acumen.
-
-Expert Team
-Count on our proficient and adept team.
-
-Accelerated Development
-Experience the expedition of project execution.
-
-Comprehensive Support
-Access comprehensive assistance and guidance.
-
-Tangible Outcomes
-Anticipate impactful and tangible results.
-
-Our Collaborators
-Our Clientele
-
-              </p>
-              <p>Frequently Asked Questions
-
-What programming languages are employed for Polygon smart contract development?
-Polygon facilitates smart contract development using two primary programming languages synonymous with Ethereum smart contract development: Solidity and Vyper. Solidity, a high-level programming language, caters to intricate smart contract development on Ethereum-based blockchains. Vyper, a newer language, prioritizes security and auditability, providing an alternative to Solidity.
-
-How does Polygon's "Security as a Service" function, and what are its benefits?
-
-Why should dApps be developed on Polygon rather than Ethereum?
-
-Which applications are optimally suited for Polygon blockchain development?
-
-How does the cost of Polygon development compare to other blockchain platforms?
-
-Explore More in Our Blogs
-
-Custom AI Blockchain Development
-Blockchain & AI: Pinnacle Use Cases and Barriers to AI Adoption
-The convergence of Blockchain and AI stands as one of the most transformative developments for businesses across diverse domains. [...]
-READ MORE
-
-Exploring Novel Blockchain Applications in Real Estate
-While the real estate industry is burgeoning, it's also susceptible to fraudulent activities. A majority of real estate frauds are driven by paper-based processes and a lack of transparency. [...]
-READ MORE
-
-Blockchain Solutions for the Beauty Industry
-Unveil the possibilities and potential of leveraging blockchain in the beauty industry in our intriguing blog.
-READ MORE
-
-Leverage Our Blockchain Technical Proficiency
-
-We're ready for a friendly dialogue, offering insights into your business needs without any obligations.
-
-Relax knowing that our technical support caters to inquiries and requests.
-</p>
+              <Heading>Cryptocurrency Exchange Development Company</Heading>
             </div>
           </div>
+          
         </div>
       </div>
 
-      {/* Info Section */}
       <div className={style.infoSection}>
+        <div className={style.infoContainer}>
+          <div className="content">
+            <Text align={'center'} letterSpacing={1}>
+              Tailored Development Services for Crypto Exchanges Empowering You to Create Extraordinary Success Stories The financial industry is undergoing a substantial paradigm shift, driven by factors such as liberal trade policies, customer demands, technological innovation, and macroeconomic forces. Both emerging and established businesses must embrace cryptocurrency to remain relevant as service providers. Crypto exchange software resembles traditional exchanges but is digital, more secure, and not bound by geographical limitations. AradChain Technologies, a leading cryptocurrency exchange development firm, specializes in crafting innovative solutions for progressive businesses seeking to enter the multi-billion dollar industry. Leverage AradChain Technologies's expertise in cryptocurrency exchange platform development to establish a strong foundation for success in the cryptocurrency sector. Acquire advanced yet user-friendly Bitcoin exchange software equipped with cutting-edge features, industry-leading functionalities, and robust security, all tailored to meet your specific requirements.
+            </Text>
+            <Link to="https://t.me/aradchain" target="_blank">
+<Text textAlign={'center'} mt={4}>
+    <Button
+      size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+      rightIcon={<MdCall />}
+      colorScheme="telegram"
+    >
+      Connect on Telegram
+    </Button>
+    <Link to="https://wa.me/+447432284026" target="_blank">
+      <Button
+        ml={5}
+        size={window.innerWidth <= 680 ? "xs" : "lg"} // Check the window width and change button size accordingly
+        rightIcon={<MdCall />}
+        colorScheme="whatsapp"
+        _media={{'@media (max-width: 680px)': { // Apply styles only in mobile view
+          marginTop: '2%',
+          marginLeft: '-15px',
+        }}}
+      >
+        Connect on Whatsapp
+      </Button>
+    </Link>
+  </Text>
+</Link>
+
+            <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+              Features of Cryptocurrency Exchange Software Development Basic
+              Level
+            </Heading>
+
+            <Text align={'center'} letterSpacing={1}>
+              Our forward-looking cryptocurrency exchange development services ensure that your exchange software thrives in the competitive landscape. Whether you're a large fintech institution, a digital currency startup, or a tech investor, we provide comprehensive services tailored to your venture's size. Over 7 Years of Expertise in Blockchain Thorough Testing & Effective Error Handling Technology-Agnostic, First-Rate Deliverables Full Transparency During Development Modern Coding Techniques & Agile Methods In-House Design and Development Proficiency Exceptional Post-Development Support Driven by Mission, Delivering Quality & Customization AradChain Technologies utilizes its wealth of experience and knowledge to provide futuristic solutions that offer a unique customer experience, surpassing expectations. Our team, comprising experienced fintech consultants, certified engineers, and cryptocurrency experts, grasps your business goals to formulate a distinctive blueprint for achieving success. Seize the Growing Trend of Digital Currency with a Crypto Exchange Clone. We assist companies in scaling their operations by offering on-demand exchange software development services and market-ready cryptocurrency exchange clone script solutions. Our diverse portfolio enables us to deliver exchange scripts that exceed market standards. Cut down the time and cost required to launch a crypto exchange using our cryptocurrency trading script solutions. With our experience in building cutting-edge exchanges, we enable you to replicate popular trading platforms, leveraging our enterprise-class scripts. 
+            </Text>
+            <Heading as='h2' size='2xl' letterSpacing={2} my={5} textAlign={'center'} mt={10} mb={10}>
+              Cryptocurrency Exchange Software Development Process
+            </Heading>
+            <Text align={'center'} letterSpacing={1}>
+              Creating on-demand crypto exchange software requires time and investment. However, the wait is worthwhile when the platform demands high-level customization and integration of complex use cases. The step-by-step transformation from concept to functional exchange software involves:
+            </Text>
+
+            <SimpleGrid minChildWidth='200px' spacing='20px' mt={10}>
+              <Card><CardBody><Text>Spot Trading Module</Text></CardBody></Card>
+              <Card><CardBody><Text>Various Advanced Order Types</Text></CardBody></Card>
+              <Card><CardBody><Text>Automated Third-Party KYC</Text></CardBody></Card>
+              <Card><CardBody><Text>Multichain USDT Integration</Text></CardBody></Card>
+              <Card><CardBody><Text>Crypto Swapping</Text></CardBody></Card>
+              <Card><CardBody><Text>Referral and Rewards Programs</Text></CardBody></Card>
+              <Card><CardBody><Text>Mobile Applications</Text></CardBody></Card>
+              <Card><CardBody><Text>News and Announcements Section</Text></CardBody></Card>
+              <Card><CardBody><Text>Admin Panel</Text></CardBody></Card>
+              <Card><CardBody><Text>Intermediate Level</Text></CardBody></Card>
+
+              <Card><CardBody><Text>Native/Utility Token Integration</Text></CardBody></Card>
+              <Card><CardBody><Text>Fiat On/Off Ramp</Text></CardBody></Card>
+              <Card><CardBody><Text>External Liquidity Module</Text></CardBody></Card>
+              <Card><CardBody><Text>Automated Market Making Bot</Text></CardBody></Card>
+              <Card><CardBody><Text>Fiat Payment Gateway</Text></CardBody></Card>
+              <Card><CardBody><Text>Airdrop Functionality</Text></CardBody></Card>
+              <Card><CardBody><Text>Multi-Lingual Platform</Text></CardBody></Card>
+              <Card><CardBody><Text>Admin Support Chat</Text></CardBody></Card>
+              <Card><CardBody><Text>Multi-Role Access</Text></CardBody></Card>
+              <Card><CardBody><Text>Advanced Level</Text></CardBody></Card>
+
+              <Card><CardBody><Text>Peer-to-Peer Trading Capability</Text></CardBody></Card>
+              <Card><CardBody><Text>Staking Module</Text></CardBody></Card>
+              <Card><CardBody><Text>Prepaid Cards Support</Text></CardBody></Card>
+              <Card><CardBody><Text>Over-The-Counter (OTC) Trading</Text></CardBody></Card>
+              <Card><CardBody><Text>Merchant Payment Gateway</Text></CardBody></Card>
+              <Card><CardBody><Text>NFT Marketplace Collectibles</Text></CardBody></Card>
+              <Card><CardBody><Text>Launchpad Functionality</Text></CardBody></Card>
+              <Card><CardBody><Text>Crypto Loans Services</Text></CardBody></Card>
+              <Card><CardBody><Text>Copy Trading Feature</Text></CardBody></Card>
+              <Card><CardBody><Text>Crypto Betting Module</Text></CardBody></Card>
+
+              <Card><CardBody><Text>User Chat Feature</Text></CardBody></Card>
+              <Card><CardBody><Text>Price Alerts</Text></CardBody></Card>
+              <Card><CardBody><Text>VIP Account Options</Text></CardBody></Card>
+              <Card><CardBody><Text>Lending and Borrowing Support</Text></CardBody></Card>
+              <Card><CardBody><Text>Grid Trading Capability</Text></CardBody></Card>
+              <Card><CardBody><Text>Margin Spot Trading Module</Text></CardBody></Card>
+              <Card><CardBody><Text>Crypto Arbitrage Bot</Text></CardBody></Card>
+              <Card><CardBody><Text>Derivatives and Perpetual Futures Trading</Text></CardBody></Card>
+              <Card><CardBody><Text>Cryptocurrency Exchange Development</Text></CardBody></Card>
+              <Card><CardBody><Text>Participate in the Next-Generation Financial Paradigm</Text></CardBody></Card>
+
+            </SimpleGrid>
+            
+          </div>
+
+        </div>
+
+      </div>
+
+      {/* Info Section */}
+      {/* <div className={style.infoSection}>
         <div className={style.infoContainer}>
           <div className={style.infoTop}>
             {data.about.map((ele) => {
@@ -185,18 +152,10 @@ Relax knowing that our technical support caters to inquiries and requests.
             })}
           </div>
         </div>
-      </div>
-
-      {/* Crypto Section */}
-      {/* <div className={style.cryptoSection}>
-        <div className={style.cryptoContainer}>
-          <img src={crypto1} alt="crypto1" />
-          <img src={crypto2} alt="crypto2" />
-        </div>
-    </div> */}
+      </div> */}
 
       {/* Our Team */}
-      <div className={style.ourTeamSection}>
+      {/* <div className={style.ourTeamSection}>
         <div className={style.ourTeamContainer}>
           <h1>Our Team</h1>
           <p>
@@ -217,11 +176,12 @@ Relax knowing that our technical support caters to inquiries and requests.
             })}
           </div>
         </div>
-      </div>
+      </div> */}
       <TelegramFloatingBtn />
       <FloatingWhatsApp
-        phoneNumber="447778222221"
-        accountName="Jennie"
+       phoneNumber="+447432284026"
+        accountName="AradChain Support"
+        chatMessage="Welcome to AradChain Technologies. One of our representative will be with you shortly."
         allowEsc
         allowClickAway
         notification
@@ -231,10 +191,20 @@ Relax knowing that our technical support caters to inquiries and requests.
           bottom: "2rem",
           left: "2rem",
         }}
+        statusMessage="Typically Replies With in 5 minutes"
+        chatboxHeight={450}
+        chatboxStyle={{
+          position: "fixed",
+          bottom: "2rem",
+          left: "2rem",
+        }}
       />
 
+
       {/* Need Solution */}
-      <Needsolution />
+      <Box mt={20}>
+        <Needsolution />
+      </Box>
 
       {/* Footer Section */}
       <Footer1 />
