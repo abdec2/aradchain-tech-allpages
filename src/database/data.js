@@ -1371,7 +1371,8 @@ const data={
                  },
                 {
                     heading:"Conclusion",
-                    para1:"Finality is a cornerstone of blockchain technology, providing the security, trust, and efficiency that make it a powerful solution for a wide range of applications. Its impact goes beyond financial transactions, extending to supply chain management, identity verification, governance, and more. As blockchain technology continues to evolve and mature, addressing the challenges associated with finality will be essential to realize its full potential and ensure it aligns with legal and ethical standards. Nevertheless, finality remains a critical factor in the adoption and success of blockchain technology across industries."
+                    para1:"Finality is a cornerstone of blockchain technology, providing the security, trust, and efficiency that make it a powerful solution for a wide range of applications. Its impact goes beyond financial transactions, extending to supply chain management, identity verification, governance, and more.",
+                    para2: "As blockchain technology continues to evolve and mature, addressing the challenges associated with finality will be essential to realize its full potential and ensure it aligns with legal and ethical standards. Nevertheless, finality remains a critical factor in the adoption and success of blockchain technology across industries."
                 }
             ]
 
