@@ -7,6 +7,7 @@ import data from "../../database/data";
 import Projectsbox from "../../components/projectsBox/Projectsbox";
 import { Link } from "react-router-dom";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
+import WhatsApp from './../../components/WhatsappWidget/WhatsApp';
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
 const Projects = () => {
@@ -48,27 +49,7 @@ const Projects = () => {
       {/* Need Solution Section*/}
       <NeedSolution />
       <TelegramFloatingBtn />
-      <FloatingWhatsApp
-       phoneNumber="+447432284026"
-        accountName="AradChain Support"
-        chatMessage="Welcome to AradChain Technologies. One of our representative will be with you shortly."
-        allowEsc
-        allowClickAway
-        notification
-        notificationSound
-        buttonStyle={{
-          position: "fixed",
-          bottom: "2rem",
-          left: "2rem",
-        }}
-        statusMessage="Typically Replies With in 5 minutes"
-        chatboxHeight={450}
-        chatboxStyle={{
-          position: "fixed",
-          bottom: "2rem",
-          left: "2rem",
-        }}
-      />
+      <WhatsApp />
 
       {/* Foooter Section */}
       <Footer1 />

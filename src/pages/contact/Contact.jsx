@@ -11,6 +11,7 @@ import logo from "../../assets/logo.png";
 // _________________________________________________________________
 import { useToast } from "@chakra-ui/react";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
+import WhatsApp from './../../components/WhatsappWidget/WhatsApp';
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
 const Contact = () => {
@@ -153,27 +154,7 @@ const Contact = () => {
 
       {/* Need Solution */}
       <Needsolution />
-      <FloatingWhatsApp
-       phoneNumber="+447432284026"
-        accountName="AradChain Support"
-        chatMessage="Welcome to AradChain Technologies. One of our representative will be with you shortly."
-        allowEsc
-        allowClickAway
-        notification
-        notificationSound
-        buttonStyle={{
-          position: "fixed",
-          bottom: "2rem",
-          left: "2rem",
-        }}
-        statusMessage="Typically Replies With in 5 minutes"
-        chatboxHeight={450}
-        chatboxStyle={{
-          position: "fixed",
-          bottom: "2rem",
-          left: "2rem",
-        }}
-      />
+      <WhatsApp />
 
       <TelegramFloatingBtn />
 

@@ -20,6 +20,7 @@ import PerkWidget from "../../components/perkWidget/PerkWidget";
 import Specialities from "../../components/Specialities/Specialities";
 import PartnershipForm from "../../components/PartnerShipForm/PartnerShipForm";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
+import WhatsApp from './../../components/WhatsappWidget/WhatsApp';
 import gurmit from "../../assets/gurmit.png";
 import CardComponent from "../../components/Card/Card";
 import { FaSearchLocation } from "react-icons/fa";
@@ -237,27 +238,7 @@ const PartnerWithUs = () => {
         <PartnershipForm />
       </Container>
       <TelegramFloatingBtn />
-      <FloatingWhatsApp
-       phoneNumber="+447432284026"
-        accountName="AradChain Support"
-        chatMessage="Welcome to AradChain Technologies. One of our representative will be with you shortly."
-        allowEsc
-        allowClickAway
-        notification
-        notificationSound
-        buttonStyle={{
-          position: "fixed",
-          bottom: "2rem",
-          left: "2rem",
-        }}
-        statusMessage="Typically Replies With in 5 minutes"
-        chatboxHeight={450}
-        chatboxStyle={{
-          position: "fixed",
-          bottom: "2rem",
-          left: "2rem",
-        }}
-      />
+      <WhatsApp />
 
       <div className={style.footerSection}>
         <Footer1 />

@@ -10,7 +10,6 @@ import Servicespage from "./servicesPage/Servicespage";
 import Projectpage from "./projectPage/Projectpage";
 import Article from "./article/Article";
 import PartnerWithUs from "./partner/Partner";
-import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 import SolutionExchangeCryptocurrencyExchange from "./solutionExchangeCryptocurencyExchange/SolutionExchangeCryptocurrencyExchange";
 import ExchangeWhiteLabelExchange from "./exchangeWhiteLabelExchange/ExchangeWhiteLabelExchange";

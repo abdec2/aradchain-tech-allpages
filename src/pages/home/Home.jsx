@@ -56,6 +56,7 @@ import {
 } from "@chakra-ui/react";
 import { MdBuild, MdCall } from "react-icons/md";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
+import WhatsApp from './../../components/WhatsappWidget/WhatsApp';
 import gurmit from "../../assets/gurmit.png";
 import AnimatedCard from "../../components/animatedCard/AnimatedCard";
 import HeroSection from "../../components/HeroSection/HeroSection";
@@ -151,6 +152,8 @@ const Home = () => {
       desc: "Development and deployment of digital tokens on the Ethereum blockchain that comply with the ERC20 standard, enabling seamless integration with decentralized applications (DApps) and facilitating tokenization for various use cases",
     },
   ];
+
+  const blogData = [...data.blogPosts].reverse()
 
   const globalPresence = [
     {
@@ -342,30 +345,33 @@ const Home = () => {
             {dataCard.map((ele) => {
               return <AnimatedCard ele={ele} />;
             })}
-            <div className={style.buttonposition}>
-            <Stack  spacing={4} mt={"1%"} direction="row" align="center">
-              <Link to="https://t.me/aradchain" target="_blank">
-                <Button
-                  size={window.innerWidth <= 680 ? "xs" : "md"} // Check the window width and change button size accordingly
-                  rightIcon={<MdCall />}
-                  colorScheme="telegram"
-                >
-                  Connect on Telegram
-                </Button>
-              </Link>
-              <Link to="https://wa.me/+447432284026" target="_blank">
-                <Button
-                  size={window.innerWidth <= 680 ? "xs" : "md"} // Check the window width and change button size accordingly
-                  rightIcon={<MdCall />}
-                  colorScheme="whatsapp"
-                >
-                  Connect on Whatsapp
-                </Button>
-              </Link>
-            </Stack>
-            </div>
+            {/* <div className={style.buttonposition}>
+            
+            </div> */}
           </Box>
         </div>
+        <Box mt={20} mb={10} display={'flex'} justifyContent={'center'}>
+          <Stack alignItems={'center'} spacing={'20px'} direction={{base: 'column', md: 'row'}}>
+            <Link to="https://t.me/aradchain" target="_blank">
+              <Button
+                size={"md"} // Check the window width and change button size accordingly
+                rightIcon={<MdCall />}
+                colorScheme="telegram"
+              >
+                Connect on Telegram
+              </Button>
+            </Link>
+            <Link to="https://wa.me/+447432284026" target="_blank">
+              <Button
+                size={"md"} // Check the window width and change button size accordingly
+                rightIcon={<MdCall />}
+                colorScheme="whatsapp"
+              >
+                Connect on Whatsapp
+              </Button>
+            </Link>
+          </Stack>
+        </Box>
       </Box>
       {/*Tech Experties*/}
 
@@ -593,20 +599,21 @@ const Home = () => {
       {/* Blog Section*/}
       <div className={style.blogSection}>
         <div className={style.blogContainer}>
-          <h1>Blog</h1>
+          <h1>Latest Blog</h1>
           <div className={style.blogContent}>
-            <OutlineBtns text="READ MORE ARTICLES" link="/blogs" />
-            {data.blogPosts.slice(0, 2).map((ele) => {
+            {/* <OutlineBtns text="READ MORE ARTICLES" link="/blogs" /> */}
+            {blogData.slice(0,3).map((ele, i) => {
               return (
                 <Link
-                  to={ele.slug}
+                  key={i}
+                  to={'article/'+ele.slug}
                   onClick={() => {
                     window.scroll(0, 0);
                   }}
                 >
                   <div>
                     <img src={ele.image} alt="" />
-                    <h2>{ele.title}</h2>
+                    <Heading noOfLines={2} fontFamily={'gordita, san-serif'}>{ele.title}</Heading>
                     <p>{ele.date}</p>
                   </div>
                 </Link>
@@ -840,27 +847,7 @@ const Home = () => {
       </Container>
 
       <TelegramFloatingBtn />
-      <FloatingWhatsApp
-       phoneNumber="+447432284026"
-        accountName="AradChain Support"
-        chatMessage="Welcome to AradChain Technologies. One of our representative will be with you shortly."
-        allowEsc
-        allowClickAway
-        notification
-        notificationSound
-        buttonStyle={{
-          position: "fixed",
-          bottom: "2rem",
-          left: "2rem",
-        }}
-        statusMessage="Typically Replies With in 5 minutes"
-        chatboxHeight={450}
-        chatboxStyle={{
-          position: "fixed",
-          bottom: "2rem",
-          left: "2rem",
-        }}
-      />
+      <WhatsApp />
 
       {/* Footer Section */}
       <div className={style.footerSection}>

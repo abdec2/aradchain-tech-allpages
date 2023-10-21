@@ -6,6 +6,7 @@ import Readytotake from "../../components/readyToTake/Readytotake";
 import Footer2 from "../../components/footer2/Footer2";
 import Projectresult from "../../components/projectResult/Projectresult";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
+import WhatsApp from './../../components/WhatsappWidget/WhatsApp';
 import gurmit from "../../assets/gurmit.png";
 import TelegramFloatingBtn from "../../components/TelegramFloatingBtn/TelegramFloatingBtn";
 const Projectpage2 = () => {
@@ -98,27 +99,7 @@ const Projectpage2 = () => {
       {/* Ready To Take */}
       <Readytotake />
       <TelegramFloatingBtn />
-      <FloatingWhatsApp
-       phoneNumber="+447432284026"
-        accountName="AradChain Support"
-        chatMessage="Welcome to AradChain Technologies. One of our representative will be with you shortly."
-        allowEsc
-        allowClickAway
-        notification
-        notificationSound
-        buttonStyle={{
-          position: "fixed",
-          bottom: "2rem",
-          left: "2rem",
-        }}
-        statusMessage="Typically Replies With in 5 minutes"
-        chatboxHeight={450}
-        chatboxStyle={{
-          position: "fixed",
-          bottom: "2rem",
-          left: "2rem",
-        }}
-      />
+      <WhatsApp />
 
 
       {/* Foooter Section */}
