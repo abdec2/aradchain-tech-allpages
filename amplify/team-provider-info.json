@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-aradchaintech-dev-183402-authRole",
+      "UnauthRoleArn": "arn:aws:iam::229412520251:role/amplify-aradchaintech-dev-183402-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::229412520251:role/amplify-aradchaintech-dev-183402-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-aradchaintech-dev-183402-deployment",
+      "UnauthRoleName": "amplify-aradchaintech-dev-183402-unauthRole",
+      "StackName": "amplify-aradchaintech-dev-183402",
+      "StackId": "arn:aws:cloudformation:us-east-1:229412520251:stack/amplify-aradchaintech-dev-183402/bd4472b0-8a15-11ee-866c-0ab0c42e9c85",
+      "AmplifyAppId": "d4g0k4yn5ffae"
+    },
+    "categories": {
+      "auth": {
+        "aradchaintech3417ae7f": {}
+      }
+    }
+  }
+}
