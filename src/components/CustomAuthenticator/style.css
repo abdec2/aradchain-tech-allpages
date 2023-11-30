@@ -1,0 +1,7 @@
+.amplify-button--primary {
+  background: #00234F;
+}
+
+.amplify-button--primary:hover {
+  background: #023a7f;
+}
