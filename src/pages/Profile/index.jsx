@@ -34,13 +34,13 @@ export default function UserProfileEdit() {
 }
 
 
-const ProfilePage = ({_, user}) => {
+const ProfilePage = () => {
   const [fetch, setFetch] = useState(true)
   const fName = useRef('');
   const lName = useRef('');
   const wallet = useRef('');
   const rlink = useRef('');
-
+  const email = useRef('');
   const toast = useToast()
   const handleSubmit = async() => {
     if(fName.current.value !== '') {
@@ -89,6 +89,8 @@ const ProfilePage = ({_, user}) => {
   const fetchdata = async() => {
     try {
       const userAttributes = await fetchUserAttributes();
+      console.log(userAttributes)
+      email.current.value = (userAttributes['email']) ? userAttributes['email'] : ''
       fName.current.value = (userAttributes['custom:fname']) ? userAttributes['custom:fname'] : ''
       lName.current.value = userAttributes['custom:lname'] ? userAttributes['custom:lname'] : ''
       wallet.current.value = userAttributes['custom:wallet'] ? userAttributes['custom:wallet'] : ''
@@ -140,11 +142,11 @@ const ProfilePage = ({_, user}) => {
           <FormControl id="email">
             <FormLabel>Email address</FormLabel>
             <Input
+              ref={email}
               placeholder="your-email@example.com"
               _placeholder={{ color: 'gray.500' }}
               type="email"
               disabled
-              defaultValue={user?.signInDetails.loginId}
             />
           </FormControl>
 
