@@ -5,3 +5,12 @@
 .amplify-button--primary:hover {
   background: #023a7f;
 }
+
+.amplify-tabs__item--active {
+  color: #023a7f;
+  border-color: #023a7f;
+}
+
+.amplify-tabs__item:hover {
+  color: #023a7f;
+}

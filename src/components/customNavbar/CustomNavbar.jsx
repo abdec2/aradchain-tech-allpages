@@ -1359,6 +1359,11 @@ const NAV_ITEMS = [
             context: "Join our referral program and earn commission",
             href: "/profile",
           },
+          {
+            innerLabel: "Plans",
+            context: "Purchase our plans as per your need.",
+            href: "/plans",
+          },
         ],
       },
     ],

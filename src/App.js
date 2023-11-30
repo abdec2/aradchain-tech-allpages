@@ -24,6 +24,7 @@ function App() {
       {currentPage === "/login" && <CustomNavbar />}
       {currentPage === "/signup" && <CustomNavbar />}
       {currentPage === "/profile" && <CustomNavbar />}
+      {currentPage === "/plans" && <CustomNavbar />}
       {currentPage === "/partner-with-us" && <CustomNavbar />}
 
       {/* Saad! below routes needs styling and layout adjustments.. right now these routes can not be accessed from website you need to enter these routes in browser address bar */}

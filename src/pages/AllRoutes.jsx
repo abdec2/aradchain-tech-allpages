@@ -138,6 +138,7 @@ import AcOBS from "./acOBS/AcOBS";
 import AcAW from "./acAW/AcAW";
 import MPR from "./mPR/MPR";
 import CC from "./cC/CC";
+import Plans from "./Plans";
 
 
 const AllRoutes = () => {
@@ -152,6 +153,7 @@ const AllRoutes = () => {
       <Route path="/signup" element={<Signup />} />
       <Route path="/profile" element={<Profile />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/plans" element={<Plans />} />
       <Route path="/partner-with-us" element={<PartnerWithUs />} />
       <Route path="/services/:slug" element={<Servicespage />} />
       <Route path="/projects/:slug" element={<Projectpage />} />

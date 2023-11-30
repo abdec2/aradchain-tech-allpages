@@ -18,14 +18,23 @@ import {
 } from '@chakra-ui/react'
 import { useToast } from '@chakra-ui/react'
 
-import { updateUserAttributes, fetchUserAttributes } from 'aws-amplify/auth' 
+import { updateUserAttributes, fetchUserAttributes, signOut } from 'aws-amplify/auth' 
 import { SmallCloseIcon } from '@chakra-ui/icons'
 import CustomAuthenticator from '../../components/CustomAuthenticator'
 import { useEffect, useState, useRef } from 'react';
 
 
 
-export default function UserProfileEdit({ signOut, user }) {
+export default function UserProfileEdit() {
+    return (
+      <CustomAuthenticator>
+        <ProfilePage></ProfilePage>
+      </CustomAuthenticator>
+    )
+}
+
+
+const ProfilePage = ({_, user}) => {
   const [fetch, setFetch] = useState(true)
   const fName = useRef('');
   const lName = useRef('');
@@ -33,7 +42,6 @@ export default function UserProfileEdit({ signOut, user }) {
   const rlink = useRef('');
 
   const toast = useToast()
-  console.log(user)
   const handleSubmit = async() => {
     if(fName.current.value !== '') {
       try {
@@ -43,7 +51,7 @@ export default function UserProfileEdit({ signOut, user }) {
           "custom:wallet" : wallet.current.value
         }
         if(wallet.current.value !== "") {
-          data['custom:rlink'] = "https://aradchain.tech/user?address="+wallet.current.value
+          data['custom:rlink'] = "https://aradchain.tech/plans?address="+wallet.current.value
         }
         const update = await updateUserAttributes({
           userAttributes: data
@@ -81,7 +89,6 @@ export default function UserProfileEdit({ signOut, user }) {
   const fetchdata = async() => {
     try {
       const userAttributes = await fetchUserAttributes();
-      console.log(userAttributes);
       fName.current.value = (userAttributes['custom:fname']) ? userAttributes['custom:fname'] : ''
       lName.current.value = userAttributes['custom:lname'] ? userAttributes['custom:lname'] : ''
       wallet.current.value = userAttributes['custom:wallet'] ? userAttributes['custom:wallet'] : ''
@@ -100,103 +107,101 @@ export default function UserProfileEdit({ signOut, user }) {
   }, [fetch])
   return (
     <>
-      <CustomAuthenticator>
-        <Flex
-          minH={'85vh'}
-          align={'center'}
-          justify={'center'}
-          bg={useColorModeValue('gray.50', 'gray.800')}>
-          <Stack
-            spacing={4}
-            w={'full'}
-            maxW={'md'}
-            bg={useColorModeValue('white', 'gray.700')}
-            rounded={'xl'}
-            boxShadow={'lg'}
-            p={6}
-            my={12}>
-            <Box textAlign={'right'}>
-              <Button 
-                w={'100px'} 
-                color={'#fff'}
-                bg={'#00234F'}
-                _hover={
-                  {
-                    bg: "#023a7f"
-                  }
+      <Flex
+        minH={'85vh'}
+        align={'center'}
+        justify={'center'}
+        bg={useColorModeValue('gray.50', 'gray.800')}>
+        <Stack
+          spacing={4}
+          w={'full'}
+          maxW={'md'}
+          bg={useColorModeValue('white', 'gray.700')}
+          rounded={'xl'}
+          boxShadow={'lg'}
+          p={6}
+          my={12}>
+          <Box textAlign={'right'}>
+            <Button 
+              w={'100px'} 
+              color={'#fff'}
+              bg={'#00234F'}
+              _hover={
+                {
+                  bg: "#023a7f"
                 }
-                onClick={signOut}
-              >Signout</Button>
-            </Box>
-            <Heading lineHeight={1.1} fontSize={{ base: '2xl', sm: '3xl' }}>
-              User Profile
-            </Heading>
-            <FormControl id="email">
-              <FormLabel>Email address</FormLabel>
-              <Input
-                placeholder="your-email@example.com"
-                _placeholder={{ color: 'gray.500' }}
-                type="email"
-                disabled
-                defaultValue={user?.signInDetails.loginId}
-              />
-            </FormControl>
+              }
+              onClick={signOut}
+            >Signout</Button>
+          </Box>
+          <Heading lineHeight={1.1} fontSize={{ base: '2xl', sm: '3xl' }}>
+            User Profile
+          </Heading>
+          <FormControl id="email">
+            <FormLabel>Email address</FormLabel>
+            <Input
+              placeholder="your-email@example.com"
+              _placeholder={{ color: 'gray.500' }}
+              type="email"
+              disabled
+              defaultValue={user?.signInDetails.loginId}
+            />
+          </FormControl>
 
-            <HStack>
-                <Box>
-                <FormControl id="firstName" isRequired>
-                    <FormLabel>First Name</FormLabel>
-                    <Input ref={fName} type="text" />
-                </FormControl>
-                </Box>
-                <Box>
-                <FormControl id="lastName">
-                    <FormLabel>Last Name</FormLabel>
-                    <Input ref={lName} type="text" />
-                </FormControl>
-                </Box>
-            </HStack>
+          <HStack>
+              <Box>
+              <FormControl id="firstName" isRequired>
+                  <FormLabel>First Name</FormLabel>
+                  <Input ref={fName} type="text" />
+              </FormControl>
+              </Box>
+              <Box>
+              <FormControl id="lastName">
+                  <FormLabel>Last Name</FormLabel>
+                  <Input ref={lName} type="text" />
+              </FormControl>
+              </Box>
+          </HStack>
 
-            <FormControl id="walletAddress">
-              <FormLabel>Wallet Address</FormLabel>
-              <Input
-                placeholder=""
-                _placeholder={{ color: 'gray.500' }}
-                type="text"
-                ref={wallet}
-              />
-            </FormControl>
+          <FormControl id="walletAddress">
+            <FormLabel>Wallet Address</FormLabel>
+            <Input
+              placeholder=""
+              _placeholder={{ color: 'gray.500' }}
+              type="text"
+              ref={wallet}
+            />
+          </FormControl>
 
-            <FormControl id="walletAddress">
-              <FormLabel>Referral Link</FormLabel>
-              <Input
-                disabled
-                placeholder=""
-                _placeholder={{ color: 'gray.500' }}
-                type="text"
-                ref={rlink}
-              />
-            </FormControl>
-            
-            <Stack spacing={6} direction={['column', 'row']}>
-              
-              <Button
-                color={"white"}
-                bg={"#00234F"}
-                fontSize={"sm"}
-                fontWeight={600}
-                w={'full'}
-                onClick={handleSubmit}
-                _hover={{
-                    bg: "#023a7f",
-                  }}>
-                Submit
-              </Button>
-            </Stack>
-          </Stack>
+          <FormControl id="walletAddress">
+            <FormLabel>Referral Link</FormLabel>
+            <Input
+              disabled
+              placeholder=""
+              _placeholder={{ color: 'gray.500' }}
+              type="text"
+              ref={rlink}
+            />
+          </FormControl>
           
-        </Flex>
-      </CustomAuthenticator>
+          <Stack spacing={6} direction={['column', 'row']}>
+            
+            <Button
+              color={"white"}
+              bg={"#00234F"}
+              fontSize={"sm"}
+              fontWeight={600}
+              w={'full'}
+              onClick={handleSubmit}
+              _hover={{
+                  bg: "#023a7f",
+                }}>
+              Submit
+            </Button>
+          </Stack>
+        </Stack>
+        
+      </Flex>
     </>
   )
 }
