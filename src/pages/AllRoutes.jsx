@@ -5,12 +5,14 @@ import Services from "./services/Services";
 import About from "./about/About";
 import Contact from "./contact/Contact";
 import Blogs from "./blogs/Blogs";
+import Login from "./login";
+import Signup from "./Signup";
+import Profile from "./Profile";
 import Projects from "./projects/Projects";
 import Servicespage from "./servicesPage/Servicespage";
 import Projectpage from "./projectPage/Projectpage";
 import Article from "./article/Article";
 import PartnerWithUs from "./partner/Partner";
-import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 import SolutionExchangeCryptocurrencyExchange from "./solutionExchangeCryptocurencyExchange/SolutionExchangeCryptocurrencyExchange";
 import ExchangeWhiteLabelExchange from "./exchangeWhiteLabelExchange/ExchangeWhiteLabelExchange";
@@ -136,6 +138,7 @@ import AcOBS from "./acOBS/AcOBS";
 import AcAW from "./acAW/AcAW";
 import MPR from "./mPR/MPR";
 import CC from "./cC/CC";
+import Plans from "./Plans";
 
 
 const AllRoutes = () => {
@@ -146,7 +149,11 @@ const AllRoutes = () => {
       <Route path="/projects" element={<Projects />} />
       <Route path="/about" element={<About />} />
       <Route path="/blogs" element={<Blogs />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
+      <Route path="/profile" element={<Profile />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/plans" element={<Plans />} />
       <Route path="/partner-with-us" element={<PartnerWithUs />} />
       <Route path="/services/:slug" element={<Servicespage />} />
       <Route path="/projects/:slug" element={<Projectpage />} />

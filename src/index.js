@@ -5,12 +5,19 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom'
 import { ChakraProvider } from '@chakra-ui/react'
+import { Amplify } from 'aws-amplify';
+import awsConfig from './aws-exports'
+import UserContext from './context/UserContext'
+
+Amplify.configure(awsConfig);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ChakraProvider>
     <BrowserRouter>
-      <App />
+      <UserContext>
+        <App />
+      </UserContext>
     </BrowserRouter>
   </ChakraProvider>
 );

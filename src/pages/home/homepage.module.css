@@ -90,7 +90,7 @@
 }
 .aboutSectionContainer {
   /* border: 1px solid green; */
-  padding-top: 80px;
+  padding-top: 20px;
   width: 1200px;
   margin: auto;
   display: flex;
@@ -450,9 +450,9 @@ form > input:nth-child(3) {
   align-items: flex-end;
   justify-content: space-between;
 }
-.blogContent > a:first-child {
+/* .blogContent > a:first-child {
   all: unset;
-}
+} */
 .blogContent button {
   padding: 12px 25px;
   /* border: 1px solid black; */

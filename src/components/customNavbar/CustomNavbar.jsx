@@ -53,13 +53,21 @@ export default function CustomNavbar() {
           borderColor={useColorModeValue("gray.200", "gray.900")}
           align={"center"}
         >
-          <Flex
+          {/* <Flex
             flex={{ base: 1, md: "auto" }}
             ml={{ base: -2 }}
-            display={{ base: "flex", md: "flex", lg: "none" }}
+            display={{ base: "flex", md: "flex", lg: "flex", xl: "none" }}
+          >
+            
+          </Flex> */}
+          <Flex
+            flex={{ base: 1 }}
+            justify={{ base: "center", md: "start" }}
+            align={"center"}
           >
             <IconButton
               onClick={onToggle}
+              display={{ base: "flex", md: "flex", lg: "none"}}
               icon={
                 isOpen ? (
                   <CloseIcon w={3} h={3} />
@@ -70,22 +78,17 @@ export default function CustomNavbar() {
               variant={"ghost"}
               aria-label={"Toggle Navigation"}
             />
-          </Flex>
-          <Flex
-            flex={{ base: 1 }}
-            justify={{ base: "center", md: "start" }}
-            align={"center"}
-          >
-            <Image
-              src={logo}
-              alt="logo"
-              cursor={"pointer"}
-              width={{ base: "180px", md: "180px" }}
-              height={{ base: "40px", md: "45px" }}
-              onClick={() => navigate("/")}
-            />
+            <Box maxW={'200px'}>
+              <Image
+                src={logo}
+                alt="logo"
+                cursor={"pointer"}
+                w={'100%'}
+                onClick={() => navigate("/")}
+              />
+            </Box>
 
-            <Flex display={{ base: "none", md: "none", lg: "flex" }} ml={10}>
+            <Flex display={{ base: "none", md: "none", lg: "flex"}} ml={10}>
               <DesktopNav
                 hoverdItem={hoverdItem}
                 setHoverdItem={setHoverdItem}
@@ -416,11 +419,13 @@ const DesktopSubNav = ({
 };
 
 const MobileNav = () => {
+  const navigate = useNavigate();
   return (
     <Stack bg="rgba(1,33,73,0.3029586834733894)" p={4} display={{ md: "flex" }}>
       {NAV_ITEMS.map((navItem) => (
         <MobileNavItem key={navItem.label} {...navItem} />
       ))}
+      
     </Stack>
   );
 };
@@ -488,6 +493,7 @@ const MobileNavItem = ({ label, children, href }) => {
             ))}
         </Stack>
       </Collapse>
+      
     </Stack>
   );
 };
@@ -1347,6 +1353,16 @@ const NAV_ITEMS = [
             innerLabel: "Become our Partner",
             context: "Become our partners and grow with us",
             href: "/partner-with-us",
+          },
+          {
+            innerLabel: "Join Our Referral Program",
+            context: "Join our referral program and earn commission",
+            href: "/profile",
+          },
+          {
+            innerLabel: "Plans",
+            context: "Purchase our plans as per your need.",
+            href: "/plans",
           },
         ],
       },

@@ -4,7 +4,7 @@ import style from './articletext.module.css'
 const Articletext = ({heading, desc, para1, para2, para3, para4, para5, subHeading1, subHeading2, subHeading3, subHeading4, subHeading5}) => {
   return (
     <div className={style.articleText}>
-        <h2 style={{marginTop: '40px'}}>{heading}</h2>
+        {heading && heading !== '' && (<h2 style={{marginTop: '40px'}}>{heading}</h2>)}
         {desc !== '' && <p> {desc}</p>}
         <p><span>{subHeading1}</span> {para1}</p>
         <p><span>{subHeading2}</span> {para2}</p>
